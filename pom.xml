@@ -16,6 +16,7 @@
         <module>modules/siddhi-query</module>
         <module>modules/siddhi-core</module>
         <module>modules/siddhi-distribution</module>
+        <module>modules/siddhi-loadbalancer</module>
 
     </modules>
 
