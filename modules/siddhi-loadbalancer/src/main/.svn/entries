@@ -1,0 +1,42 @@
+10
+
+dir
+0
+https://svn.wso2.org/repos/wso2/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-loadbalancer/src/main
+https://svn.wso2.org/repos/wso2
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a5903396-d722-0410-b921-86c7d4935375
+
+java
+dir
+
+
+
+add
+
+resources
+dir
+
+
+
+add
+

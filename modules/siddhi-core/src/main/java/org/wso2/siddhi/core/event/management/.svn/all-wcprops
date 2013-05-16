@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/event/management
+END
+PersistenceManagementEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/event/management/PersistenceManagementEvent.java
+END
+ManagementEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/event/management/ManagementEvent.java
+END

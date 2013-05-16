@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/query/projector/attribute/factory
+END
+MinOutputAttributeProcessorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/query/projector/attribute/factory/MinOutputAttributeProcessorFactory.java
+END
+SumOutputAttributeProcessorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/query/projector/attribute/factory/SumOutputAttributeProcessorFactory.java
+END
+MaxOutputAttributeProcessorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/query/projector/attribute/factory/MaxOutputAttributeProcessorFactory.java
+END
+CountOutputAttributeProcessorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/query/projector/attribute/factory/CountOutputAttributeProcessorFactory.java
+END
+AvgOutputAttributeProcessorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/query/projector/attribute/factory/AvgOutputAttributeProcessorFactory.java
+END
+OutputAttributeProcessorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/query/projector/attribute/factory/OutputAttributeProcessorFactory.java
+END

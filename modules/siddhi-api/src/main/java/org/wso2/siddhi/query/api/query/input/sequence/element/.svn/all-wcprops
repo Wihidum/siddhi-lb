@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-api/src/main/java/org/wso2/siddhi/query/api/query/input/sequence/element
+END
+SequenceElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-api/src/main/java/org/wso2/siddhi/query/api/query/input/sequence/element/SequenceElement.java
+END
+RegexElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-api/src/main/java/org/wso2/siddhi/query/api/query/input/sequence/element/RegexElement.java
+END
+NextElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-api/src/main/java/org/wso2/siddhi/query/api/query/input/sequence/element/NextElement.java
+END
+OrElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-api/src/main/java/org/wso2/siddhi/query/api/query/input/sequence/element/OrElement.java
+END

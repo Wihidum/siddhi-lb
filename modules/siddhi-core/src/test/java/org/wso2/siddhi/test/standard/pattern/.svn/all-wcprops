@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/test/java/org/wso2/siddhi/test/standard/pattern
+END
+PatternComplexTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/test/java/org/wso2/siddhi/test/standard/pattern/PatternComplexTestCase.java
+END
+PatternCountTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/test/java/org/wso2/siddhi/test/standard/pattern/PatternCountTestCase.java
+END
+PatternEveryTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/test/java/org/wso2/siddhi/test/standard/pattern/PatternEveryTestCase.java
+END
+PatternLogicTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/test/java/org/wso2/siddhi/test/standard/pattern/PatternLogicTestCase.java
+END
+PatternWithinTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/test/java/org/wso2/siddhi/test/standard/pattern/PatternWithinTestCase.java
+END

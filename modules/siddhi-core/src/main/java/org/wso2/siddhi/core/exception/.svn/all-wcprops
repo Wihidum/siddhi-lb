@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/exception
+END
+QueryNotExistException.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/exception/QueryNotExistException.java
+END
+OperationNotSupportedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/exception/OperationNotSupportedException.java
+END
+CannotLoadClassException.java
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/exception/CannotLoadClassException.java
+END
+EventStreamWithDifferentDefinitionAlreadyExistException.java
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/exception/EventStreamWithDifferentDefinitionAlreadyExistException.java
+END
+StreamHandlerException.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/exception/StreamHandlerException.java
+END
+QueryCreationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/exception/QueryCreationException.java
+END
+EventStreamNotExistException.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/exception/EventStreamNotExistException.java
+END
+NoPersistenceStoreAssignedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/exception/NoPersistenceStoreAssignedException.java
+END
+NoIdentifierException.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-core/src/main/java/org/wso2/siddhi/core/exception/NoIdentifierException.java
+END

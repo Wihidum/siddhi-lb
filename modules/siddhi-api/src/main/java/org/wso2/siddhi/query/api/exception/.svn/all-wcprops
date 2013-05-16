@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-api/src/main/java/org/wso2/siddhi/query/api/exception
+END
+AttributeNotExistException.java
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-api/src/main/java/org/wso2/siddhi/query/api/exception/AttributeNotExistException.java
+END
+AttributeAlreadyExistException.java
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-api/src/main/java/org/wso2/siddhi/query/api/exception/AttributeAlreadyExistException.java
+END
+StreamNotExistException.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-api/src/main/java/org/wso2/siddhi/query/api/exception/StreamNotExistException.java
+END
+MalformedAttributeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/repos/wso2/!svn/ver/162876/carbon/platform/tags/4.0.7/dependencies/commons/siddhi/1.1.0-wso2v1/modules/siddhi-api/src/main/java/org/wso2/siddhi/query/api/exception/MalformedAttributeException.java
+END
