@@ -253,7 +253,7 @@ public class TimeWindowTestCase {
         siddhiManager.defineStream("define stream cseEventStream (symbol string, price float, volume int) ");
 
         String queryReference = siddhiManager.addQuery("from cseEventStream#window.time(5 seconds) " +
-                                                       "insert expired-events into StockQuote symbol , sum(price) as sumPrice " +
+                                                       "insert expired-events into StockQuote@12.1.1.1 symbol , sum(price) as sumPrice " +
                                                        "group by symbol;");
         siddhiManager.addCallback(queryReference, new QueryCallback() {
             @Override
@@ -288,7 +288,7 @@ public class TimeWindowTestCase {
         siddhiManager.defineStream("define stream cseEventStream (symbol string, price float, volume long) ");
 
         String queryReference = siddhiManager.addQuery("from cseEventStream#window.time(5 seconds) " +
-                                                       "insert all-events into StockQuote symbol , sum(volume) as sumVolume, avg(volume) as avgVolume " +
+                                                       "insert all-events into StockQuote@123.23.2.1,12.2.2.3 symbol , sum(volume) as sumVolume, avg(volume) as avgVolume " +
                                                        "group by symbol;");
         siddhiManager.addCallback(queryReference, new QueryCallback() {
             @Override

@@ -17,13 +17,15 @@
 */
 package org.wso2.siddhi.query.api.query.output;
 
+import java.util.List;
+
 public class OutStream {
     public enum OutputEvents {
         EXPIRED_EVENTS, CURRENT_EVENTS, ALL_EVENTS
     }
 
     String streamId;
-    String ip;
+    List<String> ip;
     OutputEvents outputEvents;
 
     public OutStream(String streamId, OutputEvents outputEvents) {
@@ -31,7 +33,7 @@ public class OutStream {
         this.outputEvents = outputEvents;
     }
 
-    public OutStream(String streamId, String ip, OutputEvents outputEvents) {
+    public OutStream(String streamId, List<String> ip, OutputEvents outputEvents) {
         this.streamId = streamId;
         this.ip = ip;
         this.outputEvents = outputEvents;
@@ -42,7 +44,7 @@ public class OutStream {
         this.outputEvents = OutputEvents.CURRENT_EVENTS;
     }
 
-    public OutStream(String streamId, String ip) {
+    public OutStream(String streamId, List<String> ip) {
         this.streamId = streamId;
         this.ip = ip;
         this.outputEvents = OutputEvents.CURRENT_EVENTS;
@@ -52,7 +54,7 @@ public class OutStream {
         return streamId;
     }
 
-    public String getIp() {
+    public List<String> getIp() {
         return ip;
     }
 
@@ -60,7 +62,7 @@ public class OutStream {
         this.streamId = streamId;
     }
 
-    public OutStream setIp(String ip){
+    public OutStream setIp(List<String> ip){
         this.ip =ip;
         return this;
     }

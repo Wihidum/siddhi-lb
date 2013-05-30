@@ -86,8 +86,8 @@ query
 	;
 
 outputStream
-	:'insert' outputType? 'into' streamId ('@' IP)?    ->   ^(OUT_STREAM streamId outputType? IP?)
-	;
+	:'insert' outputType? 'into' streamId ('@' IP (',' IP)* )?    ->   ^(OUT_STREAM streamId outputType? (IP+)?)
+   	;
 
 outputType
 	: 'expired-events' | 'current-events' | 'all-events'

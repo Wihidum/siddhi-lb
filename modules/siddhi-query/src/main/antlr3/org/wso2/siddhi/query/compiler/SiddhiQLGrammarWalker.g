@@ -70,8 +70,14 @@ query returns [Query query]
 	;
 
 outputStream returns [OutStream value]
-	:  ^(OUT_STREAM streamId {$value=new OutStream($streamId.value);} (outputType {$value=new OutStream($streamId.value,$outputType.outputType);})? (IP {$value=$value.setIp($IP.text);})?)
-	;
+	@init{
+       		ArrayList<String> ipList=new ArrayList<String>();
+    }
+    @after{
+       		$value=$value.setIp(ipList);
+    }
+    :  ^(OUT_STREAM streamId {$value=new OutStream($streamId.value);} (outputType {$value=new OutStream($streamId.value,$outputType.outputType);})? ((IP {ipList.add($IP.text);})+)?)
+    ;
 
 outputType returns [OutStream.OutputEvents outputType]
 	: 'expired-events' {$outputType=OutStream.OutputEvents.EXPIRED_EVENTS;}

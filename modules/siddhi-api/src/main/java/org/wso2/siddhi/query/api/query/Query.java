@@ -24,6 +24,8 @@ import org.wso2.siddhi.query.api.query.projection.Projector;
 import org.wso2.siddhi.query.api.query.input.AnonymousStream;
 import org.wso2.siddhi.query.api.query.input.Stream;
 
+import java.util.List;
+
 public class Query implements ExecutionPlan {
 
     private Stream inputStream;
@@ -40,7 +42,7 @@ public class Query implements ExecutionPlan {
         return this;
     }
 
-    public Query insertInto(String outputStreamId, String ip) {
+    public Query insertInto(String outputStreamId, List<String> ip) {
         this.outStream =new OutStream(outputStreamId,ip);
         return this;
     }
@@ -78,7 +80,7 @@ public class Query implements ExecutionPlan {
         return this;
     }
 
-    public Query insertInto( String outputStreamId,String ip, OutStream.OutputEvents outputEvents) {
+    public Query insertInto( String outputStreamId,List<String> ip, OutStream.OutputEvents outputEvents) {
         this.outStream= new OutStream(outputStreamId,ip,outputEvents);
         return this;
     }
