@@ -87,12 +87,12 @@ public class CEPService implements CEPServiceInterface {
         if (buckets != null && buckets.containsKey(bucket.getName())) {
             throw new CEPConfigurationException("A bucket with name " + bucket.getName() + " already exist!");
         }
-        String bucketPath = createCEPBucketDirectories(bucket, axisConfiguration);
+        /*String bucketPath = createCEPBucketDirectories(bucket, axisConfiguration);
         try {
             CEPResourcePersister.save(bucket, bucketPath);
         } catch (Throwable e) {
             log.error(e.getMessage(), e);
-        }
+        }*/
     }
 
     private String createCEPBucketDirectories(Bucket bucket, AxisConfiguration axisConfiguration)
