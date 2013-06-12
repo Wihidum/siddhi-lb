@@ -1,0 +1,48 @@
+Manifest-Version: 1.0
+Service-Component: OSGI-INF/serviceComponents.xml
+Export-Package: org.wso2.carbon.cep.fusion.listener;uses:="org.wso2.ca
+ rbon.cep.core.listener";version="4.0.0",org.wso2.carbon.cep.fusion.ba
+ ckend;uses:="org.drools.runtime,org.apache.commons.logging,org.wso2.c
+ arbon.cep.core,org.wso2.carbon.cep.core.exception,org.drools.runtime.
+ rule,org.wso2.carbon.cep.core.mapping.input,org.drools,org.drools.bui
+ lder,org.drools.definition,org.wso2.carbon.cep.core.mapping.input.map
+ ping,org.wso2.carbon.cep.core.listener,org.wso2.carbon.cep.core.backe
+ nd,org.wso2.carbon.cep.fusion.listener,org.wso2.carbon.registry.core.
+ exceptions,org.wso2.carbon.registry.core,org.drools.io,org.wso2.carbo
+ n.cep.core.internal.ds,org.drools.conf";version="4.0.0"
+Built-By: tishan
+Tool: Bnd-1.43.0
+Bundle-Name: org.wso2.carbon.cep.fusion
+Created-By: Apache Maven Bundle Plugin
+Bundle-Vendor: WSO2 Inc
+DynamicImport-Package: *
+Fragment-Host: org.wso2.carbon.cep.core
+Build-Jdk: 1.6.0_43
+Bundle-Version: 4.0.0
+Bnd-LastModified: 1369806886047
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
+Bundle-Description: This is a Carbon bundle that represent the eventin
+ g module.
+Import-Package: javax.xml.namespace;version="0.0.0",org.apache.commons
+ .logging;resolution:=optional;version="[1.1,2)",org.drools;resolution
+ :=optional;version="[5.1,6)",org.drools.builder;resolution:=optional;
+ version="[5.1,6)",org.drools.conf;resolution:=optional;version="[5.1,
+ 6)",org.drools.definition;resolution:=optional;version="[5.1,6)",org.
+ drools.io;resolution:=optional;version="[5.1,6)",org.drools.runtime;r
+ esolution:=optional;version="[5.1,6)",org.drools.runtime.rule;resolut
+ ion:=optional;version="[5.1,6)",org.osgi.service.component;resolution
+ :=optional;version="[1.1,2)",org.wso2.carbon.cep.core;resolution:=opt
+ ional;version="[4.0,5)",org.wso2.carbon.cep.core.backend;resolution:=
+ optional;version="[4.0,5)",org.wso2.carbon.cep.core.exception;resolut
+ ion:=optional;version="[4.0,5)",org.wso2.carbon.cep.core.internal.ds;
+ resolution:=optional,org.wso2.carbon.cep.core.listener;resolution:=op
+ tional;version="[4.0,5)",org.wso2.carbon.cep.core.mapping.input;resol
+ ution:=optional;version="[4.0,5)",org.wso2.carbon.cep.core.mapping.in
+ put.mapping;resolution:=optional;version="[4.0,5)",org.wso2.carbon.ce
+ p.fusion.backend;resolution:=optional;version="[4.0,5)",org.wso2.carb
+ on.registry.core;resolution:=optional;version="[1.0,2)",org.wso2.carb
+ on.registry.core.exceptions;resolution:=optional;version="[1.0,2)"
+Bundle-DocURL: http://wso2.org
+Bundle-SymbolicName: org.wso2.carbon.cep.fusion
+

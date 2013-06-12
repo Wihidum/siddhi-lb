@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component enabled="true" immediate="true" name="fusionbackend.component">
+        <implementation class="org.wso2.carbon.cep.fusion.internal.ds.FustionBackEndRuntimeDS"/>
+        <property name="service.pid" value="fusionbackend.component"/>
+        <reference name="cep.service" interface="org.wso2.carbon.cep.core.CEPServiceInterface" cardinality="1..1" policy="dynamic" bind="setCEPService" unbind="unSetCEPService"/>
+    </scr:component>
+</components>

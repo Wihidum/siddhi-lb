@@ -1,0 +1,47 @@
+Manifest-Version: 1.0
+Service-Component: OSGI-INF/serviceComponents.xml
+Export-Package: org.wso2.carbon.cep.admin.internal;uses:="org.wso2.car
+ bon.cep.admin.internal.exception,org.apache.commons.logging,org.wso2.
+ carbon.cep.core,org.wso2.carbon.cep.core.exception,org.wso2.carbon.ce
+ p.core.mapping.input,org.wso2.carbon.cep.core.mapping.output.mapping,
+ org.wso2.carbon.core,org.wso2.carbon.cep.admin.internal.config,org.ap
+ ache.axiom.om.util,org.wso2.carbon.cep.core.mapping.input.mapping,org
+ .apache.axiom.om,javax.xml.stream,org.apache.axis2.engine,org.wso2.ca
+ rbon.cep.core.mapping.output,org.wso2.carbon.cep.core.mapping.propert
+ y,org.wso2.carbon.cep.admin.internal.util";version="4.0.0",org.wso2.c
+ arbon.cep.admin.internal.exception;version="4.0.0",org.wso2.carbon.ce
+ p.admin.internal.util;uses:="org.wso2.carbon.cep.core,org.osgi.servic
+ e.component";version="4.0.0",org.wso2.carbon.cep.admin.internal.confi
+ g;uses:="org.wso2.carbon.cep.admin.internal,org.apache.commons.loggin
+ g,org.apache.axiom.om";version="4.0.0"
+Built-By: tishan
+Tool: Bnd-1.43.0
+Bundle-Name: org.wso2.carbon.cep.admin
+Created-By: Apache Maven Bundle Plugin
+Bundle-Vendor: WSO2 Inc
+DynamicImport-Package: *
+Build-Jdk: 1.6.0_43
+Bundle-Version: 4.0.0
+Bnd-LastModified: 1369291404484
+Bundle-ManifestVersion: 2
+Bundle-Description: This is a Carbon bundle that represent the eventin
+ g module.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
+Import-Package: javax.xml.namespace;version="0.0.0",javax.xml.stream;r
+ esolution:=optional;version="[1.0,2)",org.apache.axiom.om;resolution:
+ =optional;version="[1.2,2)",org.apache.axiom.om.util;resolution:=opti
+ onal;version="[1.2,2)",org.apache.axis2.engine;resolution:=optional;v
+ ersion="[1.6,2)",org.apache.commons.logging;resolution:=optional;vers
+ ion="[1.0,2)",org.osgi.service.component;resolution:=optional;version
+ ="[1.1,2)",org.wso2.carbon.cep.core;resolution:=optional;version="[4.
+ 0,5)",org.wso2.carbon.cep.core.exception;resolution:=optional;version
+ ="[4.0,5)",org.wso2.carbon.cep.core.mapping.input;resolution:=optiona
+ l;version="[4.0,5)",org.wso2.carbon.cep.core.mapping.input.mapping;re
+ solution:=optional;version="[4.0,5)",org.wso2.carbon.cep.core.mapping
+ .output;resolution:=optional;version="[4.0,5)",org.wso2.carbon.cep.co
+ re.mapping.output.mapping;resolution:=optional;version="[4.0,5)",org.
+ wso2.carbon.cep.core.mapping.property;resolution:=optional;version="[
+ 4.0,5)",org.wso2.carbon.core;resolution:=optional
+Bundle-DocURL: http://wso2.org
+Bundle-SymbolicName: org.wso2.carbon.cep.admin
+
