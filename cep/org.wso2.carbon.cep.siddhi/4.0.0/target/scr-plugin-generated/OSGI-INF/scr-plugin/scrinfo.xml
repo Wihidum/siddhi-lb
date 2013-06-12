@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component enabled="true" immediate="true" name="siddhibackend.component">
+        <implementation class="org.wso2.carbon.cep.siddhi.internal.ds.SiddhiBackendRuntimeDS"/>
+        <property name="service.pid" value="siddhibackend.component" private="false"/>
+        <reference name="cep.service" interface="org.wso2.carbon.cep.core.CEPServiceInterface" cardinality="1..1" policy="dynamic" bind="setCEPService" unbind="unSetCEPService" checked="true" strategy="event"/>
+        <reference name="user.realm.delegating" interface="org.wso2.carbon.user.core.UserRealm" cardinality="1..1" policy="dynamic" bind="setUserRealm" unbind="unsetUserRealm" checked="true" strategy="event"/>
+        <reference name="dataaccess.service" interface="org.wso2.carbon.cassandra.dataaccess.DataAccessService" cardinality="1..1" policy="dynamic" bind="setDataAccessService" unbind="unsetDataAccessService" checked="true" strategy="event"/>
+    </scr:component>
+</components>
