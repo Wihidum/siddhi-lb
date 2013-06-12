@@ -198,24 +198,26 @@ public class CEPService implements CEPServiceInterface {
 
             CEPBackEndRuntimeFactory cepBackEndRuntimeFactory =
                     (CEPBackEndRuntimeFactory) cepEngineProvider.getProviderClass().newInstance();
-
+            CEPDistributionAdmin cepDistributionAdmin = CEPDistributionAdmin.getInstance();
+            List<Bucket> bucketList = cepDistributionAdmin.getBucketList(bucket,bucketPath);
+            for(Bucket subBucket : bucketList){
             List<InputMapping> inputMappings = new ArrayList<InputMapping>();
-            if (bucket.getInputs() != null) {
-                for (Input input : bucket.getInputs()) {
+            if (subBucket.getInputs() != null) {
+                for (Input input : subBucket.getInputs()) {
                     inputMappings.add(input.getInputMapping());
                 }
             }
 
             CEPBackEndRuntime cepBackEndRuntime =
-                    cepBackEndRuntimeFactory.createCEPBackEndRuntime(bucket.getName(), bucket.getProviderConfigurationProperties(), inputMappings, tenantId);
+                    cepBackEndRuntimeFactory.createCEPBackEndRuntime(subBucket.getName(), subBucket.getProviderConfigurationProperties(), inputMappings, tenantId);
 
-            CEPBucket cepBucket = new CEPBucket(cepBackEndRuntime, bucket, axisConfiguration, bucketPath);
+            CEPBucket cepBucket = new CEPBucket(cepBackEndRuntime, subBucket, axisConfiguration, bucketPath);
             cepBucket.init();
 
 
-            buckets.put(bucket.getName(), cepBucket);
-            log.info("Added bucket " + bucket.getName() + " to the cep engine successfully");
-
+            buckets.put(subBucket.getName(), cepBucket);
+            log.info("Added bucket " + subBucket.getName() + " to the cep engine successfully");
+            }
         } catch (InstantiationException e) {
             String errorMessage = "Can not instantiate factory class ";
             log.error(errorMessage, e);
