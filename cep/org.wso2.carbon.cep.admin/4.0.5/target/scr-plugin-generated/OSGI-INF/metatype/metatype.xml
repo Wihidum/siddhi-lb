@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/metatype">
+    <OCD id="cepadmin.component" name="%cepadmin.component.name" description="%cepadmin.component.description"/>
+    <Designate pid="cepadmin.component">
+        <Object ocdref="cepadmin.component"/>
+    </Designate>
+</metatype:MetaData>

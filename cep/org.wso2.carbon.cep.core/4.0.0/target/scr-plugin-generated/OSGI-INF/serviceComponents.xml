@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component enabled="true" immediate="true" name="cepservice.component">
+        <implementation class="org.wso2.carbon.cep.core.internal.ds.CEPServiceDS"/>
+        <property name="service.pid" value="cepservice.component"/>
+        <reference name="configurationcontext.service" interface="org.wso2.carbon.utils.ConfigurationContextService" cardinality="1..1" policy="dynamic" bind="setConfigurationContextService" unbind="unsetConfigurationContextService"/>
+        <reference name="broker.service" interface="org.wso2.carbon.broker.core.BrokerService" cardinality="1..1" policy="dynamic" bind="setBrokerService" unbind="unsetBrokerService"/>
+        <reference name="registry.service" interface="org.wso2.carbon.registry.core.service.RegistryService" cardinality="1..1" policy="dynamic" bind="setRegistryService" unbind="unsetRegistryService"/>
+        <reference name="brokermanager.service" interface="org.wso2.carbon.brokermanager.core.BrokerManagerService" cardinality="1..1" policy="dynamic" bind="setBrokerManagerService" unbind="unsetBrokerManagerService"/>
+    </scr:component>
+</components>

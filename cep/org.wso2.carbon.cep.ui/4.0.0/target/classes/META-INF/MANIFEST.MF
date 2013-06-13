@@ -1,0 +1,52 @@
+Manifest-Version: 1.0
+Export-Package: org.wso2.carbon.cep.ui;uses:="org.apache.axis2,javax.s
+ ervlet,org.wso2.carbon.ui,org.wso2.carbon.cep.stub.admin,org.apache.a
+ xis2.context,javax.servlet.http";version="4.0.0",org.wso2.carbon.cep.
+ ui.i18n;version="4.0.0",org.wso2.carbon.cep.admin.internal.exception;
+ version="4.0.0",org.wso2.carbon.cep.admin.internal.config;uses:="org.
+ wso2.carbon.cep.admin.internal,org.apache.commons.logging,org.apache.
+ axiom.om";version="4.0.0",org.wso2.carbon.cep.admin.internal;uses:="o
+ rg.wso2.carbon.cep.admin.internal.exception,org.apache.commons.loggin
+ g,org.wso2.carbon.cep.core,org.wso2.carbon.cep.core.exception,org.wso
+ 2.carbon.cep.core.mapping.input,org.wso2.carbon.cep.core.mapping.outp
+ ut.mapping,org.wso2.carbon.core,org.wso2.carbon.cep.admin.internal.co
+ nfig,org.apache.axiom.om.util,org.wso2.carbon.cep.core.mapping.input.
+ mapping,org.apache.axiom.om,javax.xml.stream,org.apache.axis2.engine,
+ org.wso2.carbon.cep.core.mapping.output,org.wso2.carbon.cep.core.mapp
+ ing.property,org.wso2.carbon.cep.admin.internal.util";version="4.0.0"
+ ,org.wso2.carbon.cep.admin.internal.util;uses:="org.wso2.carbon.cep.c
+ ore,org.osgi.service.component";version="4.0.0"
+Built-By: tishan
+Tool: Bnd-1.43.0
+Bundle-Name: org.wso2.carbon.cep.ui
+Created-By: Apache Maven Bundle Plugin
+Bundle-Vendor: WSO2 Inc
+Build-Jdk: 1.6.0_43
+Bundle-Version: 4.0.0
+Bnd-LastModified: 1369291406389
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
+Bundle-Description: CEP UI
+Import-Package: javax.servlet;resolution:=optional,javax.servlet.http;
+ resolution:=optional,javax.xml.stream;resolution:=optional;version="[
+ 1.0,2)",org.apache.axiom.om;version="[1.2.11.wso2v2,1.3.0)",org.apach
+ e.axiom.om.util;version="[1.2.11.wso2v2,1.3.0)",org.apache.axis2;vers
+ ion="[1.6.1.wso2v1,1.7.0)",org.apache.axis2.context;version="[1.6.1.w
+ so2v1,1.7.0)",org.apache.axis2.engine;version="[1.6.1.wso2v1,1.7.0)",
+ org.apache.commons.logging;resolution:=optional;version="[1.1,2)",org
+ .osgi.service.component;resolution:=optional;version="[1.1,2)",org.ws
+ o2.carbon.cep.core;resolution:=optional;version="[4.0,5)",org.wso2.ca
+ rbon.cep.core.exception;resolution:=optional;version="[4.0,5)",org.ws
+ o2.carbon.cep.core.mapping.input;resolution:=optional;version="[4.0,5
+ )",org.wso2.carbon.cep.core.mapping.input.mapping;resolution:=optiona
+ l;version="[4.0,5)",org.wso2.carbon.cep.core.mapping.output;resolutio
+ n:=optional;version="[4.0,5)",org.wso2.carbon.cep.core.mapping.output
+ .mapping;resolution:=optional;version="[4.0,5)",org.wso2.carbon.cep.c
+ ore.mapping.property;resolution:=optional;version="[4.0,5)",org.wso2.
+ carbon.cep.stub.admin;version="[4.0.0,4.1.0)",org.wso2.carbon.core;re
+ solution:=optional,org.wso2.carbon.ui;resolution:=optional,org.wso2.c
+ arbon.utils
+Bundle-DocURL: http://wso2.org
+Carbon-Component: UIBundle
+Bundle-SymbolicName: org.wso2.carbon.cep.ui
+
