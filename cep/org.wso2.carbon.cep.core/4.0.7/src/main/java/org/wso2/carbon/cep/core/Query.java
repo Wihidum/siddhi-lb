@@ -18,12 +18,20 @@ package org.wso2.carbon.cep.core;
 
 import org.wso2.carbon.cep.core.mapping.output.Output;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Query {
 
     /**
      * Query String
      * */
     private Expression expression;
+
+    /**
+     * ip List query.
+     */
+     private List<String> ipList = new ArrayList<String>();
 
     /**
      * Name of  the query
@@ -90,5 +98,17 @@ public class Query {
 
     public void setQueryIndex(int queryIndex) {
         this.queryIndex = queryIndex;
+    }
+
+
+    public List<String> getIpList() {
+        return ipList;
+    }
+
+   public void addIP(String ip){
+       ipList.add(ip);
+   }
+    public void clearIPList(){
+        ipList.clear();
     }
 }

@@ -25,6 +25,7 @@ import org.wso2.carbon.cep.core.CEPServiceInterface;
 import org.wso2.carbon.cep.core.backend.CEPBackEndRuntime;
 import org.wso2.carbon.cep.core.backend.CEPBackEndRuntimeFactory;
 import org.wso2.carbon.cep.core.backend.CEPEngineProvider;
+import org.wso2.carbon.cep.core.distributing.CEPDistributionAdmin;
 import org.wso2.carbon.cep.core.exception.CEPConfigurationException;
 import org.wso2.carbon.cep.core.internal.ds.CEPServiceValueHolder;
 import org.wso2.carbon.cep.core.internal.persistance.CEPResourcePersister;
@@ -34,6 +35,7 @@ import org.wso2.carbon.cep.core.mapping.input.Input;
 import org.wso2.carbon.cep.core.mapping.input.mapping.InputMapping;
 import org.wso2.carbon.context.CarbonContext;
 import org.wso2.carbon.context.PrivilegedCarbonContext;
+
 
 import java.io.File;
 import java.util.ArrayList;
@@ -178,56 +180,56 @@ public class CEPService implements CEPServiceInterface {
                                  AxisConfiguration axisConfiguration, String bucketPath)
             throws CEPConfigurationException {
 
-        try {
-            int tenantId = CarbonContext.getCurrentContext().getTenantId();
-
-            Map<String, CEPBucket> buckets = this.tenantSpecificCEPBuckets.get(tenantId);
-            if (buckets == null) {
-                buckets = new ConcurrentHashMap<String, CEPBucket>();
-                this.tenantSpecificCEPBuckets.put(tenantId, buckets);
-            } else if (buckets.containsKey(bucket.getName())) {
-                log.info("Bucket " + bucket.getName() + " is not deployed hence bucket already exists.");
-                return false;
-//                throw new CEPConfigurationException("Error, bucket cannot be deployed, a bucket with name " + bucket.getName() + " already exist!");
-            }
-
-            String owner = CarbonContext.getCurrentContext().getUsername();
-            if (owner != null && owner.length() > 0) {
-                bucket.setOwner(owner);
-            }
-
-            CEPBackEndRuntimeFactory cepBackEndRuntimeFactory =
-                    (CEPBackEndRuntimeFactory) cepEngineProvider.getProviderClass().newInstance();
-            CEPDistributionAdmin cepDistributionAdmin = CEPDistributionAdmin.getInstance();
-            List<Bucket> bucketList = cepDistributionAdmin.getBucketList(bucket,bucketPath);
-            for(Bucket subBucket : bucketList){
-            List<InputMapping> inputMappings = new ArrayList<InputMapping>();
-            if (subBucket.getInputs() != null) {
-                for (Input input : subBucket.getInputs()) {
-                    inputMappings.add(input.getInputMapping());
-                }
-            }
-
-            CEPBackEndRuntime cepBackEndRuntime =
-                    cepBackEndRuntimeFactory.createCEPBackEndRuntime(subBucket.getName(), subBucket.getProviderConfigurationProperties(), inputMappings, tenantId);
-
-            CEPBucket cepBucket = new CEPBucket(cepBackEndRuntime, subBucket, axisConfiguration, bucketPath);
-            cepBucket.init();
-
-
-            buckets.put(subBucket.getName(), cepBucket);
-            log.info("Added bucket " + subBucket.getName() + " to the cep engine successfully");
-            }
-        } catch (InstantiationException e) {
-            String errorMessage = "Can not instantiate factory class ";
-            log.error(errorMessage, e);
-            throw new CEPConfigurationException(errorMessage, e);
-        } catch (IllegalAccessException e) {
-            String errorMessage = "Error in adding buckets";
-            log.error(errorMessage, e);
-            throw new CEPConfigurationException(errorMessage, e);
-        }
-        return true;
+    //    try {
+//            int tenantId = CarbonContext.getCurrentContext().getTenantId();
+//
+//            Map<String, CEPBucket> buckets = this.tenantSpecificCEPBuckets.get(tenantId);
+//            if (buckets == null) {
+//                buckets = new ConcurrentHashMap<String, CEPBucket>();
+//                this.tenantSpecificCEPBuckets.put(tenantId, buckets);
+//            } else if (buckets.containsKey(bucket.getName())) {
+//                log.info("Bucket " + bucket.getName() + " is not deployed hence bucket already exists.");
+//                return false;
+////                throw new CEPConfigurationException("Error, bucket cannot be deployed, a bucket with name " + bucket.getName() + " already exist!");
+//            }
+//
+//            String owner = CarbonContext.getCurrentContext().getUsername();
+//            if (owner != null && owner.length() > 0) {
+//                bucket.setOwner(owner);
+//            }
+//
+//            CEPBackEndRuntimeFactory cepBackEndRuntimeFactory =
+//                    (CEPBackEndRuntimeFactory) cepEngineProvider.getProviderClass().newInstance();
+//            CEPDistributionAdmin cepDistributionAdmin = CEPDistributionAdmin.getInstances();
+//            List<Bucket> bucketList = cepDistributionAdmin.getBucketList(bucket,bucketPath);
+//            for(Bucket subBucket : bucketList){
+//            List<InputMapping> inputMappings = new ArrayList<InputMapping>();
+//            if (subBucket.getInputs() != null) {
+//                for (Input input : subBucket.getInputs()) {
+//                    inputMappings.add(input.getInputMapping());
+//                }
+//            }
+//
+//            CEPBackEndRuntime cepBackEndRuntime =
+//                    cepBackEndRuntimeFactory.createCEPBackEndRuntime(subBucket.getName(), subBucket.getProviderConfigurationProperties(), inputMappings, tenantId);
+//
+//            CEPBucket cepBucket = new CEPBucket(cepBackEndRuntime, subBucket, axisConfiguration, bucketPath);
+//            cepBucket.init();
+//
+//
+//            buckets.put(subBucket.getName(), cepBucket);
+//            log.info("Added bucket " + subBucket.getName() + " to the cep engine successfully");
+//            }
+//        } catch (InstantiationException e) {
+//            String errorMessage = "Can not instantiate factory class ";
+//            log.error(errorMessage, e);
+//            throw new CEPConfigurationException(errorMessage, e);
+//        } catch (IllegalAccessException e) {
+//            String errorMessage = "Error in adding buckets";
+//            log.error(errorMessage, e);
+//            throw new CEPConfigurationException(errorMessage, e);
+//        }
+  return true;
     }
 
     public boolean unDeployBucket(String bucketName, int tenantId)

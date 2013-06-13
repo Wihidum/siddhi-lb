@@ -5,8 +5,8 @@ import org.wso2.carbon.broker.core.exception.BrokerConfigException;
 import org.wso2.carbon.cep.core.internal.ds.CEPServiceValueHolder;
 
 /**
- * This class is used to  adapt the Broker Manager's Broker configuration object in to
- * Core Broker Configuration object
+ * This class is used to  adapt the BrokerConfig Manager's BrokerConfig configuration object in to
+ * Core BrokerConfig Configuration object
  */
 public class BrokerConfigurationHelper {
     public BrokerConfiguration getBrokerConfiguration(String brokerName, int tenantId) throws BrokerConfigException {

@@ -27,6 +27,8 @@ import org.wso2.carbon.cep.core.internal.config.output.OutputHelper;
 import org.wso2.carbon.cep.core.internal.util.CEPConstants;
 
 import javax.xml.namespace.QName;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * This class will help to build Query object from a given OMElement
@@ -39,11 +41,22 @@ public class QueryHelper {
         Query query = new Query();
         String name = queryElement.getAttribute(new QName(CEPConstants.CEP_CONF_ATTR_NAME)).getAttributeValue();
         query.setName(name);
+
+        Iterator iterator = queryElement.getChildrenWithName(new QName(CEPConstants.CEP_CONF_QUERY_IP));
+
+        if(iterator != null && iterator.hasNext()){
+            OMElement ipElement = (OMElement) iterator.next();
+            String ip = ipElement.getText();
+            query.addIP(ip);
+
+        }
+
         OMElement expressionElement = queryElement.getFirstChildWithName(new QName(CEPConstants.CEP_CONF_NAMESPACE,
                 CEPConstants.CEP_CONF_ELE_EXPRESSION));
         if (expressionElement != null) {
             query.setExpression(ExpressionHelper.fromOM(expressionElement));
         }
+
 
         OMElement outputOmElement = queryElement.getFirstChildWithName(new QName(CEPConstants.CEP_CONF_NAMESPACE,
                 CEPConstants.CEP_CONF_ELE_OUTPUT));
@@ -63,6 +76,13 @@ public class QueryHelper {
 				CEPConstants.CEP_CONF_CEP_NAME_SPACE_PREFIX));
         Expression queryExpression = query.getExpression();
         String queryName = query.getName();
+        OMElement queryIP=null;
+         List<String> ipList = query.getIpList();
+        for(String ip:ipList){
+            queryIP = factory.createOMElement(new QName(CEPConstants.CEP_CONF_QUERY_IP));
+            queryIP.setText(ip);
+            queryChild.addChild(queryIP);
+        }
         queryChild.addAttribute(CEPConstants.CEP_CONF_ATTR_NAME, queryName, null);
         OMElement omQueryExpression = ExpressionHelper
 				.expressionToOM(queryExpression);

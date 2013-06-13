@@ -53,6 +53,13 @@
             <artifactId>org.wso2.carbon.cep.statistics</artifactId>
             <version>4.0.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.wso2.carbon</groupId>
+            <artifactId>org.wso2.carbon.cep.statistics</artifactId>
+            <version>4.0.2</version>
+        </dependency>
+
         <dependency>
             <groupId>org.wso2.carbon</groupId>
             <artifactId>org.wso2.carbon.core</artifactId>
