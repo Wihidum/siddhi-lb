@@ -13,7 +13,7 @@ public interface QueryDecomposer {
 
 
     /**
-    * This method is used to decompose a complex query into small sub queries
+    * This method is used to decompose a complex query into small sub-queries
     * @param query - query to be decomposed
     * */
     public void decompose(Query query) ;
