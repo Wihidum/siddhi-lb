@@ -1,4 +1,4 @@
-// $ANTLR 3.4 org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g 2013-05-30 13:32:27
+// $ANTLR 3.4 org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g 2013-05-30 14:16:10
 
 	package org.wso2.siddhi.query.compiler;
 	import org.wso2.siddhi.query.compiler.exception.SiddhiPraserException;
@@ -13,6 +13,7 @@ import java.util.ArrayList;
 @SuppressWarnings({"all", "warnings", "unchecked"})
 public class SiddhiQLGrammarLexer extends Lexer {
     public static final int EOF=-1;
+    public static final int T__49=49;
     public static final int T__50=50;
     public static final int T__51=51;
     public static final int T__52=52;
@@ -90,53 +91,51 @@ public class SiddhiQLGrammarLexer extends Lexer {
     public static final int T__124=124;
     public static final int T__125=125;
     public static final int T__126=126;
-    public static final int T__127=127;
-    public static final int ABC=4;
-    public static final int ANONYMOUS=5;
-    public static final int ATTRIBUTE=6;
-    public static final int BOOL_VAL=7;
-    public static final int COLLECT=8;
-    public static final int COMMENT=9;
-    public static final int CONDITION=10;
-    public static final int CONDITION_FUNCTION=11;
-    public static final int CONSTANT=12;
-    public static final int DEFINITION=13;
-    public static final int EXTENSION=14;
-    public static final int EXTENSION_FUNCTION=15;
-    public static final int FILTER=16;
-    public static final int FOLLOWED_BY=17;
-    public static final int FUNCTION=18;
-    public static final int HANDLERS=19;
-    public static final int ID=20;
-    public static final int ID_QUOTES=21;
-    public static final int IN_ATTRIBUTE=22;
-    public static final int IP=23;
-    public static final int JOIN=24;
-    public static final int LINE_COMMENT=25;
-    public static final int NUM=26;
-    public static final int NUM_SCI=27;
-    public static final int OUT_ATTRIBUTE=28;
-    public static final int OUT_ATTRIBUTES=29;
-    public static final int OUT_STREAM=30;
-    public static final int PARAMETERS=31;
-    public static final int PATTERN=32;
-    public static final int PATTERN_FULL=33;
-    public static final int POSITIVE_DOUBLE_VAL=34;
-    public static final int POSITIVE_FLOAT_VAL=35;
-    public static final int POSITIVE_INT_VAL=36;
-    public static final int POSITIVE_LONG_VAL=37;
-    public static final int QUERY=38;
-    public static final int REGEX=39;
-    public static final int RETURN_QUERY=40;
-    public static final int SEQUENCE=41;
-    public static final int SEQUENCE_FULL=42;
-    public static final int SIGNED_VAL=43;
-    public static final int STREAM=44;
-    public static final int STRING_VAL=45;
-    public static final int TIME_EXP=46;
-    public static final int TRANSFORM=47;
-    public static final int WINDOW=48;
-    public static final int WS=49;
+    public static final int ANONYMOUS=4;
+    public static final int ATTRIBUTE=5;
+    public static final int BOOL_VAL=6;
+    public static final int COLLECT=7;
+    public static final int COMMENT=8;
+    public static final int CONDITION=9;
+    public static final int CONDITION_FUNCTION=10;
+    public static final int CONSTANT=11;
+    public static final int DEFINITION=12;
+    public static final int EXTENSION=13;
+    public static final int EXTENSION_FUNCTION=14;
+    public static final int FILTER=15;
+    public static final int FOLLOWED_BY=16;
+    public static final int FUNCTION=17;
+    public static final int HANDLERS=18;
+    public static final int ID=19;
+    public static final int ID_QUOTES=20;
+    public static final int IN_ATTRIBUTE=21;
+    public static final int IP=22;
+    public static final int JOIN=23;
+    public static final int LINE_COMMENT=24;
+    public static final int NUM=25;
+    public static final int NUM_SCI=26;
+    public static final int OUT_ATTRIBUTE=27;
+    public static final int OUT_ATTRIBUTES=28;
+    public static final int OUT_STREAM=29;
+    public static final int PARAMETERS=30;
+    public static final int PATTERN=31;
+    public static final int PATTERN_FULL=32;
+    public static final int POSITIVE_DOUBLE_VAL=33;
+    public static final int POSITIVE_FLOAT_VAL=34;
+    public static final int POSITIVE_INT_VAL=35;
+    public static final int POSITIVE_LONG_VAL=36;
+    public static final int QUERY=37;
+    public static final int REGEX=38;
+    public static final int RETURN_QUERY=39;
+    public static final int SEQUENCE=40;
+    public static final int SEQUENCE_FULL=41;
+    public static final int SIGNED_VAL=42;
+    public static final int STREAM=43;
+    public static final int STRING_VAL=44;
+    public static final int TIME_EXP=45;
+    public static final int TRANSFORM=46;
+    public static final int WINDOW=47;
+    public static final int WS=48;
 
       @Override
        public void emitErrorMessage(String errorMessage) {
@@ -159,10 +158,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
     }
     public String getGrammarFileName() { return "org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g"; }
 
-    // $ANTLR start "T__50"
-    public final void mT__50() throws RecognitionException {
+    // $ANTLR start "T__49"
+    public final void mT__49() throws RecognitionException {
         try {
-            int _type = T__50;
+            int _type = T__49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
             // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:19:7: ( '!=' )
             // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:19:9: '!='
@@ -180,6 +179,27 @@ public class SiddhiQLGrammarLexer extends Lexer {
         	// do for sure before leaving
         }
     }
+    // $ANTLR end "T__49"
+
+    // $ANTLR start "T__50"
+    public final void mT__50() throws RecognitionException {
+        try {
+            int _type = T__50;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:20:7: ( '#' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:20:9: '#'
+            {
+            match('#'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
     // $ANTLR end "T__50"
 
     // $ANTLR start "T__51"
@@ -187,10 +207,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:20:7: ( '#' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:20:9: '#'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:21:7: ( '%' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:21:9: '%'
             {
-            match('#'); 
+            match('%'); 
 
             }
 
@@ -208,10 +228,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__52;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:21:7: ( '%' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:21:9: '%'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:22:7: ( '(' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:22:9: '('
             {
-            match('%'); 
+            match('('); 
 
             }
 
@@ -229,10 +249,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__53;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:22:7: ( '(' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:22:9: '('
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:23:7: ( ')' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:23:9: ')'
             {
-            match('('); 
+            match(')'); 
 
             }
 
@@ -250,10 +270,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:23:7: ( ')' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:23:9: ')'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:24:7: ( '*' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:24:9: '*'
             {
-            match(')'); 
+            match('*'); 
 
             }
 
@@ -271,10 +291,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__55;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:24:7: ( '*' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:24:9: '*'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:25:7: ( '+' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:25:9: '+'
             {
-            match('*'); 
+            match('+'); 
 
             }
 
@@ -292,10 +312,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__56;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:25:7: ( '+' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:25:9: '+'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:26:7: ( ',' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:26:9: ','
             {
-            match('+'); 
+            match(','); 
 
             }
 
@@ -313,10 +333,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__57;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:26:7: ( ',' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:26:9: ','
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:27:7: ( '-' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:27:9: '-'
             {
-            match(','); 
+            match('-'); 
 
             }
 
@@ -334,10 +354,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__58;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:27:7: ( '-' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:27:9: '-'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:28:7: ( '.' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:28:9: '.'
             {
-            match('-'); 
+            match('.'); 
 
             }
 
@@ -355,10 +375,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__59;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:28:7: ( '.' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:28:9: '.'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:29:7: ( '/' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:29:9: '/'
             {
-            match('.'); 
+            match('/'); 
 
             }
 
@@ -376,10 +396,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__60;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:29:7: ( '/' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:29:9: '/'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:30:7: ( ':' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:30:9: ':'
             {
-            match('/'); 
+            match(':'); 
 
             }
 
@@ -397,10 +417,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__61;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:30:7: ( ':' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:30:9: ':'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:31:7: ( ';' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:31:9: ';'
             {
-            match(':'); 
+            match(';'); 
 
             }
 
@@ -418,10 +438,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__62;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:31:7: ( ';' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:31:9: ';'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:32:7: ( '<' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:32:9: '<'
             {
-            match(';'); 
+            match('<'); 
 
             }
 
@@ -439,10 +459,12 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__63;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:32:7: ( '<' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:32:9: '<'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:33:7: ( '<=' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:33:9: '<='
             {
-            match('<'); 
+            match("<="); 
+
+
 
             }
 
@@ -460,12 +482,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__64;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:33:7: ( '<=' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:33:9: '<='
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:34:7: ( '=' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:34:9: '='
             {
-            match("<="); 
-
-
+            match('='); 
 
             }
 
@@ -483,10 +503,12 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__65;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:34:7: ( '=' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:34:9: '='
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:35:7: ( '==' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:35:9: '=='
             {
-            match('='); 
+            match("=="); 
+
+
 
             }
 
@@ -504,12 +526,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__66;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:35:7: ( '==' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:35:9: '=='
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:36:7: ( '>' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:36:9: '>'
             {
-            match("=="); 
-
-
+            match('>'); 
 
             }
 
@@ -527,10 +547,12 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__67;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:36:7: ( '>' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:36:9: '>'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:37:7: ( '>=' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:37:9: '>='
             {
-            match('>'); 
+            match(">="); 
+
+
 
             }
 
@@ -548,12 +570,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__68;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:37:7: ( '>=' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:37:9: '>='
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:38:7: ( '?' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:38:9: '?'
             {
-            match(">="); 
-
-
+            match('?'); 
 
             }
 
@@ -571,10 +591,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__69;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:38:7: ( '?' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:38:9: '?'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:39:7: ( '@' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:39:9: '@'
             {
-            match('?'); 
+            match('@'); 
 
             }
 
@@ -592,10 +612,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__70;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:39:7: ( '@' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:39:9: '@'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:40:7: ( '[' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:40:9: '['
             {
-            match('@'); 
+            match('['); 
 
             }
 
@@ -613,10 +633,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__71;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:40:7: ( '[' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:40:9: '['
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:41:7: ( ']' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:41:9: ']'
             {
-            match('['); 
+            match(']'); 
 
             }
 
@@ -634,10 +654,12 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__72;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:41:7: ( ']' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:41:9: ']'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:42:7: ( 'all-events' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:42:9: 'all-events'
             {
-            match(']'); 
+            match("all-events"); 
+
+
 
             }
 
@@ -655,10 +677,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__73;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:42:7: ( 'all-events' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:42:9: 'all-events'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:43:7: ( 'and' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:43:9: 'and'
             {
-            match("all-events"); 
+            match("and"); 
 
 
 
@@ -678,10 +700,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__74;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:43:7: ( 'and' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:43:9: 'and'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:44:7: ( 'as' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:44:9: 'as'
             {
-            match("and"); 
+            match("as"); 
 
 
 
@@ -701,10 +723,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__75;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:44:7: ( 'as' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:44:9: 'as'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:45:7: ( 'bool' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:45:9: 'bool'
             {
-            match("as"); 
+            match("bool"); 
 
 
 
@@ -724,10 +746,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__76;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:45:7: ( 'bool' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:45:9: 'bool'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:46:7: ( 'by' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:46:9: 'by'
             {
-            match("bool"); 
+            match("by"); 
 
 
 
@@ -747,10 +769,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__77;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:46:7: ( 'by' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:46:9: 'by'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:47:7: ( 'call' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:47:9: 'call'
             {
-            match("by"); 
+            match("call"); 
 
 
 
@@ -770,10 +792,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__78;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:47:7: ( 'call' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:47:9: 'call'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:48:7: ( 'contains' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:48:9: 'contains'
             {
-            match("call"); 
+            match("contains"); 
 
 
 
@@ -793,10 +815,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__79;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:48:7: ( 'contains' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:48:9: 'contains'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:49:7: ( 'current-events' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:49:9: 'current-events'
             {
-            match("contains"); 
+            match("current-events"); 
 
 
 
@@ -816,10 +838,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__80;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:49:7: ( 'current-events' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:49:9: 'current-events'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:50:7: ( 'day' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:50:9: 'day'
             {
-            match("current-events"); 
+            match("day"); 
 
 
 
@@ -839,10 +861,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__81;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:50:7: ( 'day' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:50:9: 'day'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:51:7: ( 'days' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:51:9: 'days'
             {
-            match("day"); 
+            match("days"); 
 
 
 
@@ -862,10 +884,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__82;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:51:7: ( 'days' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:51:9: 'days'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:52:7: ( 'define' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:52:9: 'define'
             {
-            match("days"); 
+            match("define"); 
 
 
 
@@ -885,10 +907,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__83;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:52:7: ( 'define' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:52:9: 'define'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:53:7: ( 'double' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:53:9: 'double'
             {
-            match("define"); 
+            match("double"); 
 
 
 
@@ -908,10 +930,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__84;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:53:7: ( 'double' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:53:9: 'double'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:54:7: ( 'every' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:54:9: 'every'
             {
-            match("double"); 
+            match("every"); 
 
 
 
@@ -931,10 +953,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__85;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:54:7: ( 'every' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:54:9: 'every'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:55:7: ( 'expired-events' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:55:9: 'expired-events'
             {
-            match("every"); 
+            match("expired-events"); 
 
 
 
@@ -954,10 +976,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__86;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:55:7: ( 'expired-events' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:55:9: 'expired-events'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:56:7: ( 'float' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:56:9: 'float'
             {
-            match("expired-events"); 
+            match("float"); 
 
 
 
@@ -977,10 +999,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__87;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:56:7: ( 'float' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:56:9: 'float'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:57:7: ( 'from' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:57:9: 'from'
             {
-            match("float"); 
+            match("from"); 
 
 
 
@@ -1000,10 +1022,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__88;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:57:7: ( 'from' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:57:9: 'from'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:58:7: ( 'full' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:58:9: 'full'
             {
-            match("from"); 
+            match("full"); 
 
 
 
@@ -1023,10 +1045,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__89;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:58:7: ( 'full' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:58:9: 'full'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:59:7: ( 'group' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:59:9: 'group'
             {
-            match("full"); 
+            match("group"); 
 
 
 
@@ -1046,10 +1068,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__90;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:59:7: ( 'group' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:59:9: 'group'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:60:7: ( 'having' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:60:9: 'having'
             {
-            match("group"); 
+            match("having"); 
 
 
 
@@ -1069,10 +1091,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__91;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:60:7: ( 'having' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:60:9: 'having'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:61:7: ( 'hour' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:61:9: 'hour'
             {
-            match("having"); 
+            match("hour"); 
 
 
 
@@ -1092,10 +1114,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__92;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:61:7: ( 'hour' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:61:9: 'hour'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:62:7: ( 'hours' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:62:9: 'hours'
             {
-            match("hour"); 
+            match("hours"); 
 
 
 
@@ -1115,10 +1137,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__93;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:62:7: ( 'hours' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:62:9: 'hours'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:63:7: ( 'inner' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:63:9: 'inner'
             {
-            match("hours"); 
+            match("inner"); 
 
 
 
@@ -1138,10 +1160,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__94;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:63:7: ( 'inner' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:63:9: 'inner'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:64:7: ( 'insert' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:64:9: 'insert'
             {
-            match("inner"); 
+            match("insert"); 
 
 
 
@@ -1161,10 +1183,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__95;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:64:7: ( 'insert' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:64:9: 'insert'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:65:7: ( 'instanceof' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:65:9: 'instanceof'
             {
-            match("insert"); 
+            match("instanceof"); 
 
 
 
@@ -1184,10 +1206,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__96;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:65:7: ( 'instanceof' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:65:9: 'instanceof'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:66:7: ( 'int' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:66:9: 'int'
             {
-            match("instanceof"); 
+            match("int"); 
 
 
 
@@ -1207,10 +1229,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__97;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:66:7: ( 'int' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:66:9: 'int'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:67:7: ( 'into' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:67:9: 'into'
             {
-            match("int"); 
+            match("into"); 
 
 
 
@@ -1230,10 +1252,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__98;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:67:7: ( 'into' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:67:9: 'into'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:68:7: ( 'join' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:68:9: 'join'
             {
-            match("into"); 
+            match("join"); 
 
 
 
@@ -1253,10 +1275,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__99;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:68:7: ( 'join' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:68:9: 'join'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:69:7: ( 'left' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:69:9: 'left'
             {
-            match("join"); 
+            match("left"); 
 
 
 
@@ -1276,10 +1298,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__100;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:69:8: ( 'left' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:69:10: 'left'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:70:8: ( 'long' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:70:10: 'long'
             {
-            match("left"); 
+            match("long"); 
 
 
 
@@ -1299,10 +1321,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__101;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:70:8: ( 'long' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:70:10: 'long'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:71:8: ( 'millisecond' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:71:10: 'millisecond'
             {
-            match("long"); 
+            match("millisecond"); 
 
 
 
@@ -1322,10 +1344,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__102;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:71:8: ( 'millisecond' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:71:10: 'millisecond'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:72:8: ( 'milliseconds' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:72:10: 'milliseconds'
             {
-            match("millisecond"); 
+            match("milliseconds"); 
 
 
 
@@ -1345,10 +1367,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__103;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:72:8: ( 'milliseconds' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:72:10: 'milliseconds'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:73:8: ( 'min' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:73:10: 'min'
             {
-            match("milliseconds"); 
+            match("min"); 
 
 
 
@@ -1368,10 +1390,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__104;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:73:8: ( 'min' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:73:10: 'min'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:74:8: ( 'minute' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:74:10: 'minute'
             {
-            match("min"); 
+            match("minute"); 
 
 
 
@@ -1391,10 +1413,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__105;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:74:8: ( 'minute' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:74:10: 'minute'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:8: ( 'minutes' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:10: 'minutes'
             {
-            match("minute"); 
+            match("minutes"); 
 
 
 
@@ -1414,10 +1436,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__106;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:8: ( 'minutes' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:10: 'minutes'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:8: ( 'month' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:10: 'month'
             {
-            match("minutes"); 
+            match("month"); 
 
 
 
@@ -1437,10 +1459,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__107;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:8: ( 'month' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:10: 'month'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:77:8: ( 'months' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:77:10: 'months'
             {
-            match("month"); 
+            match("months"); 
 
 
 
@@ -1460,10 +1482,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__108;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:77:8: ( 'months' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:77:10: 'months'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:78:8: ( 'not' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:78:10: 'not'
             {
-            match("months"); 
+            match("not"); 
 
 
 
@@ -1483,10 +1505,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__109;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:78:8: ( 'not' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:78:10: 'not'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:8: ( 'on' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:10: 'on'
             {
-            match("not"); 
+            match("on"); 
 
 
 
@@ -1506,10 +1528,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__110;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:8: ( 'on' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:10: 'on'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:8: ( 'or' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:10: 'or'
             {
-            match("on"); 
+            match("or"); 
 
 
 
@@ -1529,10 +1551,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__111;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:8: ( 'or' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:10: 'or'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:81:8: ( 'outer' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:81:10: 'outer'
             {
-            match("or"); 
+            match("outer"); 
 
 
 
@@ -1552,10 +1574,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__112;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:81:8: ( 'outer' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:81:10: 'outer'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:82:8: ( 'return' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:82:10: 'return'
             {
-            match("outer"); 
+            match("return"); 
 
 
 
@@ -1575,10 +1597,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__113;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:82:8: ( 'return' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:82:10: 'return'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:83:8: ( 'right' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:83:10: 'right'
             {
-            match("return"); 
+            match("right"); 
 
 
 
@@ -1598,10 +1620,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__114;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:83:8: ( 'right' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:83:10: 'right'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:84:8: ( 'sec' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:84:10: 'sec'
             {
-            match("right"); 
+            match("sec"); 
 
 
 
@@ -1621,10 +1643,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__115;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:84:8: ( 'sec' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:84:10: 'sec'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:85:8: ( 'second' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:85:10: 'second'
             {
-            match("sec"); 
+            match("second"); 
 
 
 
@@ -1644,10 +1666,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__116;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:85:8: ( 'second' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:85:10: 'second'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:86:8: ( 'seconds' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:86:10: 'seconds'
             {
-            match("second"); 
+            match("seconds"); 
 
 
 
@@ -1667,10 +1689,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__117;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:86:8: ( 'seconds' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:86:10: 'seconds'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:87:8: ( 'stream' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:87:10: 'stream'
             {
-            match("seconds"); 
+            match("stream"); 
 
 
 
@@ -1690,10 +1712,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__118;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:87:8: ( 'stream' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:87:10: 'stream'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:8: ( 'string' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:10: 'string'
             {
-            match("stream"); 
+            match("string"); 
 
 
 
@@ -1713,10 +1735,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__119;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:8: ( 'string' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:10: 'string'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:8: ( 'transform' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:10: 'transform'
             {
-            match("string"); 
+            match("transform"); 
 
 
 
@@ -1736,10 +1758,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__120;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:8: ( 'transform' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:10: 'transform'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:90:8: ( 'unidirectional' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:90:10: 'unidirectional'
             {
-            match("transform"); 
+            match("unidirectional"); 
 
 
 
@@ -1759,10 +1781,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__121;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:90:8: ( 'unidirectional' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:90:10: 'unidirectional'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:91:8: ( 'week' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:91:10: 'week'
             {
-            match("unidirectional"); 
+            match("week"); 
 
 
 
@@ -1782,10 +1804,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__122;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:91:8: ( 'week' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:91:10: 'week'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:92:8: ( 'weeks' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:92:10: 'weeks'
             {
-            match("week"); 
+            match("weeks"); 
 
 
 
@@ -1805,10 +1827,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__123;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:92:8: ( 'weeks' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:92:10: 'weeks'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:93:8: ( 'window' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:93:10: 'window'
             {
-            match("weeks"); 
+            match("window"); 
 
 
 
@@ -1828,10 +1850,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__124;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:93:8: ( 'window' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:93:10: 'window'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:94:8: ( 'within' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:94:10: 'within'
             {
-            match("window"); 
+            match("within"); 
 
 
 
@@ -1851,10 +1873,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__125;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:94:8: ( 'within' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:94:10: 'within'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:95:8: ( 'year' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:95:10: 'year'
             {
-            match("within"); 
+            match("year"); 
 
 
 
@@ -1874,29 +1896,6 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = T__126;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:95:8: ( 'year' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:95:10: 'year'
-            {
-            match("year"); 
-
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__126"
-
-    // $ANTLR start "T__127"
-    public final void mT__127() throws RecognitionException {
-        try {
-            int _type = T__127;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
             // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:96:8: ( 'years' )
             // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:96:10: 'years'
             {
@@ -1913,15 +1912,15 @@ public class SiddhiQLGrammarLexer extends Lexer {
         	// do for sure before leaving
         }
     }
-    // $ANTLR end "T__127"
+    // $ANTLR end "T__126"
 
     // $ANTLR start "FOLLOWED_BY"
     public final void mFOLLOWED_BY() throws RecognitionException {
         try {
             int _type = FOLLOWED_BY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:164:2: ( '->' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:164:4: '->'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:163:2: ( '->' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:163:4: '->'
             {
             match("->"); 
 
@@ -1943,8 +1942,8 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = IP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:436:4: ( POSITIVE_INT_VAL '.' POSITIVE_INT_VAL '.' POSITIVE_INT_VAL '.' POSITIVE_INT_VAL )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:436:6: POSITIVE_INT_VAL '.' POSITIVE_INT_VAL '.' POSITIVE_INT_VAL '.' POSITIVE_INT_VAL
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:435:4: ( POSITIVE_INT_VAL '.' POSITIVE_INT_VAL '.' POSITIVE_INT_VAL '.' POSITIVE_INT_VAL )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:435:6: POSITIVE_INT_VAL '.' POSITIVE_INT_VAL '.' POSITIVE_INT_VAL '.' POSITIVE_INT_VAL
             {
             mPOSITIVE_INT_VAL(); 
 
@@ -1980,13 +1979,13 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = POSITIVE_INT_VAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:438:17: ( NUM ( 'I' | 'i' )? )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:438:20: NUM ( 'I' | 'i' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:437:17: ( NUM ( 'I' | 'i' )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:437:20: NUM ( 'I' | 'i' )?
             {
             mNUM(); 
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:438:23: ( 'I' | 'i' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:437:23: ( 'I' | 'i' )?
             int alt1=2;
             switch ( input.LA(1) ) {
                 case 'I':
@@ -2033,8 +2032,8 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = POSITIVE_LONG_VAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:440:18: ( NUM ( 'L' | 'l' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:440:21: NUM ( 'L' | 'l' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:439:18: ( NUM ( 'L' | 'l' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:439:21: NUM ( 'L' | 'l' )
             {
             mNUM(); 
 
@@ -2065,13 +2064,13 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = POSITIVE_FLOAT_VAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:442:19: ( NUM ( '.' NUM )? ( NUM_SCI )? ( 'F' | 'f' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:442:22: NUM ( '.' NUM )? ( NUM_SCI )? ( 'F' | 'f' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:441:19: ( NUM ( '.' NUM )? ( NUM_SCI )? ( 'F' | 'f' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:441:22: NUM ( '.' NUM )? ( NUM_SCI )? ( 'F' | 'f' )
             {
             mNUM(); 
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:442:26: ( '.' NUM )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:441:26: ( '.' NUM )?
             int alt2=2;
             switch ( input.LA(1) ) {
                 case '.':
@@ -2083,7 +2082,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
 
             switch (alt2) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:442:27: '.' NUM
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:441:27: '.' NUM
                     {
                     match('.'); 
 
@@ -2096,7 +2095,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:442:37: ( NUM_SCI )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:441:37: ( NUM_SCI )?
             int alt3=2;
             switch ( input.LA(1) ) {
                 case 'E':
@@ -2109,7 +2108,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
 
             switch (alt3) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:442:37: NUM_SCI
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:441:37: NUM_SCI
                     {
                     mNUM_SCI(); 
 
@@ -2146,13 +2145,13 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = POSITIVE_DOUBLE_VAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:444:21: ( NUM ( '.' NUM ( NUM_SCI )? ( 'D' | 'd' )? | ( NUM_SCI )? ( 'D' | 'd' ) ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:444:23: NUM ( '.' NUM ( NUM_SCI )? ( 'D' | 'd' )? | ( NUM_SCI )? ( 'D' | 'd' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:443:21: ( NUM ( '.' NUM ( NUM_SCI )? ( 'D' | 'd' )? | ( NUM_SCI )? ( 'D' | 'd' ) ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:443:23: NUM ( '.' NUM ( NUM_SCI )? ( 'D' | 'd' )? | ( NUM_SCI )? ( 'D' | 'd' ) )
             {
             mNUM(); 
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:444:27: ( '.' NUM ( NUM_SCI )? ( 'D' | 'd' )? | ( NUM_SCI )? ( 'D' | 'd' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:443:27: ( '.' NUM ( NUM_SCI )? ( 'D' | 'd' )? | ( NUM_SCI )? ( 'D' | 'd' ) )
             int alt7=2;
             switch ( input.LA(1) ) {
             case '.':
@@ -2178,14 +2177,14 @@ public class SiddhiQLGrammarLexer extends Lexer {
 
             switch (alt7) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:444:28: '.' NUM ( NUM_SCI )? ( 'D' | 'd' )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:443:28: '.' NUM ( NUM_SCI )? ( 'D' | 'd' )?
                     {
                     match('.'); 
 
                     mNUM(); 
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:444:36: ( NUM_SCI )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:443:36: ( NUM_SCI )?
                     int alt4=2;
                     switch ( input.LA(1) ) {
                         case 'E':
@@ -2198,7 +2197,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
 
                     switch (alt4) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:444:36: NUM_SCI
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:443:36: NUM_SCI
                             {
                             mNUM_SCI(); 
 
@@ -2209,7 +2208,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                     }
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:444:45: ( 'D' | 'd' )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:443:45: ( 'D' | 'd' )?
                     int alt5=2;
                     switch ( input.LA(1) ) {
                         case 'D':
@@ -2243,9 +2242,9 @@ public class SiddhiQLGrammarLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:444:57: ( NUM_SCI )? ( 'D' | 'd' )
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:443:57: ( NUM_SCI )? ( 'D' | 'd' )
                     {
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:444:57: ( NUM_SCI )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:443:57: ( NUM_SCI )?
                     int alt6=2;
                     switch ( input.LA(1) ) {
                         case 'E':
@@ -2258,7 +2257,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
 
                     switch (alt6) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:444:57: NUM_SCI
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:443:57: NUM_SCI
                             {
                             mNUM_SCI(); 
 
@@ -2301,10 +2300,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = BOOL_VAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:446:9: ( ( 'true' | 'false' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:446:11: ( 'true' | 'false' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:445:9: ( ( 'true' | 'false' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:445:11: ( 'true' | 'false' )
             {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:446:11: ( 'true' | 'false' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:445:11: ( 'true' | 'false' )
             int alt8=2;
             switch ( input.LA(1) ) {
             case 't':
@@ -2327,7 +2326,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
 
             switch (alt8) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:446:12: 'true'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:445:12: 'true'
                     {
                     match("true"); 
 
@@ -2336,7 +2335,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:446:19: 'false'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:445:19: 'false'
                     {
                     match("false"); 
 
@@ -2364,8 +2363,8 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = ID_QUOTES;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:449:11: ( '`' ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* '`' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:449:13: '`' ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* '`'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:448:11: ( '`' ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* '`' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:448:13: '`' ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* '`'
             {
             match('`'); 
 
@@ -2379,7 +2378,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:449:40: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:448:40: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop9:
             do {
                 int alt9=2;
@@ -2497,8 +2496,8 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:451:4: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:451:6: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:450:4: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:450:6: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -2510,7 +2509,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:451:30: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:450:30: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop10:
             do {
                 int alt10=2;
@@ -2624,7 +2623,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = STRING_VAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:456:2: ( '\\'' (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' | '\\\"' ) )* '\\'' | '\"' (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\\"' ) )* '\"' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:455:2: ( '\\'' (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' | '\\\"' ) )* '\\'' | '\"' (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\\"' ) )* '\"' )
             int alt13=2;
             switch ( input.LA(1) ) {
             case '\'':
@@ -2647,11 +2646,11 @@ public class SiddhiQLGrammarLexer extends Lexer {
 
             switch (alt13) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:456:3: '\\'' (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' | '\\\"' ) )* '\\''
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:455:3: '\\'' (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' | '\\\"' ) )* '\\''
                     {
                     match('\''); 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:456:8: (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' | '\\\"' ) )*
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:455:8: (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' | '\\\"' ) )*
                     loop11:
                     do {
                         int alt11=2;
@@ -2692,11 +2691,11 @@ public class SiddhiQLGrammarLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:457:3: '\"' (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\\"' ) )* '\"'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:456:3: '\"' (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\\"' ) )* '\"'
                     {
                     match('\"'); 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:457:7: (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\\"' ) )*
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:456:7: (~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\\"' ) )*
                     loop12:
                     do {
                         int alt12=2;
@@ -2750,10 +2749,10 @@ public class SiddhiQLGrammarLexer extends Lexer {
     // $ANTLR start "NUM"
     public final void mNUM() throws RecognitionException {
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:460:13: ( ( '0' .. '9' )+ )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:460:15: ( '0' .. '9' )+
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:459:13: ( ( '0' .. '9' )+ )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:459:15: ( '0' .. '9' )+
             {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:460:15: ( '0' .. '9' )+
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:459:15: ( '0' .. '9' )+
             int cnt14=0;
             loop14:
             do {
@@ -2816,8 +2815,8 @@ public class SiddhiQLGrammarLexer extends Lexer {
     // $ANTLR start "NUM_SCI"
     public final void mNUM_SCI() throws RecognitionException {
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:462:17: ( ( 'e' | 'E' ) ( '-' )? NUM )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:462:19: ( 'e' | 'E' ) ( '-' )? NUM
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:461:17: ( ( 'e' | 'E' ) ( '-' )? NUM )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:461:19: ( 'e' | 'E' ) ( '-' )? NUM
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -2829,7 +2828,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:462:29: ( '-' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:461:29: ( '-' )?
             int alt15=2;
             switch ( input.LA(1) ) {
                 case '-':
@@ -2841,7 +2840,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
 
             switch (alt15) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:462:29: '-'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:461:29: '-'
                     {
                     match('-'); 
 
@@ -2869,8 +2868,8 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:466:5: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:466:7: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:465:5: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:465:7: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||(input.LA(1) >= '\f' && input.LA(1) <= '\r')||input.LA(1)==' ' ) {
                 input.consume();
@@ -2900,14 +2899,14 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:469:5: ( '/*' ( . )* '*/' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:469:7: '/*' ( . )* '*/'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:468:5: ( '/*' ( . )* '*/' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:468:7: '/*' ( . )* '*/'
             {
             match("/*"); 
 
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:469:12: ( . )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:468:12: ( . )*
             loop16:
             do {
                 int alt16=2;
@@ -2932,7 +2931,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
 
                 switch (alt16) {
             	case 1 :
-            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:469:12: .
+            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:468:12: .
             	    {
             	    matchAny(); 
 
@@ -2967,14 +2966,14 @@ public class SiddhiQLGrammarLexer extends Lexer {
         try {
             int _type = LINE_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:472:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:472:7: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:471:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:471:7: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
             {
             match("//"); 
 
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:472:12: (~ ( '\\n' | '\\r' ) )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:471:12: (~ ( '\\n' | '\\r' ) )*
             loop17:
             do {
                 int alt17=2;
@@ -3008,7 +3007,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
             } while (true);
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:472:26: ( '\\r' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:471:26: ( '\\r' )?
             int alt18=2;
             switch ( input.LA(1) ) {
                 case '\r':
@@ -3020,7 +3019,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
 
             switch (alt18) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:472:26: '\\r'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:471:26: '\\r'
                     {
                     match('\r'); 
 
@@ -3046,636 +3045,636 @@ public class SiddhiQLGrammarLexer extends Lexer {
     // $ANTLR end "LINE_COMMENT"
 
     public void mTokens() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:8: ( T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | T__117 | T__118 | T__119 | T__120 | T__121 | T__122 | T__123 | T__124 | T__125 | T__126 | T__127 | FOLLOWED_BY | IP | POSITIVE_INT_VAL | POSITIVE_LONG_VAL | POSITIVE_FLOAT_VAL | POSITIVE_DOUBLE_VAL | BOOL_VAL | ID_QUOTES | ID | STRING_VAL | WS | COMMENT | LINE_COMMENT )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:8: ( T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | T__117 | T__118 | T__119 | T__120 | T__121 | T__122 | T__123 | T__124 | T__125 | T__126 | FOLLOWED_BY | IP | POSITIVE_INT_VAL | POSITIVE_LONG_VAL | POSITIVE_FLOAT_VAL | POSITIVE_DOUBLE_VAL | BOOL_VAL | ID_QUOTES | ID | STRING_VAL | WS | COMMENT | LINE_COMMENT )
         int alt19=91;
         alt19 = dfa19.predict(input);
         switch (alt19) {
             case 1 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:10: T__50
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:10: T__49
+                {
+                mT__49(); 
+
+
+                }
+                break;
+            case 2 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:16: T__50
                 {
                 mT__50(); 
 
 
                 }
                 break;
-            case 2 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:16: T__51
+            case 3 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:22: T__51
                 {
                 mT__51(); 
 
 
                 }
                 break;
-            case 3 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:22: T__52
+            case 4 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:28: T__52
                 {
                 mT__52(); 
 
 
                 }
                 break;
-            case 4 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:28: T__53
+            case 5 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:34: T__53
                 {
                 mT__53(); 
 
 
                 }
                 break;
-            case 5 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:34: T__54
+            case 6 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:40: T__54
                 {
                 mT__54(); 
 
 
                 }
                 break;
-            case 6 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:40: T__55
+            case 7 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:46: T__55
                 {
                 mT__55(); 
 
 
                 }
                 break;
-            case 7 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:46: T__56
+            case 8 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:52: T__56
                 {
                 mT__56(); 
 
 
                 }
                 break;
-            case 8 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:52: T__57
+            case 9 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:58: T__57
                 {
                 mT__57(); 
 
 
                 }
                 break;
-            case 9 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:58: T__58
+            case 10 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:64: T__58
                 {
                 mT__58(); 
 
 
                 }
                 break;
-            case 10 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:64: T__59
+            case 11 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:70: T__59
                 {
                 mT__59(); 
 
 
                 }
                 break;
-            case 11 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:70: T__60
+            case 12 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:76: T__60
                 {
                 mT__60(); 
 
 
                 }
                 break;
-            case 12 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:76: T__61
+            case 13 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:82: T__61
                 {
                 mT__61(); 
 
 
                 }
                 break;
-            case 13 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:82: T__62
+            case 14 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:88: T__62
                 {
                 mT__62(); 
 
 
                 }
                 break;
-            case 14 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:88: T__63
+            case 15 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:94: T__63
                 {
                 mT__63(); 
 
 
                 }
                 break;
-            case 15 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:94: T__64
+            case 16 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:100: T__64
                 {
                 mT__64(); 
 
 
                 }
                 break;
-            case 16 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:100: T__65
+            case 17 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:106: T__65
                 {
                 mT__65(); 
 
 
                 }
                 break;
-            case 17 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:106: T__66
+            case 18 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:112: T__66
                 {
                 mT__66(); 
 
 
                 }
                 break;
-            case 18 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:112: T__67
+            case 19 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:118: T__67
                 {
                 mT__67(); 
 
 
                 }
                 break;
-            case 19 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:118: T__68
+            case 20 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:124: T__68
                 {
                 mT__68(); 
 
 
                 }
                 break;
-            case 20 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:124: T__69
+            case 21 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:130: T__69
                 {
                 mT__69(); 
 
 
                 }
                 break;
-            case 21 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:130: T__70
+            case 22 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:136: T__70
                 {
                 mT__70(); 
 
 
                 }
                 break;
-            case 22 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:136: T__71
+            case 23 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:142: T__71
                 {
                 mT__71(); 
 
 
                 }
                 break;
-            case 23 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:142: T__72
+            case 24 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:148: T__72
                 {
                 mT__72(); 
 
 
                 }
                 break;
-            case 24 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:148: T__73
+            case 25 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:154: T__73
                 {
                 mT__73(); 
 
 
                 }
                 break;
-            case 25 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:154: T__74
+            case 26 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:160: T__74
                 {
                 mT__74(); 
 
 
                 }
                 break;
-            case 26 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:160: T__75
+            case 27 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:166: T__75
                 {
                 mT__75(); 
 
 
                 }
                 break;
-            case 27 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:166: T__76
+            case 28 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:172: T__76
                 {
                 mT__76(); 
 
 
                 }
                 break;
-            case 28 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:172: T__77
+            case 29 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:178: T__77
                 {
                 mT__77(); 
 
 
                 }
                 break;
-            case 29 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:178: T__78
+            case 30 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:184: T__78
                 {
                 mT__78(); 
 
 
                 }
                 break;
-            case 30 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:184: T__79
+            case 31 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:190: T__79
                 {
                 mT__79(); 
 
 
                 }
                 break;
-            case 31 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:190: T__80
+            case 32 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:196: T__80
                 {
                 mT__80(); 
 
 
                 }
                 break;
-            case 32 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:196: T__81
+            case 33 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:202: T__81
                 {
                 mT__81(); 
 
 
                 }
                 break;
-            case 33 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:202: T__82
+            case 34 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:208: T__82
                 {
                 mT__82(); 
 
 
                 }
                 break;
-            case 34 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:208: T__83
+            case 35 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:214: T__83
                 {
                 mT__83(); 
 
 
                 }
                 break;
-            case 35 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:214: T__84
+            case 36 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:220: T__84
                 {
                 mT__84(); 
 
 
                 }
                 break;
-            case 36 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:220: T__85
+            case 37 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:226: T__85
                 {
                 mT__85(); 
 
 
                 }
                 break;
-            case 37 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:226: T__86
+            case 38 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:232: T__86
                 {
                 mT__86(); 
 
 
                 }
                 break;
-            case 38 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:232: T__87
+            case 39 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:238: T__87
                 {
                 mT__87(); 
 
 
                 }
                 break;
-            case 39 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:238: T__88
+            case 40 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:244: T__88
                 {
                 mT__88(); 
 
 
                 }
                 break;
-            case 40 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:244: T__89
+            case 41 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:250: T__89
                 {
                 mT__89(); 
 
 
                 }
                 break;
-            case 41 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:250: T__90
+            case 42 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:256: T__90
                 {
                 mT__90(); 
 
 
                 }
                 break;
-            case 42 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:256: T__91
+            case 43 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:262: T__91
                 {
                 mT__91(); 
 
 
                 }
                 break;
-            case 43 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:262: T__92
+            case 44 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:268: T__92
                 {
                 mT__92(); 
 
 
                 }
                 break;
-            case 44 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:268: T__93
+            case 45 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:274: T__93
                 {
                 mT__93(); 
 
 
                 }
                 break;
-            case 45 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:274: T__94
+            case 46 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:280: T__94
                 {
                 mT__94(); 
 
 
                 }
                 break;
-            case 46 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:280: T__95
+            case 47 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:286: T__95
                 {
                 mT__95(); 
 
 
                 }
                 break;
-            case 47 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:286: T__96
+            case 48 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:292: T__96
                 {
                 mT__96(); 
 
 
                 }
                 break;
-            case 48 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:292: T__97
+            case 49 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:298: T__97
                 {
                 mT__97(); 
 
 
                 }
                 break;
-            case 49 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:298: T__98
+            case 50 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:304: T__98
                 {
                 mT__98(); 
 
 
                 }
                 break;
-            case 50 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:304: T__99
+            case 51 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:310: T__99
                 {
                 mT__99(); 
 
 
                 }
                 break;
-            case 51 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:310: T__100
+            case 52 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:316: T__100
                 {
                 mT__100(); 
 
 
                 }
                 break;
-            case 52 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:317: T__101
+            case 53 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:323: T__101
                 {
                 mT__101(); 
 
 
                 }
                 break;
-            case 53 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:324: T__102
+            case 54 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:330: T__102
                 {
                 mT__102(); 
 
 
                 }
                 break;
-            case 54 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:331: T__103
+            case 55 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:337: T__103
                 {
                 mT__103(); 
 
 
                 }
                 break;
-            case 55 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:338: T__104
+            case 56 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:344: T__104
                 {
                 mT__104(); 
 
 
                 }
                 break;
-            case 56 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:345: T__105
+            case 57 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:351: T__105
                 {
                 mT__105(); 
 
 
                 }
                 break;
-            case 57 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:352: T__106
+            case 58 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:358: T__106
                 {
                 mT__106(); 
 
 
                 }
                 break;
-            case 58 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:359: T__107
+            case 59 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:365: T__107
                 {
                 mT__107(); 
 
 
                 }
                 break;
-            case 59 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:366: T__108
+            case 60 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:372: T__108
                 {
                 mT__108(); 
 
 
                 }
                 break;
-            case 60 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:373: T__109
+            case 61 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:379: T__109
                 {
                 mT__109(); 
 
 
                 }
                 break;
-            case 61 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:380: T__110
+            case 62 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:386: T__110
                 {
                 mT__110(); 
 
 
                 }
                 break;
-            case 62 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:387: T__111
+            case 63 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:393: T__111
                 {
                 mT__111(); 
 
 
                 }
                 break;
-            case 63 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:394: T__112
+            case 64 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:400: T__112
                 {
                 mT__112(); 
 
 
                 }
                 break;
-            case 64 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:401: T__113
+            case 65 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:407: T__113
                 {
                 mT__113(); 
 
 
                 }
                 break;
-            case 65 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:408: T__114
+            case 66 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:414: T__114
                 {
                 mT__114(); 
 
 
                 }
                 break;
-            case 66 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:415: T__115
+            case 67 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:421: T__115
                 {
                 mT__115(); 
 
 
                 }
                 break;
-            case 67 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:422: T__116
+            case 68 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:428: T__116
                 {
                 mT__116(); 
 
 
                 }
                 break;
-            case 68 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:429: T__117
+            case 69 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:435: T__117
                 {
                 mT__117(); 
 
 
                 }
                 break;
-            case 69 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:436: T__118
+            case 70 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:442: T__118
                 {
                 mT__118(); 
 
 
                 }
                 break;
-            case 70 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:443: T__119
+            case 71 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:449: T__119
                 {
                 mT__119(); 
 
 
                 }
                 break;
-            case 71 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:450: T__120
+            case 72 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:456: T__120
                 {
                 mT__120(); 
 
 
                 }
                 break;
-            case 72 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:457: T__121
+            case 73 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:463: T__121
                 {
                 mT__121(); 
 
 
                 }
                 break;
-            case 73 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:464: T__122
+            case 74 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:470: T__122
                 {
                 mT__122(); 
 
 
                 }
                 break;
-            case 74 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:471: T__123
+            case 75 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:477: T__123
                 {
                 mT__123(); 
 
 
                 }
                 break;
-            case 75 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:478: T__124
+            case 76 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:484: T__124
                 {
                 mT__124(); 
 
 
                 }
                 break;
-            case 76 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:485: T__125
+            case 77 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:491: T__125
                 {
                 mT__125(); 
 
 
                 }
                 break;
-            case 77 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:492: T__126
+            case 78 :
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:498: T__126
                 {
                 mT__126(); 
 
 
                 }
                 break;
-            case 78 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:499: T__127
-                {
-                mT__127(); 
-
-
-                }
-                break;
             case 79 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:506: FOLLOWED_BY
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:505: FOLLOWED_BY
                 {
                 mFOLLOWED_BY(); 
 
@@ -3683,7 +3682,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 80 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:518: IP
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:517: IP
                 {
                 mIP(); 
 
@@ -3691,7 +3690,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 81 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:521: POSITIVE_INT_VAL
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:520: POSITIVE_INT_VAL
                 {
                 mPOSITIVE_INT_VAL(); 
 
@@ -3699,7 +3698,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 82 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:538: POSITIVE_LONG_VAL
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:537: POSITIVE_LONG_VAL
                 {
                 mPOSITIVE_LONG_VAL(); 
 
@@ -3707,7 +3706,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 83 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:556: POSITIVE_FLOAT_VAL
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:555: POSITIVE_FLOAT_VAL
                 {
                 mPOSITIVE_FLOAT_VAL(); 
 
@@ -3715,7 +3714,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 84 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:575: POSITIVE_DOUBLE_VAL
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:574: POSITIVE_DOUBLE_VAL
                 {
                 mPOSITIVE_DOUBLE_VAL(); 
 
@@ -3723,7 +3722,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 85 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:595: BOOL_VAL
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:594: BOOL_VAL
                 {
                 mBOOL_VAL(); 
 
@@ -3731,7 +3730,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 86 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:604: ID_QUOTES
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:603: ID_QUOTES
                 {
                 mID_QUOTES(); 
 
@@ -3739,7 +3738,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 87 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:614: ID
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:613: ID
                 {
                 mID(); 
 
@@ -3747,7 +3746,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 88 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:617: STRING_VAL
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:616: STRING_VAL
                 {
                 mSTRING_VAL(); 
 
@@ -3755,7 +3754,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 89 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:628: WS
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:627: WS
                 {
                 mWS(); 
 
@@ -3763,7 +3762,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 90 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:631: COMMENT
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:630: COMMENT
                 {
                 mCOMMENT(); 
 
@@ -3771,7 +3770,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
                 }
                 break;
             case 91 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:639: LINE_COMMENT
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:1:638: LINE_COMMENT
                 {
                 mLINE_COMMENT(); 
 
@@ -4237,7 +4236,7 @@ public class SiddhiQLGrammarLexer extends Lexer {
             this.transition = DFA19_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | T__117 | T__118 | T__119 | T__120 | T__121 | T__122 | T__123 | T__124 | T__125 | T__126 | T__127 | FOLLOWED_BY | IP | POSITIVE_INT_VAL | POSITIVE_LONG_VAL | POSITIVE_FLOAT_VAL | POSITIVE_DOUBLE_VAL | BOOL_VAL | ID_QUOTES | ID | STRING_VAL | WS | COMMENT | LINE_COMMENT );";
+            return "1:1: Tokens : ( T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | T__117 | T__118 | T__119 | T__120 | T__121 | T__122 | T__123 | T__124 | T__125 | T__126 | FOLLOWED_BY | IP | POSITIVE_INT_VAL | POSITIVE_LONG_VAL | POSITIVE_FLOAT_VAL | POSITIVE_DOUBLE_VAL | BOOL_VAL | ID_QUOTES | ID | STRING_VAL | WS | COMMENT | LINE_COMMENT );";
         }
     }
  

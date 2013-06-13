@@ -40,7 +40,6 @@ tokens {
   EXTENSION;
   FILTER;
   EXTENSION_FUNCTION;
-  ABC;
 }
 
 @header {

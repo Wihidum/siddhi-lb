@@ -1,4 +1,4 @@
-// $ANTLR 3.4 org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g 2013-05-30 13:32:25
+// $ANTLR 3.4 org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g 2013-05-30 14:16:08
 
 	package org.wso2.siddhi.query.compiler;
 	import java.util.LinkedList;
@@ -19,10 +19,11 @@ import org.antlr.runtime.tree.*;
 @SuppressWarnings({"all", "warnings", "unchecked"})
 public class SiddhiQLGrammarParser extends Parser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "ABC", "ANONYMOUS", "ATTRIBUTE", "BOOL_VAL", "COLLECT", "COMMENT", "CONDITION", "CONDITION_FUNCTION", "CONSTANT", "DEFINITION", "EXTENSION", "EXTENSION_FUNCTION", "FILTER", "FOLLOWED_BY", "FUNCTION", "HANDLERS", "ID", "ID_QUOTES", "IN_ATTRIBUTE", "IP", "JOIN", "LINE_COMMENT", "NUM", "NUM_SCI", "OUT_ATTRIBUTE", "OUT_ATTRIBUTES", "OUT_STREAM", "PARAMETERS", "PATTERN", "PATTERN_FULL", "POSITIVE_DOUBLE_VAL", "POSITIVE_FLOAT_VAL", "POSITIVE_INT_VAL", "POSITIVE_LONG_VAL", "QUERY", "REGEX", "RETURN_QUERY", "SEQUENCE", "SEQUENCE_FULL", "SIGNED_VAL", "STREAM", "STRING_VAL", "TIME_EXP", "TRANSFORM", "WINDOW", "WS", "'!='", "'#'", "'%'", "'('", "')'", "'*'", "'+'", "','", "'-'", "'.'", "'/'", "':'", "';'", "'<'", "'<='", "'='", "'=='", "'>'", "'>='", "'?'", "'@'", "'['", "']'", "'all-events'", "'and'", "'as'", "'bool'", "'by'", "'call'", "'contains'", "'current-events'", "'day'", "'days'", "'define'", "'double'", "'every'", "'expired-events'", "'float'", "'from'", "'full'", "'group'", "'having'", "'hour'", "'hours'", "'inner'", "'insert'", "'instanceof'", "'int'", "'into'", "'join'", "'left'", "'long'", "'millisecond'", "'milliseconds'", "'min'", "'minute'", "'minutes'", "'month'", "'months'", "'not'", "'on'", "'or'", "'outer'", "'return'", "'right'", "'sec'", "'second'", "'seconds'", "'stream'", "'string'", "'transform'", "'unidirectional'", "'week'", "'weeks'", "'window'", "'within'", "'year'", "'years'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "ANONYMOUS", "ATTRIBUTE", "BOOL_VAL", "COLLECT", "COMMENT", "CONDITION", "CONDITION_FUNCTION", "CONSTANT", "DEFINITION", "EXTENSION", "EXTENSION_FUNCTION", "FILTER", "FOLLOWED_BY", "FUNCTION", "HANDLERS", "ID", "ID_QUOTES", "IN_ATTRIBUTE", "IP", "JOIN", "LINE_COMMENT", "NUM", "NUM_SCI", "OUT_ATTRIBUTE", "OUT_ATTRIBUTES", "OUT_STREAM", "PARAMETERS", "PATTERN", "PATTERN_FULL", "POSITIVE_DOUBLE_VAL", "POSITIVE_FLOAT_VAL", "POSITIVE_INT_VAL", "POSITIVE_LONG_VAL", "QUERY", "REGEX", "RETURN_QUERY", "SEQUENCE", "SEQUENCE_FULL", "SIGNED_VAL", "STREAM", "STRING_VAL", "TIME_EXP", "TRANSFORM", "WINDOW", "WS", "'!='", "'#'", "'%'", "'('", "')'", "'*'", "'+'", "','", "'-'", "'.'", "'/'", "':'", "';'", "'<'", "'<='", "'='", "'=='", "'>'", "'>='", "'?'", "'@'", "'['", "']'", "'all-events'", "'and'", "'as'", "'bool'", "'by'", "'call'", "'contains'", "'current-events'", "'day'", "'days'", "'define'", "'double'", "'every'", "'expired-events'", "'float'", "'from'", "'full'", "'group'", "'having'", "'hour'", "'hours'", "'inner'", "'insert'", "'instanceof'", "'int'", "'into'", "'join'", "'left'", "'long'", "'millisecond'", "'milliseconds'", "'min'", "'minute'", "'minutes'", "'month'", "'months'", "'not'", "'on'", "'or'", "'outer'", "'return'", "'right'", "'sec'", "'second'", "'seconds'", "'stream'", "'string'", "'transform'", "'unidirectional'", "'week'", "'weeks'", "'window'", "'within'", "'year'", "'years'"
     };
 
     public static final int EOF=-1;
+    public static final int T__49=49;
     public static final int T__50=50;
     public static final int T__51=51;
     public static final int T__52=52;
@@ -100,53 +101,51 @@ public class SiddhiQLGrammarParser extends Parser {
     public static final int T__124=124;
     public static final int T__125=125;
     public static final int T__126=126;
-    public static final int T__127=127;
-    public static final int ABC=4;
-    public static final int ANONYMOUS=5;
-    public static final int ATTRIBUTE=6;
-    public static final int BOOL_VAL=7;
-    public static final int COLLECT=8;
-    public static final int COMMENT=9;
-    public static final int CONDITION=10;
-    public static final int CONDITION_FUNCTION=11;
-    public static final int CONSTANT=12;
-    public static final int DEFINITION=13;
-    public static final int EXTENSION=14;
-    public static final int EXTENSION_FUNCTION=15;
-    public static final int FILTER=16;
-    public static final int FOLLOWED_BY=17;
-    public static final int FUNCTION=18;
-    public static final int HANDLERS=19;
-    public static final int ID=20;
-    public static final int ID_QUOTES=21;
-    public static final int IN_ATTRIBUTE=22;
-    public static final int IP=23;
-    public static final int JOIN=24;
-    public static final int LINE_COMMENT=25;
-    public static final int NUM=26;
-    public static final int NUM_SCI=27;
-    public static final int OUT_ATTRIBUTE=28;
-    public static final int OUT_ATTRIBUTES=29;
-    public static final int OUT_STREAM=30;
-    public static final int PARAMETERS=31;
-    public static final int PATTERN=32;
-    public static final int PATTERN_FULL=33;
-    public static final int POSITIVE_DOUBLE_VAL=34;
-    public static final int POSITIVE_FLOAT_VAL=35;
-    public static final int POSITIVE_INT_VAL=36;
-    public static final int POSITIVE_LONG_VAL=37;
-    public static final int QUERY=38;
-    public static final int REGEX=39;
-    public static final int RETURN_QUERY=40;
-    public static final int SEQUENCE=41;
-    public static final int SEQUENCE_FULL=42;
-    public static final int SIGNED_VAL=43;
-    public static final int STREAM=44;
-    public static final int STRING_VAL=45;
-    public static final int TIME_EXP=46;
-    public static final int TRANSFORM=47;
-    public static final int WINDOW=48;
-    public static final int WS=49;
+    public static final int ANONYMOUS=4;
+    public static final int ATTRIBUTE=5;
+    public static final int BOOL_VAL=6;
+    public static final int COLLECT=7;
+    public static final int COMMENT=8;
+    public static final int CONDITION=9;
+    public static final int CONDITION_FUNCTION=10;
+    public static final int CONSTANT=11;
+    public static final int DEFINITION=12;
+    public static final int EXTENSION=13;
+    public static final int EXTENSION_FUNCTION=14;
+    public static final int FILTER=15;
+    public static final int FOLLOWED_BY=16;
+    public static final int FUNCTION=17;
+    public static final int HANDLERS=18;
+    public static final int ID=19;
+    public static final int ID_QUOTES=20;
+    public static final int IN_ATTRIBUTE=21;
+    public static final int IP=22;
+    public static final int JOIN=23;
+    public static final int LINE_COMMENT=24;
+    public static final int NUM=25;
+    public static final int NUM_SCI=26;
+    public static final int OUT_ATTRIBUTE=27;
+    public static final int OUT_ATTRIBUTES=28;
+    public static final int OUT_STREAM=29;
+    public static final int PARAMETERS=30;
+    public static final int PATTERN=31;
+    public static final int PATTERN_FULL=32;
+    public static final int POSITIVE_DOUBLE_VAL=33;
+    public static final int POSITIVE_FLOAT_VAL=34;
+    public static final int POSITIVE_INT_VAL=35;
+    public static final int POSITIVE_LONG_VAL=36;
+    public static final int QUERY=37;
+    public static final int REGEX=38;
+    public static final int RETURN_QUERY=39;
+    public static final int SEQUENCE=40;
+    public static final int SEQUENCE_FULL=41;
+    public static final int SIGNED_VAL=42;
+    public static final int STREAM=43;
+    public static final int STRING_VAL=44;
+    public static final int TIME_EXP=45;
+    public static final int TRANSFORM=46;
+    public static final int WINDOW=47;
+    public static final int WS=48;
 
     // delegates
     public Parser[] getDelegates() {
@@ -188,7 +187,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "executionPlan"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:1: executionPlan : ( definitionStream | query ) ( ';' ( definitionStream | query ) )* ( ';' )? -> ( ^( DEFINITION definitionStream ) )* ( query )* ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:74:1: executionPlan : ( definitionStream | query ) ( ';' ( definitionStream | query ) )* ( ';' )? -> ( ^( DEFINITION definitionStream ) )* ( query )* ;
     public final SiddhiQLGrammarParser.executionPlan_return executionPlan() throws RecognitionException {
         SiddhiQLGrammarParser.executionPlan_return retval = new SiddhiQLGrammarParser.executionPlan_return();
         retval.start = input.LT(1);
@@ -209,22 +208,22 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree char_literal3_tree=null;
         CommonTree char_literal6_tree=null;
-        RewriteRuleTokenStream stream_62=new RewriteRuleTokenStream(adaptor,"token 62");
+        RewriteRuleTokenStream stream_61=new RewriteRuleTokenStream(adaptor,"token 61");
         RewriteRuleSubtreeStream stream_query=new RewriteRuleSubtreeStream(adaptor,"rule query");
         RewriteRuleSubtreeStream stream_definitionStream=new RewriteRuleSubtreeStream(adaptor,"rule definitionStream");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:2: ( ( definitionStream | query ) ( ';' ( definitionStream | query ) )* ( ';' )? -> ( ^( DEFINITION definitionStream ) )* ( query )* )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:3: ( definitionStream | query ) ( ';' ( definitionStream | query ) )* ( ';' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:2: ( ( definitionStream | query ) ( ';' ( definitionStream | query ) )* ( ';' )? -> ( ^( DEFINITION definitionStream ) )* ( query )* )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:3: ( definitionStream | query ) ( ';' ( definitionStream | query ) )* ( ';' )?
             {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:3: ( definitionStream | query )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:3: ( definitionStream | query )
             int alt1=2;
             switch ( input.LA(1) ) {
-            case 83:
+            case 82:
                 {
                 alt1=1;
                 }
                 break;
-            case 88:
+            case 87:
                 {
                 alt1=2;
                 }
@@ -240,9 +239,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt1) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:4: definitionStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:4: definitionStream
                     {
-                    pushFollow(FOLLOW_definitionStream_in_executionPlan257);
+                    pushFollow(FOLLOW_definitionStream_in_executionPlan252);
                     definitionStream1=definitionStream();
 
                     state._fsp--;
@@ -252,9 +251,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:21: query
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:21: query
                     {
-                    pushFollow(FOLLOW_query_in_executionPlan259);
+                    pushFollow(FOLLOW_query_in_executionPlan254);
                     query2=query();
 
                     state._fsp--;
@@ -267,16 +266,16 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:28: ( ';' ( definitionStream | query ) )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:28: ( ';' ( definitionStream | query ) )*
             loop3:
             do {
                 int alt3=2;
                 switch ( input.LA(1) ) {
-                case 62:
+                case 61:
                     {
                     switch ( input.LA(2) ) {
-                    case 83:
-                    case 88:
+                    case 82:
+                    case 87:
                         {
                         alt3=1;
                         }
@@ -291,21 +290,21 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt3) {
             	case 1 :
-            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:29: ';' ( definitionStream | query )
+            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:29: ';' ( definitionStream | query )
             	    {
-            	    char_literal3=(Token)match(input,62,FOLLOW_62_in_executionPlan263); if (state.failed) return retval; 
-            	    if ( state.backtracking==0 ) stream_62.add(char_literal3);
+            	    char_literal3=(Token)match(input,61,FOLLOW_61_in_executionPlan258); if (state.failed) return retval; 
+            	    if ( state.backtracking==0 ) stream_61.add(char_literal3);
 
 
-            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:33: ( definitionStream | query )
+            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:33: ( definitionStream | query )
             	    int alt2=2;
             	    switch ( input.LA(1) ) {
-            	    case 83:
+            	    case 82:
             	        {
             	        alt2=1;
             	        }
             	        break;
-            	    case 88:
+            	    case 87:
             	        {
             	        alt2=2;
             	        }
@@ -321,9 +320,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             	    switch (alt2) {
             	        case 1 :
-            	            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:34: definitionStream
+            	            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:34: definitionStream
             	            {
-            	            pushFollow(FOLLOW_definitionStream_in_executionPlan266);
+            	            pushFollow(FOLLOW_definitionStream_in_executionPlan261);
             	            definitionStream4=definitionStream();
 
             	            state._fsp--;
@@ -333,9 +332,9 @@ public TreeAdaptor getTreeAdaptor() {
             	            }
             	            break;
             	        case 2 :
-            	            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:51: query
+            	            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:51: query
             	            {
-            	            pushFollow(FOLLOW_query_in_executionPlan268);
+            	            pushFollow(FOLLOW_query_in_executionPlan263);
             	            query5=query();
 
             	            state._fsp--;
@@ -357,10 +356,10 @@ public TreeAdaptor getTreeAdaptor() {
             } while (true);
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:60: ( ';' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:60: ( ';' )?
             int alt4=2;
             switch ( input.LA(1) ) {
-                case 62:
+                case 61:
                     {
                     alt4=1;
                     }
@@ -369,10 +368,10 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt4) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:60: ';'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:60: ';'
                     {
-                    char_literal6=(Token)match(input,62,FOLLOW_62_in_executionPlan273); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_62.add(char_literal6);
+                    char_literal6=(Token)match(input,61,FOLLOW_61_in_executionPlan268); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_61.add(char_literal6);
 
 
                     }
@@ -394,11 +393,11 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 76:66: -> ( ^( DEFINITION definitionStream ) )* ( query )*
+            // 75:66: -> ( ^( DEFINITION definitionStream ) )* ( query )*
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:70: ( ^( DEFINITION definitionStream ) )*
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:70: ( ^( DEFINITION definitionStream ) )*
                 while ( stream_definitionStream.hasNext() ) {
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:71: ^( DEFINITION definitionStream )
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:71: ^( DEFINITION definitionStream )
                     {
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     root_1 = (CommonTree)adaptor.becomeRoot(
@@ -413,7 +412,7 @@ public TreeAdaptor getTreeAdaptor() {
                 }
                 stream_definitionStream.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:76:105: ( query )*
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:75:105: ( query )*
                 while ( stream_query.hasNext() ) {
                     adaptor.addChild(root_0, stream_query.nextTree());
 
@@ -459,7 +458,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "definitionStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:1: definitionStream : 'define' 'stream' streamId ( '@' IP )? '(' attributeName type ( ',' attributeName type )* ')' -> ^( streamId ( ^( IN_ATTRIBUTE attributeName type ) )+ ( IP )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:78:1: definitionStream : 'define' 'stream' streamId ( '@' IP )? '(' attributeName type ( ',' attributeName type )* ')' -> ^( streamId ( ^( IN_ATTRIBUTE attributeName type ) )+ ( IP )? ) ;
     public final SiddhiQLGrammarParser.definitionStream_return definitionStream() throws RecognitionException {
         SiddhiQLGrammarParser.definitionStream_return retval = new SiddhiQLGrammarParser.definitionStream_return();
         retval.start = input.LT(1);
@@ -492,39 +491,39 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal12_tree=null;
         CommonTree char_literal15_tree=null;
         CommonTree char_literal18_tree=null;
-        RewriteRuleTokenStream stream_57=new RewriteRuleTokenStream(adaptor,"token 57");
+        RewriteRuleTokenStream stream_117=new RewriteRuleTokenStream(adaptor,"token 117");
+        RewriteRuleTokenStream stream_69=new RewriteRuleTokenStream(adaptor,"token 69");
+        RewriteRuleTokenStream stream_56=new RewriteRuleTokenStream(adaptor,"token 56");
         RewriteRuleTokenStream stream_IP=new RewriteRuleTokenStream(adaptor,"token IP");
-        RewriteRuleTokenStream stream_83=new RewriteRuleTokenStream(adaptor,"token 83");
-        RewriteRuleTokenStream stream_70=new RewriteRuleTokenStream(adaptor,"token 70");
+        RewriteRuleTokenStream stream_82=new RewriteRuleTokenStream(adaptor,"token 82");
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
-        RewriteRuleTokenStream stream_118=new RewriteRuleTokenStream(adaptor,"token 118");
         RewriteRuleSubtreeStream stream_attributeName=new RewriteRuleSubtreeStream(adaptor,"rule attributeName");
         RewriteRuleSubtreeStream stream_streamId=new RewriteRuleSubtreeStream(adaptor,"rule streamId");
         RewriteRuleSubtreeStream stream_type=new RewriteRuleSubtreeStream(adaptor,"rule type");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:2: ( 'define' 'stream' streamId ( '@' IP )? '(' attributeName type ( ',' attributeName type )* ')' -> ^( streamId ( ^( IN_ATTRIBUTE attributeName type ) )+ ( IP )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:3: 'define' 'stream' streamId ( '@' IP )? '(' attributeName type ( ',' attributeName type )* ')'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:2: ( 'define' 'stream' streamId ( '@' IP )? '(' attributeName type ( ',' attributeName type )* ')' -> ^( streamId ( ^( IN_ATTRIBUTE attributeName type ) )+ ( IP )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:3: 'define' 'stream' streamId ( '@' IP )? '(' attributeName type ( ',' attributeName type )* ')'
             {
-            string_literal7=(Token)match(input,83,FOLLOW_83_in_definitionStream309); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_83.add(string_literal7);
+            string_literal7=(Token)match(input,82,FOLLOW_82_in_definitionStream304); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_82.add(string_literal7);
 
 
-            string_literal8=(Token)match(input,118,FOLLOW_118_in_definitionStream311); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_118.add(string_literal8);
+            string_literal8=(Token)match(input,117,FOLLOW_117_in_definitionStream306); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_117.add(string_literal8);
 
 
-            pushFollow(FOLLOW_streamId_in_definitionStream313);
+            pushFollow(FOLLOW_streamId_in_definitionStream308);
             streamId9=streamId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_streamId.add(streamId9.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:30: ( '@' IP )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:30: ( '@' IP )?
             int alt5=2;
             switch ( input.LA(1) ) {
-                case 70:
+                case 69:
                     {
                     alt5=1;
                     }
@@ -533,13 +532,13 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt5) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:31: '@' IP
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:31: '@' IP
                     {
-                    char_literal10=(Token)match(input,70,FOLLOW_70_in_definitionStream316); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_70.add(char_literal10);
+                    char_literal10=(Token)match(input,69,FOLLOW_69_in_definitionStream311); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_69.add(char_literal10);
 
 
-                    IP11=(Token)match(input,IP,FOLLOW_IP_in_definitionStream318); if (state.failed) return retval; 
+                    IP11=(Token)match(input,IP,FOLLOW_IP_in_definitionStream313); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_IP.add(IP11);
 
 
@@ -549,30 +548,30 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            char_literal12=(Token)match(input,53,FOLLOW_53_in_definitionStream323); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_53.add(char_literal12);
+            char_literal12=(Token)match(input,52,FOLLOW_52_in_definitionStream318); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_52.add(char_literal12);
 
 
-            pushFollow(FOLLOW_attributeName_in_definitionStream325);
+            pushFollow(FOLLOW_attributeName_in_definitionStream320);
             attributeName13=attributeName();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_attributeName.add(attributeName13.getTree());
 
-            pushFollow(FOLLOW_type_in_definitionStream327);
+            pushFollow(FOLLOW_type_in_definitionStream322);
             type14=type();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_type.add(type14.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:64: ( ',' attributeName type )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:64: ( ',' attributeName type )*
             loop6:
             do {
                 int alt6=2;
                 switch ( input.LA(1) ) {
-                case 57:
+                case 56:
                     {
                     alt6=1;
                     }
@@ -582,20 +581,20 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt6) {
             	case 1 :
-            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:65: ',' attributeName type
+            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:65: ',' attributeName type
             	    {
-            	    char_literal15=(Token)match(input,57,FOLLOW_57_in_definitionStream330); if (state.failed) return retval; 
-            	    if ( state.backtracking==0 ) stream_57.add(char_literal15);
+            	    char_literal15=(Token)match(input,56,FOLLOW_56_in_definitionStream325); if (state.failed) return retval; 
+            	    if ( state.backtracking==0 ) stream_56.add(char_literal15);
 
 
-            	    pushFollow(FOLLOW_attributeName_in_definitionStream332);
+            	    pushFollow(FOLLOW_attributeName_in_definitionStream327);
             	    attributeName16=attributeName();
 
             	    state._fsp--;
             	    if (state.failed) return retval;
             	    if ( state.backtracking==0 ) stream_attributeName.add(attributeName16.getTree());
 
-            	    pushFollow(FOLLOW_type_in_definitionStream334);
+            	    pushFollow(FOLLOW_type_in_definitionStream329);
             	    type17=type();
 
             	    state._fsp--;
@@ -611,12 +610,12 @@ public TreeAdaptor getTreeAdaptor() {
             } while (true);
 
 
-            char_literal18=(Token)match(input,54,FOLLOW_54_in_definitionStream339); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_54.add(char_literal18);
+            char_literal18=(Token)match(input,53,FOLLOW_53_in_definitionStream334); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_53.add(char_literal18);
 
 
             // AST REWRITE
-            // elements: attributeName, IP, type, streamId
+            // elements: type, streamId, attributeName, IP
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -628,18 +627,18 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 80:96: -> ^( streamId ( ^( IN_ATTRIBUTE attributeName type ) )+ ( IP )? )
+            // 79:96: -> ^( streamId ( ^( IN_ATTRIBUTE attributeName type ) )+ ( IP )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:100: ^( streamId ( ^( IN_ATTRIBUTE attributeName type ) )+ ( IP )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:100: ^( streamId ( ^( IN_ATTRIBUTE attributeName type ) )+ ( IP )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(stream_streamId.nextNode(), root_1);
 
-                if ( !(stream_attributeName.hasNext()||stream_type.hasNext()) ) {
+                if ( !(stream_type.hasNext()||stream_attributeName.hasNext()) ) {
                     throw new RewriteEarlyExitException();
                 }
-                while ( stream_attributeName.hasNext()||stream_type.hasNext() ) {
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:113: ^( IN_ATTRIBUTE attributeName type )
+                while ( stream_type.hasNext()||stream_attributeName.hasNext() ) {
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:113: ^( IN_ATTRIBUTE attributeName type )
                     {
                     CommonTree root_2 = (CommonTree)adaptor.nil();
                     root_2 = (CommonTree)adaptor.becomeRoot(
@@ -654,10 +653,10 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
                 }
-                stream_attributeName.reset();
                 stream_type.reset();
+                stream_attributeName.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:80:151: ( IP )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:79:151: ( IP )?
                 if ( stream_IP.hasNext() ) {
                     adaptor.addChild(root_1, 
                     stream_IP.nextNode()
@@ -708,7 +707,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "query"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:83:1: query : ( inputStream outputStream outputProjection -> ^( QUERY outputStream inputStream outputProjection ) | inputStream 'return' outputProjection -> ^( QUERY inputStream outputProjection ) );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:82:1: query : ( inputStream outputStream outputProjection -> ^( QUERY outputStream inputStream outputProjection ) | inputStream 'return' outputProjection -> ^( QUERY inputStream outputProjection ) );
     public final SiddhiQLGrammarParser.query_return query() throws RecognitionException {
         SiddhiQLGrammarParser.query_return retval = new SiddhiQLGrammarParser.query_return();
         retval.start = input.LT(1);
@@ -729,15 +728,15 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         CommonTree string_literal23_tree=null;
-        RewriteRuleTokenStream stream_113=new RewriteRuleTokenStream(adaptor,"token 113");
+        RewriteRuleTokenStream stream_112=new RewriteRuleTokenStream(adaptor,"token 112");
         RewriteRuleSubtreeStream stream_outputProjection=new RewriteRuleSubtreeStream(adaptor,"rule outputProjection");
         RewriteRuleSubtreeStream stream_inputStream=new RewriteRuleSubtreeStream(adaptor,"rule inputStream");
         RewriteRuleSubtreeStream stream_outputStream=new RewriteRuleSubtreeStream(adaptor,"rule outputStream");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:84:2: ( inputStream outputStream outputProjection -> ^( QUERY outputStream inputStream outputProjection ) | inputStream 'return' outputProjection -> ^( QUERY inputStream outputProjection ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:83:2: ( inputStream outputStream outputProjection -> ^( QUERY outputStream inputStream outputProjection ) | inputStream 'return' outputProjection -> ^( QUERY inputStream outputProjection ) )
             int alt7=2;
             switch ( input.LA(1) ) {
-            case 88:
+            case 87:
                 {
                 int LA7_1 = input.LA(2);
 
@@ -768,23 +767,23 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt7) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:84:3: inputStream outputStream outputProjection
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:83:3: inputStream outputStream outputProjection
                     {
-                    pushFollow(FOLLOW_inputStream_in_query373);
+                    pushFollow(FOLLOW_inputStream_in_query368);
                     inputStream19=inputStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_inputStream.add(inputStream19.getTree());
 
-                    pushFollow(FOLLOW_outputStream_in_query375);
+                    pushFollow(FOLLOW_outputStream_in_query370);
                     outputStream20=outputStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_outputStream.add(outputStream20.getTree());
 
-                    pushFollow(FOLLOW_outputProjection_in_query377);
+                    pushFollow(FOLLOW_outputProjection_in_query372);
                     outputProjection21=outputProjection();
 
                     state._fsp--;
@@ -792,7 +791,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if ( state.backtracking==0 ) stream_outputProjection.add(outputProjection21.getTree());
 
                     // AST REWRITE
-                    // elements: inputStream, outputStream, outputProjection
+                    // elements: outputStream, outputProjection, inputStream
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -804,9 +803,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 84:46: -> ^( QUERY outputStream inputStream outputProjection )
+                    // 83:46: -> ^( QUERY outputStream inputStream outputProjection )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:84:50: ^( QUERY outputStream inputStream outputProjection )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:83:50: ^( QUERY outputStream inputStream outputProjection )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -831,20 +830,20 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:85:3: inputStream 'return' outputProjection
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:84:3: inputStream 'return' outputProjection
                     {
-                    pushFollow(FOLLOW_inputStream_in_query396);
+                    pushFollow(FOLLOW_inputStream_in_query391);
                     inputStream22=inputStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_inputStream.add(inputStream22.getTree());
 
-                    string_literal23=(Token)match(input,113,FOLLOW_113_in_query398); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_113.add(string_literal23);
+                    string_literal23=(Token)match(input,112,FOLLOW_112_in_query393); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_112.add(string_literal23);
 
 
-                    pushFollow(FOLLOW_outputProjection_in_query400);
+                    pushFollow(FOLLOW_outputProjection_in_query395);
                     outputProjection24=outputProjection();
 
                     state._fsp--;
@@ -864,9 +863,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 85:42: -> ^( QUERY inputStream outputProjection )
+                    // 84:42: -> ^( QUERY inputStream outputProjection )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:85:46: ^( QUERY inputStream outputProjection )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:84:46: ^( QUERY inputStream outputProjection )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -921,7 +920,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "outputStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:1: outputStream : 'insert' ( outputType )? 'into' streamId ( '@' IP ( ',' IP )* )? -> ^( OUT_STREAM streamId ( outputType )? ( ( IP )+ )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:87:1: outputStream : 'insert' ( outputType )? 'into' streamId ( '@' IP ( ',' IP )* )? -> ^( OUT_STREAM streamId ( outputType )? ( ( IP )+ )? ) ;
     public final SiddhiQLGrammarParser.outputStream_return outputStream() throws RecognitionException {
         SiddhiQLGrammarParser.outputStream_return retval = new SiddhiQLGrammarParser.outputStream_return();
         retval.start = input.LT(1);
@@ -946,27 +945,27 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree IP30_tree=null;
         CommonTree char_literal31_tree=null;
         CommonTree IP32_tree=null;
-        RewriteRuleTokenStream stream_98=new RewriteRuleTokenStream(adaptor,"token 98");
-        RewriteRuleTokenStream stream_95=new RewriteRuleTokenStream(adaptor,"token 95");
-        RewriteRuleTokenStream stream_57=new RewriteRuleTokenStream(adaptor,"token 57");
+        RewriteRuleTokenStream stream_97=new RewriteRuleTokenStream(adaptor,"token 97");
+        RewriteRuleTokenStream stream_69=new RewriteRuleTokenStream(adaptor,"token 69");
+        RewriteRuleTokenStream stream_94=new RewriteRuleTokenStream(adaptor,"token 94");
+        RewriteRuleTokenStream stream_56=new RewriteRuleTokenStream(adaptor,"token 56");
         RewriteRuleTokenStream stream_IP=new RewriteRuleTokenStream(adaptor,"token IP");
-        RewriteRuleTokenStream stream_70=new RewriteRuleTokenStream(adaptor,"token 70");
         RewriteRuleSubtreeStream stream_streamId=new RewriteRuleSubtreeStream(adaptor,"rule streamId");
         RewriteRuleSubtreeStream stream_outputType=new RewriteRuleSubtreeStream(adaptor,"rule outputType");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:2: ( 'insert' ( outputType )? 'into' streamId ( '@' IP ( ',' IP )* )? -> ^( OUT_STREAM streamId ( outputType )? ( ( IP )+ )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:3: 'insert' ( outputType )? 'into' streamId ( '@' IP ( ',' IP )* )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:2: ( 'insert' ( outputType )? 'into' streamId ( '@' IP ( ',' IP )* )? -> ^( OUT_STREAM streamId ( outputType )? ( ( IP )+ )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:3: 'insert' ( outputType )? 'into' streamId ( '@' IP ( ',' IP )* )?
             {
-            string_literal25=(Token)match(input,95,FOLLOW_95_in_outputStream423); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_95.add(string_literal25);
+            string_literal25=(Token)match(input,94,FOLLOW_94_in_outputStream418); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_94.add(string_literal25);
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:12: ( outputType )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:12: ( outputType )?
             int alt8=2;
             switch ( input.LA(1) ) {
-                case 73:
-                case 80:
-                case 86:
+                case 72:
+                case 79:
+                case 85:
                     {
                     alt8=1;
                     }
@@ -975,9 +974,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt8) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:12: outputType
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:12: outputType
                     {
-                    pushFollow(FOLLOW_outputType_in_outputStream425);
+                    pushFollow(FOLLOW_outputType_in_outputStream420);
                     outputType26=outputType();
 
                     state._fsp--;
@@ -990,21 +989,21 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            string_literal27=(Token)match(input,98,FOLLOW_98_in_outputStream428); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_98.add(string_literal27);
+            string_literal27=(Token)match(input,97,FOLLOW_97_in_outputStream423); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_97.add(string_literal27);
 
 
-            pushFollow(FOLLOW_streamId_in_outputStream430);
+            pushFollow(FOLLOW_streamId_in_outputStream425);
             streamId28=streamId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_streamId.add(streamId28.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:40: ( '@' IP ( ',' IP )* )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:40: ( '@' IP ( ',' IP )* )?
             int alt10=2;
             switch ( input.LA(1) ) {
-                case 70:
+                case 69:
                     {
                     alt10=1;
                     }
@@ -1013,22 +1012,22 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt10) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:41: '@' IP ( ',' IP )*
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:41: '@' IP ( ',' IP )*
                     {
-                    char_literal29=(Token)match(input,70,FOLLOW_70_in_outputStream433); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_70.add(char_literal29);
+                    char_literal29=(Token)match(input,69,FOLLOW_69_in_outputStream428); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_69.add(char_literal29);
 
 
-                    IP30=(Token)match(input,IP,FOLLOW_IP_in_outputStream435); if (state.failed) return retval; 
+                    IP30=(Token)match(input,IP,FOLLOW_IP_in_outputStream430); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_IP.add(IP30);
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:48: ( ',' IP )*
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:48: ( ',' IP )*
                     loop9:
                     do {
                         int alt9=2;
                         switch ( input.LA(1) ) {
-                        case 57:
+                        case 56:
                             {
                             alt9=1;
                             }
@@ -1038,13 +1037,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:49: ',' IP
+                    	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:49: ',' IP
                     	    {
-                    	    char_literal31=(Token)match(input,57,FOLLOW_57_in_outputStream438); if (state.failed) return retval; 
-                    	    if ( state.backtracking==0 ) stream_57.add(char_literal31);
+                    	    char_literal31=(Token)match(input,56,FOLLOW_56_in_outputStream433); if (state.failed) return retval; 
+                    	    if ( state.backtracking==0 ) stream_56.add(char_literal31);
 
 
-                    	    IP32=(Token)match(input,IP,FOLLOW_IP_in_outputStream440); if (state.failed) return retval; 
+                    	    IP32=(Token)match(input,IP,FOLLOW_IP_in_outputStream435); if (state.failed) return retval; 
                     	    if ( state.backtracking==0 ) stream_IP.add(IP32);
 
 
@@ -1064,7 +1063,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: streamId, IP, outputType
+            // elements: IP, streamId, outputType
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1076,9 +1075,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 89:64: -> ^( OUT_STREAM streamId ( outputType )? ( ( IP )+ )? )
+            // 88:64: -> ^( OUT_STREAM streamId ( outputType )? ( ( IP )+ )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:69: ^( OUT_STREAM streamId ( outputType )? ( ( IP )+ )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:69: ^( OUT_STREAM streamId ( outputType )? ( ( IP )+ )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1087,14 +1086,14 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_streamId.nextTree());
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:91: ( outputType )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:91: ( outputType )?
                 if ( stream_outputType.hasNext() ) {
                     adaptor.addChild(root_1, stream_outputType.nextTree());
 
                 }
                 stream_outputType.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:89:103: ( ( IP )+ )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:88:103: ( ( IP )+ )?
                 if ( stream_IP.hasNext() ) {
                     if ( !(stream_IP.hasNext()) ) {
                         throw new RewriteEarlyExitException();
@@ -1152,7 +1151,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "outputType"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:92:1: outputType : ( 'expired-events' | 'current-events' | 'all-events' );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:91:1: outputType : ( 'expired-events' | 'current-events' | 'all-events' );
     public final SiddhiQLGrammarParser.outputType_return outputType() throws RecognitionException {
         SiddhiQLGrammarParser.outputType_return retval = new SiddhiQLGrammarParser.outputType_return();
         retval.start = input.LT(1);
@@ -1165,7 +1164,7 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set33_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:93:2: ( 'expired-events' | 'current-events' | 'all-events' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:92:2: ( 'expired-events' | 'current-events' | 'all-events' )
             // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -1173,7 +1172,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             set33=(Token)input.LT(1);
 
-            if ( input.LA(1)==73||input.LA(1)==80||input.LA(1)==86 ) {
+            if ( input.LA(1)==72||input.LA(1)==79||input.LA(1)==85 ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set33)
@@ -1221,7 +1220,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "inputStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:96:1: inputStream : 'from' ( sequenceFullStream -> ^( SEQUENCE_FULL sequenceFullStream ) | patternFullStream -> ^( PATTERN_FULL patternFullStream ) | joinStream -> ^( JOIN joinStream ) | windowStream -> windowStream | basicStream -> basicStream ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:95:1: inputStream : 'from' ( sequenceFullStream -> ^( SEQUENCE_FULL sequenceFullStream ) | patternFullStream -> ^( PATTERN_FULL patternFullStream ) | joinStream -> ^( JOIN joinStream ) | windowStream -> windowStream | basicStream -> basicStream ) ;
     public final SiddhiQLGrammarParser.inputStream_return inputStream() throws RecognitionException {
         SiddhiQLGrammarParser.inputStream_return retval = new SiddhiQLGrammarParser.inputStream_return();
         retval.start = input.LT(1);
@@ -1242,21 +1241,21 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         CommonTree string_literal34_tree=null;
-        RewriteRuleTokenStream stream_88=new RewriteRuleTokenStream(adaptor,"token 88");
+        RewriteRuleTokenStream stream_87=new RewriteRuleTokenStream(adaptor,"token 87");
         RewriteRuleSubtreeStream stream_sequenceFullStream=new RewriteRuleSubtreeStream(adaptor,"rule sequenceFullStream");
         RewriteRuleSubtreeStream stream_windowStream=new RewriteRuleSubtreeStream(adaptor,"rule windowStream");
         RewriteRuleSubtreeStream stream_patternFullStream=new RewriteRuleSubtreeStream(adaptor,"rule patternFullStream");
         RewriteRuleSubtreeStream stream_basicStream=new RewriteRuleSubtreeStream(adaptor,"rule basicStream");
         RewriteRuleSubtreeStream stream_joinStream=new RewriteRuleSubtreeStream(adaptor,"rule joinStream");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:97:2: ( 'from' ( sequenceFullStream -> ^( SEQUENCE_FULL sequenceFullStream ) | patternFullStream -> ^( PATTERN_FULL patternFullStream ) | joinStream -> ^( JOIN joinStream ) | windowStream -> windowStream | basicStream -> basicStream ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:97:3: 'from' ( sequenceFullStream -> ^( SEQUENCE_FULL sequenceFullStream ) | patternFullStream -> ^( PATTERN_FULL patternFullStream ) | joinStream -> ^( JOIN joinStream ) | windowStream -> windowStream | basicStream -> basicStream )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:96:2: ( 'from' ( sequenceFullStream -> ^( SEQUENCE_FULL sequenceFullStream ) | patternFullStream -> ^( PATTERN_FULL patternFullStream ) | joinStream -> ^( JOIN joinStream ) | windowStream -> windowStream | basicStream -> basicStream ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:96:3: 'from' ( sequenceFullStream -> ^( SEQUENCE_FULL sequenceFullStream ) | patternFullStream -> ^( PATTERN_FULL patternFullStream ) | joinStream -> ^( JOIN joinStream ) | windowStream -> windowStream | basicStream -> basicStream )
             {
-            string_literal34=(Token)match(input,88,FOLLOW_88_in_inputStream499); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_88.add(string_literal34);
+            string_literal34=(Token)match(input,87,FOLLOW_87_in_inputStream494); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_87.add(string_literal34);
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:97:10: ( sequenceFullStream -> ^( SEQUENCE_FULL sequenceFullStream ) | patternFullStream -> ^( PATTERN_FULL patternFullStream ) | joinStream -> ^( JOIN joinStream ) | windowStream -> windowStream | basicStream -> basicStream )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:96:10: ( sequenceFullStream -> ^( SEQUENCE_FULL sequenceFullStream ) | patternFullStream -> ^( PATTERN_FULL patternFullStream ) | joinStream -> ^( JOIN joinStream ) | windowStream -> windowStream | basicStream -> basicStream )
             int alt11=5;
             switch ( input.LA(1) ) {
             case ID:
@@ -1289,7 +1288,7 @@ public TreeAdaptor getTreeAdaptor() {
                 }
                 }
                 break;
-            case 53:
+            case 52:
                 {
                 int LA11_2 = input.LA(2);
 
@@ -1315,7 +1314,7 @@ public TreeAdaptor getTreeAdaptor() {
                 }
                 }
                 break;
-            case 85:
+            case 84:
                 {
                 alt11=2;
                 }
@@ -1331,9 +1330,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt11) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:97:12: sequenceFullStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:96:12: sequenceFullStream
                     {
-                    pushFollow(FOLLOW_sequenceFullStream_in_inputStream503);
+                    pushFollow(FOLLOW_sequenceFullStream_in_inputStream498);
                     sequenceFullStream35=sequenceFullStream();
 
                     state._fsp--;
@@ -1353,9 +1352,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 97:31: -> ^( SEQUENCE_FULL sequenceFullStream )
+                    // 96:31: -> ^( SEQUENCE_FULL sequenceFullStream )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:97:34: ^( SEQUENCE_FULL sequenceFullStream )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:96:34: ^( SEQUENCE_FULL sequenceFullStream )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1376,9 +1375,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:98:5: patternFullStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:97:5: patternFullStream
                     {
-                    pushFollow(FOLLOW_patternFullStream_in_inputStream517);
+                    pushFollow(FOLLOW_patternFullStream_in_inputStream512);
                     patternFullStream36=patternFullStream();
 
                     state._fsp--;
@@ -1398,9 +1397,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 98:23: -> ^( PATTERN_FULL patternFullStream )
+                    // 97:23: -> ^( PATTERN_FULL patternFullStream )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:98:27: ^( PATTERN_FULL patternFullStream )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:97:27: ^( PATTERN_FULL patternFullStream )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1421,9 +1420,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:99:5: joinStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:98:5: joinStream
                     {
-                    pushFollow(FOLLOW_joinStream_in_inputStream534);
+                    pushFollow(FOLLOW_joinStream_in_inputStream529);
                     joinStream37=joinStream();
 
                     state._fsp--;
@@ -1443,9 +1442,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 99:16: -> ^( JOIN joinStream )
+                    // 98:16: -> ^( JOIN joinStream )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:99:19: ^( JOIN joinStream )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:98:19: ^( JOIN joinStream )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1466,9 +1465,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:100:5: windowStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:99:5: windowStream
                     {
-                    pushFollow(FOLLOW_windowStream_in_inputStream549);
+                    pushFollow(FOLLOW_windowStream_in_inputStream544);
                     windowStream38=windowStream();
 
                     state._fsp--;
@@ -1488,7 +1487,7 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 100:18: -> windowStream
+                    // 99:18: -> windowStream
                     {
                         adaptor.addChild(root_0, stream_windowStream.nextTree());
 
@@ -1501,9 +1500,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:101:5: basicStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:100:5: basicStream
                     {
-                    pushFollow(FOLLOW_basicStream_in_inputStream559);
+                    pushFollow(FOLLOW_basicStream_in_inputStream554);
                     basicStream39=basicStream();
 
                     state._fsp--;
@@ -1523,7 +1522,7 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 101:18: -> basicStream
+                    // 100:18: -> basicStream
                     {
                         adaptor.addChild(root_0, stream_basicStream.nextTree());
 
@@ -1572,7 +1571,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "patternFullStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:106:1: patternFullStream : ( '(' patternStream ')' ( 'within' time )? -> ^( PATTERN patternStream ( time )? ) | patternStream ( 'within' time )? -> ^( PATTERN patternStream ( time )? ) );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:105:1: patternFullStream : ( '(' patternStream ')' ( 'within' time )? -> ^( PATTERN patternStream ( time )? ) | patternStream ( 'within' time )? -> ^( PATTERN patternStream ( time )? ) );
     public final SiddhiQLGrammarParser.patternFullStream_return patternFullStream() throws RecognitionException {
         SiddhiQLGrammarParser.patternFullStream_return retval = new SiddhiQLGrammarParser.patternFullStream_return();
         retval.start = input.LT(1);
@@ -1597,23 +1596,23 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal42_tree=null;
         CommonTree string_literal43_tree=null;
         CommonTree string_literal46_tree=null;
-        RewriteRuleTokenStream stream_125=new RewriteRuleTokenStream(adaptor,"token 125");
+        RewriteRuleTokenStream stream_124=new RewriteRuleTokenStream(adaptor,"token 124");
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
         RewriteRuleSubtreeStream stream_time=new RewriteRuleSubtreeStream(adaptor,"rule time");
         RewriteRuleSubtreeStream stream_patternStream=new RewriteRuleSubtreeStream(adaptor,"rule patternStream");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:107:2: ( '(' patternStream ')' ( 'within' time )? -> ^( PATTERN patternStream ( time )? ) | patternStream ( 'within' time )? -> ^( PATTERN patternStream ( time )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:106:2: ( '(' patternStream ')' ( 'within' time )? -> ^( PATTERN patternStream ( time )? ) | patternStream ( 'within' time )? -> ^( PATTERN patternStream ( time )? ) )
             int alt14=2;
             switch ( input.LA(1) ) {
-            case 53:
+            case 52:
                 {
                 alt14=1;
                 }
                 break;
             case ID:
             case ID_QUOTES:
-            case 85:
+            case 84:
                 {
                 alt14=2;
                 }
@@ -1629,27 +1628,27 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt14) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:107:3: '(' patternStream ')' ( 'within' time )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:106:3: '(' patternStream ')' ( 'within' time )?
                     {
-                    char_literal40=(Token)match(input,53,FOLLOW_53_in_patternFullStream584); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_53.add(char_literal40);
+                    char_literal40=(Token)match(input,52,FOLLOW_52_in_patternFullStream579); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_52.add(char_literal40);
 
 
-                    pushFollow(FOLLOW_patternStream_in_patternFullStream586);
+                    pushFollow(FOLLOW_patternStream_in_patternFullStream581);
                     patternStream41=patternStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_patternStream.add(patternStream41.getTree());
 
-                    char_literal42=(Token)match(input,54,FOLLOW_54_in_patternFullStream588); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_54.add(char_literal42);
+                    char_literal42=(Token)match(input,53,FOLLOW_53_in_patternFullStream583); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_53.add(char_literal42);
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:107:25: ( 'within' time )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:106:25: ( 'within' time )?
                     int alt12=2;
                     switch ( input.LA(1) ) {
-                        case 125:
+                        case 124:
                             {
                             alt12=1;
                             }
@@ -1658,13 +1657,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt12) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:107:26: 'within' time
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:106:26: 'within' time
                             {
-                            string_literal43=(Token)match(input,125,FOLLOW_125_in_patternFullStream591); if (state.failed) return retval; 
-                            if ( state.backtracking==0 ) stream_125.add(string_literal43);
+                            string_literal43=(Token)match(input,124,FOLLOW_124_in_patternFullStream586); if (state.failed) return retval; 
+                            if ( state.backtracking==0 ) stream_124.add(string_literal43);
 
 
-                            pushFollow(FOLLOW_time_in_patternFullStream593);
+                            pushFollow(FOLLOW_time_in_patternFullStream588);
                             time44=time();
 
                             state._fsp--;
@@ -1678,7 +1677,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: patternStream, time
+                    // elements: time, patternStream
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -1690,9 +1689,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 107:42: -> ^( PATTERN patternStream ( time )? )
+                    // 106:42: -> ^( PATTERN patternStream ( time )? )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:107:46: ^( PATTERN patternStream ( time )? )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:106:46: ^( PATTERN patternStream ( time )? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1701,7 +1700,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         adaptor.addChild(root_1, stream_patternStream.nextTree());
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:107:72: ( time )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:106:72: ( time )?
                         if ( stream_time.hasNext() ) {
                             adaptor.addChild(root_1, stream_time.nextTree());
 
@@ -1720,19 +1719,19 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:108:3: patternStream ( 'within' time )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:107:3: patternStream ( 'within' time )?
                     {
-                    pushFollow(FOLLOW_patternStream_in_patternFullStream615);
+                    pushFollow(FOLLOW_patternStream_in_patternFullStream610);
                     patternStream45=patternStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_patternStream.add(patternStream45.getTree());
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:108:18: ( 'within' time )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:107:18: ( 'within' time )?
                     int alt13=2;
                     switch ( input.LA(1) ) {
-                        case 125:
+                        case 124:
                             {
                             alt13=1;
                             }
@@ -1741,13 +1740,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt13) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:108:19: 'within' time
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:107:19: 'within' time
                             {
-                            string_literal46=(Token)match(input,125,FOLLOW_125_in_patternFullStream619); if (state.failed) return retval; 
-                            if ( state.backtracking==0 ) stream_125.add(string_literal46);
+                            string_literal46=(Token)match(input,124,FOLLOW_124_in_patternFullStream614); if (state.failed) return retval; 
+                            if ( state.backtracking==0 ) stream_124.add(string_literal46);
 
 
-                            pushFollow(FOLLOW_time_in_patternFullStream621);
+                            pushFollow(FOLLOW_time_in_patternFullStream616);
                             time47=time();
 
                             state._fsp--;
@@ -1773,9 +1772,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 108:36: -> ^( PATTERN patternStream ( time )? )
+                    // 107:36: -> ^( PATTERN patternStream ( time )? )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:108:40: ^( PATTERN patternStream ( time )? )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:107:40: ^( PATTERN patternStream ( time )? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1784,7 +1783,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         adaptor.addChild(root_1, stream_patternStream.nextTree());
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:108:66: ( time )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:107:66: ( time )?
                         if ( stream_time.hasNext() ) {
                             adaptor.addChild(root_1, stream_time.nextTree());
 
@@ -1835,7 +1834,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "basicStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:111:1: basicStream : rawStream ( transformHandler )? ( 'as' id )? -> ^( STREAM rawStream ( transformHandler )? ( id )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:110:1: basicStream : rawStream ( transformHandler )? ( 'as' id )? -> ^( STREAM rawStream ( transformHandler )? ( id )? ) ;
     public final SiddhiQLGrammarParser.basicStream_return basicStream() throws RecognitionException {
         SiddhiQLGrammarParser.basicStream_return retval = new SiddhiQLGrammarParser.basicStream_return();
         retval.start = input.LT(1);
@@ -1852,25 +1851,25 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         CommonTree string_literal50_tree=null;
-        RewriteRuleTokenStream stream_75=new RewriteRuleTokenStream(adaptor,"token 75");
+        RewriteRuleTokenStream stream_74=new RewriteRuleTokenStream(adaptor,"token 74");
         RewriteRuleSubtreeStream stream_id=new RewriteRuleSubtreeStream(adaptor,"rule id");
         RewriteRuleSubtreeStream stream_rawStream=new RewriteRuleSubtreeStream(adaptor,"rule rawStream");
         RewriteRuleSubtreeStream stream_transformHandler=new RewriteRuleSubtreeStream(adaptor,"rule transformHandler");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:112:2: ( rawStream ( transformHandler )? ( 'as' id )? -> ^( STREAM rawStream ( transformHandler )? ( id )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:112:4: rawStream ( transformHandler )? ( 'as' id )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:111:2: ( rawStream ( transformHandler )? ( 'as' id )? -> ^( STREAM rawStream ( transformHandler )? ( id )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:111:4: rawStream ( transformHandler )? ( 'as' id )?
             {
-            pushFollow(FOLLOW_rawStream_in_basicStream652);
+            pushFollow(FOLLOW_rawStream_in_basicStream647);
             rawStream48=rawStream();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_rawStream.add(rawStream48.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:112:14: ( transformHandler )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:111:14: ( transformHandler )?
             int alt15=2;
             switch ( input.LA(1) ) {
-                case 51:
+                case 50:
                     {
                     alt15=1;
                     }
@@ -1879,9 +1878,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt15) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:112:14: transformHandler
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:111:14: transformHandler
                     {
-                    pushFollow(FOLLOW_transformHandler_in_basicStream654);
+                    pushFollow(FOLLOW_transformHandler_in_basicStream649);
                     transformHandler49=transformHandler();
 
                     state._fsp--;
@@ -1894,10 +1893,10 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:112:32: ( 'as' id )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:111:32: ( 'as' id )?
             int alt16=2;
             switch ( input.LA(1) ) {
-                case 75:
+                case 74:
                     {
                     alt16=1;
                     }
@@ -1906,13 +1905,13 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt16) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:112:33: 'as' id
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:111:33: 'as' id
                     {
-                    string_literal50=(Token)match(input,75,FOLLOW_75_in_basicStream658); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_75.add(string_literal50);
+                    string_literal50=(Token)match(input,74,FOLLOW_74_in_basicStream653); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_74.add(string_literal50);
 
 
-                    pushFollow(FOLLOW_id_in_basicStream660);
+                    pushFollow(FOLLOW_id_in_basicStream655);
                     id51=id();
 
                     state._fsp--;
@@ -1926,7 +1925,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: rawStream, id, transformHandler
+            // elements: transformHandler, id, rawStream
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1938,9 +1937,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 112:43: -> ^( STREAM rawStream ( transformHandler )? ( id )? )
+            // 111:43: -> ^( STREAM rawStream ( transformHandler )? ( id )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:112:46: ^( STREAM rawStream ( transformHandler )? ( id )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:111:46: ^( STREAM rawStream ( transformHandler )? ( id )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1949,14 +1948,14 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_rawStream.nextTree());
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:112:65: ( transformHandler )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:111:65: ( transformHandler )?
                 if ( stream_transformHandler.hasNext() ) {
                     adaptor.addChild(root_1, stream_transformHandler.nextTree());
 
                 }
                 stream_transformHandler.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:112:84: ( id )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:111:84: ( id )?
                 if ( stream_id.hasNext() ) {
                     adaptor.addChild(root_1, stream_id.nextTree());
 
@@ -2005,7 +2004,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "windowStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:1: windowStream : ( streamId ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )? -> ^( STREAM ^( streamId ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? ) | '(' returnQuery ')' ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )? -> ^( STREAM ^( ANONYMOUS returnQuery ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? ) );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:114:1: windowStream : ( streamId ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )? -> ^( STREAM ^( streamId ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? ) | '(' returnQuery ')' ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )? -> ^( STREAM ^( ANONYMOUS returnQuery ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? ) );
     public final SiddhiQLGrammarParser.windowStream_return windowStream() throws RecognitionException {
         SiddhiQLGrammarParser.windowStream_return retval = new SiddhiQLGrammarParser.windowStream_return();
         retval.start = input.LT(1);
@@ -2042,9 +2041,9 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal58_tree=null;
         CommonTree char_literal60_tree=null;
         CommonTree string_literal64_tree=null;
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
-        RewriteRuleTokenStream stream_75=new RewriteRuleTokenStream(adaptor,"token 75");
+        RewriteRuleTokenStream stream_74=new RewriteRuleTokenStream(adaptor,"token 74");
         RewriteRuleSubtreeStream stream_id=new RewriteRuleSubtreeStream(adaptor,"rule id");
         RewriteRuleSubtreeStream stream_streamId=new RewriteRuleSubtreeStream(adaptor,"rule streamId");
         RewriteRuleSubtreeStream stream_filterHandler=new RewriteRuleSubtreeStream(adaptor,"rule filterHandler");
@@ -2052,7 +2051,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_returnQuery=new RewriteRuleSubtreeStream(adaptor,"rule returnQuery");
         RewriteRuleSubtreeStream stream_transformHandler=new RewriteRuleSubtreeStream(adaptor,"rule transformHandler");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:2: ( streamId ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )? -> ^( STREAM ^( streamId ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? ) | '(' returnQuery ')' ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )? -> ^( STREAM ^( ANONYMOUS returnQuery ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:2: ( streamId ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )? -> ^( STREAM ^( streamId ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? ) | '(' returnQuery ')' ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )? -> ^( STREAM ^( ANONYMOUS returnQuery ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? ) )
             int alt23=2;
             switch ( input.LA(1) ) {
             case ID:
@@ -2061,7 +2060,7 @@ public TreeAdaptor getTreeAdaptor() {
                 alt23=1;
                 }
                 break;
-            case 53:
+            case 52:
                 {
                 alt23=2;
                 }
@@ -2077,19 +2076,19 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt23) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:4: streamId ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:4: streamId ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )?
                     {
-                    pushFollow(FOLLOW_streamId_in_windowStream688);
+                    pushFollow(FOLLOW_streamId_in_windowStream683);
                     streamId52=streamId();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_streamId.add(streamId52.getTree());
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:14: ( filterHandler )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:14: ( filterHandler )?
                     int alt17=2;
                     switch ( input.LA(1) ) {
-                        case 71:
+                        case 70:
                             {
                             alt17=1;
                             }
@@ -2098,9 +2097,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt17) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:14: filterHandler
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:14: filterHandler
                             {
-                            pushFollow(FOLLOW_filterHandler_in_windowStream691);
+                            pushFollow(FOLLOW_filterHandler_in_windowStream686);
                             filterHandler53=filterHandler();
 
                             state._fsp--;
@@ -2113,13 +2112,13 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:29: ( transformHandler )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:29: ( transformHandler )?
                     int alt18=2;
                     switch ( input.LA(1) ) {
-                        case 51:
+                        case 50:
                             {
                             switch ( input.LA(2) ) {
-                                case 120:
+                                case 119:
                                     {
                                     alt18=1;
                                     }
@@ -2132,9 +2131,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt18) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:29: transformHandler
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:29: transformHandler
                             {
-                            pushFollow(FOLLOW_transformHandler_in_windowStream694);
+                            pushFollow(FOLLOW_transformHandler_in_windowStream689);
                             transformHandler54=transformHandler();
 
                             state._fsp--;
@@ -2147,17 +2146,17 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    pushFollow(FOLLOW_windowHandler_in_windowStream697);
+                    pushFollow(FOLLOW_windowHandler_in_windowStream692);
                     windowHandler55=windowHandler();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_windowHandler.add(windowHandler55.getTree());
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:61: ( 'as' id )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:61: ( 'as' id )?
                     int alt19=2;
                     switch ( input.LA(1) ) {
-                        case 75:
+                        case 74:
                             {
                             alt19=1;
                             }
@@ -2166,13 +2165,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt19) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:62: 'as' id
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:62: 'as' id
                             {
-                            string_literal56=(Token)match(input,75,FOLLOW_75_in_windowStream700); if (state.failed) return retval; 
-                            if ( state.backtracking==0 ) stream_75.add(string_literal56);
+                            string_literal56=(Token)match(input,74,FOLLOW_74_in_windowStream695); if (state.failed) return retval; 
+                            if ( state.backtracking==0 ) stream_74.add(string_literal56);
 
 
-                            pushFollow(FOLLOW_id_in_windowStream702);
+                            pushFollow(FOLLOW_id_in_windowStream697);
                             id57=id();
 
                             state._fsp--;
@@ -2186,7 +2185,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: filterHandler, streamId, id, windowHandler, transformHandler
+                    // elements: id, windowHandler, filterHandler, transformHandler, streamId
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -2198,28 +2197,28 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 116:71: -> ^( STREAM ^( streamId ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? )
+                    // 115:71: -> ^( STREAM ^( streamId ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:74: ^( STREAM ^( streamId ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:74: ^( STREAM ^( streamId ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
                         (CommonTree)adaptor.create(STREAM, "STREAM")
                         , root_1);
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:83: ^( streamId ( filterHandler )? ( transformHandler )? windowHandler )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:83: ^( streamId ( filterHandler )? ( transformHandler )? windowHandler )
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(stream_streamId.nextNode(), root_2);
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:95: ( filterHandler )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:95: ( filterHandler )?
                         if ( stream_filterHandler.hasNext() ) {
                             adaptor.addChild(root_2, stream_filterHandler.nextTree());
 
                         }
                         stream_filterHandler.reset();
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:110: ( transformHandler )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:110: ( transformHandler )?
                         if ( stream_transformHandler.hasNext() ) {
                             adaptor.addChild(root_2, stream_transformHandler.nextTree());
 
@@ -2231,7 +2230,7 @@ public TreeAdaptor getTreeAdaptor() {
                         adaptor.addChild(root_1, root_2);
                         }
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:144: ( id )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:115:144: ( id )?
                         if ( stream_id.hasNext() ) {
                             adaptor.addChild(root_1, stream_id.nextTree());
 
@@ -2250,27 +2249,27 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:4: '(' returnQuery ')' ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:4: '(' returnQuery ')' ( filterHandler )? ( transformHandler )? windowHandler ( 'as' id )?
                     {
-                    char_literal58=(Token)match(input,53,FOLLOW_53_in_windowStream731); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_53.add(char_literal58);
+                    char_literal58=(Token)match(input,52,FOLLOW_52_in_windowStream726); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_52.add(char_literal58);
 
 
-                    pushFollow(FOLLOW_returnQuery_in_windowStream733);
+                    pushFollow(FOLLOW_returnQuery_in_windowStream728);
                     returnQuery59=returnQuery();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_returnQuery.add(returnQuery59.getTree());
 
-                    char_literal60=(Token)match(input,54,FOLLOW_54_in_windowStream735); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_54.add(char_literal60);
+                    char_literal60=(Token)match(input,53,FOLLOW_53_in_windowStream730); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_53.add(char_literal60);
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:25: ( filterHandler )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:25: ( filterHandler )?
                     int alt20=2;
                     switch ( input.LA(1) ) {
-                        case 71:
+                        case 70:
                             {
                             alt20=1;
                             }
@@ -2279,9 +2278,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt20) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:25: filterHandler
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:25: filterHandler
                             {
-                            pushFollow(FOLLOW_filterHandler_in_windowStream738);
+                            pushFollow(FOLLOW_filterHandler_in_windowStream733);
                             filterHandler61=filterHandler();
 
                             state._fsp--;
@@ -2294,13 +2293,13 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:40: ( transformHandler )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:40: ( transformHandler )?
                     int alt21=2;
                     switch ( input.LA(1) ) {
-                        case 51:
+                        case 50:
                             {
                             switch ( input.LA(2) ) {
-                                case 120:
+                                case 119:
                                     {
                                     alt21=1;
                                     }
@@ -2313,9 +2312,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt21) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:40: transformHandler
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:40: transformHandler
                             {
-                            pushFollow(FOLLOW_transformHandler_in_windowStream741);
+                            pushFollow(FOLLOW_transformHandler_in_windowStream736);
                             transformHandler62=transformHandler();
 
                             state._fsp--;
@@ -2328,17 +2327,17 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    pushFollow(FOLLOW_windowHandler_in_windowStream744);
+                    pushFollow(FOLLOW_windowHandler_in_windowStream739);
                     windowHandler63=windowHandler();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_windowHandler.add(windowHandler63.getTree());
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:72: ( 'as' id )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:72: ( 'as' id )?
                     int alt22=2;
                     switch ( input.LA(1) ) {
-                        case 75:
+                        case 74:
                             {
                             alt22=1;
                             }
@@ -2347,13 +2346,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt22) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:73: 'as' id
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:73: 'as' id
                             {
-                            string_literal64=(Token)match(input,75,FOLLOW_75_in_windowStream747); if (state.failed) return retval; 
-                            if ( state.backtracking==0 ) stream_75.add(string_literal64);
+                            string_literal64=(Token)match(input,74,FOLLOW_74_in_windowStream742); if (state.failed) return retval; 
+                            if ( state.backtracking==0 ) stream_74.add(string_literal64);
 
 
-                            pushFollow(FOLLOW_id_in_windowStream749);
+                            pushFollow(FOLLOW_id_in_windowStream744);
                             id65=id();
 
                             state._fsp--;
@@ -2367,7 +2366,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: windowHandler, returnQuery, transformHandler, filterHandler, id
+                    // elements: returnQuery, id, filterHandler, windowHandler, transformHandler
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -2379,16 +2378,16 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 117:84: -> ^( STREAM ^( ANONYMOUS returnQuery ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? )
+                    // 116:84: -> ^( STREAM ^( ANONYMOUS returnQuery ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:88: ^( STREAM ^( ANONYMOUS returnQuery ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:88: ^( STREAM ^( ANONYMOUS returnQuery ( filterHandler )? ( transformHandler )? windowHandler ) ( id )? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
                         (CommonTree)adaptor.create(STREAM, "STREAM")
                         , root_1);
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:97: ^( ANONYMOUS returnQuery ( filterHandler )? ( transformHandler )? windowHandler )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:97: ^( ANONYMOUS returnQuery ( filterHandler )? ( transformHandler )? windowHandler )
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(
@@ -2397,14 +2396,14 @@ public TreeAdaptor getTreeAdaptor() {
 
                         adaptor.addChild(root_2, stream_returnQuery.nextTree());
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:124: ( filterHandler )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:124: ( filterHandler )?
                         if ( stream_filterHandler.hasNext() ) {
                             adaptor.addChild(root_2, stream_filterHandler.nextTree());
 
                         }
                         stream_filterHandler.reset();
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:139: ( transformHandler )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:139: ( transformHandler )?
                         if ( stream_transformHandler.hasNext() ) {
                             adaptor.addChild(root_2, stream_transformHandler.nextTree());
 
@@ -2416,7 +2415,7 @@ public TreeAdaptor getTreeAdaptor() {
                         adaptor.addChild(root_1, root_2);
                         }
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:117:173: ( id )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:116:173: ( id )?
                         if ( stream_id.hasNext() ) {
                             adaptor.addChild(root_1, stream_id.nextTree());
 
@@ -2467,7 +2466,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "rawStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:120:1: rawStream : ( streamId ( filterHandler )? -> ^( streamId ( filterHandler )? ) | '(' returnQuery ')' ( filterHandler )? -> ^( ANONYMOUS returnQuery ( filterHandler )? ) );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:119:1: rawStream : ( streamId ( filterHandler )? -> ^( streamId ( filterHandler )? ) | '(' returnQuery ')' ( filterHandler )? -> ^( ANONYMOUS returnQuery ( filterHandler )? ) );
     public final SiddhiQLGrammarParser.rawStream_return rawStream() throws RecognitionException {
         SiddhiQLGrammarParser.rawStream_return retval = new SiddhiQLGrammarParser.rawStream_return();
         retval.start = input.LT(1);
@@ -2488,13 +2487,13 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree char_literal68_tree=null;
         CommonTree char_literal70_tree=null;
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
         RewriteRuleSubtreeStream stream_streamId=new RewriteRuleSubtreeStream(adaptor,"rule streamId");
         RewriteRuleSubtreeStream stream_filterHandler=new RewriteRuleSubtreeStream(adaptor,"rule filterHandler");
         RewriteRuleSubtreeStream stream_returnQuery=new RewriteRuleSubtreeStream(adaptor,"rule returnQuery");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:121:2: ( streamId ( filterHandler )? -> ^( streamId ( filterHandler )? ) | '(' returnQuery ')' ( filterHandler )? -> ^( ANONYMOUS returnQuery ( filterHandler )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:120:2: ( streamId ( filterHandler )? -> ^( streamId ( filterHandler )? ) | '(' returnQuery ')' ( filterHandler )? -> ^( ANONYMOUS returnQuery ( filterHandler )? ) )
             int alt26=2;
             switch ( input.LA(1) ) {
             case ID:
@@ -2503,7 +2502,7 @@ public TreeAdaptor getTreeAdaptor() {
                 alt26=1;
                 }
                 break;
-            case 53:
+            case 52:
                 {
                 alt26=2;
                 }
@@ -2519,19 +2518,19 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt26) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:121:4: streamId ( filterHandler )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:120:4: streamId ( filterHandler )?
                     {
-                    pushFollow(FOLLOW_streamId_in_rawStream791);
+                    pushFollow(FOLLOW_streamId_in_rawStream786);
                     streamId66=streamId();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_streamId.add(streamId66.getTree());
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:121:14: ( filterHandler )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:120:14: ( filterHandler )?
                     int alt24=2;
                     switch ( input.LA(1) ) {
-                        case 71:
+                        case 70:
                             {
                             alt24=1;
                             }
@@ -2540,9 +2539,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt24) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:121:14: filterHandler
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:120:14: filterHandler
                             {
-                            pushFollow(FOLLOW_filterHandler_in_rawStream794);
+                            pushFollow(FOLLOW_filterHandler_in_rawStream789);
                             filterHandler67=filterHandler();
 
                             state._fsp--;
@@ -2556,7 +2555,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: filterHandler, streamId
+                    // elements: streamId, filterHandler
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -2568,14 +2567,14 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 121:31: -> ^( streamId ( filterHandler )? )
+                    // 120:31: -> ^( streamId ( filterHandler )? )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:121:34: ^( streamId ( filterHandler )? )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:120:34: ^( streamId ( filterHandler )? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(stream_streamId.nextNode(), root_1);
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:121:47: ( filterHandler )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:120:47: ( filterHandler )?
                         if ( stream_filterHandler.hasNext() ) {
                             adaptor.addChild(root_1, stream_filterHandler.nextTree());
 
@@ -2594,27 +2593,27 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:122:4: '(' returnQuery ')' ( filterHandler )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:121:4: '(' returnQuery ')' ( filterHandler )?
                     {
-                    char_literal68=(Token)match(input,53,FOLLOW_53_in_rawStream815); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_53.add(char_literal68);
+                    char_literal68=(Token)match(input,52,FOLLOW_52_in_rawStream810); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_52.add(char_literal68);
 
 
-                    pushFollow(FOLLOW_returnQuery_in_rawStream817);
+                    pushFollow(FOLLOW_returnQuery_in_rawStream812);
                     returnQuery69=returnQuery();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_returnQuery.add(returnQuery69.getTree());
 
-                    char_literal70=(Token)match(input,54,FOLLOW_54_in_rawStream819); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_54.add(char_literal70);
+                    char_literal70=(Token)match(input,53,FOLLOW_53_in_rawStream814); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_53.add(char_literal70);
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:122:25: ( filterHandler )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:121:25: ( filterHandler )?
                     int alt25=2;
                     switch ( input.LA(1) ) {
-                        case 71:
+                        case 70:
                             {
                             alt25=1;
                             }
@@ -2623,9 +2622,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt25) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:122:25: filterHandler
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:121:25: filterHandler
                             {
-                            pushFollow(FOLLOW_filterHandler_in_rawStream822);
+                            pushFollow(FOLLOW_filterHandler_in_rawStream817);
                             filterHandler71=filterHandler();
 
                             state._fsp--;
@@ -2651,9 +2650,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 122:41: -> ^( ANONYMOUS returnQuery ( filterHandler )? )
+                    // 121:41: -> ^( ANONYMOUS returnQuery ( filterHandler )? )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:122:45: ^( ANONYMOUS returnQuery ( filterHandler )? )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:121:45: ^( ANONYMOUS returnQuery ( filterHandler )? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -2662,7 +2661,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         adaptor.addChild(root_1, stream_returnQuery.nextTree());
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:122:70: ( filterHandler )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:121:70: ( filterHandler )?
                         if ( stream_filterHandler.hasNext() ) {
                             adaptor.addChild(root_1, stream_filterHandler.nextTree());
 
@@ -2713,7 +2712,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "joinStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:1: joinStream : ( leftStream join rightStream 'unidirectional' ( 'on' condition )? ( 'within' time )? -> leftStream join rightStream 'unidirectional' ( condition )? ( time )? | leftStream join rightStream ( 'on' condition )? ( 'within' time )? -> leftStream join rightStream ( condition )? ( time )? | leftStream 'unidirectional' join rightStream ( 'on' condition )? ( 'within' time )? -> leftStream 'unidirectional' join rightStream ( condition )? ( time )? );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:124:1: joinStream : ( leftStream join rightStream 'unidirectional' ( 'on' condition )? ( 'within' time )? -> leftStream join rightStream 'unidirectional' ( condition )? ( time )? | leftStream join rightStream ( 'on' condition )? ( 'within' time )? -> leftStream join rightStream ( condition )? ( time )? | leftStream 'unidirectional' join rightStream ( 'on' condition )? ( 'within' time )? -> leftStream 'unidirectional' join rightStream ( condition )? ( time )? );
     public final SiddhiQLGrammarParser.joinStream_return joinStream() throws RecognitionException {
         SiddhiQLGrammarParser.joinStream_return retval = new SiddhiQLGrammarParser.joinStream_return();
         retval.start = input.LT(1);
@@ -2768,16 +2767,16 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal88_tree=null;
         CommonTree string_literal91_tree=null;
         CommonTree string_literal93_tree=null;
-        RewriteRuleTokenStream stream_125=new RewriteRuleTokenStream(adaptor,"token 125");
-        RewriteRuleTokenStream stream_121=new RewriteRuleTokenStream(adaptor,"token 121");
-        RewriteRuleTokenStream stream_110=new RewriteRuleTokenStream(adaptor,"token 110");
+        RewriteRuleTokenStream stream_109=new RewriteRuleTokenStream(adaptor,"token 109");
+        RewriteRuleTokenStream stream_124=new RewriteRuleTokenStream(adaptor,"token 124");
+        RewriteRuleTokenStream stream_120=new RewriteRuleTokenStream(adaptor,"token 120");
         RewriteRuleSubtreeStream stream_time=new RewriteRuleSubtreeStream(adaptor,"rule time");
         RewriteRuleSubtreeStream stream_condition=new RewriteRuleSubtreeStream(adaptor,"rule condition");
         RewriteRuleSubtreeStream stream_join=new RewriteRuleSubtreeStream(adaptor,"rule join");
         RewriteRuleSubtreeStream stream_rightStream=new RewriteRuleSubtreeStream(adaptor,"rule rightStream");
         RewriteRuleSubtreeStream stream_leftStream=new RewriteRuleSubtreeStream(adaptor,"rule leftStream");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:2: ( leftStream join rightStream 'unidirectional' ( 'on' condition )? ( 'within' time )? -> leftStream join rightStream 'unidirectional' ( condition )? ( time )? | leftStream join rightStream ( 'on' condition )? ( 'within' time )? -> leftStream join rightStream ( condition )? ( time )? | leftStream 'unidirectional' join rightStream ( 'on' condition )? ( 'within' time )? -> leftStream 'unidirectional' join rightStream ( condition )? ( time )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:2: ( leftStream join rightStream 'unidirectional' ( 'on' condition )? ( 'within' time )? -> leftStream join rightStream 'unidirectional' ( condition )? ( time )? | leftStream join rightStream ( 'on' condition )? ( 'within' time )? -> leftStream join rightStream ( condition )? ( time )? | leftStream 'unidirectional' join rightStream ( 'on' condition )? ( 'within' time )? -> leftStream 'unidirectional' join rightStream ( condition )? ( time )? )
             int alt33=3;
             switch ( input.LA(1) ) {
             case ID:
@@ -2804,7 +2803,7 @@ public TreeAdaptor getTreeAdaptor() {
                 }
                 }
                 break;
-            case 53:
+            case 52:
                 {
                 int LA33_2 = input.LA(2);
 
@@ -2838,37 +2837,37 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt33) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:3: leftStream join rightStream 'unidirectional' ( 'on' condition )? ( 'within' time )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:3: leftStream join rightStream 'unidirectional' ( 'on' condition )? ( 'within' time )?
                     {
-                    pushFollow(FOLLOW_leftStream_in_joinStream848);
+                    pushFollow(FOLLOW_leftStream_in_joinStream843);
                     leftStream72=leftStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_leftStream.add(leftStream72.getTree());
 
-                    pushFollow(FOLLOW_join_in_joinStream850);
+                    pushFollow(FOLLOW_join_in_joinStream845);
                     join73=join();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_join.add(join73.getTree());
 
-                    pushFollow(FOLLOW_rightStream_in_joinStream852);
+                    pushFollow(FOLLOW_rightStream_in_joinStream847);
                     rightStream74=rightStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_rightStream.add(rightStream74.getTree());
 
-                    string_literal75=(Token)match(input,121,FOLLOW_121_in_joinStream854); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_121.add(string_literal75);
+                    string_literal75=(Token)match(input,120,FOLLOW_120_in_joinStream849); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_120.add(string_literal75);
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:48: ( 'on' condition )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:48: ( 'on' condition )?
                     int alt27=2;
                     switch ( input.LA(1) ) {
-                        case 110:
+                        case 109:
                             {
                             alt27=1;
                             }
@@ -2877,13 +2876,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt27) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:49: 'on' condition
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:49: 'on' condition
                             {
-                            string_literal76=(Token)match(input,110,FOLLOW_110_in_joinStream857); if (state.failed) return retval; 
-                            if ( state.backtracking==0 ) stream_110.add(string_literal76);
+                            string_literal76=(Token)match(input,109,FOLLOW_109_in_joinStream852); if (state.failed) return retval; 
+                            if ( state.backtracking==0 ) stream_109.add(string_literal76);
 
 
-                            pushFollow(FOLLOW_condition_in_joinStream859);
+                            pushFollow(FOLLOW_condition_in_joinStream854);
                             condition77=condition();
 
                             state._fsp--;
@@ -2896,10 +2895,10 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:66: ( 'within' time )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:66: ( 'within' time )?
                     int alt28=2;
                     switch ( input.LA(1) ) {
-                        case 125:
+                        case 124:
                             {
                             alt28=1;
                             }
@@ -2908,13 +2907,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt28) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:67: 'within' time
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:67: 'within' time
                             {
-                            string_literal78=(Token)match(input,125,FOLLOW_125_in_joinStream864); if (state.failed) return retval; 
-                            if ( state.backtracking==0 ) stream_125.add(string_literal78);
+                            string_literal78=(Token)match(input,124,FOLLOW_124_in_joinStream859); if (state.failed) return retval; 
+                            if ( state.backtracking==0 ) stream_124.add(string_literal78);
 
 
-                            pushFollow(FOLLOW_time_in_joinStream866);
+                            pushFollow(FOLLOW_time_in_joinStream861);
                             time79=time();
 
                             state._fsp--;
@@ -2928,7 +2927,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: condition, time, join, 121, leftStream, rightStream
+                    // elements: 120, rightStream, condition, join, time, leftStream
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -2940,7 +2939,7 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 126:83: -> leftStream join rightStream 'unidirectional' ( condition )? ( time )?
+                    // 125:83: -> leftStream join rightStream 'unidirectional' ( condition )? ( time )?
                     {
                         adaptor.addChild(root_0, stream_leftStream.nextTree());
 
@@ -2949,17 +2948,17 @@ public TreeAdaptor getTreeAdaptor() {
                         adaptor.addChild(root_0, stream_rightStream.nextTree());
 
                         adaptor.addChild(root_0, 
-                        stream_121.nextNode()
+                        stream_120.nextNode()
                         );
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:132: ( condition )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:132: ( condition )?
                         if ( stream_condition.hasNext() ) {
                             adaptor.addChild(root_0, stream_condition.nextTree());
 
                         }
                         stream_condition.reset();
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:143: ( time )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:143: ( time )?
                         if ( stream_time.hasNext() ) {
                             adaptor.addChild(root_0, stream_time.nextTree());
 
@@ -2975,33 +2974,33 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:3: leftStream join rightStream ( 'on' condition )? ( 'within' time )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:3: leftStream join rightStream ( 'on' condition )? ( 'within' time )?
                     {
-                    pushFollow(FOLLOW_leftStream_in_joinStream889);
+                    pushFollow(FOLLOW_leftStream_in_joinStream884);
                     leftStream80=leftStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_leftStream.add(leftStream80.getTree());
 
-                    pushFollow(FOLLOW_join_in_joinStream891);
+                    pushFollow(FOLLOW_join_in_joinStream886);
                     join81=join();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_join.add(join81.getTree());
 
-                    pushFollow(FOLLOW_rightStream_in_joinStream893);
+                    pushFollow(FOLLOW_rightStream_in_joinStream888);
                     rightStream82=rightStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_rightStream.add(rightStream82.getTree());
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:31: ( 'on' condition )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:31: ( 'on' condition )?
                     int alt29=2;
                     switch ( input.LA(1) ) {
-                        case 110:
+                        case 109:
                             {
                             alt29=1;
                             }
@@ -3010,13 +3009,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt29) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:32: 'on' condition
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:32: 'on' condition
                             {
-                            string_literal83=(Token)match(input,110,FOLLOW_110_in_joinStream896); if (state.failed) return retval; 
-                            if ( state.backtracking==0 ) stream_110.add(string_literal83);
+                            string_literal83=(Token)match(input,109,FOLLOW_109_in_joinStream891); if (state.failed) return retval; 
+                            if ( state.backtracking==0 ) stream_109.add(string_literal83);
 
 
-                            pushFollow(FOLLOW_condition_in_joinStream898);
+                            pushFollow(FOLLOW_condition_in_joinStream893);
                             condition84=condition();
 
                             state._fsp--;
@@ -3029,10 +3028,10 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:49: ( 'within' time )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:49: ( 'within' time )?
                     int alt30=2;
                     switch ( input.LA(1) ) {
-                        case 125:
+                        case 124:
                             {
                             alt30=1;
                             }
@@ -3041,13 +3040,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt30) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:50: 'within' time
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:50: 'within' time
                             {
-                            string_literal85=(Token)match(input,125,FOLLOW_125_in_joinStream903); if (state.failed) return retval; 
-                            if ( state.backtracking==0 ) stream_125.add(string_literal85);
+                            string_literal85=(Token)match(input,124,FOLLOW_124_in_joinStream898); if (state.failed) return retval; 
+                            if ( state.backtracking==0 ) stream_124.add(string_literal85);
 
 
-                            pushFollow(FOLLOW_time_in_joinStream905);
+                            pushFollow(FOLLOW_time_in_joinStream900);
                             time86=time();
 
                             state._fsp--;
@@ -3061,7 +3060,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: join, time, condition, rightStream, leftStream
+                    // elements: join, time, leftStream, condition, rightStream
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -3073,7 +3072,7 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 127:66: -> leftStream join rightStream ( condition )? ( time )?
+                    // 126:66: -> leftStream join rightStream ( condition )? ( time )?
                     {
                         adaptor.addChild(root_0, stream_leftStream.nextTree());
 
@@ -3081,14 +3080,14 @@ public TreeAdaptor getTreeAdaptor() {
 
                         adaptor.addChild(root_0, stream_rightStream.nextTree());
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:99: ( condition )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:99: ( condition )?
                         if ( stream_condition.hasNext() ) {
                             adaptor.addChild(root_0, stream_condition.nextTree());
 
                         }
                         stream_condition.reset();
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:110: ( time )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:110: ( time )?
                         if ( stream_time.hasNext() ) {
                             adaptor.addChild(root_0, stream_time.nextTree());
 
@@ -3104,37 +3103,37 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:128:3: leftStream 'unidirectional' join rightStream ( 'on' condition )? ( 'within' time )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:3: leftStream 'unidirectional' join rightStream ( 'on' condition )? ( 'within' time )?
                     {
-                    pushFollow(FOLLOW_leftStream_in_joinStream927);
+                    pushFollow(FOLLOW_leftStream_in_joinStream922);
                     leftStream87=leftStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_leftStream.add(leftStream87.getTree());
 
-                    string_literal88=(Token)match(input,121,FOLLOW_121_in_joinStream929); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_121.add(string_literal88);
+                    string_literal88=(Token)match(input,120,FOLLOW_120_in_joinStream924); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_120.add(string_literal88);
 
 
-                    pushFollow(FOLLOW_join_in_joinStream931);
+                    pushFollow(FOLLOW_join_in_joinStream926);
                     join89=join();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_join.add(join89.getTree());
 
-                    pushFollow(FOLLOW_rightStream_in_joinStream933);
+                    pushFollow(FOLLOW_rightStream_in_joinStream928);
                     rightStream90=rightStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_rightStream.add(rightStream90.getTree());
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:128:48: ( 'on' condition )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:48: ( 'on' condition )?
                     int alt31=2;
                     switch ( input.LA(1) ) {
-                        case 110:
+                        case 109:
                             {
                             alt31=1;
                             }
@@ -3143,13 +3142,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt31) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:128:49: 'on' condition
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:49: 'on' condition
                             {
-                            string_literal91=(Token)match(input,110,FOLLOW_110_in_joinStream936); if (state.failed) return retval; 
-                            if ( state.backtracking==0 ) stream_110.add(string_literal91);
+                            string_literal91=(Token)match(input,109,FOLLOW_109_in_joinStream931); if (state.failed) return retval; 
+                            if ( state.backtracking==0 ) stream_109.add(string_literal91);
 
 
-                            pushFollow(FOLLOW_condition_in_joinStream938);
+                            pushFollow(FOLLOW_condition_in_joinStream933);
                             condition92=condition();
 
                             state._fsp--;
@@ -3162,10 +3161,10 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:128:66: ( 'within' time )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:66: ( 'within' time )?
                     int alt32=2;
                     switch ( input.LA(1) ) {
-                        case 125:
+                        case 124:
                             {
                             alt32=1;
                             }
@@ -3174,13 +3173,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt32) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:128:67: 'within' time
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:67: 'within' time
                             {
-                            string_literal93=(Token)match(input,125,FOLLOW_125_in_joinStream943); if (state.failed) return retval; 
-                            if ( state.backtracking==0 ) stream_125.add(string_literal93);
+                            string_literal93=(Token)match(input,124,FOLLOW_124_in_joinStream938); if (state.failed) return retval; 
+                            if ( state.backtracking==0 ) stream_124.add(string_literal93);
 
 
-                            pushFollow(FOLLOW_time_in_joinStream945);
+                            pushFollow(FOLLOW_time_in_joinStream940);
                             time94=time();
 
                             state._fsp--;
@@ -3194,7 +3193,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: time, condition, 121, join, leftStream, rightStream
+                    // elements: time, rightStream, join, condition, 120, leftStream
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -3206,26 +3205,26 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 128:83: -> leftStream 'unidirectional' join rightStream ( condition )? ( time )?
+                    // 127:83: -> leftStream 'unidirectional' join rightStream ( condition )? ( time )?
                     {
                         adaptor.addChild(root_0, stream_leftStream.nextTree());
 
                         adaptor.addChild(root_0, 
-                        stream_121.nextNode()
+                        stream_120.nextNode()
                         );
 
                         adaptor.addChild(root_0, stream_join.nextTree());
 
                         adaptor.addChild(root_0, stream_rightStream.nextTree());
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:128:133: ( condition )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:133: ( condition )?
                         if ( stream_condition.hasNext() ) {
                             adaptor.addChild(root_0, stream_condition.nextTree());
 
                         }
                         stream_condition.reset();
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:128:144: ( time )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:144: ( time )?
                         if ( stream_time.hasNext() ) {
                             adaptor.addChild(root_0, stream_time.nextTree());
 
@@ -3273,7 +3272,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "leftStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:131:1: leftStream : ( windowStream | basicStream );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:130:1: leftStream : ( windowStream | basicStream );
     public final SiddhiQLGrammarParser.leftStream_return leftStream() throws RecognitionException {
         SiddhiQLGrammarParser.leftStream_return retval = new SiddhiQLGrammarParser.leftStream_return();
         retval.start = input.LT(1);
@@ -3288,7 +3287,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:132:5: ( windowStream | basicStream )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:131:5: ( windowStream | basicStream )
             int alt34=2;
             switch ( input.LA(1) ) {
             case ID:
@@ -3312,7 +3311,7 @@ public TreeAdaptor getTreeAdaptor() {
                 }
                 }
                 break;
-            case 53:
+            case 52:
                 {
                 int LA34_2 = input.LA(2);
 
@@ -3343,12 +3342,12 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt34) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:132:8: windowStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:131:8: windowStream
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_windowStream_in_leftStream980);
+                    pushFollow(FOLLOW_windowStream_in_leftStream975);
                     windowStream95=windowStream();
 
                     state._fsp--;
@@ -3358,12 +3357,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:133:7: basicStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:132:7: basicStream
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_basicStream_in_leftStream988);
+                    pushFollow(FOLLOW_basicStream_in_leftStream983);
                     basicStream96=basicStream();
 
                     state._fsp--;
@@ -3405,7 +3404,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "rightStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:136:1: rightStream : ( windowStream | basicStream );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:135:1: rightStream : ( windowStream | basicStream );
     public final SiddhiQLGrammarParser.rightStream_return rightStream() throws RecognitionException {
         SiddhiQLGrammarParser.rightStream_return retval = new SiddhiQLGrammarParser.rightStream_return();
         retval.start = input.LT(1);
@@ -3420,7 +3419,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:137:5: ( windowStream | basicStream )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:136:5: ( windowStream | basicStream )
             int alt35=2;
             switch ( input.LA(1) ) {
             case ID:
@@ -3444,7 +3443,7 @@ public TreeAdaptor getTreeAdaptor() {
                 }
                 }
                 break;
-            case 53:
+            case 52:
                 {
                 int LA35_2 = input.LA(2);
 
@@ -3475,12 +3474,12 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt35) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:137:8: windowStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:136:8: windowStream
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_windowStream_in_rightStream1006);
+                    pushFollow(FOLLOW_windowStream_in_rightStream1001);
                     windowStream97=windowStream();
 
                     state._fsp--;
@@ -3490,12 +3489,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:138:8: basicStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:137:8: basicStream
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_basicStream_in_rightStream1015);
+                    pushFollow(FOLLOW_basicStream_in_rightStream1010);
                     basicStream98=basicStream();
 
                     state._fsp--;
@@ -3537,7 +3536,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "returnQuery"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:141:1: returnQuery : inputStream 'return' outputProjection -> ^( RETURN_QUERY inputStream outputProjection ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:140:1: returnQuery : inputStream 'return' outputProjection -> ^( RETURN_QUERY inputStream outputProjection ) ;
     public final SiddhiQLGrammarParser.returnQuery_return returnQuery() throws RecognitionException {
         SiddhiQLGrammarParser.returnQuery_return retval = new SiddhiQLGrammarParser.returnQuery_return();
         retval.start = input.LT(1);
@@ -3552,25 +3551,25 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         CommonTree string_literal100_tree=null;
-        RewriteRuleTokenStream stream_113=new RewriteRuleTokenStream(adaptor,"token 113");
+        RewriteRuleTokenStream stream_112=new RewriteRuleTokenStream(adaptor,"token 112");
         RewriteRuleSubtreeStream stream_outputProjection=new RewriteRuleSubtreeStream(adaptor,"rule outputProjection");
         RewriteRuleSubtreeStream stream_inputStream=new RewriteRuleSubtreeStream(adaptor,"rule inputStream");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:142:2: ( inputStream 'return' outputProjection -> ^( RETURN_QUERY inputStream outputProjection ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:142:4: inputStream 'return' outputProjection
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:141:2: ( inputStream 'return' outputProjection -> ^( RETURN_QUERY inputStream outputProjection ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:141:4: inputStream 'return' outputProjection
             {
-            pushFollow(FOLLOW_inputStream_in_returnQuery1029);
+            pushFollow(FOLLOW_inputStream_in_returnQuery1024);
             inputStream99=inputStream();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_inputStream.add(inputStream99.getTree());
 
-            string_literal100=(Token)match(input,113,FOLLOW_113_in_returnQuery1031); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_113.add(string_literal100);
+            string_literal100=(Token)match(input,112,FOLLOW_112_in_returnQuery1026); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_112.add(string_literal100);
 
 
-            pushFollow(FOLLOW_outputProjection_in_returnQuery1033);
+            pushFollow(FOLLOW_outputProjection_in_returnQuery1028);
             outputProjection101=outputProjection();
 
             state._fsp--;
@@ -3578,7 +3577,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_outputProjection.add(outputProjection101.getTree());
 
             // AST REWRITE
-            // elements: inputStream, outputProjection
+            // elements: outputProjection, inputStream
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -3590,9 +3589,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 142:42: -> ^( RETURN_QUERY inputStream outputProjection )
+            // 141:42: -> ^( RETURN_QUERY inputStream outputProjection )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:142:45: ^( RETURN_QUERY inputStream outputProjection )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:141:45: ^( RETURN_QUERY inputStream outputProjection )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -3645,7 +3644,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "patternStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:145:1: patternStream : ( patternItem ( FOLLOWED_BY patternStream )? -> patternItem ( patternStream )? | 'every' patternItem ( FOLLOWED_BY patternStream )? -> ^( 'every' patternItem ) ( patternStream )? | 'every' '(' nonEveryPatternStream ')' ( FOLLOWED_BY patternStream )? -> ^( 'every' nonEveryPatternStream ) ( patternStream )? );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:144:1: patternStream : ( patternItem ( FOLLOWED_BY patternStream )? -> patternItem ( patternStream )? | 'every' patternItem ( FOLLOWED_BY patternStream )? -> ^( 'every' patternItem ) ( patternStream )? | 'every' '(' nonEveryPatternStream ')' ( FOLLOWED_BY patternStream )? -> ^( 'every' nonEveryPatternStream ) ( patternStream )? );
     public final SiddhiQLGrammarParser.patternStream_return patternStream() throws RecognitionException {
         SiddhiQLGrammarParser.patternStream_return retval = new SiddhiQLGrammarParser.patternStream_return();
         retval.start = input.LT(1);
@@ -3680,15 +3679,15 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal110_tree=null;
         CommonTree char_literal112_tree=null;
         CommonTree FOLLOWED_BY113_tree=null;
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
         RewriteRuleTokenStream stream_FOLLOWED_BY=new RewriteRuleTokenStream(adaptor,"token FOLLOWED_BY");
-        RewriteRuleTokenStream stream_85=new RewriteRuleTokenStream(adaptor,"token 85");
+        RewriteRuleTokenStream stream_84=new RewriteRuleTokenStream(adaptor,"token 84");
         RewriteRuleSubtreeStream stream_nonEveryPatternStream=new RewriteRuleSubtreeStream(adaptor,"rule nonEveryPatternStream");
         RewriteRuleSubtreeStream stream_patternStream=new RewriteRuleSubtreeStream(adaptor,"rule patternStream");
         RewriteRuleSubtreeStream stream_patternItem=new RewriteRuleSubtreeStream(adaptor,"rule patternItem");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:146:2: ( patternItem ( FOLLOWED_BY patternStream )? -> patternItem ( patternStream )? | 'every' patternItem ( FOLLOWED_BY patternStream )? -> ^( 'every' patternItem ) ( patternStream )? | 'every' '(' nonEveryPatternStream ')' ( FOLLOWED_BY patternStream )? -> ^( 'every' nonEveryPatternStream ) ( patternStream )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:145:2: ( patternItem ( FOLLOWED_BY patternStream )? -> patternItem ( patternStream )? | 'every' patternItem ( FOLLOWED_BY patternStream )? -> ^( 'every' patternItem ) ( patternStream )? | 'every' '(' nonEveryPatternStream ')' ( FOLLOWED_BY patternStream )? -> ^( 'every' nonEveryPatternStream ) ( patternStream )? )
             int alt39=3;
             switch ( input.LA(1) ) {
             case ID:
@@ -3697,10 +3696,10 @@ public TreeAdaptor getTreeAdaptor() {
                 alt39=1;
                 }
                 break;
-            case 85:
+            case 84:
                 {
                 switch ( input.LA(2) ) {
-                case 53:
+                case 52:
                     {
                     alt39=3;
                     }
@@ -3733,16 +3732,16 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt39) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:146:4: patternItem ( FOLLOWED_BY patternStream )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:145:4: patternItem ( FOLLOWED_BY patternStream )?
                     {
-                    pushFollow(FOLLOW_patternItem_in_patternStream1055);
+                    pushFollow(FOLLOW_patternItem_in_patternStream1050);
                     patternItem102=patternItem();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_patternItem.add(patternItem102.getTree());
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:146:16: ( FOLLOWED_BY patternStream )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:145:16: ( FOLLOWED_BY patternStream )?
                     int alt36=2;
                     switch ( input.LA(1) ) {
                         case FOLLOWED_BY:
@@ -3754,13 +3753,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt36) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:146:18: FOLLOWED_BY patternStream
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:145:18: FOLLOWED_BY patternStream
                             {
-                            FOLLOWED_BY103=(Token)match(input,FOLLOWED_BY,FOLLOW_FOLLOWED_BY_in_patternStream1059); if (state.failed) return retval; 
+                            FOLLOWED_BY103=(Token)match(input,FOLLOWED_BY,FOLLOW_FOLLOWED_BY_in_patternStream1054); if (state.failed) return retval; 
                             if ( state.backtracking==0 ) stream_FOLLOWED_BY.add(FOLLOWED_BY103);
 
 
-                            pushFollow(FOLLOW_patternStream_in_patternStream1061);
+                            pushFollow(FOLLOW_patternStream_in_patternStream1056);
                             patternStream104=patternStream();
 
                             state._fsp--;
@@ -3786,11 +3785,11 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 146:48: -> patternItem ( patternStream )?
+                    // 145:48: -> patternItem ( patternStream )?
                     {
                         adaptor.addChild(root_0, stream_patternItem.nextTree());
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:146:65: ( patternStream )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:145:65: ( patternStream )?
                         if ( stream_patternStream.hasNext() ) {
                             adaptor.addChild(root_0, stream_patternStream.nextTree());
 
@@ -3806,20 +3805,20 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:147:4: 'every' patternItem ( FOLLOWED_BY patternStream )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:146:4: 'every' patternItem ( FOLLOWED_BY patternStream )?
                     {
-                    string_literal105=(Token)match(input,85,FOLLOW_85_in_patternStream1079); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_85.add(string_literal105);
+                    string_literal105=(Token)match(input,84,FOLLOW_84_in_patternStream1074); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_84.add(string_literal105);
 
 
-                    pushFollow(FOLLOW_patternItem_in_patternStream1081);
+                    pushFollow(FOLLOW_patternItem_in_patternStream1076);
                     patternItem106=patternItem();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_patternItem.add(patternItem106.getTree());
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:147:24: ( FOLLOWED_BY patternStream )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:146:24: ( FOLLOWED_BY patternStream )?
                     int alt37=2;
                     switch ( input.LA(1) ) {
                         case FOLLOWED_BY:
@@ -3831,13 +3830,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt37) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:147:26: FOLLOWED_BY patternStream
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:146:26: FOLLOWED_BY patternStream
                             {
-                            FOLLOWED_BY107=(Token)match(input,FOLLOWED_BY,FOLLOW_FOLLOWED_BY_in_patternStream1085); if (state.failed) return retval; 
+                            FOLLOWED_BY107=(Token)match(input,FOLLOWED_BY,FOLLOW_FOLLOWED_BY_in_patternStream1080); if (state.failed) return retval; 
                             if ( state.backtracking==0 ) stream_FOLLOWED_BY.add(FOLLOWED_BY107);
 
 
-                            pushFollow(FOLLOW_patternStream_in_patternStream1087);
+                            pushFollow(FOLLOW_patternStream_in_patternStream1082);
                             patternStream108=patternStream();
 
                             state._fsp--;
@@ -3851,7 +3850,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: patternStream, patternItem, 85
+                    // elements: patternStream, 84, patternItem
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -3863,13 +3862,13 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 147:56: -> ^( 'every' patternItem ) ( patternStream )?
+                    // 146:56: -> ^( 'every' patternItem ) ( patternStream )?
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:147:60: ^( 'every' patternItem )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:146:60: ^( 'every' patternItem )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
-                        stream_85.nextNode()
+                        stream_84.nextNode()
                         , root_1);
 
                         adaptor.addChild(root_1, stream_patternItem.nextTree());
@@ -3877,7 +3876,7 @@ public TreeAdaptor getTreeAdaptor() {
                         adaptor.addChild(root_0, root_1);
                         }
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:147:86: ( patternStream )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:146:86: ( patternStream )?
                         if ( stream_patternStream.hasNext() ) {
                             adaptor.addChild(root_0, stream_patternStream.nextTree());
 
@@ -3893,28 +3892,28 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:148:4: 'every' '(' nonEveryPatternStream ')' ( FOLLOWED_BY patternStream )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:147:4: 'every' '(' nonEveryPatternStream ')' ( FOLLOWED_BY patternStream )?
                     {
-                    string_literal109=(Token)match(input,85,FOLLOW_85_in_patternStream1111); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_85.add(string_literal109);
+                    string_literal109=(Token)match(input,84,FOLLOW_84_in_patternStream1106); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_84.add(string_literal109);
 
 
-                    char_literal110=(Token)match(input,53,FOLLOW_53_in_patternStream1113); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_53.add(char_literal110);
+                    char_literal110=(Token)match(input,52,FOLLOW_52_in_patternStream1108); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_52.add(char_literal110);
 
 
-                    pushFollow(FOLLOW_nonEveryPatternStream_in_patternStream1114);
+                    pushFollow(FOLLOW_nonEveryPatternStream_in_patternStream1109);
                     nonEveryPatternStream111=nonEveryPatternStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_nonEveryPatternStream.add(nonEveryPatternStream111.getTree());
 
-                    char_literal112=(Token)match(input,54,FOLLOW_54_in_patternStream1115); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_54.add(char_literal112);
+                    char_literal112=(Token)match(input,53,FOLLOW_53_in_patternStream1110); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_53.add(char_literal112);
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:148:40: ( FOLLOWED_BY patternStream )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:147:40: ( FOLLOWED_BY patternStream )?
                     int alt38=2;
                     switch ( input.LA(1) ) {
                         case FOLLOWED_BY:
@@ -3926,13 +3925,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt38) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:148:42: FOLLOWED_BY patternStream
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:147:42: FOLLOWED_BY patternStream
                             {
-                            FOLLOWED_BY113=(Token)match(input,FOLLOWED_BY,FOLLOW_FOLLOWED_BY_in_patternStream1119); if (state.failed) return retval; 
+                            FOLLOWED_BY113=(Token)match(input,FOLLOWED_BY,FOLLOW_FOLLOWED_BY_in_patternStream1114); if (state.failed) return retval; 
                             if ( state.backtracking==0 ) stream_FOLLOWED_BY.add(FOLLOWED_BY113);
 
 
-                            pushFollow(FOLLOW_patternStream_in_patternStream1121);
+                            pushFollow(FOLLOW_patternStream_in_patternStream1116);
                             patternStream114=patternStream();
 
                             state._fsp--;
@@ -3946,7 +3945,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                     // AST REWRITE
-                    // elements: nonEveryPatternStream, 85, patternStream
+                    // elements: nonEveryPatternStream, 84, patternStream
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -3958,13 +3957,13 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 148:71: -> ^( 'every' nonEveryPatternStream ) ( patternStream )?
+                    // 147:71: -> ^( 'every' nonEveryPatternStream ) ( patternStream )?
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:148:74: ^( 'every' nonEveryPatternStream )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:147:74: ^( 'every' nonEveryPatternStream )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
-                        stream_85.nextNode()
+                        stream_84.nextNode()
                         , root_1);
 
                         adaptor.addChild(root_1, stream_nonEveryPatternStream.nextTree());
@@ -3972,7 +3971,7 @@ public TreeAdaptor getTreeAdaptor() {
                         adaptor.addChild(root_0, root_1);
                         }
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:148:111: ( patternStream )?
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:147:111: ( patternStream )?
                         if ( stream_patternStream.hasNext() ) {
                             adaptor.addChild(root_0, stream_patternStream.nextTree());
 
@@ -4020,7 +4019,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "nonEveryPatternStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:151:1: nonEveryPatternStream : patternItem ( FOLLOWED_BY nonEveryPatternStream )? -> patternItem ( nonEveryPatternStream )? ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:150:1: nonEveryPatternStream : patternItem ( FOLLOWED_BY nonEveryPatternStream )? -> patternItem ( nonEveryPatternStream )? ;
     public final SiddhiQLGrammarParser.nonEveryPatternStream_return nonEveryPatternStream() throws RecognitionException {
         SiddhiQLGrammarParser.nonEveryPatternStream_return retval = new SiddhiQLGrammarParser.nonEveryPatternStream_return();
         retval.start = input.LT(1);
@@ -4039,17 +4038,17 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_nonEveryPatternStream=new RewriteRuleSubtreeStream(adaptor,"rule nonEveryPatternStream");
         RewriteRuleSubtreeStream stream_patternItem=new RewriteRuleSubtreeStream(adaptor,"rule patternItem");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:152:2: ( patternItem ( FOLLOWED_BY nonEveryPatternStream )? -> patternItem ( nonEveryPatternStream )? )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:152:4: patternItem ( FOLLOWED_BY nonEveryPatternStream )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:151:2: ( patternItem ( FOLLOWED_BY nonEveryPatternStream )? -> patternItem ( nonEveryPatternStream )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:151:4: patternItem ( FOLLOWED_BY nonEveryPatternStream )?
             {
-            pushFollow(FOLLOW_patternItem_in_nonEveryPatternStream1150);
+            pushFollow(FOLLOW_patternItem_in_nonEveryPatternStream1145);
             patternItem115=patternItem();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_patternItem.add(patternItem115.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:152:17: ( FOLLOWED_BY nonEveryPatternStream )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:151:17: ( FOLLOWED_BY nonEveryPatternStream )?
             int alt40=2;
             switch ( input.LA(1) ) {
                 case FOLLOWED_BY:
@@ -4061,13 +4060,13 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt40) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:152:19: FOLLOWED_BY nonEveryPatternStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:151:19: FOLLOWED_BY nonEveryPatternStream
                     {
-                    FOLLOWED_BY116=(Token)match(input,FOLLOWED_BY,FOLLOW_FOLLOWED_BY_in_nonEveryPatternStream1155); if (state.failed) return retval; 
+                    FOLLOWED_BY116=(Token)match(input,FOLLOWED_BY,FOLLOW_FOLLOWED_BY_in_nonEveryPatternStream1150); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_FOLLOWED_BY.add(FOLLOWED_BY116);
 
 
-                    pushFollow(FOLLOW_nonEveryPatternStream_in_nonEveryPatternStream1157);
+                    pushFollow(FOLLOW_nonEveryPatternStream_in_nonEveryPatternStream1152);
                     nonEveryPatternStream117=nonEveryPatternStream();
 
                     state._fsp--;
@@ -4081,7 +4080,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: nonEveryPatternStream, patternItem
+            // elements: patternItem, nonEveryPatternStream
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -4093,11 +4092,11 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 152:57: -> patternItem ( nonEveryPatternStream )?
+            // 151:57: -> patternItem ( nonEveryPatternStream )?
             {
                 adaptor.addChild(root_0, stream_patternItem.nextTree());
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:152:73: ( nonEveryPatternStream )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:151:73: ( nonEveryPatternStream )?
                 if ( stream_nonEveryPatternStream.hasNext() ) {
                     adaptor.addChild(root_0, stream_nonEveryPatternStream.nextTree());
 
@@ -4143,7 +4142,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "sequenceFullStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:155:1: sequenceFullStream : sequenceStream ( 'within' time )? -> ^( SEQUENCE sequenceStream ( time )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:154:1: sequenceFullStream : sequenceStream ( 'within' time )? -> ^( SEQUENCE sequenceStream ( time )? ) ;
     public final SiddhiQLGrammarParser.sequenceFullStream_return sequenceFullStream() throws RecognitionException {
         SiddhiQLGrammarParser.sequenceFullStream_return retval = new SiddhiQLGrammarParser.sequenceFullStream_return();
         retval.start = input.LT(1);
@@ -4158,24 +4157,24 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         CommonTree string_literal119_tree=null;
-        RewriteRuleTokenStream stream_125=new RewriteRuleTokenStream(adaptor,"token 125");
+        RewriteRuleTokenStream stream_124=new RewriteRuleTokenStream(adaptor,"token 124");
         RewriteRuleSubtreeStream stream_time=new RewriteRuleSubtreeStream(adaptor,"rule time");
         RewriteRuleSubtreeStream stream_sequenceStream=new RewriteRuleSubtreeStream(adaptor,"rule sequenceStream");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:156:2: ( sequenceStream ( 'within' time )? -> ^( SEQUENCE sequenceStream ( time )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:156:3: sequenceStream ( 'within' time )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:155:2: ( sequenceStream ( 'within' time )? -> ^( SEQUENCE sequenceStream ( time )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:155:3: sequenceStream ( 'within' time )?
             {
-            pushFollow(FOLLOW_sequenceStream_in_sequenceFullStream1179);
+            pushFollow(FOLLOW_sequenceStream_in_sequenceFullStream1174);
             sequenceStream118=sequenceStream();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_sequenceStream.add(sequenceStream118.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:156:18: ( 'within' time )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:155:18: ( 'within' time )?
             int alt41=2;
             switch ( input.LA(1) ) {
-                case 125:
+                case 124:
                     {
                     alt41=1;
                     }
@@ -4184,13 +4183,13 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt41) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:156:19: 'within' time
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:155:19: 'within' time
                     {
-                    string_literal119=(Token)match(input,125,FOLLOW_125_in_sequenceFullStream1182); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_125.add(string_literal119);
+                    string_literal119=(Token)match(input,124,FOLLOW_124_in_sequenceFullStream1177); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_124.add(string_literal119);
 
 
-                    pushFollow(FOLLOW_time_in_sequenceFullStream1184);
+                    pushFollow(FOLLOW_time_in_sequenceFullStream1179);
                     time120=time();
 
                     state._fsp--;
@@ -4204,7 +4203,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: sequenceStream, time
+            // elements: time, sequenceStream
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -4216,9 +4215,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 156:35: -> ^( SEQUENCE sequenceStream ( time )? )
+            // 155:35: -> ^( SEQUENCE sequenceStream ( time )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:156:39: ^( SEQUENCE sequenceStream ( time )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:155:39: ^( SEQUENCE sequenceStream ( time )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -4227,7 +4226,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_sequenceStream.nextTree());
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:156:66: ( time )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:155:66: ( time )?
                 if ( stream_time.hasNext() ) {
                     adaptor.addChild(root_1, stream_time.nextTree());
 
@@ -4276,7 +4275,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "sequenceStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:159:1: sequenceStream : sequenceItem ',' sequenceItem ( ',' sequenceItem )* -> ( sequenceItem )+ ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:158:1: sequenceStream : sequenceItem ',' sequenceItem ( ',' sequenceItem )* -> ( sequenceItem )+ ;
     public final SiddhiQLGrammarParser.sequenceStream_return sequenceStream() throws RecognitionException {
         SiddhiQLGrammarParser.sequenceStream_return retval = new SiddhiQLGrammarParser.sequenceStream_return();
         retval.start = input.LT(1);
@@ -4295,36 +4294,36 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree char_literal122_tree=null;
         CommonTree char_literal124_tree=null;
-        RewriteRuleTokenStream stream_57=new RewriteRuleTokenStream(adaptor,"token 57");
+        RewriteRuleTokenStream stream_56=new RewriteRuleTokenStream(adaptor,"token 56");
         RewriteRuleSubtreeStream stream_sequenceItem=new RewriteRuleSubtreeStream(adaptor,"rule sequenceItem");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:160:2: ( sequenceItem ',' sequenceItem ( ',' sequenceItem )* -> ( sequenceItem )+ )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:160:4: sequenceItem ',' sequenceItem ( ',' sequenceItem )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:159:2: ( sequenceItem ',' sequenceItem ( ',' sequenceItem )* -> ( sequenceItem )+ )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:159:4: sequenceItem ',' sequenceItem ( ',' sequenceItem )*
             {
-            pushFollow(FOLLOW_sequenceItem_in_sequenceStream1211);
+            pushFollow(FOLLOW_sequenceItem_in_sequenceStream1206);
             sequenceItem121=sequenceItem();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_sequenceItem.add(sequenceItem121.getTree());
 
-            char_literal122=(Token)match(input,57,FOLLOW_57_in_sequenceStream1213); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_57.add(char_literal122);
+            char_literal122=(Token)match(input,56,FOLLOW_56_in_sequenceStream1208); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_56.add(char_literal122);
 
 
-            pushFollow(FOLLOW_sequenceItem_in_sequenceStream1215);
+            pushFollow(FOLLOW_sequenceItem_in_sequenceStream1210);
             sequenceItem123=sequenceItem();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_sequenceItem.add(sequenceItem123.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:160:35: ( ',' sequenceItem )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:159:35: ( ',' sequenceItem )*
             loop42:
             do {
                 int alt42=2;
                 switch ( input.LA(1) ) {
-                case 57:
+                case 56:
                     {
                     alt42=1;
                     }
@@ -4334,13 +4333,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt42) {
             	case 1 :
-            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:160:36: ',' sequenceItem
+            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:159:36: ',' sequenceItem
             	    {
-            	    char_literal124=(Token)match(input,57,FOLLOW_57_in_sequenceStream1219); if (state.failed) return retval; 
-            	    if ( state.backtracking==0 ) stream_57.add(char_literal124);
+            	    char_literal124=(Token)match(input,56,FOLLOW_56_in_sequenceStream1214); if (state.failed) return retval; 
+            	    if ( state.backtracking==0 ) stream_56.add(char_literal124);
 
 
-            	    pushFollow(FOLLOW_sequenceItem_in_sequenceStream1221);
+            	    pushFollow(FOLLOW_sequenceItem_in_sequenceStream1216);
             	    sequenceItem125=sequenceItem();
 
             	    state._fsp--;
@@ -4369,7 +4368,7 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 160:58: -> ( sequenceItem )+
+            // 159:58: -> ( sequenceItem )+
             {
                 if ( !(stream_sequenceItem.hasNext()) ) {
                     throw new RewriteEarlyExitException();
@@ -4419,7 +4418,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "patternItem"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:167:1: patternItem : ( itemStream 'and' ^ itemStream | itemStream 'or' ^ itemStream | itemStream '<' collect '>' -> ^( COLLECT itemStream collect ) | itemStream );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:166:1: patternItem : ( itemStream 'and' ^ itemStream | itemStream 'or' ^ itemStream | itemStream '<' collect '>' -> ^( COLLECT itemStream collect ) | itemStream );
     public final SiddhiQLGrammarParser.patternItem_return patternItem() throws RecognitionException {
         SiddhiQLGrammarParser.patternItem_return retval = new SiddhiQLGrammarParser.patternItem_return();
         retval.start = input.LT(1);
@@ -4450,12 +4449,12 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal130_tree=null;
         CommonTree char_literal133_tree=null;
         CommonTree char_literal135_tree=null;
-        RewriteRuleTokenStream stream_67=new RewriteRuleTokenStream(adaptor,"token 67");
-        RewriteRuleTokenStream stream_63=new RewriteRuleTokenStream(adaptor,"token 63");
+        RewriteRuleTokenStream stream_66=new RewriteRuleTokenStream(adaptor,"token 66");
+        RewriteRuleTokenStream stream_62=new RewriteRuleTokenStream(adaptor,"token 62");
         RewriteRuleSubtreeStream stream_itemStream=new RewriteRuleSubtreeStream(adaptor,"rule itemStream");
         RewriteRuleSubtreeStream stream_collect=new RewriteRuleSubtreeStream(adaptor,"rule collect");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:168:2: ( itemStream 'and' ^ itemStream | itemStream 'or' ^ itemStream | itemStream '<' collect '>' -> ^( COLLECT itemStream collect ) | itemStream )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:167:2: ( itemStream 'and' ^ itemStream | itemStream 'or' ^ itemStream | itemStream '<' collect '>' -> ^( COLLECT itemStream collect ) | itemStream )
             int alt43=4;
             switch ( input.LA(1) ) {
             case ID:
@@ -4496,19 +4495,19 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt43) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:168:4: itemStream 'and' ^ itemStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:167:4: itemStream 'and' ^ itemStream
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_itemStream_in_patternItem1255);
+                    pushFollow(FOLLOW_itemStream_in_patternItem1250);
                     itemStream126=itemStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, itemStream126.getTree());
 
-                    string_literal127=(Token)match(input,74,FOLLOW_74_in_patternItem1257); if (state.failed) return retval;
+                    string_literal127=(Token)match(input,73,FOLLOW_73_in_patternItem1252); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     string_literal127_tree = 
                     (CommonTree)adaptor.create(string_literal127)
@@ -4516,7 +4515,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.becomeRoot(string_literal127_tree, root_0);
                     }
 
-                    pushFollow(FOLLOW_itemStream_in_patternItem1260);
+                    pushFollow(FOLLOW_itemStream_in_patternItem1255);
                     itemStream128=itemStream();
 
                     state._fsp--;
@@ -4526,19 +4525,19 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:169:4: itemStream 'or' ^ itemStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:168:4: itemStream 'or' ^ itemStream
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_itemStream_in_patternItem1265);
+                    pushFollow(FOLLOW_itemStream_in_patternItem1260);
                     itemStream129=itemStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, itemStream129.getTree());
 
-                    string_literal130=(Token)match(input,111,FOLLOW_111_in_patternItem1267); if (state.failed) return retval;
+                    string_literal130=(Token)match(input,110,FOLLOW_110_in_patternItem1262); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     string_literal130_tree = 
                     (CommonTree)adaptor.create(string_literal130)
@@ -4546,7 +4545,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.becomeRoot(string_literal130_tree, root_0);
                     }
 
-                    pushFollow(FOLLOW_itemStream_in_patternItem1270);
+                    pushFollow(FOLLOW_itemStream_in_patternItem1265);
                     itemStream131=itemStream();
 
                     state._fsp--;
@@ -4556,28 +4555,28 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:170:4: itemStream '<' collect '>'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:169:4: itemStream '<' collect '>'
                     {
-                    pushFollow(FOLLOW_itemStream_in_patternItem1275);
+                    pushFollow(FOLLOW_itemStream_in_patternItem1270);
                     itemStream132=itemStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_itemStream.add(itemStream132.getTree());
 
-                    char_literal133=(Token)match(input,63,FOLLOW_63_in_patternItem1277); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_63.add(char_literal133);
+                    char_literal133=(Token)match(input,62,FOLLOW_62_in_patternItem1272); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_62.add(char_literal133);
 
 
-                    pushFollow(FOLLOW_collect_in_patternItem1278);
+                    pushFollow(FOLLOW_collect_in_patternItem1273);
                     collect134=collect();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_collect.add(collect134.getTree());
 
-                    char_literal135=(Token)match(input,67,FOLLOW_67_in_patternItem1280); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_67.add(char_literal135);
+                    char_literal135=(Token)match(input,66,FOLLOW_66_in_patternItem1275); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_66.add(char_literal135);
 
 
                     // AST REWRITE
@@ -4593,9 +4592,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 170:30: -> ^( COLLECT itemStream collect )
+                    // 169:30: -> ^( COLLECT itemStream collect )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:170:33: ^( COLLECT itemStream collect )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:169:33: ^( COLLECT itemStream collect )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -4618,12 +4617,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:171:4: itemStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:170:4: itemStream
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_itemStream_in_patternItem1295);
+                    pushFollow(FOLLOW_itemStream_in_patternItem1290);
                     itemStream136=itemStream();
 
                     state._fsp--;
@@ -4665,7 +4664,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "sequenceItem"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:174:1: sequenceItem : ( itemStream 'or' ^ itemStream | itemStream regex -> ^( REGEX itemStream regex ) | itemStream );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:173:1: sequenceItem : ( itemStream 'or' ^ itemStream | itemStream regex -> ^( REGEX itemStream regex ) | itemStream );
     public final SiddhiQLGrammarParser.sequenceItem_return sequenceItem() throws RecognitionException {
         SiddhiQLGrammarParser.sequenceItem_return retval = new SiddhiQLGrammarParser.sequenceItem_return();
         retval.start = input.LT(1);
@@ -4689,7 +4688,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_itemStream=new RewriteRuleSubtreeStream(adaptor,"rule itemStream");
         RewriteRuleSubtreeStream stream_regex=new RewriteRuleSubtreeStream(adaptor,"rule regex");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:175:2: ( itemStream 'or' ^ itemStream | itemStream regex -> ^( REGEX itemStream regex ) | itemStream )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:174:2: ( itemStream 'or' ^ itemStream | itemStream regex -> ^( REGEX itemStream regex ) | itemStream )
             int alt44=3;
             switch ( input.LA(1) ) {
             case ID:
@@ -4727,19 +4726,19 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt44) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:175:4: itemStream 'or' ^ itemStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:174:4: itemStream 'or' ^ itemStream
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_itemStream_in_sequenceItem1306);
+                    pushFollow(FOLLOW_itemStream_in_sequenceItem1301);
                     itemStream137=itemStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, itemStream137.getTree());
 
-                    string_literal138=(Token)match(input,111,FOLLOW_111_in_sequenceItem1308); if (state.failed) return retval;
+                    string_literal138=(Token)match(input,110,FOLLOW_110_in_sequenceItem1303); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     string_literal138_tree = 
                     (CommonTree)adaptor.create(string_literal138)
@@ -4747,7 +4746,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.becomeRoot(string_literal138_tree, root_0);
                     }
 
-                    pushFollow(FOLLOW_itemStream_in_sequenceItem1311);
+                    pushFollow(FOLLOW_itemStream_in_sequenceItem1306);
                     itemStream139=itemStream();
 
                     state._fsp--;
@@ -4757,16 +4756,16 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:176:4: itemStream regex
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:175:4: itemStream regex
                     {
-                    pushFollow(FOLLOW_itemStream_in_sequenceItem1316);
+                    pushFollow(FOLLOW_itemStream_in_sequenceItem1311);
                     itemStream140=itemStream();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_itemStream.add(itemStream140.getTree());
 
-                    pushFollow(FOLLOW_regex_in_sequenceItem1318);
+                    pushFollow(FOLLOW_regex_in_sequenceItem1313);
                     regex141=regex();
 
                     state._fsp--;
@@ -4774,7 +4773,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if ( state.backtracking==0 ) stream_regex.add(regex141.getTree());
 
                     // AST REWRITE
-                    // elements: itemStream, regex
+                    // elements: regex, itemStream
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -4786,9 +4785,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 176:21: -> ^( REGEX itemStream regex )
+                    // 175:21: -> ^( REGEX itemStream regex )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:176:24: ^( REGEX itemStream regex )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:175:24: ^( REGEX itemStream regex )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -4811,12 +4810,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:177:4: itemStream
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:176:4: itemStream
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_itemStream_in_sequenceItem1333);
+                    pushFollow(FOLLOW_itemStream_in_sequenceItem1328);
                     itemStream142=itemStream();
 
                     state._fsp--;
@@ -4858,7 +4857,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "itemStream"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:180:1: itemStream : attributeName '=' rawStream -> ^( STREAM rawStream ( attributeName )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:179:1: itemStream : attributeName '=' rawStream -> ^( STREAM rawStream ( attributeName )? ) ;
     public final SiddhiQLGrammarParser.itemStream_return itemStream() throws RecognitionException {
         SiddhiQLGrammarParser.itemStream_return retval = new SiddhiQLGrammarParser.itemStream_return();
         retval.start = input.LT(1);
@@ -4873,25 +4872,25 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         CommonTree char_literal144_tree=null;
-        RewriteRuleTokenStream stream_65=new RewriteRuleTokenStream(adaptor,"token 65");
+        RewriteRuleTokenStream stream_64=new RewriteRuleTokenStream(adaptor,"token 64");
         RewriteRuleSubtreeStream stream_attributeName=new RewriteRuleSubtreeStream(adaptor,"rule attributeName");
         RewriteRuleSubtreeStream stream_rawStream=new RewriteRuleSubtreeStream(adaptor,"rule rawStream");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:181:2: ( attributeName '=' rawStream -> ^( STREAM rawStream ( attributeName )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:181:4: attributeName '=' rawStream
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:180:2: ( attributeName '=' rawStream -> ^( STREAM rawStream ( attributeName )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:180:4: attributeName '=' rawStream
             {
-            pushFollow(FOLLOW_attributeName_in_itemStream1344);
+            pushFollow(FOLLOW_attributeName_in_itemStream1339);
             attributeName143=attributeName();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_attributeName.add(attributeName143.getTree());
 
-            char_literal144=(Token)match(input,65,FOLLOW_65_in_itemStream1345); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_65.add(char_literal144);
+            char_literal144=(Token)match(input,64,FOLLOW_64_in_itemStream1340); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_64.add(char_literal144);
 
 
-            pushFollow(FOLLOW_rawStream_in_itemStream1346);
+            pushFollow(FOLLOW_rawStream_in_itemStream1341);
             rawStream145=rawStream();
 
             state._fsp--;
@@ -4899,7 +4898,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_rawStream.add(rawStream145.getTree());
 
             // AST REWRITE
-            // elements: attributeName, rawStream
+            // elements: rawStream, attributeName
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -4911,9 +4910,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 181:31: -> ^( STREAM rawStream ( attributeName )? )
+            // 180:31: -> ^( STREAM rawStream ( attributeName )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:181:36: ^( STREAM rawStream ( attributeName )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:180:36: ^( STREAM rawStream ( attributeName )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -4922,7 +4921,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_rawStream.nextTree());
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:181:55: ( attributeName )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:180:55: ( attributeName )?
                 if ( stream_attributeName.hasNext() ) {
                     adaptor.addChild(root_1, stream_attributeName.nextTree());
 
@@ -4971,7 +4970,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "regex"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:184:1: regex : ( '*' | '+' | '?' ) ( '?' )? ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:183:1: regex : ( '*' | '+' | '?' ) ( '?' )? ;
     public final SiddhiQLGrammarParser.regex_return regex() throws RecognitionException {
         SiddhiQLGrammarParser.regex_return retval = new SiddhiQLGrammarParser.regex_return();
         retval.start = input.LT(1);
@@ -4986,15 +4985,15 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal147_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:185:2: ( ( '*' | '+' | '?' ) ( '?' )? )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:185:4: ( '*' | '+' | '?' ) ( '?' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:184:2: ( ( '*' | '+' | '?' ) ( '?' )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:184:4: ( '*' | '+' | '?' ) ( '?' )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
             set146=(Token)input.LT(1);
 
-            if ( (input.LA(1) >= 55 && input.LA(1) <= 56)||input.LA(1)==69 ) {
+            if ( (input.LA(1) >= 54 && input.LA(1) <= 55)||input.LA(1)==68 ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set146)
@@ -5009,10 +5008,10 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:185:18: ( '?' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:184:18: ( '?' )?
             int alt45=2;
             switch ( input.LA(1) ) {
-                case 69:
+                case 68:
                     {
                     alt45=1;
                     }
@@ -5021,9 +5020,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt45) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:185:18: '?'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:184:18: '?'
                     {
-                    char_literal147=(Token)match(input,69,FOLLOW_69_in_regex1379); if (state.failed) return retval;
+                    char_literal147=(Token)match(input,68,FOLLOW_68_in_regex1374); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal147_tree = 
                     (CommonTree)adaptor.create(char_literal147)
@@ -5070,7 +5069,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "outputProjection"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:1: outputProjection : ( externalCall )? outputAttributeList ( groupBy )? ( having )? -> ( externalCall )? ^( OUT_ATTRIBUTES outputAttributeList ) ( groupBy )? ( having )? ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:187:1: outputProjection : ( externalCall )? outputAttributeList ( groupBy )? ( having )? -> ( externalCall )? ^( OUT_ATTRIBUTES outputAttributeList ) ( groupBy )? ( having )? ;
     public final SiddhiQLGrammarParser.outputProjection_return outputProjection() throws RecognitionException {
         SiddhiQLGrammarParser.outputProjection_return retval = new SiddhiQLGrammarParser.outputProjection_return();
         retval.start = input.LT(1);
@@ -5092,13 +5091,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_outputAttributeList=new RewriteRuleSubtreeStream(adaptor,"rule outputAttributeList");
         RewriteRuleSubtreeStream stream_having=new RewriteRuleSubtreeStream(adaptor,"rule having");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:2: ( ( externalCall )? outputAttributeList ( groupBy )? ( having )? -> ( externalCall )? ^( OUT_ATTRIBUTES outputAttributeList ) ( groupBy )? ( having )? )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:4: ( externalCall )? outputAttributeList ( groupBy )? ( having )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:2: ( ( externalCall )? outputAttributeList ( groupBy )? ( having )? -> ( externalCall )? ^( OUT_ATTRIBUTES outputAttributeList ) ( groupBy )? ( having )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:4: ( externalCall )? outputAttributeList ( groupBy )? ( having )?
             {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:4: ( externalCall )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:4: ( externalCall )?
             int alt46=2;
             switch ( input.LA(1) ) {
-                case 78:
+                case 77:
                     {
                     alt46=1;
                     }
@@ -5107,9 +5106,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt46) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:4: externalCall
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:4: externalCall
                     {
-                    pushFollow(FOLLOW_externalCall_in_outputProjection1391);
+                    pushFollow(FOLLOW_externalCall_in_outputProjection1386);
                     externalCall148=externalCall();
 
                     state._fsp--;
@@ -5122,17 +5121,17 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            pushFollow(FOLLOW_outputAttributeList_in_outputProjection1394);
+            pushFollow(FOLLOW_outputAttributeList_in_outputProjection1389);
             outputAttributeList149=outputAttributeList();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_outputAttributeList.add(outputAttributeList149.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:38: ( groupBy )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:38: ( groupBy )?
             int alt47=2;
             switch ( input.LA(1) ) {
-                case 90:
+                case 89:
                     {
                     alt47=1;
                     }
@@ -5141,9 +5140,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt47) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:38: groupBy
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:38: groupBy
                     {
-                    pushFollow(FOLLOW_groupBy_in_outputProjection1396);
+                    pushFollow(FOLLOW_groupBy_in_outputProjection1391);
                     groupBy150=groupBy();
 
                     state._fsp--;
@@ -5156,10 +5155,10 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:47: ( having )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:47: ( having )?
             int alt48=2;
             switch ( input.LA(1) ) {
-                case 91:
+                case 90:
                     {
                     alt48=1;
                     }
@@ -5168,9 +5167,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt48) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:47: having
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:47: having
                     {
-                    pushFollow(FOLLOW_having_in_outputProjection1399);
+                    pushFollow(FOLLOW_having_in_outputProjection1394);
                     having151=having();
 
                     state._fsp--;
@@ -5184,7 +5183,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: having, groupBy, outputAttributeList, externalCall
+            // elements: outputAttributeList, groupBy, externalCall, having
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -5196,16 +5195,16 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 189:55: -> ( externalCall )? ^( OUT_ATTRIBUTES outputAttributeList ) ( groupBy )? ( having )?
+            // 188:55: -> ( externalCall )? ^( OUT_ATTRIBUTES outputAttributeList ) ( groupBy )? ( having )?
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:59: ( externalCall )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:59: ( externalCall )?
                 if ( stream_externalCall.hasNext() ) {
                     adaptor.addChild(root_0, stream_externalCall.nextTree());
 
                 }
                 stream_externalCall.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:73: ^( OUT_ATTRIBUTES outputAttributeList )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:73: ^( OUT_ATTRIBUTES outputAttributeList )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -5217,14 +5216,14 @@ public TreeAdaptor getTreeAdaptor() {
                 adaptor.addChild(root_0, root_1);
                 }
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:112: ( groupBy )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:112: ( groupBy )?
                 if ( stream_groupBy.hasNext() ) {
                     adaptor.addChild(root_0, stream_groupBy.nextTree());
 
                 }
                 stream_groupBy.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:189:121: ( having )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:188:121: ( having )?
                 if ( stream_having.hasNext() ) {
                     adaptor.addChild(root_0, stream_having.nextTree());
 
@@ -5270,7 +5269,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "outputAttributeList"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:192:1: outputAttributeList : ( '*' | outputItem ( ',' outputItem )* -> ( ^( OUT_ATTRIBUTE outputItem ) )+ | -> '*' );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:191:1: outputAttributeList : ( '*' | outputItem ( ',' outputItem )* -> ( ^( OUT_ATTRIBUTE outputItem ) )+ | -> '*' );
     public final SiddhiQLGrammarParser.outputAttributeList_return outputAttributeList() throws RecognitionException {
         SiddhiQLGrammarParser.outputAttributeList_return retval = new SiddhiQLGrammarParser.outputAttributeList_return();
         retval.start = input.LT(1);
@@ -5287,20 +5286,20 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree char_literal152_tree=null;
         CommonTree char_literal154_tree=null;
-        RewriteRuleTokenStream stream_57=new RewriteRuleTokenStream(adaptor,"token 57");
+        RewriteRuleTokenStream stream_56=new RewriteRuleTokenStream(adaptor,"token 56");
         RewriteRuleSubtreeStream stream_outputItem=new RewriteRuleSubtreeStream(adaptor,"rule outputItem");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:193:2: ( '*' | outputItem ( ',' outputItem )* -> ( ^( OUT_ATTRIBUTE outputItem ) )+ | -> '*' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:192:2: ( '*' | outputItem ( ',' outputItem )* -> ( ^( OUT_ATTRIBUTE outputItem ) )+ | -> '*' )
             int alt50=3;
             switch ( input.LA(1) ) {
-            case 55:
+            case 54:
                 {
                 switch ( input.LA(2) ) {
                 case EOF:
-                case 54:
-                case 62:
+                case 53:
+                case 61:
+                case 89:
                 case 90:
-                case 91:
                     {
                     alt50=1;
                     }
@@ -5313,19 +5312,19 @@ public TreeAdaptor getTreeAdaptor() {
                 case POSITIVE_INT_VAL:
                 case POSITIVE_LONG_VAL:
                 case STRING_VAL:
+                case 51:
                 case 52:
-                case 53:
+                case 54:
                 case 55:
-                case 56:
-                case 58:
-                case 60:
+                case 57:
+                case 59:
+                case 74:
                 case 75:
-                case 76:
-                case 84:
-                case 87:
-                case 97:
-                case 101:
-                case 119:
+                case 83:
+                case 86:
+                case 96:
+                case 100:
+                case 118:
                     {
                     alt50=2;
                     }
@@ -5349,27 +5348,27 @@ public TreeAdaptor getTreeAdaptor() {
             case POSITIVE_INT_VAL:
             case POSITIVE_LONG_VAL:
             case STRING_VAL:
+            case 51:
             case 52:
-            case 53:
-            case 56:
-            case 58:
-            case 60:
+            case 55:
+            case 57:
+            case 59:
+            case 74:
             case 75:
-            case 76:
-            case 84:
-            case 87:
-            case 97:
-            case 101:
-            case 119:
+            case 83:
+            case 86:
+            case 96:
+            case 100:
+            case 118:
                 {
                 alt50=2;
                 }
                 break;
             case EOF:
-            case 54:
-            case 62:
+            case 53:
+            case 61:
+            case 89:
             case 90:
-            case 91:
                 {
                 alt50=3;
                 }
@@ -5385,12 +5384,12 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt50) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:193:3: '*'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:192:3: '*'
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    char_literal152=(Token)match(input,55,FOLLOW_55_in_outputAttributeList1429); if (state.failed) return retval;
+                    char_literal152=(Token)match(input,54,FOLLOW_54_in_outputAttributeList1424); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal152_tree = 
                     (CommonTree)adaptor.create(char_literal152)
@@ -5401,21 +5400,21 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:194:4: outputItem ( ',' outputItem )*
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:193:4: outputItem ( ',' outputItem )*
                     {
-                    pushFollow(FOLLOW_outputItem_in_outputAttributeList1434);
+                    pushFollow(FOLLOW_outputItem_in_outputAttributeList1429);
                     outputItem153=outputItem();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_outputItem.add(outputItem153.getTree());
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:194:15: ( ',' outputItem )*
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:193:15: ( ',' outputItem )*
                     loop49:
                     do {
                         int alt49=2;
                         switch ( input.LA(1) ) {
-                        case 57:
+                        case 56:
                             {
                             alt49=1;
                             }
@@ -5425,13 +5424,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt49) {
                     	case 1 :
-                    	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:194:16: ',' outputItem
+                    	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:193:16: ',' outputItem
                     	    {
-                    	    char_literal154=(Token)match(input,57,FOLLOW_57_in_outputAttributeList1437); if (state.failed) return retval; 
-                    	    if ( state.backtracking==0 ) stream_57.add(char_literal154);
+                    	    char_literal154=(Token)match(input,56,FOLLOW_56_in_outputAttributeList1432); if (state.failed) return retval; 
+                    	    if ( state.backtracking==0 ) stream_56.add(char_literal154);
 
 
-                    	    pushFollow(FOLLOW_outputItem_in_outputAttributeList1439);
+                    	    pushFollow(FOLLOW_outputItem_in_outputAttributeList1434);
                     	    outputItem155=outputItem();
 
                     	    state._fsp--;
@@ -5460,13 +5459,13 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 194:33: -> ( ^( OUT_ATTRIBUTE outputItem ) )+
+                    // 193:33: -> ( ^( OUT_ATTRIBUTE outputItem ) )+
                     {
                         if ( !(stream_outputItem.hasNext()) ) {
                             throw new RewriteEarlyExitException();
                         }
                         while ( stream_outputItem.hasNext() ) {
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:194:37: ^( OUT_ATTRIBUTE outputItem )
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:193:37: ^( OUT_ATTRIBUTE outputItem )
                             {
                             CommonTree root_1 = (CommonTree)adaptor.nil();
                             root_1 = (CommonTree)adaptor.becomeRoot(
@@ -5490,10 +5489,10 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:195:3: 
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:194:3: 
                     {
                     // AST REWRITE
-                    // elements: 55
+                    // elements: 54
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -5505,10 +5504,10 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 195:3: -> '*'
+                    // 194:3: -> '*'
                     {
                         adaptor.addChild(root_0, 
-                        (CommonTree)adaptor.create(55, "55")
+                        (CommonTree)adaptor.create(54, "54")
                         );
 
                     }
@@ -5552,7 +5551,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "outputItem"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:198:1: outputItem : ( extensionOutFunction 'as' id -> id extensionOutFunction | outFunction 'as' id -> outFunction id | expression 'as' id -> expression id | attributeVariable );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:197:1: outputItem : ( extensionOutFunction 'as' id -> id extensionOutFunction | outFunction 'as' id -> outFunction id | expression 'as' id -> expression id | attributeVariable );
     public final SiddhiQLGrammarParser.outputItem_return outputItem() throws RecognitionException {
         SiddhiQLGrammarParser.outputItem_return retval = new SiddhiQLGrammarParser.outputItem_return();
         retval.start = input.LT(1);
@@ -5581,13 +5580,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal157_tree=null;
         CommonTree string_literal160_tree=null;
         CommonTree string_literal163_tree=null;
-        RewriteRuleTokenStream stream_75=new RewriteRuleTokenStream(adaptor,"token 75");
+        RewriteRuleTokenStream stream_74=new RewriteRuleTokenStream(adaptor,"token 74");
         RewriteRuleSubtreeStream stream_expression=new RewriteRuleSubtreeStream(adaptor,"rule expression");
         RewriteRuleSubtreeStream stream_id=new RewriteRuleSubtreeStream(adaptor,"rule id");
         RewriteRuleSubtreeStream stream_extensionOutFunction=new RewriteRuleSubtreeStream(adaptor,"rule extensionOutFunction");
         RewriteRuleSubtreeStream stream_outFunction=new RewriteRuleSubtreeStream(adaptor,"rule outFunction");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:199:2: ( extensionOutFunction 'as' id -> id extensionOutFunction | outFunction 'as' id -> outFunction id | expression 'as' id -> expression id | attributeVariable )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:198:2: ( extensionOutFunction 'as' id -> id extensionOutFunction | outFunction 'as' id -> outFunction id | expression 'as' id -> expression id | attributeVariable )
             int alt51=4;
             switch ( input.LA(1) ) {
             case ID:
@@ -5645,19 +5644,19 @@ public TreeAdaptor getTreeAdaptor() {
             case POSITIVE_INT_VAL:
             case POSITIVE_LONG_VAL:
             case STRING_VAL:
+            case 51:
             case 52:
-            case 53:
+            case 54:
             case 55:
-            case 56:
-            case 58:
-            case 60:
+            case 57:
+            case 59:
+            case 74:
             case 75:
-            case 76:
-            case 84:
-            case 87:
-            case 97:
-            case 101:
-            case 119:
+            case 83:
+            case 86:
+            case 96:
+            case 100:
+            case 118:
                 {
                 alt51=3;
                 }
@@ -5673,20 +5672,20 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt51) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:199:4: extensionOutFunction 'as' id
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:198:4: extensionOutFunction 'as' id
                     {
-                    pushFollow(FOLLOW_extensionOutFunction_in_outputItem1469);
+                    pushFollow(FOLLOW_extensionOutFunction_in_outputItem1464);
                     extensionOutFunction156=extensionOutFunction();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_extensionOutFunction.add(extensionOutFunction156.getTree());
 
-                    string_literal157=(Token)match(input,75,FOLLOW_75_in_outputItem1471); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_75.add(string_literal157);
+                    string_literal157=(Token)match(input,74,FOLLOW_74_in_outputItem1466); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_74.add(string_literal157);
 
 
-                    pushFollow(FOLLOW_id_in_outputItem1473);
+                    pushFollow(FOLLOW_id_in_outputItem1468);
                     id158=id();
 
                     state._fsp--;
@@ -5694,7 +5693,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if ( state.backtracking==0 ) stream_id.add(id158.getTree());
 
                     // AST REWRITE
-                    // elements: extensionOutFunction, id
+                    // elements: id, extensionOutFunction
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -5706,7 +5705,7 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 199:33: -> id extensionOutFunction
+                    // 198:33: -> id extensionOutFunction
                     {
                         adaptor.addChild(root_0, stream_id.nextTree());
 
@@ -5721,20 +5720,20 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:200:4: outFunction 'as' id
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:199:4: outFunction 'as' id
                     {
-                    pushFollow(FOLLOW_outFunction_in_outputItem1486);
+                    pushFollow(FOLLOW_outFunction_in_outputItem1481);
                     outFunction159=outFunction();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_outFunction.add(outFunction159.getTree());
 
-                    string_literal160=(Token)match(input,75,FOLLOW_75_in_outputItem1488); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_75.add(string_literal160);
+                    string_literal160=(Token)match(input,74,FOLLOW_74_in_outputItem1483); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_74.add(string_literal160);
 
 
-                    pushFollow(FOLLOW_id_in_outputItem1490);
+                    pushFollow(FOLLOW_id_in_outputItem1485);
                     id161=id();
 
                     state._fsp--;
@@ -5754,7 +5753,7 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 200:24: -> outFunction id
+                    // 199:24: -> outFunction id
                     {
                         adaptor.addChild(root_0, stream_outFunction.nextTree());
 
@@ -5769,20 +5768,20 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:201:4: expression 'as' id
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:200:4: expression 'as' id
                     {
-                    pushFollow(FOLLOW_expression_in_outputItem1502);
+                    pushFollow(FOLLOW_expression_in_outputItem1497);
                     expression162=expression();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_expression.add(expression162.getTree());
 
-                    string_literal163=(Token)match(input,75,FOLLOW_75_in_outputItem1505); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_75.add(string_literal163);
+                    string_literal163=(Token)match(input,74,FOLLOW_74_in_outputItem1500); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_74.add(string_literal163);
 
 
-                    pushFollow(FOLLOW_id_in_outputItem1507);
+                    pushFollow(FOLLOW_id_in_outputItem1502);
                     id164=id();
 
                     state._fsp--;
@@ -5790,7 +5789,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if ( state.backtracking==0 ) stream_id.add(id164.getTree());
 
                     // AST REWRITE
-                    // elements: id, expression
+                    // elements: expression, id
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -5802,7 +5801,7 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 201:25: -> expression id
+                    // 200:25: -> expression id
                     {
                         adaptor.addChild(root_0, stream_expression.nextTree());
 
@@ -5817,12 +5816,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:202:4: attributeVariable
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:201:4: attributeVariable
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_attributeVariable_in_outputItem1521);
+                    pushFollow(FOLLOW_attributeVariable_in_outputItem1516);
                     attributeVariable165=attributeVariable();
 
                     state._fsp--;
@@ -5864,7 +5863,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "extensionOutFunction"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:205:1: extensionOutFunction : extensionId ':' functionId '(' ( parameters )? ')' -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:204:1: extensionOutFunction : extensionId ':' functionId '(' ( parameters )? ')' -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? ) ;
     public final SiddhiQLGrammarParser.extensionOutFunction_return extensionOutFunction() throws RecognitionException {
         SiddhiQLGrammarParser.extensionOutFunction_return retval = new SiddhiQLGrammarParser.extensionOutFunction_return();
         retval.start = input.LT(1);
@@ -5885,39 +5884,39 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal167_tree=null;
         CommonTree char_literal169_tree=null;
         CommonTree char_literal171_tree=null;
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
-        RewriteRuleTokenStream stream_61=new RewriteRuleTokenStream(adaptor,"token 61");
+        RewriteRuleTokenStream stream_60=new RewriteRuleTokenStream(adaptor,"token 60");
         RewriteRuleSubtreeStream stream_extensionId=new RewriteRuleSubtreeStream(adaptor,"rule extensionId");
         RewriteRuleSubtreeStream stream_parameters=new RewriteRuleSubtreeStream(adaptor,"rule parameters");
         RewriteRuleSubtreeStream stream_functionId=new RewriteRuleSubtreeStream(adaptor,"rule functionId");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:206:2: ( extensionId ':' functionId '(' ( parameters )? ')' -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:206:4: extensionId ':' functionId '(' ( parameters )? ')'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:205:2: ( extensionId ':' functionId '(' ( parameters )? ')' -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:205:4: extensionId ':' functionId '(' ( parameters )? ')'
             {
-            pushFollow(FOLLOW_extensionId_in_extensionOutFunction1532);
+            pushFollow(FOLLOW_extensionId_in_extensionOutFunction1527);
             extensionId166=extensionId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_extensionId.add(extensionId166.getTree());
 
-            char_literal167=(Token)match(input,61,FOLLOW_61_in_extensionOutFunction1534); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_61.add(char_literal167);
+            char_literal167=(Token)match(input,60,FOLLOW_60_in_extensionOutFunction1529); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_60.add(char_literal167);
 
 
-            pushFollow(FOLLOW_functionId_in_extensionOutFunction1536);
+            pushFollow(FOLLOW_functionId_in_extensionOutFunction1531);
             functionId168=functionId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_functionId.add(functionId168.getTree());
 
-            char_literal169=(Token)match(input,53,FOLLOW_53_in_extensionOutFunction1539); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_53.add(char_literal169);
+            char_literal169=(Token)match(input,52,FOLLOW_52_in_extensionOutFunction1534); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_52.add(char_literal169);
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:206:36: ( parameters )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:205:36: ( parameters )?
             int alt52=2;
             switch ( input.LA(1) ) {
                 case BOOL_VAL:
@@ -5928,24 +5927,24 @@ public TreeAdaptor getTreeAdaptor() {
                 case POSITIVE_INT_VAL:
                 case POSITIVE_LONG_VAL:
                 case STRING_VAL:
+                case 51:
                 case 52:
-                case 53:
+                case 54:
                 case 55:
                 case 56:
                 case 57:
-                case 58:
-                case 60:
-                case 76:
-                case 84:
-                case 87:
-                case 97:
-                case 101:
-                case 119:
+                case 59:
+                case 75:
+                case 83:
+                case 86:
+                case 96:
+                case 100:
+                case 118:
                     {
                     alt52=1;
                     }
                     break;
-                case 54:
+                case 53:
                     {
                     int LA52_2 = input.LA(2);
 
@@ -5958,9 +5957,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt52) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:206:36: parameters
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:205:36: parameters
                     {
-                    pushFollow(FOLLOW_parameters_in_extensionOutFunction1541);
+                    pushFollow(FOLLOW_parameters_in_extensionOutFunction1536);
                     parameters170=parameters();
 
                     state._fsp--;
@@ -5973,12 +5972,12 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            char_literal171=(Token)match(input,54,FOLLOW_54_in_extensionOutFunction1544); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_54.add(char_literal171);
+            char_literal171=(Token)match(input,53,FOLLOW_53_in_extensionOutFunction1539); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_53.add(char_literal171);
 
 
             // AST REWRITE
-            // elements: functionId, extensionId, parameters
+            // elements: functionId, parameters, extensionId
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -5990,9 +5989,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 206:52: -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? )
+            // 205:52: -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:206:55: ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:205:55: ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -6003,7 +6002,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_functionId.nextTree());
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:206:100: ( parameters )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:205:100: ( parameters )?
                 if ( stream_parameters.hasNext() ) {
                     adaptor.addChild(root_1, stream_parameters.nextTree());
 
@@ -6052,7 +6051,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "outFunction"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:209:1: outFunction : ID '(' ( parameters )? ')' -> ^( FUNCTION ID ( parameters )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:208:1: outFunction : ID '(' ( parameters )? ')' -> ^( FUNCTION ID ( parameters )? ) ;
     public final SiddhiQLGrammarParser.outFunction_return outFunction() throws RecognitionException {
         SiddhiQLGrammarParser.outFunction_return retval = new SiddhiQLGrammarParser.outFunction_return();
         retval.start = input.LT(1);
@@ -6070,22 +6069,22 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal173_tree=null;
         CommonTree char_literal175_tree=null;
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
         RewriteRuleSubtreeStream stream_parameters=new RewriteRuleSubtreeStream(adaptor,"rule parameters");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:210:2: ( ID '(' ( parameters )? ')' -> ^( FUNCTION ID ( parameters )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:210:4: ID '(' ( parameters )? ')'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:209:2: ( ID '(' ( parameters )? ')' -> ^( FUNCTION ID ( parameters )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:209:4: ID '(' ( parameters )? ')'
             {
-            ID172=(Token)match(input,ID,FOLLOW_ID_in_outFunction1569); if (state.failed) return retval; 
+            ID172=(Token)match(input,ID,FOLLOW_ID_in_outFunction1564); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_ID.add(ID172);
 
 
-            char_literal173=(Token)match(input,53,FOLLOW_53_in_outFunction1571); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_53.add(char_literal173);
+            char_literal173=(Token)match(input,52,FOLLOW_52_in_outFunction1566); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_52.add(char_literal173);
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:210:11: ( parameters )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:209:11: ( parameters )?
             int alt53=2;
             switch ( input.LA(1) ) {
                 case BOOL_VAL:
@@ -6096,24 +6095,24 @@ public TreeAdaptor getTreeAdaptor() {
                 case POSITIVE_INT_VAL:
                 case POSITIVE_LONG_VAL:
                 case STRING_VAL:
+                case 51:
                 case 52:
-                case 53:
+                case 54:
                 case 55:
                 case 56:
                 case 57:
-                case 58:
-                case 60:
-                case 76:
-                case 84:
-                case 87:
-                case 97:
-                case 101:
-                case 119:
+                case 59:
+                case 75:
+                case 83:
+                case 86:
+                case 96:
+                case 100:
+                case 118:
                     {
                     alt53=1;
                     }
                     break;
-                case 54:
+                case 53:
                     {
                     int LA53_2 = input.LA(2);
 
@@ -6126,9 +6125,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt53) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:210:11: parameters
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:209:11: parameters
                     {
-                    pushFollow(FOLLOW_parameters_in_outFunction1573);
+                    pushFollow(FOLLOW_parameters_in_outFunction1568);
                     parameters174=parameters();
 
                     state._fsp--;
@@ -6141,8 +6140,8 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            char_literal175=(Token)match(input,54,FOLLOW_54_in_outFunction1576); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_54.add(char_literal175);
+            char_literal175=(Token)match(input,53,FOLLOW_53_in_outFunction1571); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_53.add(char_literal175);
 
 
             // AST REWRITE
@@ -6158,9 +6157,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 210:27: -> ^( FUNCTION ID ( parameters )? )
+            // 209:27: -> ^( FUNCTION ID ( parameters )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:210:30: ^( FUNCTION ID ( parameters )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:209:30: ^( FUNCTION ID ( parameters )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -6171,7 +6170,7 @@ public TreeAdaptor getTreeAdaptor() {
                 stream_ID.nextNode()
                 );
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:210:45: ( parameters )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:209:45: ( parameters )?
                 if ( stream_parameters.hasNext() ) {
                     adaptor.addChild(root_1, stream_parameters.nextTree());
 
@@ -6220,7 +6219,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "groupBy"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:213:1: groupBy : 'group' 'by' attributeVariable ( ',' attributeVariable )* -> ^( 'group' ( attributeVariable )+ ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:212:1: groupBy : 'group' 'by' attributeVariable ( ',' attributeVariable )* -> ^( 'group' ( attributeVariable )+ ) ;
     public final SiddhiQLGrammarParser.groupBy_return groupBy() throws RecognitionException {
         SiddhiQLGrammarParser.groupBy_return retval = new SiddhiQLGrammarParser.groupBy_return();
         retval.start = input.LT(1);
@@ -6239,35 +6238,35 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal176_tree=null;
         CommonTree string_literal177_tree=null;
         CommonTree char_literal179_tree=null;
-        RewriteRuleTokenStream stream_77=new RewriteRuleTokenStream(adaptor,"token 77");
-        RewriteRuleTokenStream stream_57=new RewriteRuleTokenStream(adaptor,"token 57");
-        RewriteRuleTokenStream stream_90=new RewriteRuleTokenStream(adaptor,"token 90");
+        RewriteRuleTokenStream stream_56=new RewriteRuleTokenStream(adaptor,"token 56");
+        RewriteRuleTokenStream stream_76=new RewriteRuleTokenStream(adaptor,"token 76");
+        RewriteRuleTokenStream stream_89=new RewriteRuleTokenStream(adaptor,"token 89");
         RewriteRuleSubtreeStream stream_attributeVariable=new RewriteRuleSubtreeStream(adaptor,"rule attributeVariable");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:214:2: ( 'group' 'by' attributeVariable ( ',' attributeVariable )* -> ^( 'group' ( attributeVariable )+ ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:214:4: 'group' 'by' attributeVariable ( ',' attributeVariable )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:213:2: ( 'group' 'by' attributeVariable ( ',' attributeVariable )* -> ^( 'group' ( attributeVariable )+ ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:213:4: 'group' 'by' attributeVariable ( ',' attributeVariable )*
             {
-            string_literal176=(Token)match(input,90,FOLLOW_90_in_groupBy1599); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_90.add(string_literal176);
+            string_literal176=(Token)match(input,89,FOLLOW_89_in_groupBy1594); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_89.add(string_literal176);
 
 
-            string_literal177=(Token)match(input,77,FOLLOW_77_in_groupBy1601); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_77.add(string_literal177);
+            string_literal177=(Token)match(input,76,FOLLOW_76_in_groupBy1596); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_76.add(string_literal177);
 
 
-            pushFollow(FOLLOW_attributeVariable_in_groupBy1603);
+            pushFollow(FOLLOW_attributeVariable_in_groupBy1598);
             attributeVariable178=attributeVariable();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_attributeVariable.add(attributeVariable178.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:214:35: ( ',' attributeVariable )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:213:35: ( ',' attributeVariable )*
             loop54:
             do {
                 int alt54=2;
                 switch ( input.LA(1) ) {
-                case 57:
+                case 56:
                     {
                     alt54=1;
                     }
@@ -6277,13 +6276,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt54) {
             	case 1 :
-            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:214:36: ',' attributeVariable
+            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:213:36: ',' attributeVariable
             	    {
-            	    char_literal179=(Token)match(input,57,FOLLOW_57_in_groupBy1606); if (state.failed) return retval; 
-            	    if ( state.backtracking==0 ) stream_57.add(char_literal179);
+            	    char_literal179=(Token)match(input,56,FOLLOW_56_in_groupBy1601); if (state.failed) return retval; 
+            	    if ( state.backtracking==0 ) stream_56.add(char_literal179);
 
 
-            	    pushFollow(FOLLOW_attributeVariable_in_groupBy1608);
+            	    pushFollow(FOLLOW_attributeVariable_in_groupBy1603);
             	    attributeVariable180=attributeVariable();
 
             	    state._fsp--;
@@ -6300,7 +6299,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: attributeVariable, 90
+            // elements: attributeVariable, 89
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -6312,13 +6311,13 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 214:61: -> ^( 'group' ( attributeVariable )+ )
+            // 213:61: -> ^( 'group' ( attributeVariable )+ )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:214:66: ^( 'group' ( attributeVariable )+ )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:213:66: ^( 'group' ( attributeVariable )+ )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
-                stream_90.nextNode()
+                stream_89.nextNode()
                 , root_1);
 
                 if ( !(stream_attributeVariable.hasNext()) ) {
@@ -6372,7 +6371,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "having"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:217:1: having : 'having' condition -> ^( 'having' condition ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:216:1: having : 'having' condition -> ^( 'having' condition ) ;
     public final SiddhiQLGrammarParser.having_return having() throws RecognitionException {
         SiddhiQLGrammarParser.having_return retval = new SiddhiQLGrammarParser.having_return();
         retval.start = input.LT(1);
@@ -6385,17 +6384,17 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         CommonTree string_literal181_tree=null;
-        RewriteRuleTokenStream stream_91=new RewriteRuleTokenStream(adaptor,"token 91");
+        RewriteRuleTokenStream stream_90=new RewriteRuleTokenStream(adaptor,"token 90");
         RewriteRuleSubtreeStream stream_condition=new RewriteRuleSubtreeStream(adaptor,"rule condition");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:218:2: ( 'having' condition -> ^( 'having' condition ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:218:4: 'having' condition
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:217:2: ( 'having' condition -> ^( 'having' condition ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:217:4: 'having' condition
             {
-            string_literal181=(Token)match(input,91,FOLLOW_91_in_having1633); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_91.add(string_literal181);
+            string_literal181=(Token)match(input,90,FOLLOW_90_in_having1628); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_90.add(string_literal181);
 
 
-            pushFollow(FOLLOW_condition_in_having1635);
+            pushFollow(FOLLOW_condition_in_having1630);
             condition182=condition();
 
             state._fsp--;
@@ -6403,7 +6402,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_condition.add(condition182.getTree());
 
             // AST REWRITE
-            // elements: condition, 91
+            // elements: condition, 90
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -6415,13 +6414,13 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 218:24: -> ^( 'having' condition )
+            // 217:24: -> ^( 'having' condition )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:218:27: ^( 'having' condition )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:217:27: ^( 'having' condition )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
-                stream_91.nextNode()
+                stream_90.nextNode()
                 , root_1);
 
                 adaptor.addChild(root_1, stream_condition.nextTree());
@@ -6468,7 +6467,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "externalCall"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:221:1: externalCall : 'call' ID '(' ( parameters )? ')' -> ^( 'call' ^( ID ( parameters )? ) ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:220:1: externalCall : 'call' ID '(' ( parameters )? ')' -> ^( 'call' ^( ID ( parameters )? ) ) ;
     public final SiddhiQLGrammarParser.externalCall_return externalCall() throws RecognitionException {
         SiddhiQLGrammarParser.externalCall_return retval = new SiddhiQLGrammarParser.externalCall_return();
         retval.start = input.LT(1);
@@ -6487,28 +6486,28 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree ID184_tree=null;
         CommonTree char_literal185_tree=null;
         CommonTree char_literal187_tree=null;
-        RewriteRuleTokenStream stream_78=new RewriteRuleTokenStream(adaptor,"token 78");
+        RewriteRuleTokenStream stream_77=new RewriteRuleTokenStream(adaptor,"token 77");
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
         RewriteRuleSubtreeStream stream_parameters=new RewriteRuleSubtreeStream(adaptor,"rule parameters");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:222:2: ( 'call' ID '(' ( parameters )? ')' -> ^( 'call' ^( ID ( parameters )? ) ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:222:4: 'call' ID '(' ( parameters )? ')'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:221:2: ( 'call' ID '(' ( parameters )? ')' -> ^( 'call' ^( ID ( parameters )? ) ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:221:4: 'call' ID '(' ( parameters )? ')'
             {
-            string_literal183=(Token)match(input,78,FOLLOW_78_in_externalCall1655); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_78.add(string_literal183);
+            string_literal183=(Token)match(input,77,FOLLOW_77_in_externalCall1650); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_77.add(string_literal183);
 
 
-            ID184=(Token)match(input,ID,FOLLOW_ID_in_externalCall1657); if (state.failed) return retval; 
+            ID184=(Token)match(input,ID,FOLLOW_ID_in_externalCall1652); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_ID.add(ID184);
 
 
-            char_literal185=(Token)match(input,53,FOLLOW_53_in_externalCall1659); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_53.add(char_literal185);
+            char_literal185=(Token)match(input,52,FOLLOW_52_in_externalCall1654); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_52.add(char_literal185);
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:222:18: ( parameters )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:221:18: ( parameters )?
             int alt55=2;
             switch ( input.LA(1) ) {
                 case BOOL_VAL:
@@ -6519,24 +6518,24 @@ public TreeAdaptor getTreeAdaptor() {
                 case POSITIVE_INT_VAL:
                 case POSITIVE_LONG_VAL:
                 case STRING_VAL:
+                case 51:
                 case 52:
-                case 53:
+                case 54:
                 case 55:
                 case 56:
                 case 57:
-                case 58:
-                case 60:
-                case 76:
-                case 84:
-                case 87:
-                case 97:
-                case 101:
-                case 119:
+                case 59:
+                case 75:
+                case 83:
+                case 86:
+                case 96:
+                case 100:
+                case 118:
                     {
                     alt55=1;
                     }
                     break;
-                case 54:
+                case 53:
                     {
                     int LA55_2 = input.LA(2);
 
@@ -6549,9 +6548,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt55) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:222:18: parameters
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:221:18: parameters
                     {
-                    pushFollow(FOLLOW_parameters_in_externalCall1661);
+                    pushFollow(FOLLOW_parameters_in_externalCall1656);
                     parameters186=parameters();
 
                     state._fsp--;
@@ -6564,12 +6563,12 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            char_literal187=(Token)match(input,54,FOLLOW_54_in_externalCall1664); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_54.add(char_literal187);
+            char_literal187=(Token)match(input,53,FOLLOW_53_in_externalCall1659); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_53.add(char_literal187);
 
 
             // AST REWRITE
-            // elements: 78, parameters, ID
+            // elements: 77, parameters, ID
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -6581,23 +6580,23 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 222:35: -> ^( 'call' ^( ID ( parameters )? ) )
+            // 221:35: -> ^( 'call' ^( ID ( parameters )? ) )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:222:39: ^( 'call' ^( ID ( parameters )? ) )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:221:39: ^( 'call' ^( ID ( parameters )? ) )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
-                stream_78.nextNode()
+                stream_77.nextNode()
                 , root_1);
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:222:49: ^( ID ( parameters )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:221:49: ^( ID ( parameters )? )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot(
                 stream_ID.nextNode()
                 , root_2);
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:222:54: ( parameters )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:221:54: ( parameters )?
                 if ( stream_parameters.hasNext() ) {
                     adaptor.addChild(root_2, stream_parameters.nextTree());
 
@@ -6649,7 +6648,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "filterHandler"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:225:1: filterHandler : '[' condition ']' -> ^( FILTER condition ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:224:1: filterHandler : '[' condition ']' -> ^( FILTER condition ) ;
     public final SiddhiQLGrammarParser.filterHandler_return filterHandler() throws RecognitionException {
         SiddhiQLGrammarParser.filterHandler_return retval = new SiddhiQLGrammarParser.filterHandler_return();
         retval.start = input.LT(1);
@@ -6664,26 +6663,26 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree char_literal188_tree=null;
         CommonTree char_literal190_tree=null;
+        RewriteRuleTokenStream stream_70=new RewriteRuleTokenStream(adaptor,"token 70");
         RewriteRuleTokenStream stream_71=new RewriteRuleTokenStream(adaptor,"token 71");
-        RewriteRuleTokenStream stream_72=new RewriteRuleTokenStream(adaptor,"token 72");
         RewriteRuleSubtreeStream stream_condition=new RewriteRuleSubtreeStream(adaptor,"rule condition");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:226:2: ( '[' condition ']' -> ^( FILTER condition ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:226:4: '[' condition ']'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:225:2: ( '[' condition ']' -> ^( FILTER condition ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:225:4: '[' condition ']'
             {
-            char_literal188=(Token)match(input,71,FOLLOW_71_in_filterHandler1691); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_71.add(char_literal188);
+            char_literal188=(Token)match(input,70,FOLLOW_70_in_filterHandler1686); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_70.add(char_literal188);
 
 
-            pushFollow(FOLLOW_condition_in_filterHandler1693);
+            pushFollow(FOLLOW_condition_in_filterHandler1688);
             condition189=condition();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_condition.add(condition189.getTree());
 
-            char_literal190=(Token)match(input,72,FOLLOW_72_in_filterHandler1695); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_72.add(char_literal190);
+            char_literal190=(Token)match(input,71,FOLLOW_71_in_filterHandler1690); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_71.add(char_literal190);
 
 
             // AST REWRITE
@@ -6699,9 +6698,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 226:23: -> ^( FILTER condition )
+            // 225:23: -> ^( FILTER condition )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:226:29: ^( FILTER condition )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:225:29: ^( FILTER condition )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -6752,7 +6751,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "transformHandler"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:229:1: transformHandler : '#' transform '.' extensibleId ( '(' ( parameters )? ')' )? -> ^( TRANSFORM extensibleId ( parameters )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:228:1: transformHandler : '#' transform '.' extensibleId ( '(' ( parameters )? ')' )? -> ^( TRANSFORM extensibleId ( parameters )? ) ;
     public final SiddhiQLGrammarParser.transformHandler_return transformHandler() throws RecognitionException {
         SiddhiQLGrammarParser.transformHandler_return retval = new SiddhiQLGrammarParser.transformHandler_return();
         retval.start = input.LT(1);
@@ -6775,43 +6774,43 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal193_tree=null;
         CommonTree char_literal195_tree=null;
         CommonTree char_literal197_tree=null;
-        RewriteRuleTokenStream stream_59=new RewriteRuleTokenStream(adaptor,"token 59");
-        RewriteRuleTokenStream stream_51=new RewriteRuleTokenStream(adaptor,"token 51");
+        RewriteRuleTokenStream stream_58=new RewriteRuleTokenStream(adaptor,"token 58");
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
+        RewriteRuleTokenStream stream_50=new RewriteRuleTokenStream(adaptor,"token 50");
         RewriteRuleSubtreeStream stream_transform=new RewriteRuleSubtreeStream(adaptor,"rule transform");
         RewriteRuleSubtreeStream stream_extensibleId=new RewriteRuleSubtreeStream(adaptor,"rule extensibleId");
         RewriteRuleSubtreeStream stream_parameters=new RewriteRuleSubtreeStream(adaptor,"rule parameters");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:230:2: ( '#' transform '.' extensibleId ( '(' ( parameters )? ')' )? -> ^( TRANSFORM extensibleId ( parameters )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:230:4: '#' transform '.' extensibleId ( '(' ( parameters )? ')' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:229:2: ( '#' transform '.' extensibleId ( '(' ( parameters )? ')' )? -> ^( TRANSFORM extensibleId ( parameters )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:229:4: '#' transform '.' extensibleId ( '(' ( parameters )? ')' )?
             {
-            char_literal191=(Token)match(input,51,FOLLOW_51_in_transformHandler1719); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_51.add(char_literal191);
+            char_literal191=(Token)match(input,50,FOLLOW_50_in_transformHandler1714); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_50.add(char_literal191);
 
 
-            pushFollow(FOLLOW_transform_in_transformHandler1721);
+            pushFollow(FOLLOW_transform_in_transformHandler1716);
             transform192=transform();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_transform.add(transform192.getTree());
 
-            char_literal193=(Token)match(input,59,FOLLOW_59_in_transformHandler1723); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_59.add(char_literal193);
+            char_literal193=(Token)match(input,58,FOLLOW_58_in_transformHandler1718); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_58.add(char_literal193);
 
 
-            pushFollow(FOLLOW_extensibleId_in_transformHandler1725);
+            pushFollow(FOLLOW_extensibleId_in_transformHandler1720);
             extensibleId194=extensibleId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_extensibleId.add(extensibleId194.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:230:36: ( '(' ( parameters )? ')' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:229:36: ( '(' ( parameters )? ')' )?
             int alt57=2;
             switch ( input.LA(1) ) {
-                case 53:
+                case 52:
                     {
                     alt57=1;
                     }
@@ -6820,13 +6819,13 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt57) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:230:37: '(' ( parameters )? ')'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:229:37: '(' ( parameters )? ')'
                     {
-                    char_literal195=(Token)match(input,53,FOLLOW_53_in_transformHandler1729); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_53.add(char_literal195);
+                    char_literal195=(Token)match(input,52,FOLLOW_52_in_transformHandler1724); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_52.add(char_literal195);
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:230:41: ( parameters )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:229:41: ( parameters )?
                     int alt56=2;
                     switch ( input.LA(1) ) {
                         case BOOL_VAL:
@@ -6837,24 +6836,24 @@ public TreeAdaptor getTreeAdaptor() {
                         case POSITIVE_INT_VAL:
                         case POSITIVE_LONG_VAL:
                         case STRING_VAL:
+                        case 51:
                         case 52:
-                        case 53:
+                        case 54:
                         case 55:
                         case 56:
                         case 57:
-                        case 58:
-                        case 60:
-                        case 76:
-                        case 84:
-                        case 87:
-                        case 97:
-                        case 101:
-                        case 119:
+                        case 59:
+                        case 75:
+                        case 83:
+                        case 86:
+                        case 96:
+                        case 100:
+                        case 118:
                             {
                             alt56=1;
                             }
                             break;
-                        case 54:
+                        case 53:
                             {
                             int LA56_2 = input.LA(2);
 
@@ -6867,9 +6866,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt56) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:230:41: parameters
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:229:41: parameters
                             {
-                            pushFollow(FOLLOW_parameters_in_transformHandler1731);
+                            pushFollow(FOLLOW_parameters_in_transformHandler1726);
                             parameters196=parameters();
 
                             state._fsp--;
@@ -6882,8 +6881,8 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    char_literal197=(Token)match(input,54,FOLLOW_54_in_transformHandler1734); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_54.add(char_literal197);
+                    char_literal197=(Token)match(input,53,FOLLOW_53_in_transformHandler1729); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_53.add(char_literal197);
 
 
                     }
@@ -6905,9 +6904,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 230:60: -> ^( TRANSFORM extensibleId ( parameters )? )
+            // 229:60: -> ^( TRANSFORM extensibleId ( parameters )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:230:65: ^( TRANSFORM extensibleId ( parameters )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:229:65: ^( TRANSFORM extensibleId ( parameters )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -6916,7 +6915,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_extensibleId.nextTree());
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:230:91: ( parameters )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:229:91: ( parameters )?
                 if ( stream_parameters.hasNext() ) {
                     adaptor.addChild(root_1, stream_parameters.nextTree());
 
@@ -6965,7 +6964,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "windowHandler"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:233:1: windowHandler : '#' window '.' extensibleId ( '(' ( parameters )? ')' )? -> ^( WINDOW extensibleId ( parameters )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:232:1: windowHandler : '#' window '.' extensibleId ( '(' ( parameters )? ')' )? -> ^( WINDOW extensibleId ( parameters )? ) ;
     public final SiddhiQLGrammarParser.windowHandler_return windowHandler() throws RecognitionException {
         SiddhiQLGrammarParser.windowHandler_return retval = new SiddhiQLGrammarParser.windowHandler_return();
         retval.start = input.LT(1);
@@ -6988,43 +6987,43 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal200_tree=null;
         CommonTree char_literal202_tree=null;
         CommonTree char_literal204_tree=null;
-        RewriteRuleTokenStream stream_59=new RewriteRuleTokenStream(adaptor,"token 59");
-        RewriteRuleTokenStream stream_51=new RewriteRuleTokenStream(adaptor,"token 51");
+        RewriteRuleTokenStream stream_58=new RewriteRuleTokenStream(adaptor,"token 58");
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
+        RewriteRuleTokenStream stream_50=new RewriteRuleTokenStream(adaptor,"token 50");
         RewriteRuleSubtreeStream stream_window=new RewriteRuleSubtreeStream(adaptor,"rule window");
         RewriteRuleSubtreeStream stream_extensibleId=new RewriteRuleSubtreeStream(adaptor,"rule extensibleId");
         RewriteRuleSubtreeStream stream_parameters=new RewriteRuleSubtreeStream(adaptor,"rule parameters");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:234:2: ( '#' window '.' extensibleId ( '(' ( parameters )? ')' )? -> ^( WINDOW extensibleId ( parameters )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:234:4: '#' window '.' extensibleId ( '(' ( parameters )? ')' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:233:2: ( '#' window '.' extensibleId ( '(' ( parameters )? ')' )? -> ^( WINDOW extensibleId ( parameters )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:233:4: '#' window '.' extensibleId ( '(' ( parameters )? ')' )?
             {
-            char_literal198=(Token)match(input,51,FOLLOW_51_in_windowHandler1762); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_51.add(char_literal198);
+            char_literal198=(Token)match(input,50,FOLLOW_50_in_windowHandler1757); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_50.add(char_literal198);
 
 
-            pushFollow(FOLLOW_window_in_windowHandler1764);
+            pushFollow(FOLLOW_window_in_windowHandler1759);
             window199=window();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_window.add(window199.getTree());
 
-            char_literal200=(Token)match(input,59,FOLLOW_59_in_windowHandler1767); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_59.add(char_literal200);
+            char_literal200=(Token)match(input,58,FOLLOW_58_in_windowHandler1762); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_58.add(char_literal200);
 
 
-            pushFollow(FOLLOW_extensibleId_in_windowHandler1769);
+            pushFollow(FOLLOW_extensibleId_in_windowHandler1764);
             extensibleId201=extensibleId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_extensibleId.add(extensibleId201.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:234:34: ( '(' ( parameters )? ')' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:233:34: ( '(' ( parameters )? ')' )?
             int alt59=2;
             switch ( input.LA(1) ) {
-                case 53:
+                case 52:
                     {
                     alt59=1;
                     }
@@ -7033,13 +7032,13 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt59) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:234:35: '(' ( parameters )? ')'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:233:35: '(' ( parameters )? ')'
                     {
-                    char_literal202=(Token)match(input,53,FOLLOW_53_in_windowHandler1773); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_53.add(char_literal202);
+                    char_literal202=(Token)match(input,52,FOLLOW_52_in_windowHandler1768); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_52.add(char_literal202);
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:234:39: ( parameters )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:233:39: ( parameters )?
                     int alt58=2;
                     switch ( input.LA(1) ) {
                         case BOOL_VAL:
@@ -7050,24 +7049,24 @@ public TreeAdaptor getTreeAdaptor() {
                         case POSITIVE_INT_VAL:
                         case POSITIVE_LONG_VAL:
                         case STRING_VAL:
+                        case 51:
                         case 52:
-                        case 53:
+                        case 54:
                         case 55:
                         case 56:
                         case 57:
-                        case 58:
-                        case 60:
-                        case 76:
-                        case 84:
-                        case 87:
-                        case 97:
-                        case 101:
-                        case 119:
+                        case 59:
+                        case 75:
+                        case 83:
+                        case 86:
+                        case 96:
+                        case 100:
+                        case 118:
                             {
                             alt58=1;
                             }
                             break;
-                        case 54:
+                        case 53:
                             {
                             int LA58_2 = input.LA(2);
 
@@ -7080,9 +7079,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt58) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:234:39: parameters
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:233:39: parameters
                             {
-                            pushFollow(FOLLOW_parameters_in_windowHandler1775);
+                            pushFollow(FOLLOW_parameters_in_windowHandler1770);
                             parameters203=parameters();
 
                             state._fsp--;
@@ -7095,8 +7094,8 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    char_literal204=(Token)match(input,54,FOLLOW_54_in_windowHandler1778); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_54.add(char_literal204);
+                    char_literal204=(Token)match(input,53,FOLLOW_53_in_windowHandler1773); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_53.add(char_literal204);
 
 
                     }
@@ -7106,7 +7105,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: extensibleId, parameters
+            // elements: parameters, extensibleId
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -7118,9 +7117,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 234:58: -> ^( WINDOW extensibleId ( parameters )? )
+            // 233:58: -> ^( WINDOW extensibleId ( parameters )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:234:63: ^( WINDOW extensibleId ( parameters )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:233:63: ^( WINDOW extensibleId ( parameters )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -7129,7 +7128,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_extensibleId.nextTree());
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:234:86: ( parameters )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:233:86: ( parameters )?
                 if ( stream_parameters.hasNext() ) {
                     adaptor.addChild(root_1, stream_parameters.nextTree());
 
@@ -7178,7 +7177,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "extensibleId"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:237:1: extensibleId : ( extensionId ':' functionId -> ^( EXTENSION extensionId functionId ) | id );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:236:1: extensibleId : ( extensionId ':' functionId -> ^( EXTENSION extensionId functionId ) | id );
     public final SiddhiQLGrammarParser.extensibleId_return extensibleId() throws RecognitionException {
         SiddhiQLGrammarParser.extensibleId_return retval = new SiddhiQLGrammarParser.extensibleId_return();
         retval.start = input.LT(1);
@@ -7195,37 +7194,37 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         CommonTree char_literal206_tree=null;
-        RewriteRuleTokenStream stream_61=new RewriteRuleTokenStream(adaptor,"token 61");
+        RewriteRuleTokenStream stream_60=new RewriteRuleTokenStream(adaptor,"token 60");
         RewriteRuleSubtreeStream stream_extensionId=new RewriteRuleSubtreeStream(adaptor,"rule extensionId");
         RewriteRuleSubtreeStream stream_functionId=new RewriteRuleSubtreeStream(adaptor,"rule functionId");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:238:2: ( extensionId ':' functionId -> ^( EXTENSION extensionId functionId ) | id )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:237:2: ( extensionId ':' functionId -> ^( EXTENSION extensionId functionId ) | id )
             int alt60=2;
             switch ( input.LA(1) ) {
             case ID:
             case ID_QUOTES:
                 {
                 switch ( input.LA(2) ) {
-                case 61:
+                case 60:
                     {
                     alt60=1;
                     }
                     break;
                 case EOF:
-                case 51:
-                case 53:
-                case 75:
-                case 89:
+                case 50:
+                case 52:
+                case 74:
+                case 88:
+                case 93:
                 case 94:
-                case 95:
+                case 98:
                 case 99:
-                case 100:
-                case 110:
+                case 109:
+                case 111:
                 case 112:
                 case 113:
-                case 114:
-                case 121:
-                case 125:
+                case 120:
+                case 124:
                     {
                     alt60=2;
                     }
@@ -7252,20 +7251,20 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt60) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:238:4: extensionId ':' functionId
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:237:4: extensionId ':' functionId
                     {
-                    pushFollow(FOLLOW_extensionId_in_extensibleId1806);
+                    pushFollow(FOLLOW_extensionId_in_extensibleId1801);
                     extensionId205=extensionId();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_extensionId.add(extensionId205.getTree());
 
-                    char_literal206=(Token)match(input,61,FOLLOW_61_in_extensibleId1808); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_61.add(char_literal206);
+                    char_literal206=(Token)match(input,60,FOLLOW_60_in_extensibleId1803); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_60.add(char_literal206);
 
 
-                    pushFollow(FOLLOW_functionId_in_extensibleId1810);
+                    pushFollow(FOLLOW_functionId_in_extensibleId1805);
                     functionId207=functionId();
 
                     state._fsp--;
@@ -7285,9 +7284,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 238:31: -> ^( EXTENSION extensionId functionId )
+                    // 237:31: -> ^( EXTENSION extensionId functionId )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:238:35: ^( EXTENSION extensionId functionId )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:237:35: ^( EXTENSION extensionId functionId )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -7310,12 +7309,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:239:4: id
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:238:4: id
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_id_in_extensibleId1828);
+                    pushFollow(FOLLOW_id_in_extensibleId1823);
                     id208=id();
 
                     state._fsp--;
@@ -7357,7 +7356,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "parameters"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:242:1: parameters : parameter ( ',' parameter )* -> ^( PARAMETERS ( parameter )+ ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:241:1: parameters : parameter ( ',' parameter )* -> ^( PARAMETERS ( parameter )+ ) ;
     public final SiddhiQLGrammarParser.parameters_return parameters() throws RecognitionException {
         SiddhiQLGrammarParser.parameters_return retval = new SiddhiQLGrammarParser.parameters_return();
         retval.start = input.LT(1);
@@ -7372,25 +7371,25 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         CommonTree char_literal210_tree=null;
-        RewriteRuleTokenStream stream_57=new RewriteRuleTokenStream(adaptor,"token 57");
+        RewriteRuleTokenStream stream_56=new RewriteRuleTokenStream(adaptor,"token 56");
         RewriteRuleSubtreeStream stream_parameter=new RewriteRuleSubtreeStream(adaptor,"rule parameter");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:243:2: ( parameter ( ',' parameter )* -> ^( PARAMETERS ( parameter )+ ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:243:4: parameter ( ',' parameter )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:242:2: ( parameter ( ',' parameter )* -> ^( PARAMETERS ( parameter )+ ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:242:4: parameter ( ',' parameter )*
             {
-            pushFollow(FOLLOW_parameter_in_parameters1839);
+            pushFollow(FOLLOW_parameter_in_parameters1834);
             parameter209=parameter();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_parameter.add(parameter209.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:243:14: ( ',' parameter )*
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:242:14: ( ',' parameter )*
             loop61:
             do {
                 int alt61=2;
                 switch ( input.LA(1) ) {
-                case 57:
+                case 56:
                     {
                     alt61=1;
                     }
@@ -7400,13 +7399,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt61) {
             	case 1 :
-            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:243:15: ',' parameter
+            	    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:242:15: ',' parameter
             	    {
-            	    char_literal210=(Token)match(input,57,FOLLOW_57_in_parameters1842); if (state.failed) return retval; 
-            	    if ( state.backtracking==0 ) stream_57.add(char_literal210);
+            	    char_literal210=(Token)match(input,56,FOLLOW_56_in_parameters1837); if (state.failed) return retval; 
+            	    if ( state.backtracking==0 ) stream_56.add(char_literal210);
 
 
-            	    pushFollow(FOLLOW_parameter_in_parameters1844);
+            	    pushFollow(FOLLOW_parameter_in_parameters1839);
             	    parameter211=parameter();
 
             	    state._fsp--;
@@ -7435,9 +7434,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 243:32: -> ^( PARAMETERS ( parameter )+ )
+            // 242:32: -> ^( PARAMETERS ( parameter )+ )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:243:36: ^( PARAMETERS ( parameter )+ )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:242:36: ^( PARAMETERS ( parameter )+ )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -7495,7 +7494,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "time"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:246:1: time : constant ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:245:1: time : constant ;
     public final SiddhiQLGrammarParser.time_return time() throws RecognitionException {
         SiddhiQLGrammarParser.time_return retval = new SiddhiQLGrammarParser.time_return();
         retval.start = input.LT(1);
@@ -7508,13 +7507,13 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:247:2: ( constant )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:247:4: constant
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:246:2: ( constant )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:246:4: constant
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_constant_in_time1868);
+            pushFollow(FOLLOW_constant_in_time1863);
             constant212=constant();
 
             state._fsp--;
@@ -7554,7 +7553,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "parameter"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:250:1: parameter : expression ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:249:1: parameter : expression ;
     public final SiddhiQLGrammarParser.parameter_return parameter() throws RecognitionException {
         SiddhiQLGrammarParser.parameter_return retval = new SiddhiQLGrammarParser.parameter_return();
         retval.start = input.LT(1);
@@ -7567,13 +7566,13 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:251:2: ( expression )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:251:4: expression
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:250:2: ( expression )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:250:4: expression
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_expression_in_parameter1880);
+            pushFollow(FOLLOW_expression_in_parameter1875);
             expression213=expression();
 
             state._fsp--;
@@ -7613,7 +7612,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "collect"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:254:1: collect : ( countStart ':' countEnd | countStart ':' | ':' countEnd | countStartAndEnd );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:253:1: collect : ( countStart ':' countEnd | countStart ':' | ':' countEnd | countStartAndEnd );
     public final SiddhiQLGrammarParser.collect_return collect() throws RecognitionException {
         SiddhiQLGrammarParser.collect_return retval = new SiddhiQLGrammarParser.collect_return();
         retval.start = input.LT(1);
@@ -7640,13 +7639,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal219_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:255:2: ( countStart ':' countEnd | countStart ':' | ':' countEnd | countStartAndEnd )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:254:2: ( countStart ':' countEnd | countStart ':' | ':' countEnd | countStartAndEnd )
             int alt62=4;
             switch ( input.LA(1) ) {
             case POSITIVE_INT_VAL:
                 {
                 switch ( input.LA(2) ) {
-                case 61:
+                case 60:
                     {
                     switch ( input.LA(3) ) {
                     case POSITIVE_INT_VAL:
@@ -7654,7 +7653,7 @@ public TreeAdaptor getTreeAdaptor() {
                         alt62=1;
                         }
                         break;
-                    case 67:
+                    case 66:
                         {
                         alt62=2;
                         }
@@ -7670,7 +7669,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     }
                     break;
-                case 67:
+                case 66:
                     {
                     alt62=4;
                     }
@@ -7686,7 +7685,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 }
                 break;
-            case 61:
+            case 60:
                 {
                 alt62=3;
                 }
@@ -7702,19 +7701,19 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt62) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:255:4: countStart ':' countEnd
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:254:4: countStart ':' countEnd
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_countStart_in_collect1891);
+                    pushFollow(FOLLOW_countStart_in_collect1886);
                     countStart214=countStart();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, countStart214.getTree());
 
-                    char_literal215=(Token)match(input,61,FOLLOW_61_in_collect1893); if (state.failed) return retval;
+                    char_literal215=(Token)match(input,60,FOLLOW_60_in_collect1888); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal215_tree = 
                     (CommonTree)adaptor.create(char_literal215)
@@ -7722,7 +7721,7 @@ public TreeAdaptor getTreeAdaptor() {
                     adaptor.addChild(root_0, char_literal215_tree);
                     }
 
-                    pushFollow(FOLLOW_countEnd_in_collect1895);
+                    pushFollow(FOLLOW_countEnd_in_collect1890);
                     countEnd216=countEnd();
 
                     state._fsp--;
@@ -7732,19 +7731,19 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:256:4: countStart ':'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:255:4: countStart ':'
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_countStart_in_collect1900);
+                    pushFollow(FOLLOW_countStart_in_collect1895);
                     countStart217=countStart();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, countStart217.getTree());
 
-                    char_literal218=(Token)match(input,61,FOLLOW_61_in_collect1902); if (state.failed) return retval;
+                    char_literal218=(Token)match(input,60,FOLLOW_60_in_collect1897); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal218_tree = 
                     (CommonTree)adaptor.create(char_literal218)
@@ -7755,12 +7754,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:257:4: ':' countEnd
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:256:4: ':' countEnd
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    char_literal219=(Token)match(input,61,FOLLOW_61_in_collect1907); if (state.failed) return retval;
+                    char_literal219=(Token)match(input,60,FOLLOW_60_in_collect1902); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal219_tree = 
                     (CommonTree)adaptor.create(char_literal219)
@@ -7768,7 +7767,7 @@ public TreeAdaptor getTreeAdaptor() {
                     adaptor.addChild(root_0, char_literal219_tree);
                     }
 
-                    pushFollow(FOLLOW_countEnd_in_collect1909);
+                    pushFollow(FOLLOW_countEnd_in_collect1904);
                     countEnd220=countEnd();
 
                     state._fsp--;
@@ -7778,12 +7777,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:258:4: countStartAndEnd
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:257:4: countStartAndEnd
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_countStartAndEnd_in_collect1914);
+                    pushFollow(FOLLOW_countStartAndEnd_in_collect1909);
                     countStartAndEnd221=countStartAndEnd();
 
                     state._fsp--;
@@ -7825,7 +7824,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "countStart"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:261:1: countStart : POSITIVE_INT_VAL ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:260:1: countStart : POSITIVE_INT_VAL ;
     public final SiddhiQLGrammarParser.countStart_return countStart() throws RecognitionException {
         SiddhiQLGrammarParser.countStart_return retval = new SiddhiQLGrammarParser.countStart_return();
         retval.start = input.LT(1);
@@ -7838,13 +7837,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree POSITIVE_INT_VAL222_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:261:12: ( POSITIVE_INT_VAL )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:261:13: POSITIVE_INT_VAL
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:260:12: ( POSITIVE_INT_VAL )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:260:13: POSITIVE_INT_VAL
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            POSITIVE_INT_VAL222=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_countStart1923); if (state.failed) return retval;
+            POSITIVE_INT_VAL222=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_countStart1918); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             POSITIVE_INT_VAL222_tree = 
             (CommonTree)adaptor.create(POSITIVE_INT_VAL222)
@@ -7885,7 +7884,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "countEnd"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:263:1: countEnd : POSITIVE_INT_VAL ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:262:1: countEnd : POSITIVE_INT_VAL ;
     public final SiddhiQLGrammarParser.countEnd_return countEnd() throws RecognitionException {
         SiddhiQLGrammarParser.countEnd_return retval = new SiddhiQLGrammarParser.countEnd_return();
         retval.start = input.LT(1);
@@ -7898,13 +7897,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree POSITIVE_INT_VAL223_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:263:10: ( POSITIVE_INT_VAL )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:263:11: POSITIVE_INT_VAL
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:262:10: ( POSITIVE_INT_VAL )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:262:11: POSITIVE_INT_VAL
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            POSITIVE_INT_VAL223=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_countEnd1930); if (state.failed) return retval;
+            POSITIVE_INT_VAL223=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_countEnd1925); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             POSITIVE_INT_VAL223_tree = 
             (CommonTree)adaptor.create(POSITIVE_INT_VAL223)
@@ -7945,7 +7944,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "countStartAndEnd"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:265:1: countStartAndEnd : POSITIVE_INT_VAL ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:264:1: countStartAndEnd : POSITIVE_INT_VAL ;
     public final SiddhiQLGrammarParser.countStartAndEnd_return countStartAndEnd() throws RecognitionException {
         SiddhiQLGrammarParser.countStartAndEnd_return retval = new SiddhiQLGrammarParser.countStartAndEnd_return();
         retval.start = input.LT(1);
@@ -7958,13 +7957,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree POSITIVE_INT_VAL224_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:265:18: ( POSITIVE_INT_VAL )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:265:19: POSITIVE_INT_VAL
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:264:18: ( POSITIVE_INT_VAL )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:264:19: POSITIVE_INT_VAL
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            POSITIVE_INT_VAL224=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_countStartAndEnd1937); if (state.failed) return retval;
+            POSITIVE_INT_VAL224=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_countStartAndEnd1932); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             POSITIVE_INT_VAL224_tree = 
             (CommonTree)adaptor.create(POSITIVE_INT_VAL224)
@@ -8005,7 +8004,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "condition"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:269:1: condition : conditionExpression -> ^( CONDITION conditionExpression ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:268:1: condition : conditionExpression -> ^( CONDITION conditionExpression ) ;
     public final SiddhiQLGrammarParser.condition_return condition() throws RecognitionException {
         SiddhiQLGrammarParser.condition_return retval = new SiddhiQLGrammarParser.condition_return();
         retval.start = input.LT(1);
@@ -8018,10 +8017,10 @@ public TreeAdaptor getTreeAdaptor() {
 
         RewriteRuleSubtreeStream stream_conditionExpression=new RewriteRuleSubtreeStream(adaptor,"rule conditionExpression");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:270:2: ( conditionExpression -> ^( CONDITION conditionExpression ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:270:3: conditionExpression
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:269:2: ( conditionExpression -> ^( CONDITION conditionExpression ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:269:3: conditionExpression
             {
-            pushFollow(FOLLOW_conditionExpression_in_condition1947);
+            pushFollow(FOLLOW_conditionExpression_in_condition1942);
             conditionExpression225=conditionExpression();
 
             state._fsp--;
@@ -8041,9 +8040,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 270:24: -> ^( CONDITION conditionExpression )
+            // 269:24: -> ^( CONDITION conditionExpression )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:270:27: ^( CONDITION conditionExpression )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:269:27: ^( CONDITION conditionExpression )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -8094,7 +8093,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "conditionExpression"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:273:1: conditionExpression : andCondition ( 'or' ^ conditionExpression )? ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:272:1: conditionExpression : andCondition ( 'or' ^ conditionExpression )? ;
     public final SiddhiQLGrammarParser.conditionExpression_return conditionExpression() throws RecognitionException {
         SiddhiQLGrammarParser.conditionExpression_return retval = new SiddhiQLGrammarParser.conditionExpression_return();
         retval.start = input.LT(1);
@@ -8111,23 +8110,23 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal227_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:274:5: ( andCondition ( 'or' ^ conditionExpression )? )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:274:7: andCondition ( 'or' ^ conditionExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:273:5: ( andCondition ( 'or' ^ conditionExpression )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:273:7: andCondition ( 'or' ^ conditionExpression )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_andCondition_in_conditionExpression1970);
+            pushFollow(FOLLOW_andCondition_in_conditionExpression1965);
             andCondition226=andCondition();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, andCondition226.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:274:20: ( 'or' ^ conditionExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:273:20: ( 'or' ^ conditionExpression )?
             int alt63=2;
             switch ( input.LA(1) ) {
-                case 111:
+                case 110:
                     {
                     int LA63_1 = input.LA(2);
 
@@ -8140,9 +8139,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt63) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:274:21: 'or' ^ conditionExpression
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:273:21: 'or' ^ conditionExpression
                     {
-                    string_literal227=(Token)match(input,111,FOLLOW_111_in_conditionExpression1973); if (state.failed) return retval;
+                    string_literal227=(Token)match(input,110,FOLLOW_110_in_conditionExpression1968); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     string_literal227_tree = 
                     (CommonTree)adaptor.create(string_literal227)
@@ -8150,7 +8149,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.becomeRoot(string_literal227_tree, root_0);
                     }
 
-                    pushFollow(FOLLOW_conditionExpression_in_conditionExpression1976);
+                    pushFollow(FOLLOW_conditionExpression_in_conditionExpression1971);
                     conditionExpression228=conditionExpression();
 
                     state._fsp--;
@@ -8196,7 +8195,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "andCondition"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:277:1: andCondition : compareCondition ( 'and' ^ conditionExpression )? ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:276:1: andCondition : compareCondition ( 'and' ^ conditionExpression )? ;
     public final SiddhiQLGrammarParser.andCondition_return andCondition() throws RecognitionException {
         SiddhiQLGrammarParser.andCondition_return retval = new SiddhiQLGrammarParser.andCondition_return();
         retval.start = input.LT(1);
@@ -8213,23 +8212,23 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal230_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:278:2: ( compareCondition ( 'and' ^ conditionExpression )? )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:278:4: compareCondition ( 'and' ^ conditionExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:277:2: ( compareCondition ( 'and' ^ conditionExpression )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:277:4: compareCondition ( 'and' ^ conditionExpression )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_compareCondition_in_andCondition1990);
+            pushFollow(FOLLOW_compareCondition_in_andCondition1985);
             compareCondition229=compareCondition();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, compareCondition229.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:278:21: ( 'and' ^ conditionExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:277:21: ( 'and' ^ conditionExpression )?
             int alt64=2;
             switch ( input.LA(1) ) {
-                case 74:
+                case 73:
                     {
                     alt64=1;
                     }
@@ -8238,9 +8237,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt64) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:278:22: 'and' ^ conditionExpression
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:277:22: 'and' ^ conditionExpression
                     {
-                    string_literal230=(Token)match(input,74,FOLLOW_74_in_andCondition1993); if (state.failed) return retval;
+                    string_literal230=(Token)match(input,73,FOLLOW_73_in_andCondition1988); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     string_literal230_tree = 
                     (CommonTree)adaptor.create(string_literal230)
@@ -8248,7 +8247,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.becomeRoot(string_literal230_tree, root_0);
                     }
 
-                    pushFollow(FOLLOW_conditionExpression_in_andCondition1996);
+                    pushFollow(FOLLOW_conditionExpression_in_andCondition1991);
                     conditionExpression231=conditionExpression();
 
                     state._fsp--;
@@ -8294,7 +8293,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "compareCondition"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:281:1: compareCondition : ( expression compareOperation ^ expression | boolVal | '(' conditionExpression ')' -> conditionExpression | notCondition | extensionCondition );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:280:1: compareCondition : ( expression compareOperation ^ expression | boolVal | '(' conditionExpression ')' -> conditionExpression | notCondition | extensionCondition );
     public final SiddhiQLGrammarParser.compareCondition_return compareCondition() throws RecognitionException {
         SiddhiQLGrammarParser.compareCondition_return retval = new SiddhiQLGrammarParser.compareCondition_return();
         retval.start = input.LT(1);
@@ -8321,11 +8320,11 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree char_literal236_tree=null;
         CommonTree char_literal238_tree=null;
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
         RewriteRuleSubtreeStream stream_conditionExpression=new RewriteRuleSubtreeStream(adaptor,"rule conditionExpression");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:282:2: ( expression compareOperation ^ expression | boolVal | '(' conditionExpression ')' -> conditionExpression | notCondition | extensionCondition )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:281:2: ( expression compareOperation ^ expression | boolVal | '(' conditionExpression ')' -> conditionExpression | notCondition | extensionCondition )
             int alt65=5;
             switch ( input.LA(1) ) {
             case POSITIVE_DOUBLE_VAL:
@@ -8333,25 +8332,25 @@ public TreeAdaptor getTreeAdaptor() {
             case POSITIVE_INT_VAL:
             case POSITIVE_LONG_VAL:
             case STRING_VAL:
-            case 50:
-            case 52:
+            case 49:
+            case 51:
+            case 54:
             case 55:
-            case 56:
-            case 58:
-            case 60:
+            case 57:
+            case 59:
+            case 62:
             case 63:
-            case 64:
+            case 65:
             case 66:
             case 67:
-            case 68:
-            case 76:
-            case 79:
-            case 84:
-            case 87:
+            case 75:
+            case 78:
+            case 83:
+            case 86:
+            case 95:
             case 96:
-            case 97:
-            case 101:
-            case 119:
+            case 100:
+            case 118:
                 {
                 alt65=1;
                 }
@@ -8397,7 +8396,7 @@ public TreeAdaptor getTreeAdaptor() {
                 }
                 }
                 break;
-            case 53:
+            case 52:
                 {
                 int LA65_15 = input.LA(2);
 
@@ -8417,7 +8416,7 @@ public TreeAdaptor getTreeAdaptor() {
                 }
                 }
                 break;
-            case 109:
+            case 108:
                 {
                 alt65=4;
                 }
@@ -8433,26 +8432,26 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt65) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:282:3: expression compareOperation ^ expression
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:281:3: expression compareOperation ^ expression
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_expression_in_compareCondition2008);
+                    pushFollow(FOLLOW_expression_in_compareCondition2003);
                     expression232=expression();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) adaptor.addChild(root_0, expression232.getTree());
 
-                    pushFollow(FOLLOW_compareOperation_in_compareCondition2010);
+                    pushFollow(FOLLOW_compareOperation_in_compareCondition2005);
                     compareOperation233=compareOperation();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) root_0 = (CommonTree)adaptor.becomeRoot(compareOperation233.getTree(), root_0);
 
-                    pushFollow(FOLLOW_expression_in_compareCondition2013);
+                    pushFollow(FOLLOW_expression_in_compareCondition2008);
                     expression234=expression();
 
                     state._fsp--;
@@ -8462,12 +8461,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:283:3: boolVal
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:282:3: boolVal
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_boolVal_in_compareCondition2017);
+                    pushFollow(FOLLOW_boolVal_in_compareCondition2012);
                     boolVal235=boolVal();
 
                     state._fsp--;
@@ -8477,21 +8476,21 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:284:6: '(' conditionExpression ')'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:283:6: '(' conditionExpression ')'
                     {
-                    char_literal236=(Token)match(input,53,FOLLOW_53_in_compareCondition2024); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_53.add(char_literal236);
+                    char_literal236=(Token)match(input,52,FOLLOW_52_in_compareCondition2019); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_52.add(char_literal236);
 
 
-                    pushFollow(FOLLOW_conditionExpression_in_compareCondition2025);
+                    pushFollow(FOLLOW_conditionExpression_in_compareCondition2020);
                     conditionExpression237=conditionExpression();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_conditionExpression.add(conditionExpression237.getTree());
 
-                    char_literal238=(Token)match(input,54,FOLLOW_54_in_compareCondition2027); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_54.add(char_literal238);
+                    char_literal238=(Token)match(input,53,FOLLOW_53_in_compareCondition2022); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_53.add(char_literal238);
 
 
                     // AST REWRITE
@@ -8507,7 +8506,7 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 284:33: -> conditionExpression
+                    // 283:33: -> conditionExpression
                     {
                         adaptor.addChild(root_0, stream_conditionExpression.nextTree());
 
@@ -8520,12 +8519,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:285:6: notCondition
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:284:6: notCondition
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_notCondition_in_compareCondition2038);
+                    pushFollow(FOLLOW_notCondition_in_compareCondition2033);
                     notCondition239=notCondition();
 
                     state._fsp--;
@@ -8535,12 +8534,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:286:6: extensionCondition
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:285:6: extensionCondition
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_extensionCondition_in_compareCondition2045);
+                    pushFollow(FOLLOW_extensionCondition_in_compareCondition2040);
                     extensionCondition240=extensionCondition();
 
                     state._fsp--;
@@ -8582,7 +8581,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expression"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:289:1: expression : minusExpression ( '+' ^ expression )? ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:288:1: expression : minusExpression ( '+' ^ expression )? ;
     public final SiddhiQLGrammarParser.expression_return expression() throws RecognitionException {
         SiddhiQLGrammarParser.expression_return retval = new SiddhiQLGrammarParser.expression_return();
         retval.start = input.LT(1);
@@ -8599,23 +8598,23 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal242_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:290:5: ( minusExpression ( '+' ^ expression )? )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:290:6: minusExpression ( '+' ^ expression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:289:5: ( minusExpression ( '+' ^ expression )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:289:6: minusExpression ( '+' ^ expression )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_minusExpression_in_expression2058);
+            pushFollow(FOLLOW_minusExpression_in_expression2053);
             minusExpression241=minusExpression();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, minusExpression241.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:290:22: ( '+' ^ expression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:289:22: ( '+' ^ expression )?
             int alt66=2;
             switch ( input.LA(1) ) {
-                case 56:
+                case 55:
                     {
                     alt66=1;
                     }
@@ -8624,9 +8623,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt66) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:290:23: '+' ^ expression
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:289:23: '+' ^ expression
                     {
-                    char_literal242=(Token)match(input,56,FOLLOW_56_in_expression2061); if (state.failed) return retval;
+                    char_literal242=(Token)match(input,55,FOLLOW_55_in_expression2056); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal242_tree = 
                     (CommonTree)adaptor.create(char_literal242)
@@ -8634,7 +8633,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.becomeRoot(char_literal242_tree, root_0);
                     }
 
-                    pushFollow(FOLLOW_expression_in_expression2064);
+                    pushFollow(FOLLOW_expression_in_expression2059);
                     expression243=expression();
 
                     state._fsp--;
@@ -8680,7 +8679,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "minusExpression"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:293:1: minusExpression : multiplyExpression ( '-' ^ minusExpression )? ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:292:1: minusExpression : multiplyExpression ( '-' ^ minusExpression )? ;
     public final SiddhiQLGrammarParser.minusExpression_return minusExpression() throws RecognitionException {
         SiddhiQLGrammarParser.minusExpression_return retval = new SiddhiQLGrammarParser.minusExpression_return();
         retval.start = input.LT(1);
@@ -8697,23 +8696,23 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal245_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:294:5: ( multiplyExpression ( '-' ^ minusExpression )? )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:294:6: multiplyExpression ( '-' ^ minusExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:293:5: ( multiplyExpression ( '-' ^ minusExpression )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:293:6: multiplyExpression ( '-' ^ minusExpression )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_multiplyExpression_in_minusExpression2082);
+            pushFollow(FOLLOW_multiplyExpression_in_minusExpression2077);
             multiplyExpression244=multiplyExpression();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, multiplyExpression244.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:294:25: ( '-' ^ minusExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:293:25: ( '-' ^ minusExpression )?
             int alt67=2;
             switch ( input.LA(1) ) {
-                case 58:
+                case 57:
                     {
                     alt67=1;
                     }
@@ -8722,9 +8721,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt67) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:294:26: '-' ^ minusExpression
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:293:26: '-' ^ minusExpression
                     {
-                    char_literal245=(Token)match(input,58,FOLLOW_58_in_minusExpression2085); if (state.failed) return retval;
+                    char_literal245=(Token)match(input,57,FOLLOW_57_in_minusExpression2080); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal245_tree = 
                     (CommonTree)adaptor.create(char_literal245)
@@ -8732,7 +8731,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.becomeRoot(char_literal245_tree, root_0);
                     }
 
-                    pushFollow(FOLLOW_minusExpression_in_minusExpression2088);
+                    pushFollow(FOLLOW_minusExpression_in_minusExpression2083);
                     minusExpression246=minusExpression();
 
                     state._fsp--;
@@ -8778,7 +8777,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "multiplyExpression"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:297:1: multiplyExpression : divisionExpression ( '*' ^ multiplyExpression )? ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:296:1: multiplyExpression : divisionExpression ( '*' ^ multiplyExpression )? ;
     public final SiddhiQLGrammarParser.multiplyExpression_return multiplyExpression() throws RecognitionException {
         SiddhiQLGrammarParser.multiplyExpression_return retval = new SiddhiQLGrammarParser.multiplyExpression_return();
         retval.start = input.LT(1);
@@ -8795,23 +8794,23 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal248_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:298:5: ( divisionExpression ( '*' ^ multiplyExpression )? )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:298:6: divisionExpression ( '*' ^ multiplyExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:297:5: ( divisionExpression ( '*' ^ multiplyExpression )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:297:6: divisionExpression ( '*' ^ multiplyExpression )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_divisionExpression_in_multiplyExpression2106);
+            pushFollow(FOLLOW_divisionExpression_in_multiplyExpression2101);
             divisionExpression247=divisionExpression();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, divisionExpression247.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:298:25: ( '*' ^ multiplyExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:297:25: ( '*' ^ multiplyExpression )?
             int alt68=2;
             switch ( input.LA(1) ) {
-                case 55:
+                case 54:
                     {
                     alt68=1;
                     }
@@ -8820,9 +8819,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt68) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:298:26: '*' ^ multiplyExpression
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:297:26: '*' ^ multiplyExpression
                     {
-                    char_literal248=(Token)match(input,55,FOLLOW_55_in_multiplyExpression2109); if (state.failed) return retval;
+                    char_literal248=(Token)match(input,54,FOLLOW_54_in_multiplyExpression2104); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal248_tree = 
                     (CommonTree)adaptor.create(char_literal248)
@@ -8830,7 +8829,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.becomeRoot(char_literal248_tree, root_0);
                     }
 
-                    pushFollow(FOLLOW_multiplyExpression_in_multiplyExpression2112);
+                    pushFollow(FOLLOW_multiplyExpression_in_multiplyExpression2107);
                     multiplyExpression249=multiplyExpression();
 
                     state._fsp--;
@@ -8876,7 +8875,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "divisionExpression"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:301:1: divisionExpression : modExpression ( '/' ^ divisionExpression )? ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:300:1: divisionExpression : modExpression ( '/' ^ divisionExpression )? ;
     public final SiddhiQLGrammarParser.divisionExpression_return divisionExpression() throws RecognitionException {
         SiddhiQLGrammarParser.divisionExpression_return retval = new SiddhiQLGrammarParser.divisionExpression_return();
         retval.start = input.LT(1);
@@ -8893,23 +8892,23 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal251_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:302:5: ( modExpression ( '/' ^ divisionExpression )? )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:302:6: modExpression ( '/' ^ divisionExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:301:5: ( modExpression ( '/' ^ divisionExpression )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:301:6: modExpression ( '/' ^ divisionExpression )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_modExpression_in_divisionExpression2130);
+            pushFollow(FOLLOW_modExpression_in_divisionExpression2125);
             modExpression250=modExpression();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, modExpression250.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:302:20: ( '/' ^ divisionExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:301:20: ( '/' ^ divisionExpression )?
             int alt69=2;
             switch ( input.LA(1) ) {
-                case 60:
+                case 59:
                     {
                     alt69=1;
                     }
@@ -8918,9 +8917,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt69) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:302:21: '/' ^ divisionExpression
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:301:21: '/' ^ divisionExpression
                     {
-                    char_literal251=(Token)match(input,60,FOLLOW_60_in_divisionExpression2133); if (state.failed) return retval;
+                    char_literal251=(Token)match(input,59,FOLLOW_59_in_divisionExpression2128); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal251_tree = 
                     (CommonTree)adaptor.create(char_literal251)
@@ -8928,7 +8927,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.becomeRoot(char_literal251_tree, root_0);
                     }
 
-                    pushFollow(FOLLOW_divisionExpression_in_divisionExpression2136);
+                    pushFollow(FOLLOW_divisionExpression_in_divisionExpression2131);
                     divisionExpression252=divisionExpression();
 
                     state._fsp--;
@@ -8974,7 +8973,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "modExpression"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:305:1: modExpression : valueExpression ( '%' ^ modExpression )? ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:304:1: modExpression : valueExpression ( '%' ^ modExpression )? ;
     public final SiddhiQLGrammarParser.modExpression_return modExpression() throws RecognitionException {
         SiddhiQLGrammarParser.modExpression_return retval = new SiddhiQLGrammarParser.modExpression_return();
         retval.start = input.LT(1);
@@ -8991,23 +8990,23 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal254_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:306:5: ( valueExpression ( '%' ^ modExpression )? )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:306:6: valueExpression ( '%' ^ modExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:305:5: ( valueExpression ( '%' ^ modExpression )? )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:305:6: valueExpression ( '%' ^ modExpression )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_valueExpression_in_modExpression2154);
+            pushFollow(FOLLOW_valueExpression_in_modExpression2149);
             valueExpression253=valueExpression();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, valueExpression253.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:306:22: ( '%' ^ modExpression )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:305:22: ( '%' ^ modExpression )?
             int alt70=2;
             switch ( input.LA(1) ) {
-                case 52:
+                case 51:
                     {
                     alt70=1;
                     }
@@ -9016,9 +9015,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt70) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:306:23: '%' ^ modExpression
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:305:23: '%' ^ modExpression
                     {
-                    char_literal254=(Token)match(input,52,FOLLOW_52_in_modExpression2157); if (state.failed) return retval;
+                    char_literal254=(Token)match(input,51,FOLLOW_51_in_modExpression2152); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal254_tree = 
                     (CommonTree)adaptor.create(char_literal254)
@@ -9026,7 +9025,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.becomeRoot(char_literal254_tree, root_0);
                     }
 
-                    pushFollow(FOLLOW_modExpression_in_modExpression2160);
+                    pushFollow(FOLLOW_modExpression_in_modExpression2155);
                     modExpression255=modExpression();
 
                     state._fsp--;
@@ -9072,7 +9071,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "valueExpression"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:309:1: valueExpression : ( constant | attributeVariable | type | '(' expression ')' -> expression | extensionExpression );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:308:1: valueExpression : ( constant | attributeVariable | type | '(' expression ')' -> expression | extensionExpression );
     public final SiddhiQLGrammarParser.valueExpression_return valueExpression() throws RecognitionException {
         SiddhiQLGrammarParser.valueExpression_return retval = new SiddhiQLGrammarParser.valueExpression_return();
         retval.start = input.LT(1);
@@ -9095,11 +9094,11 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree char_literal259_tree=null;
         CommonTree char_literal261_tree=null;
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
         RewriteRuleSubtreeStream stream_expression=new RewriteRuleSubtreeStream(adaptor,"rule expression");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:310:5: ( constant | attributeVariable | type | '(' expression ')' -> expression | extensionExpression )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:309:5: ( constant | attributeVariable | type | '(' expression ')' -> expression | extensionExpression )
             int alt71=5;
             switch ( input.LA(1) ) {
             case EOF:
@@ -9109,29 +9108,29 @@ public TreeAdaptor getTreeAdaptor() {
             case POSITIVE_INT_VAL:
             case POSITIVE_LONG_VAL:
             case STRING_VAL:
-            case 50:
-            case 52:
+            case 49:
+            case 51:
+            case 53:
             case 54:
             case 55:
             case 56:
             case 57:
-            case 58:
-            case 60:
+            case 59:
+            case 61:
             case 62:
             case 63:
-            case 64:
+            case 65:
             case 66:
             case 67:
-            case 68:
-            case 72:
+            case 71:
+            case 73:
             case 74:
-            case 75:
-            case 79:
+            case 78:
+            case 94:
             case 95:
-            case 96:
-            case 111:
-            case 113:
-            case 125:
+            case 110:
+            case 112:
+            case 124:
                 {
                 alt71=1;
                 }
@@ -9141,36 +9140,36 @@ public TreeAdaptor getTreeAdaptor() {
                 {
                 switch ( input.LA(2) ) {
                 case EOF:
-                case 50:
-                case 52:
+                case 49:
+                case 51:
+                case 53:
                 case 54:
                 case 55:
                 case 56:
                 case 57:
                 case 58:
                 case 59:
-                case 60:
+                case 61:
                 case 62:
                 case 63:
-                case 64:
+                case 65:
                 case 66:
                 case 67:
-                case 68:
+                case 70:
                 case 71:
-                case 72:
+                case 73:
                 case 74:
-                case 75:
-                case 79:
+                case 78:
+                case 94:
                 case 95:
-                case 96:
-                case 111:
-                case 113:
-                case 125:
+                case 110:
+                case 112:
+                case 124:
                     {
                     alt71=2;
                     }
                     break;
-                case 61:
+                case 60:
                     {
                     alt71=5;
                     }
@@ -9186,17 +9185,17 @@ public TreeAdaptor getTreeAdaptor() {
 
                 }
                 break;
-            case 76:
-            case 84:
-            case 87:
-            case 97:
-            case 101:
-            case 119:
+            case 75:
+            case 83:
+            case 86:
+            case 96:
+            case 100:
+            case 118:
                 {
                 alt71=3;
                 }
                 break;
-            case 53:
+            case 52:
                 {
                 alt71=4;
                 }
@@ -9212,12 +9211,12 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt71) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:310:7: constant
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:309:7: constant
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_constant_in_valueExpression2179);
+                    pushFollow(FOLLOW_constant_in_valueExpression2174);
                     constant256=constant();
 
                     state._fsp--;
@@ -9227,12 +9226,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:311:7: attributeVariable
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:310:7: attributeVariable
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_attributeVariable_in_valueExpression2187);
+                    pushFollow(FOLLOW_attributeVariable_in_valueExpression2182);
                     attributeVariable257=attributeVariable();
 
                     state._fsp--;
@@ -9242,12 +9241,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:312:7: type
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:311:7: type
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_type_in_valueExpression2195);
+                    pushFollow(FOLLOW_type_in_valueExpression2190);
                     type258=type();
 
                     state._fsp--;
@@ -9257,21 +9256,21 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:313:7: '(' expression ')'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:312:7: '(' expression ')'
                     {
-                    char_literal259=(Token)match(input,53,FOLLOW_53_in_valueExpression2203); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_53.add(char_literal259);
+                    char_literal259=(Token)match(input,52,FOLLOW_52_in_valueExpression2198); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_52.add(char_literal259);
 
 
-                    pushFollow(FOLLOW_expression_in_valueExpression2204);
+                    pushFollow(FOLLOW_expression_in_valueExpression2199);
                     expression260=expression();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_expression.add(expression260.getTree());
 
-                    char_literal261=(Token)match(input,54,FOLLOW_54_in_valueExpression2206); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_54.add(char_literal261);
+                    char_literal261=(Token)match(input,53,FOLLOW_53_in_valueExpression2201); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_53.add(char_literal261);
 
 
                     // AST REWRITE
@@ -9287,7 +9286,7 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 313:25: -> expression
+                    // 312:25: -> expression
                     {
                         adaptor.addChild(root_0, stream_expression.nextTree());
 
@@ -9300,12 +9299,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:314:7: extensionExpression
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:313:7: extensionExpression
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_extensionExpression_in_valueExpression2218);
+                    pushFollow(FOLLOW_extensionExpression_in_valueExpression2213);
                     extensionExpression262=extensionExpression();
 
                     state._fsp--;
@@ -9347,7 +9346,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "notCondition"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:317:1: notCondition : 'not' '(' conditionExpression ')' -> ^( 'not' conditionExpression ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:316:1: notCondition : 'not' '(' conditionExpression ')' -> ^( 'not' conditionExpression ) ;
     public final SiddhiQLGrammarParser.notCondition_return notCondition() throws RecognitionException {
         SiddhiQLGrammarParser.notCondition_return retval = new SiddhiQLGrammarParser.notCondition_return();
         retval.start = input.LT(1);
@@ -9364,35 +9363,35 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal263_tree=null;
         CommonTree char_literal264_tree=null;
         CommonTree char_literal266_tree=null;
-        RewriteRuleTokenStream stream_109=new RewriteRuleTokenStream(adaptor,"token 109");
+        RewriteRuleTokenStream stream_108=new RewriteRuleTokenStream(adaptor,"token 108");
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
         RewriteRuleSubtreeStream stream_conditionExpression=new RewriteRuleSubtreeStream(adaptor,"rule conditionExpression");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:318:2: ( 'not' '(' conditionExpression ')' -> ^( 'not' conditionExpression ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:318:3: 'not' '(' conditionExpression ')'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:317:2: ( 'not' '(' conditionExpression ')' -> ^( 'not' conditionExpression ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:317:3: 'not' '(' conditionExpression ')'
             {
-            string_literal263=(Token)match(input,109,FOLLOW_109_in_notCondition2231); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_109.add(string_literal263);
+            string_literal263=(Token)match(input,108,FOLLOW_108_in_notCondition2226); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_108.add(string_literal263);
 
 
-            char_literal264=(Token)match(input,53,FOLLOW_53_in_notCondition2233); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_53.add(char_literal264);
+            char_literal264=(Token)match(input,52,FOLLOW_52_in_notCondition2228); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_52.add(char_literal264);
 
 
-            pushFollow(FOLLOW_conditionExpression_in_notCondition2234);
+            pushFollow(FOLLOW_conditionExpression_in_notCondition2229);
             conditionExpression265=conditionExpression();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_conditionExpression.add(conditionExpression265.getTree());
 
-            char_literal266=(Token)match(input,54,FOLLOW_54_in_notCondition2235); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_54.add(char_literal266);
+            char_literal266=(Token)match(input,53,FOLLOW_53_in_notCondition2230); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_53.add(char_literal266);
 
 
             // AST REWRITE
-            // elements: 109, conditionExpression
+            // elements: 108, conditionExpression
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -9404,13 +9403,13 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 318:35: -> ^( 'not' conditionExpression )
+            // 317:35: -> ^( 'not' conditionExpression )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:318:39: ^( 'not' conditionExpression )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:317:39: ^( 'not' conditionExpression )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
-                stream_109.nextNode()
+                stream_108.nextNode()
                 , root_1);
 
                 adaptor.addChild(root_1, stream_conditionExpression.nextTree());
@@ -9457,7 +9456,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "extensionCondition"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:321:1: extensionCondition : extensionId ':' functionId ( '(' ( parameters )? ')' )? -> ^( CONDITION_FUNCTION extensionId functionId ( parameters )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:320:1: extensionCondition : extensionId ':' functionId ( '(' ( parameters )? ')' )? -> ^( CONDITION_FUNCTION extensionId functionId ( parameters )? ) ;
     public final SiddhiQLGrammarParser.extensionCondition_return extensionCondition() throws RecognitionException {
         SiddhiQLGrammarParser.extensionCondition_return retval = new SiddhiQLGrammarParser.extensionCondition_return();
         retval.start = input.LT(1);
@@ -9478,38 +9477,38 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal268_tree=null;
         CommonTree char_literal270_tree=null;
         CommonTree char_literal272_tree=null;
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
-        RewriteRuleTokenStream stream_61=new RewriteRuleTokenStream(adaptor,"token 61");
+        RewriteRuleTokenStream stream_60=new RewriteRuleTokenStream(adaptor,"token 60");
         RewriteRuleSubtreeStream stream_extensionId=new RewriteRuleSubtreeStream(adaptor,"rule extensionId");
         RewriteRuleSubtreeStream stream_parameters=new RewriteRuleSubtreeStream(adaptor,"rule parameters");
         RewriteRuleSubtreeStream stream_functionId=new RewriteRuleSubtreeStream(adaptor,"rule functionId");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:322:5: ( extensionId ':' functionId ( '(' ( parameters )? ')' )? -> ^( CONDITION_FUNCTION extensionId functionId ( parameters )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:322:9: extensionId ':' functionId ( '(' ( parameters )? ')' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:321:5: ( extensionId ':' functionId ( '(' ( parameters )? ')' )? -> ^( CONDITION_FUNCTION extensionId functionId ( parameters )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:321:9: extensionId ':' functionId ( '(' ( parameters )? ')' )?
             {
-            pushFollow(FOLLOW_extensionId_in_extensionCondition2260);
+            pushFollow(FOLLOW_extensionId_in_extensionCondition2255);
             extensionId267=extensionId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_extensionId.add(extensionId267.getTree());
 
-            char_literal268=(Token)match(input,61,FOLLOW_61_in_extensionCondition2262); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_61.add(char_literal268);
+            char_literal268=(Token)match(input,60,FOLLOW_60_in_extensionCondition2257); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_60.add(char_literal268);
 
 
-            pushFollow(FOLLOW_functionId_in_extensionCondition2264);
+            pushFollow(FOLLOW_functionId_in_extensionCondition2259);
             functionId269=functionId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_functionId.add(functionId269.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:322:37: ( '(' ( parameters )? ')' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:321:37: ( '(' ( parameters )? ')' )?
             int alt73=2;
             switch ( input.LA(1) ) {
-                case 53:
+                case 52:
                     {
                     alt73=1;
                     }
@@ -9518,13 +9517,13 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt73) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:322:38: '(' ( parameters )? ')'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:321:38: '(' ( parameters )? ')'
                     {
-                    char_literal270=(Token)match(input,53,FOLLOW_53_in_extensionCondition2268); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_53.add(char_literal270);
+                    char_literal270=(Token)match(input,52,FOLLOW_52_in_extensionCondition2263); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_52.add(char_literal270);
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:322:42: ( parameters )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:321:42: ( parameters )?
                     int alt72=2;
                     switch ( input.LA(1) ) {
                         case BOOL_VAL:
@@ -9535,24 +9534,24 @@ public TreeAdaptor getTreeAdaptor() {
                         case POSITIVE_INT_VAL:
                         case POSITIVE_LONG_VAL:
                         case STRING_VAL:
+                        case 51:
                         case 52:
-                        case 53:
+                        case 54:
                         case 55:
                         case 56:
                         case 57:
-                        case 58:
-                        case 60:
-                        case 76:
-                        case 84:
-                        case 87:
-                        case 97:
-                        case 101:
-                        case 119:
+                        case 59:
+                        case 75:
+                        case 83:
+                        case 86:
+                        case 96:
+                        case 100:
+                        case 118:
                             {
                             alt72=1;
                             }
                             break;
-                        case 54:
+                        case 53:
                             {
                             int LA72_2 = input.LA(2);
 
@@ -9565,9 +9564,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt72) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:322:42: parameters
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:321:42: parameters
                             {
-                            pushFollow(FOLLOW_parameters_in_extensionCondition2270);
+                            pushFollow(FOLLOW_parameters_in_extensionCondition2265);
                             parameters271=parameters();
 
                             state._fsp--;
@@ -9580,8 +9579,8 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    char_literal272=(Token)match(input,54,FOLLOW_54_in_extensionCondition2273); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_54.add(char_literal272);
+                    char_literal272=(Token)match(input,53,FOLLOW_53_in_extensionCondition2268); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_53.add(char_literal272);
 
 
                     }
@@ -9591,7 +9590,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: functionId, parameters, extensionId
+            // elements: extensionId, functionId, parameters
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -9603,9 +9602,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 322:61: -> ^( CONDITION_FUNCTION extensionId functionId ( parameters )? )
+            // 321:61: -> ^( CONDITION_FUNCTION extensionId functionId ( parameters )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:322:66: ^( CONDITION_FUNCTION extensionId functionId ( parameters )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:321:66: ^( CONDITION_FUNCTION extensionId functionId ( parameters )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -9616,7 +9615,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_functionId.nextTree());
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:322:111: ( parameters )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:321:111: ( parameters )?
                 if ( stream_parameters.hasNext() ) {
                     adaptor.addChild(root_1, stream_parameters.nextTree());
 
@@ -9665,7 +9664,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "extensionExpression"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:325:1: extensionExpression : extensionId ':' functionId ( '(' ( parameters )? ')' )? -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:324:1: extensionExpression : extensionId ':' functionId ( '(' ( parameters )? ')' )? -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? ) ;
     public final SiddhiQLGrammarParser.extensionExpression_return extensionExpression() throws RecognitionException {
         SiddhiQLGrammarParser.extensionExpression_return retval = new SiddhiQLGrammarParser.extensionExpression_return();
         retval.start = input.LT(1);
@@ -9686,38 +9685,38 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal274_tree=null;
         CommonTree char_literal276_tree=null;
         CommonTree char_literal278_tree=null;
+        RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleTokenStream stream_53=new RewriteRuleTokenStream(adaptor,"token 53");
-        RewriteRuleTokenStream stream_54=new RewriteRuleTokenStream(adaptor,"token 54");
-        RewriteRuleTokenStream stream_61=new RewriteRuleTokenStream(adaptor,"token 61");
+        RewriteRuleTokenStream stream_60=new RewriteRuleTokenStream(adaptor,"token 60");
         RewriteRuleSubtreeStream stream_extensionId=new RewriteRuleSubtreeStream(adaptor,"rule extensionId");
         RewriteRuleSubtreeStream stream_parameters=new RewriteRuleSubtreeStream(adaptor,"rule parameters");
         RewriteRuleSubtreeStream stream_functionId=new RewriteRuleSubtreeStream(adaptor,"rule functionId");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:326:5: ( extensionId ':' functionId ( '(' ( parameters )? ')' )? -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:326:9: extensionId ':' functionId ( '(' ( parameters )? ')' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:325:5: ( extensionId ':' functionId ( '(' ( parameters )? ')' )? -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:325:9: extensionId ':' functionId ( '(' ( parameters )? ')' )?
             {
-            pushFollow(FOLLOW_extensionId_in_extensionExpression2311);
+            pushFollow(FOLLOW_extensionId_in_extensionExpression2306);
             extensionId273=extensionId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_extensionId.add(extensionId273.getTree());
 
-            char_literal274=(Token)match(input,61,FOLLOW_61_in_extensionExpression2313); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_61.add(char_literal274);
+            char_literal274=(Token)match(input,60,FOLLOW_60_in_extensionExpression2308); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_60.add(char_literal274);
 
 
-            pushFollow(FOLLOW_functionId_in_extensionExpression2315);
+            pushFollow(FOLLOW_functionId_in_extensionExpression2310);
             functionId275=functionId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_functionId.add(functionId275.getTree());
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:326:37: ( '(' ( parameters )? ')' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:325:37: ( '(' ( parameters )? ')' )?
             int alt75=2;
             switch ( input.LA(1) ) {
-                case 53:
+                case 52:
                     {
                     alt75=1;
                     }
@@ -9726,13 +9725,13 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt75) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:326:38: '(' ( parameters )? ')'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:325:38: '(' ( parameters )? ')'
                     {
-                    char_literal276=(Token)match(input,53,FOLLOW_53_in_extensionExpression2319); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_53.add(char_literal276);
+                    char_literal276=(Token)match(input,52,FOLLOW_52_in_extensionExpression2314); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_52.add(char_literal276);
 
 
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:326:42: ( parameters )?
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:325:42: ( parameters )?
                     int alt74=2;
                     switch ( input.LA(1) ) {
                         case BOOL_VAL:
@@ -9743,24 +9742,24 @@ public TreeAdaptor getTreeAdaptor() {
                         case POSITIVE_INT_VAL:
                         case POSITIVE_LONG_VAL:
                         case STRING_VAL:
+                        case 51:
                         case 52:
-                        case 53:
+                        case 54:
                         case 55:
                         case 56:
                         case 57:
-                        case 58:
-                        case 60:
-                        case 76:
-                        case 84:
-                        case 87:
-                        case 97:
-                        case 101:
-                        case 119:
+                        case 59:
+                        case 75:
+                        case 83:
+                        case 86:
+                        case 96:
+                        case 100:
+                        case 118:
                             {
                             alt74=1;
                             }
                             break;
-                        case 54:
+                        case 53:
                             {
                             int LA74_2 = input.LA(2);
 
@@ -9773,9 +9772,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt74) {
                         case 1 :
-                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:326:42: parameters
+                            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:325:42: parameters
                             {
-                            pushFollow(FOLLOW_parameters_in_extensionExpression2321);
+                            pushFollow(FOLLOW_parameters_in_extensionExpression2316);
                             parameters277=parameters();
 
                             state._fsp--;
@@ -9788,8 +9787,8 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    char_literal278=(Token)match(input,54,FOLLOW_54_in_extensionExpression2324); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_54.add(char_literal278);
+                    char_literal278=(Token)match(input,53,FOLLOW_53_in_extensionExpression2319); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_53.add(char_literal278);
 
 
                     }
@@ -9811,9 +9810,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 326:61: -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? )
+            // 325:61: -> ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:326:66: ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:325:66: ^( EXTENSION_FUNCTION extensionId functionId ( parameters )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -9824,7 +9823,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_functionId.nextTree());
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:326:111: ( parameters )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:325:111: ( parameters )?
                 if ( stream_parameters.hasNext() ) {
                     adaptor.addChild(root_1, stream_parameters.nextTree());
 
@@ -9873,7 +9872,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "constant"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:331:1: constant : ( intVal -> ^( CONSTANT intVal ) | longVal -> ^( CONSTANT longVal ) | floatVal -> ^( CONSTANT floatVal ) | doubleVal -> ^( CONSTANT doubleVal ) | boolVal -> ^( CONSTANT boolVal ) | stringVal -> ^( CONSTANT stringVal ) | timeExpr -> ^( CONSTANT timeExpr ) );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:330:1: constant : ( intVal -> ^( CONSTANT intVal ) | longVal -> ^( CONSTANT longVal ) | floatVal -> ^( CONSTANT floatVal ) | doubleVal -> ^( CONSTANT doubleVal ) | boolVal -> ^( CONSTANT boolVal ) | stringVal -> ^( CONSTANT stringVal ) | timeExpr -> ^( CONSTANT timeExpr ) );
     public final SiddhiQLGrammarParser.constant_return constant() throws RecognitionException {
         SiddhiQLGrammarParser.constant_return retval = new SiddhiQLGrammarParser.constant_return();
         retval.start = input.LT(1);
@@ -9904,10 +9903,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_intVal=new RewriteRuleSubtreeStream(adaptor,"rule intVal");
         RewriteRuleSubtreeStream stream_stringVal=new RewriteRuleSubtreeStream(adaptor,"rule stringVal");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:332:2: ( intVal -> ^( CONSTANT intVal ) | longVal -> ^( CONSTANT longVal ) | floatVal -> ^( CONSTANT floatVal ) | doubleVal -> ^( CONSTANT doubleVal ) | boolVal -> ^( CONSTANT boolVal ) | stringVal -> ^( CONSTANT stringVal ) | timeExpr -> ^( CONSTANT timeExpr ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:331:2: ( intVal -> ^( CONSTANT intVal ) | longVal -> ^( CONSTANT longVal ) | floatVal -> ^( CONSTANT floatVal ) | doubleVal -> ^( CONSTANT doubleVal ) | boolVal -> ^( CONSTANT boolVal ) | stringVal -> ^( CONSTANT stringVal ) | timeExpr -> ^( CONSTANT timeExpr ) )
             int alt76=7;
             switch ( input.LA(1) ) {
-            case 58:
+            case 57:
                 {
                 int LA76_1 = input.LA(2);
 
@@ -9939,52 +9938,52 @@ public TreeAdaptor getTreeAdaptor() {
             case POSITIVE_INT_VAL:
                 {
                 switch ( input.LA(2) ) {
+                case 80:
                 case 81:
-                case 82:
+                case 91:
                 case 92:
-                case 93:
+                case 101:
                 case 102:
                 case 103:
                 case 104:
                 case 105:
                 case 106:
                 case 107:
-                case 108:
+                case 114:
                 case 115:
                 case 116:
-                case 117:
+                case 121:
                 case 122:
-                case 123:
+                case 125:
                 case 126:
-                case 127:
                     {
                     alt76=7;
                     }
                     break;
                 case EOF:
-                case 50:
-                case 52:
+                case 49:
+                case 51:
+                case 53:
                 case 54:
                 case 55:
                 case 56:
                 case 57:
-                case 58:
-                case 60:
+                case 59:
+                case 61:
                 case 62:
                 case 63:
-                case 64:
+                case 65:
                 case 66:
                 case 67:
-                case 68:
-                case 72:
+                case 71:
+                case 73:
                 case 74:
-                case 75:
-                case 79:
+                case 78:
+                case 94:
                 case 95:
-                case 96:
-                case 111:
-                case 113:
-                case 125:
+                case 110:
+                case 112:
+                case 124:
                     {
                     alt76=1;
                     }
@@ -10026,28 +10025,28 @@ public TreeAdaptor getTreeAdaptor() {
                 }
                 break;
             case EOF:
-            case 50:
-            case 52:
+            case 49:
+            case 51:
+            case 53:
             case 54:
             case 55:
             case 56:
-            case 57:
-            case 60:
+            case 59:
+            case 61:
             case 62:
             case 63:
-            case 64:
+            case 65:
             case 66:
             case 67:
-            case 68:
-            case 72:
+            case 71:
+            case 73:
             case 74:
-            case 75:
-            case 79:
+            case 78:
+            case 94:
             case 95:
-            case 96:
-            case 111:
-            case 113:
-            case 125:
+            case 110:
+            case 112:
+            case 124:
                 {
                 alt76=7;
                 }
@@ -10063,9 +10062,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt76) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:332:3: intVal
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:331:3: intVal
                     {
-                    pushFollow(FOLLOW_intVal_in_constant2358);
+                    pushFollow(FOLLOW_intVal_in_constant2353);
                     intVal279=intVal();
 
                     state._fsp--;
@@ -10085,9 +10084,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 332:10: -> ^( CONSTANT intVal )
+                    // 331:10: -> ^( CONSTANT intVal )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:332:13: ^( CONSTANT intVal )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:331:13: ^( CONSTANT intVal )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -10108,9 +10107,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:333:3: longVal
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:332:3: longVal
                     {
-                    pushFollow(FOLLOW_longVal_in_constant2371);
+                    pushFollow(FOLLOW_longVal_in_constant2366);
                     longVal280=longVal();
 
                     state._fsp--;
@@ -10130,9 +10129,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 333:11: -> ^( CONSTANT longVal )
+                    // 332:11: -> ^( CONSTANT longVal )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:333:14: ^( CONSTANT longVal )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:332:14: ^( CONSTANT longVal )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -10153,9 +10152,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:334:3: floatVal
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:333:3: floatVal
                     {
-                    pushFollow(FOLLOW_floatVal_in_constant2384);
+                    pushFollow(FOLLOW_floatVal_in_constant2379);
                     floatVal281=floatVal();
 
                     state._fsp--;
@@ -10175,9 +10174,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 334:13: -> ^( CONSTANT floatVal )
+                    // 333:13: -> ^( CONSTANT floatVal )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:334:16: ^( CONSTANT floatVal )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:333:16: ^( CONSTANT floatVal )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -10198,9 +10197,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:335:3: doubleVal
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:334:3: doubleVal
                     {
-                    pushFollow(FOLLOW_doubleVal_in_constant2398);
+                    pushFollow(FOLLOW_doubleVal_in_constant2393);
                     doubleVal282=doubleVal();
 
                     state._fsp--;
@@ -10220,9 +10219,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 335:13: -> ^( CONSTANT doubleVal )
+                    // 334:13: -> ^( CONSTANT doubleVal )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:335:16: ^( CONSTANT doubleVal )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:334:16: ^( CONSTANT doubleVal )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -10243,9 +10242,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:336:3: boolVal
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:335:3: boolVal
                     {
-                    pushFollow(FOLLOW_boolVal_in_constant2411);
+                    pushFollow(FOLLOW_boolVal_in_constant2406);
                     boolVal283=boolVal();
 
                     state._fsp--;
@@ -10265,9 +10264,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 336:11: -> ^( CONSTANT boolVal )
+                    // 335:11: -> ^( CONSTANT boolVal )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:336:14: ^( CONSTANT boolVal )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:335:14: ^( CONSTANT boolVal )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -10288,9 +10287,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:337:3: stringVal
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:336:3: stringVal
                     {
-                    pushFollow(FOLLOW_stringVal_in_constant2424);
+                    pushFollow(FOLLOW_stringVal_in_constant2419);
                     stringVal284=stringVal();
 
                     state._fsp--;
@@ -10310,9 +10309,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 337:13: -> ^( CONSTANT stringVal )
+                    // 336:13: -> ^( CONSTANT stringVal )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:337:16: ^( CONSTANT stringVal )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:336:16: ^( CONSTANT stringVal )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -10333,9 +10332,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:338:3: timeExpr
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:337:3: timeExpr
                     {
-                    pushFollow(FOLLOW_timeExpr_in_constant2437);
+                    pushFollow(FOLLOW_timeExpr_in_constant2432);
                     timeExpr285=timeExpr();
 
                     state._fsp--;
@@ -10355,9 +10354,9 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 338:14: -> ^( CONSTANT timeExpr )
+                    // 337:14: -> ^( CONSTANT timeExpr )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:338:17: ^( CONSTANT timeExpr )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:337:17: ^( CONSTANT timeExpr )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -10410,7 +10409,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "streamId"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:341:1: streamId : id ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:340:1: streamId : id ;
     public final SiddhiQLGrammarParser.streamId_return streamId() throws RecognitionException {
         SiddhiQLGrammarParser.streamId_return retval = new SiddhiQLGrammarParser.streamId_return();
         retval.start = input.LT(1);
@@ -10423,13 +10422,13 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:341:9: ( id )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:341:11: id
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:340:9: ( id )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:340:11: id
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_id_in_streamId2457);
+            pushFollow(FOLLOW_id_in_streamId2452);
             id286=id();
 
             state._fsp--;
@@ -10469,7 +10468,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "attributeVariable"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:343:1: attributeVariable : ( streamPositionAttributeName | streamAttributeName | attributeName );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:342:1: attributeVariable : ( streamPositionAttributeName | streamAttributeName | attributeName );
     public final SiddhiQLGrammarParser.attributeVariable_return attributeVariable() throws RecognitionException {
         SiddhiQLGrammarParser.attributeVariable_return retval = new SiddhiQLGrammarParser.attributeVariable_return();
         retval.start = input.LT(1);
@@ -10486,49 +10485,49 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:344:2: ( streamPositionAttributeName | streamAttributeName | attributeName )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:343:2: ( streamPositionAttributeName | streamAttributeName | attributeName )
             int alt77=3;
             switch ( input.LA(1) ) {
             case ID:
             case ID_QUOTES:
                 {
                 switch ( input.LA(2) ) {
-                case 71:
+                case 70:
                     {
                     alt77=1;
                     }
                     break;
-                case 59:
+                case 58:
                     {
                     alt77=2;
                     }
                     break;
                 case EOF:
-                case 50:
-                case 52:
+                case 49:
+                case 51:
+                case 53:
                 case 54:
                 case 55:
                 case 56:
                 case 57:
-                case 58:
-                case 60:
+                case 59:
+                case 61:
                 case 62:
                 case 63:
-                case 64:
+                case 65:
                 case 66:
                 case 67:
-                case 68:
-                case 72:
+                case 71:
+                case 73:
                 case 74:
-                case 75:
-                case 79:
+                case 78:
+                case 89:
                 case 90:
-                case 91:
+                case 94:
                 case 95:
-                case 96:
-                case 111:
-                case 113:
-                case 125:
+                case 110:
+                case 112:
+                case 124:
                     {
                     alt77=3;
                     }
@@ -10555,12 +10554,12 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt77) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:344:3: streamPositionAttributeName
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:343:3: streamPositionAttributeName
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_streamPositionAttributeName_in_attributeVariable2465);
+                    pushFollow(FOLLOW_streamPositionAttributeName_in_attributeVariable2460);
                     streamPositionAttributeName287=streamPositionAttributeName();
 
                     state._fsp--;
@@ -10570,12 +10569,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:344:31: streamAttributeName
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:343:31: streamAttributeName
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_streamAttributeName_in_attributeVariable2467);
+                    pushFollow(FOLLOW_streamAttributeName_in_attributeVariable2462);
                     streamAttributeName288=streamAttributeName();
 
                     state._fsp--;
@@ -10585,12 +10584,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:344:51: attributeName
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:343:51: attributeName
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_attributeName_in_attributeVariable2469);
+                    pushFollow(FOLLOW_attributeName_in_attributeVariable2464);
                     attributeName289=attributeName();
 
                     state._fsp--;
@@ -10632,7 +10631,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "streamPositionAttributeName"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:346:1: streamPositionAttributeName : streamId '[' POSITIVE_INT_VAL ']' '.' id -> ^( ATTRIBUTE ^( streamId POSITIVE_INT_VAL ) id ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:345:1: streamPositionAttributeName : streamId '[' POSITIVE_INT_VAL ']' '.' id -> ^( ATTRIBUTE ^( streamId POSITIVE_INT_VAL ) id ) ;
     public final SiddhiQLGrammarParser.streamPositionAttributeName_return streamPositionAttributeName() throws RecognitionException {
         SiddhiQLGrammarParser.streamPositionAttributeName_return retval = new SiddhiQLGrammarParser.streamPositionAttributeName_return();
         retval.start = input.LT(1);
@@ -10654,39 +10653,39 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal293_tree=null;
         CommonTree char_literal294_tree=null;
         RewriteRuleTokenStream stream_POSITIVE_INT_VAL=new RewriteRuleTokenStream(adaptor,"token POSITIVE_INT_VAL");
-        RewriteRuleTokenStream stream_59=new RewriteRuleTokenStream(adaptor,"token 59");
+        RewriteRuleTokenStream stream_58=new RewriteRuleTokenStream(adaptor,"token 58");
+        RewriteRuleTokenStream stream_70=new RewriteRuleTokenStream(adaptor,"token 70");
         RewriteRuleTokenStream stream_71=new RewriteRuleTokenStream(adaptor,"token 71");
-        RewriteRuleTokenStream stream_72=new RewriteRuleTokenStream(adaptor,"token 72");
         RewriteRuleSubtreeStream stream_id=new RewriteRuleSubtreeStream(adaptor,"rule id");
         RewriteRuleSubtreeStream stream_streamId=new RewriteRuleSubtreeStream(adaptor,"rule streamId");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:347:2: ( streamId '[' POSITIVE_INT_VAL ']' '.' id -> ^( ATTRIBUTE ^( streamId POSITIVE_INT_VAL ) id ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:347:3: streamId '[' POSITIVE_INT_VAL ']' '.' id
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:346:2: ( streamId '[' POSITIVE_INT_VAL ']' '.' id -> ^( ATTRIBUTE ^( streamId POSITIVE_INT_VAL ) id ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:346:3: streamId '[' POSITIVE_INT_VAL ']' '.' id
             {
-            pushFollow(FOLLOW_streamId_in_streamPositionAttributeName2477);
+            pushFollow(FOLLOW_streamId_in_streamPositionAttributeName2472);
             streamId290=streamId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_streamId.add(streamId290.getTree());
 
-            char_literal291=(Token)match(input,71,FOLLOW_71_in_streamPositionAttributeName2479); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_71.add(char_literal291);
+            char_literal291=(Token)match(input,70,FOLLOW_70_in_streamPositionAttributeName2474); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_70.add(char_literal291);
 
 
-            POSITIVE_INT_VAL292=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_streamPositionAttributeName2480); if (state.failed) return retval; 
+            POSITIVE_INT_VAL292=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_streamPositionAttributeName2475); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_POSITIVE_INT_VAL.add(POSITIVE_INT_VAL292);
 
 
-            char_literal293=(Token)match(input,72,FOLLOW_72_in_streamPositionAttributeName2481); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_72.add(char_literal293);
+            char_literal293=(Token)match(input,71,FOLLOW_71_in_streamPositionAttributeName2476); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_71.add(char_literal293);
 
 
-            char_literal294=(Token)match(input,59,FOLLOW_59_in_streamPositionAttributeName2482); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_59.add(char_literal294);
+            char_literal294=(Token)match(input,58,FOLLOW_58_in_streamPositionAttributeName2477); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_58.add(char_literal294);
 
 
-            pushFollow(FOLLOW_id_in_streamPositionAttributeName2484);
+            pushFollow(FOLLOW_id_in_streamPositionAttributeName2479);
             id295=id();
 
             state._fsp--;
@@ -10706,16 +10705,16 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 347:41: -> ^( ATTRIBUTE ^( streamId POSITIVE_INT_VAL ) id )
+            // 346:41: -> ^( ATTRIBUTE ^( streamId POSITIVE_INT_VAL ) id )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:347:45: ^( ATTRIBUTE ^( streamId POSITIVE_INT_VAL ) id )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:346:45: ^( ATTRIBUTE ^( streamId POSITIVE_INT_VAL ) id )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
                 (CommonTree)adaptor.create(ATTRIBUTE, "ATTRIBUTE")
                 , root_1);
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:347:58: ^( streamId POSITIVE_INT_VAL )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:346:58: ^( streamId POSITIVE_INT_VAL )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot(stream_streamId.nextNode(), root_2);
@@ -10771,7 +10770,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "streamAttributeName"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:350:1: streamAttributeName : streamId '.' id -> ^( ATTRIBUTE streamId id ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:349:1: streamAttributeName : streamId '.' id -> ^( ATTRIBUTE streamId id ) ;
     public final SiddhiQLGrammarParser.streamAttributeName_return streamAttributeName() throws RecognitionException {
         SiddhiQLGrammarParser.streamAttributeName_return retval = new SiddhiQLGrammarParser.streamAttributeName_return();
         retval.start = input.LT(1);
@@ -10786,25 +10785,25 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         CommonTree char_literal297_tree=null;
-        RewriteRuleTokenStream stream_59=new RewriteRuleTokenStream(adaptor,"token 59");
+        RewriteRuleTokenStream stream_58=new RewriteRuleTokenStream(adaptor,"token 58");
         RewriteRuleSubtreeStream stream_id=new RewriteRuleSubtreeStream(adaptor,"rule id");
         RewriteRuleSubtreeStream stream_streamId=new RewriteRuleSubtreeStream(adaptor,"rule streamId");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:351:2: ( streamId '.' id -> ^( ATTRIBUTE streamId id ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:351:4: streamId '.' id
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:350:2: ( streamId '.' id -> ^( ATTRIBUTE streamId id ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:350:4: streamId '.' id
             {
-            pushFollow(FOLLOW_streamId_in_streamAttributeName2511);
+            pushFollow(FOLLOW_streamId_in_streamAttributeName2506);
             streamId296=streamId();
 
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_streamId.add(streamId296.getTree());
 
-            char_literal297=(Token)match(input,59,FOLLOW_59_in_streamAttributeName2513); if (state.failed) return retval; 
-            if ( state.backtracking==0 ) stream_59.add(char_literal297);
+            char_literal297=(Token)match(input,58,FOLLOW_58_in_streamAttributeName2508); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_58.add(char_literal297);
 
 
-            pushFollow(FOLLOW_id_in_streamAttributeName2515);
+            pushFollow(FOLLOW_id_in_streamAttributeName2510);
             id298=id();
 
             state._fsp--;
@@ -10824,9 +10823,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 351:21: -> ^( ATTRIBUTE streamId id )
+            // 350:21: -> ^( ATTRIBUTE streamId id )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:351:25: ^( ATTRIBUTE streamId id )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:350:25: ^( ATTRIBUTE streamId id )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -10879,7 +10878,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "attributeName"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:354:1: attributeName : id -> ^( ATTRIBUTE id ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:353:1: attributeName : id -> ^( ATTRIBUTE id ) ;
     public final SiddhiQLGrammarParser.attributeName_return attributeName() throws RecognitionException {
         SiddhiQLGrammarParser.attributeName_return retval = new SiddhiQLGrammarParser.attributeName_return();
         retval.start = input.LT(1);
@@ -10892,10 +10891,10 @@ public TreeAdaptor getTreeAdaptor() {
 
         RewriteRuleSubtreeStream stream_id=new RewriteRuleSubtreeStream(adaptor,"rule id");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:355:2: ( id -> ^( ATTRIBUTE id ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:355:4: id
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:354:2: ( id -> ^( ATTRIBUTE id ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:354:4: id
             {
-            pushFollow(FOLLOW_id_in_attributeName2539);
+            pushFollow(FOLLOW_id_in_attributeName2534);
             id299=id();
 
             state._fsp--;
@@ -10915,9 +10914,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 355:8: -> ^( ATTRIBUTE id )
+            // 354:8: -> ^( ATTRIBUTE id )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:355:12: ^( ATTRIBUTE id )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:354:12: ^( ATTRIBUTE id )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -10968,7 +10967,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "join"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:358:1: join : ( 'left' 'outer' 'join' -> ^( 'join' ^( 'outer' 'left' ) ) | 'right' 'outer' 'join' -> ^( 'join' ^( 'outer' 'right' ) ) | 'full' 'outer' 'join' -> ^( 'join' ^( 'outer' 'full' ) ) | 'outer' 'join' -> ^( 'join' ^( 'outer' 'full' ) ) | 'inner' 'join' -> ^( 'join' 'inner' ) | 'join' -> ^( 'join' 'inner' ) );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:357:1: join : ( 'left' 'outer' 'join' -> ^( 'join' ^( 'outer' 'left' ) ) | 'right' 'outer' 'join' -> ^( 'join' ^( 'outer' 'right' ) ) | 'full' 'outer' 'join' -> ^( 'join' ^( 'outer' 'full' ) ) | 'outer' 'join' -> ^( 'join' ^( 'outer' 'full' ) ) | 'inner' 'join' -> ^( 'join' 'inner' ) | 'join' -> ^( 'join' 'inner' ) );
     public final SiddhiQLGrammarParser.join_return join() throws RecognitionException {
         SiddhiQLGrammarParser.join_return retval = new SiddhiQLGrammarParser.join_return();
         retval.start = input.LT(1);
@@ -11005,43 +11004,43 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal311_tree=null;
         CommonTree string_literal312_tree=null;
         CommonTree string_literal313_tree=null;
-        RewriteRuleTokenStream stream_114=new RewriteRuleTokenStream(adaptor,"token 114");
-        RewriteRuleTokenStream stream_94=new RewriteRuleTokenStream(adaptor,"token 94");
-        RewriteRuleTokenStream stream_112=new RewriteRuleTokenStream(adaptor,"token 112");
+        RewriteRuleTokenStream stream_98=new RewriteRuleTokenStream(adaptor,"token 98");
+        RewriteRuleTokenStream stream_93=new RewriteRuleTokenStream(adaptor,"token 93");
+        RewriteRuleTokenStream stream_113=new RewriteRuleTokenStream(adaptor,"token 113");
+        RewriteRuleTokenStream stream_111=new RewriteRuleTokenStream(adaptor,"token 111");
         RewriteRuleTokenStream stream_99=new RewriteRuleTokenStream(adaptor,"token 99");
-        RewriteRuleTokenStream stream_100=new RewriteRuleTokenStream(adaptor,"token 100");
-        RewriteRuleTokenStream stream_89=new RewriteRuleTokenStream(adaptor,"token 89");
+        RewriteRuleTokenStream stream_88=new RewriteRuleTokenStream(adaptor,"token 88");
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:359:2: ( 'left' 'outer' 'join' -> ^( 'join' ^( 'outer' 'left' ) ) | 'right' 'outer' 'join' -> ^( 'join' ^( 'outer' 'right' ) ) | 'full' 'outer' 'join' -> ^( 'join' ^( 'outer' 'full' ) ) | 'outer' 'join' -> ^( 'join' ^( 'outer' 'full' ) ) | 'inner' 'join' -> ^( 'join' 'inner' ) | 'join' -> ^( 'join' 'inner' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:358:2: ( 'left' 'outer' 'join' -> ^( 'join' ^( 'outer' 'left' ) ) | 'right' 'outer' 'join' -> ^( 'join' ^( 'outer' 'right' ) ) | 'full' 'outer' 'join' -> ^( 'join' ^( 'outer' 'full' ) ) | 'outer' 'join' -> ^( 'join' ^( 'outer' 'full' ) ) | 'inner' 'join' -> ^( 'join' 'inner' ) | 'join' -> ^( 'join' 'inner' ) )
             int alt78=6;
             switch ( input.LA(1) ) {
-            case 100:
+            case 99:
                 {
                 alt78=1;
                 }
                 break;
-            case 114:
+            case 113:
                 {
                 alt78=2;
                 }
                 break;
-            case 89:
+            case 88:
                 {
                 alt78=3;
                 }
                 break;
-            case 112:
+            case 111:
                 {
                 alt78=4;
                 }
                 break;
-            case 94:
+            case 93:
                 {
                 alt78=5;
                 }
                 break;
-            case 99:
+            case 98:
                 {
                 alt78=6;
                 }
@@ -11057,22 +11056,22 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt78) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:359:4: 'left' 'outer' 'join'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:358:4: 'left' 'outer' 'join'
                     {
-                    string_literal300=(Token)match(input,100,FOLLOW_100_in_join2561); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_100.add(string_literal300);
+                    string_literal300=(Token)match(input,99,FOLLOW_99_in_join2556); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_99.add(string_literal300);
 
 
-                    string_literal301=(Token)match(input,112,FOLLOW_112_in_join2562); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_112.add(string_literal301);
+                    string_literal301=(Token)match(input,111,FOLLOW_111_in_join2557); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_111.add(string_literal301);
 
 
-                    string_literal302=(Token)match(input,99,FOLLOW_99_in_join2564); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_99.add(string_literal302);
+                    string_literal302=(Token)match(input,98,FOLLOW_98_in_join2559); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_98.add(string_literal302);
 
 
                     // AST REWRITE
-                    // elements: 112, 99, 100
+                    // elements: 99, 111, 98
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -11084,24 +11083,24 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 359:25: -> ^( 'join' ^( 'outer' 'left' ) )
+                    // 358:25: -> ^( 'join' ^( 'outer' 'left' ) )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:359:29: ^( 'join' ^( 'outer' 'left' ) )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:358:29: ^( 'join' ^( 'outer' 'left' ) )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
-                        stream_99.nextNode()
+                        stream_98.nextNode()
                         , root_1);
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:359:38: ^( 'outer' 'left' )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:358:38: ^( 'outer' 'left' )
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(
-                        stream_112.nextNode()
+                        stream_111.nextNode()
                         , root_2);
 
                         adaptor.addChild(root_2, 
-                        stream_100.nextNode()
+                        stream_99.nextNode()
                         );
 
                         adaptor.addChild(root_1, root_2);
@@ -11119,22 +11118,22 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:360:4: 'right' 'outer' 'join'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:359:4: 'right' 'outer' 'join'
                     {
-                    string_literal303=(Token)match(input,114,FOLLOW_114_in_join2582); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_114.add(string_literal303);
+                    string_literal303=(Token)match(input,113,FOLLOW_113_in_join2577); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_113.add(string_literal303);
 
 
-                    string_literal304=(Token)match(input,112,FOLLOW_112_in_join2584); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_112.add(string_literal304);
+                    string_literal304=(Token)match(input,111,FOLLOW_111_in_join2579); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_111.add(string_literal304);
 
 
-                    string_literal305=(Token)match(input,99,FOLLOW_99_in_join2586); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_99.add(string_literal305);
+                    string_literal305=(Token)match(input,98,FOLLOW_98_in_join2581); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_98.add(string_literal305);
 
 
                     // AST REWRITE
-                    // elements: 112, 114, 99
+                    // elements: 113, 111, 98
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -11146,24 +11145,24 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 360:27: -> ^( 'join' ^( 'outer' 'right' ) )
+                    // 359:27: -> ^( 'join' ^( 'outer' 'right' ) )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:360:30: ^( 'join' ^( 'outer' 'right' ) )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:359:30: ^( 'join' ^( 'outer' 'right' ) )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
-                        stream_99.nextNode()
+                        stream_98.nextNode()
                         , root_1);
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:360:39: ^( 'outer' 'right' )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:359:39: ^( 'outer' 'right' )
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(
-                        stream_112.nextNode()
+                        stream_111.nextNode()
                         , root_2);
 
                         adaptor.addChild(root_2, 
-                        stream_114.nextNode()
+                        stream_113.nextNode()
                         );
 
                         adaptor.addChild(root_1, root_2);
@@ -11181,22 +11180,22 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:361:4: 'full' 'outer' 'join'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:360:4: 'full' 'outer' 'join'
                     {
-                    string_literal306=(Token)match(input,89,FOLLOW_89_in_join2603); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_89.add(string_literal306);
+                    string_literal306=(Token)match(input,88,FOLLOW_88_in_join2598); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_88.add(string_literal306);
 
 
-                    string_literal307=(Token)match(input,112,FOLLOW_112_in_join2604); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_112.add(string_literal307);
+                    string_literal307=(Token)match(input,111,FOLLOW_111_in_join2599); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_111.add(string_literal307);
 
 
-                    string_literal308=(Token)match(input,99,FOLLOW_99_in_join2606); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_99.add(string_literal308);
+                    string_literal308=(Token)match(input,98,FOLLOW_98_in_join2601); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_98.add(string_literal308);
 
 
                     // AST REWRITE
-                    // elements: 99, 112, 89
+                    // elements: 88, 98, 111
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -11208,24 +11207,24 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 361:25: -> ^( 'join' ^( 'outer' 'full' ) )
+                    // 360:25: -> ^( 'join' ^( 'outer' 'full' ) )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:361:28: ^( 'join' ^( 'outer' 'full' ) )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:360:28: ^( 'join' ^( 'outer' 'full' ) )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
-                        stream_99.nextNode()
+                        stream_98.nextNode()
                         , root_1);
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:361:37: ^( 'outer' 'full' )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:360:37: ^( 'outer' 'full' )
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(
-                        stream_112.nextNode()
+                        stream_111.nextNode()
                         , root_2);
 
                         adaptor.addChild(root_2, 
-                        stream_89.nextNode()
+                        stream_88.nextNode()
                         );
 
                         adaptor.addChild(root_1, root_2);
@@ -11243,18 +11242,18 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:362:4: 'outer' 'join'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:361:4: 'outer' 'join'
                     {
-                    string_literal309=(Token)match(input,112,FOLLOW_112_in_join2623); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_112.add(string_literal309);
+                    string_literal309=(Token)match(input,111,FOLLOW_111_in_join2618); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_111.add(string_literal309);
 
 
-                    string_literal310=(Token)match(input,99,FOLLOW_99_in_join2625); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_99.add(string_literal310);
+                    string_literal310=(Token)match(input,98,FOLLOW_98_in_join2620); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_98.add(string_literal310);
 
 
                     // AST REWRITE
-                    // elements: 89, 112, 99
+                    // elements: 98, 111, 88
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -11266,24 +11265,24 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 362:20: -> ^( 'join' ^( 'outer' 'full' ) )
+                    // 361:20: -> ^( 'join' ^( 'outer' 'full' ) )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:362:23: ^( 'join' ^( 'outer' 'full' ) )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:361:23: ^( 'join' ^( 'outer' 'full' ) )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
-                        stream_99.nextNode()
+                        stream_98.nextNode()
                         , root_1);
 
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:362:32: ^( 'outer' 'full' )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:361:32: ^( 'outer' 'full' )
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(
-                        stream_112.nextNode()
+                        stream_111.nextNode()
                         , root_2);
 
                         adaptor.addChild(root_2, 
-                        (CommonTree)adaptor.create(89, "89")
+                        (CommonTree)adaptor.create(88, "88")
                         );
 
                         adaptor.addChild(root_1, root_2);
@@ -11301,18 +11300,18 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:363:4: 'inner' 'join'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:362:4: 'inner' 'join'
                     {
-                    string_literal311=(Token)match(input,94,FOLLOW_94_in_join2643); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_94.add(string_literal311);
+                    string_literal311=(Token)match(input,93,FOLLOW_93_in_join2638); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_93.add(string_literal311);
 
 
-                    string_literal312=(Token)match(input,99,FOLLOW_99_in_join2645); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_99.add(string_literal312);
+                    string_literal312=(Token)match(input,98,FOLLOW_98_in_join2640); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_98.add(string_literal312);
 
 
                     // AST REWRITE
-                    // elements: 94, 99
+                    // elements: 98, 93
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -11324,17 +11323,17 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 363:20: -> ^( 'join' 'inner' )
+                    // 362:20: -> ^( 'join' 'inner' )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:363:23: ^( 'join' 'inner' )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:362:23: ^( 'join' 'inner' )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
-                        stream_99.nextNode()
+                        stream_98.nextNode()
                         , root_1);
 
                         adaptor.addChild(root_1, 
-                        stream_94.nextNode()
+                        stream_93.nextNode()
                         );
 
                         adaptor.addChild(root_0, root_1);
@@ -11349,14 +11348,14 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:364:5: 'join'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:363:5: 'join'
                     {
-                    string_literal313=(Token)match(input,99,FOLLOW_99_in_join2660); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_99.add(string_literal313);
+                    string_literal313=(Token)match(input,98,FOLLOW_98_in_join2655); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_98.add(string_literal313);
 
 
                     // AST REWRITE
-                    // elements: 94, 99
+                    // elements: 93, 98
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -11368,17 +11367,17 @@ public TreeAdaptor getTreeAdaptor() {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 364:12: -> ^( 'join' 'inner' )
+                    // 363:12: -> ^( 'join' 'inner' )
                     {
-                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:364:15: ^( 'join' 'inner' )
+                        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:363:15: ^( 'join' 'inner' )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
-                        stream_99.nextNode()
+                        stream_98.nextNode()
                         , root_1);
 
                         adaptor.addChild(root_1, 
-                        (CommonTree)adaptor.create(94, "94")
+                        (CommonTree)adaptor.create(93, "93")
                         );
 
                         adaptor.addChild(root_0, root_1);
@@ -11425,7 +11424,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "window"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:367:1: window : 'window' ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:366:1: window : 'window' ;
     public final SiddhiQLGrammarParser.window_return window() throws RecognitionException {
         SiddhiQLGrammarParser.window_return retval = new SiddhiQLGrammarParser.window_return();
         retval.start = input.LT(1);
@@ -11438,13 +11437,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal314_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:368:5: ( 'window' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:368:7: 'window'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:367:5: ( 'window' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:367:7: 'window'
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            string_literal314=(Token)match(input,124,FOLLOW_124_in_window2682); if (state.failed) return retval;
+            string_literal314=(Token)match(input,123,FOLLOW_123_in_window2677); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             string_literal314_tree = 
             (CommonTree)adaptor.create(string_literal314)
@@ -11485,7 +11484,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "transform"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:371:1: transform : 'transform' ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:370:1: transform : 'transform' ;
     public final SiddhiQLGrammarParser.transform_return transform() throws RecognitionException {
         SiddhiQLGrammarParser.transform_return retval = new SiddhiQLGrammarParser.transform_return();
         retval.start = input.LT(1);
@@ -11498,13 +11497,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree string_literal315_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:372:5: ( 'transform' )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:372:7: 'transform'
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:371:5: ( 'transform' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:371:7: 'transform'
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            string_literal315=(Token)match(input,120,FOLLOW_120_in_transform2699); if (state.failed) return retval;
+            string_literal315=(Token)match(input,119,FOLLOW_119_in_transform2694); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             string_literal315_tree = 
             (CommonTree)adaptor.create(string_literal315)
@@ -11545,7 +11544,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "compareOperation"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:375:1: compareOperation : ( '==' | '!=' | '<=' | '>=' | '<' | '>' | 'contains' | 'instanceof' );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:374:1: compareOperation : ( '==' | '!=' | '<=' | '>=' | '<' | '>' | 'contains' | 'instanceof' );
     public final SiddhiQLGrammarParser.compareOperation_return compareOperation() throws RecognitionException {
         SiddhiQLGrammarParser.compareOperation_return retval = new SiddhiQLGrammarParser.compareOperation_return();
         retval.start = input.LT(1);
@@ -11558,7 +11557,7 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set316_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:376:2: ( '==' | '!=' | '<=' | '>=' | '<' | '>' | 'contains' | 'instanceof' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:375:2: ( '==' | '!=' | '<=' | '>=' | '<' | '>' | 'contains' | 'instanceof' )
             // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -11566,7 +11565,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             set316=(Token)input.LT(1);
 
-            if ( input.LA(1)==50||(input.LA(1) >= 63 && input.LA(1) <= 64)||(input.LA(1) >= 66 && input.LA(1) <= 68)||input.LA(1)==79||input.LA(1)==96 ) {
+            if ( input.LA(1)==49||(input.LA(1) >= 62 && input.LA(1) <= 63)||(input.LA(1) >= 65 && input.LA(1) <= 67)||input.LA(1)==78||input.LA(1)==95 ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set316)
@@ -11614,7 +11613,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "id"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:379:1: id : ( ID | ID_QUOTES );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:378:1: id : ( ID | ID_QUOTES );
     public final SiddhiQLGrammarParser.id_return id() throws RecognitionException {
         SiddhiQLGrammarParser.id_return retval = new SiddhiQLGrammarParser.id_return();
         retval.start = input.LT(1);
@@ -11627,7 +11626,7 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set317_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:379:3: ( ID | ID_QUOTES )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:378:3: ( ID | ID_QUOTES )
             // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -11683,7 +11682,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "timeExpr"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:1: timeExpr : ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? -> ^( TIME_EXP ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:380:1: timeExpr : ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? -> ^( TIME_EXP ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? ) ;
     public final SiddhiQLGrammarParser.timeExpr_return timeExpr() throws RecognitionException {
         SiddhiQLGrammarParser.timeExpr_return retval = new SiddhiQLGrammarParser.timeExpr_return();
         retval.start = input.LT(1);
@@ -11717,17 +11716,17 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_secondValue=new RewriteRuleSubtreeStream(adaptor,"rule secondValue");
         RewriteRuleSubtreeStream stream_hourValue=new RewriteRuleSubtreeStream(adaptor,"rule hourValue");
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:5: ( ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? -> ^( TIME_EXP ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:7: ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:5: ( ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? -> ^( TIME_EXP ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:7: ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )?
             {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:7: ( yearValue )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:7: ( yearValue )?
             int alt79=2;
             switch ( input.LA(1) ) {
                 case POSITIVE_INT_VAL:
                     {
                     switch ( input.LA(2) ) {
+                        case 125:
                         case 126:
-                        case 127:
                             {
                             alt79=1;
                             }
@@ -11740,9 +11739,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt79) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:8: yearValue
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:8: yearValue
                     {
-                    pushFollow(FOLLOW_yearValue_in_timeExpr2759);
+                    pushFollow(FOLLOW_yearValue_in_timeExpr2754);
                     yearValue318=yearValue();
 
                     state._fsp--;
@@ -11755,14 +11754,14 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:20: ( monthValue )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:20: ( monthValue )?
             int alt80=2;
             switch ( input.LA(1) ) {
                 case POSITIVE_INT_VAL:
                     {
                     switch ( input.LA(2) ) {
+                        case 106:
                         case 107:
-                        case 108:
                             {
                             alt80=1;
                             }
@@ -11775,9 +11774,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt80) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:21: monthValue
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:21: monthValue
                     {
-                    pushFollow(FOLLOW_monthValue_in_timeExpr2764);
+                    pushFollow(FOLLOW_monthValue_in_timeExpr2759);
                     monthValue319=monthValue();
 
                     state._fsp--;
@@ -11790,14 +11789,14 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:34: ( weekValue )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:34: ( weekValue )?
             int alt81=2;
             switch ( input.LA(1) ) {
                 case POSITIVE_INT_VAL:
                     {
                     switch ( input.LA(2) ) {
+                        case 121:
                         case 122:
-                        case 123:
                             {
                             alt81=1;
                             }
@@ -11810,9 +11809,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt81) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:35: weekValue
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:35: weekValue
                     {
-                    pushFollow(FOLLOW_weekValue_in_timeExpr2769);
+                    pushFollow(FOLLOW_weekValue_in_timeExpr2764);
                     weekValue320=weekValue();
 
                     state._fsp--;
@@ -11825,14 +11824,14 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:47: ( dayValue )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:47: ( dayValue )?
             int alt82=2;
             switch ( input.LA(1) ) {
                 case POSITIVE_INT_VAL:
                     {
                     switch ( input.LA(2) ) {
+                        case 80:
                         case 81:
-                        case 82:
                             {
                             alt82=1;
                             }
@@ -11845,9 +11844,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt82) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:48: dayValue
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:48: dayValue
                     {
-                    pushFollow(FOLLOW_dayValue_in_timeExpr2774);
+                    pushFollow(FOLLOW_dayValue_in_timeExpr2769);
                     dayValue321=dayValue();
 
                     state._fsp--;
@@ -11860,14 +11859,14 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:59: ( hourValue )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:59: ( hourValue )?
             int alt83=2;
             switch ( input.LA(1) ) {
                 case POSITIVE_INT_VAL:
                     {
                     switch ( input.LA(2) ) {
+                        case 91:
                         case 92:
-                        case 93:
                             {
                             alt83=1;
                             }
@@ -11880,9 +11879,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt83) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:60: hourValue
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:60: hourValue
                     {
-                    pushFollow(FOLLOW_hourValue_in_timeExpr2779);
+                    pushFollow(FOLLOW_hourValue_in_timeExpr2774);
                     hourValue322=hourValue();
 
                     state._fsp--;
@@ -11895,15 +11894,15 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:72: ( minuteValue )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:72: ( minuteValue )?
             int alt84=2;
             switch ( input.LA(1) ) {
                 case POSITIVE_INT_VAL:
                     {
                     switch ( input.LA(2) ) {
+                        case 103:
                         case 104:
                         case 105:
-                        case 106:
                             {
                             alt84=1;
                             }
@@ -11916,9 +11915,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt84) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:73: minuteValue
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:73: minuteValue
                     {
-                    pushFollow(FOLLOW_minuteValue_in_timeExpr2784);
+                    pushFollow(FOLLOW_minuteValue_in_timeExpr2779);
                     minuteValue323=minuteValue();
 
                     state._fsp--;
@@ -11931,15 +11930,15 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:87: ( secondValue )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:87: ( secondValue )?
             int alt85=2;
             switch ( input.LA(1) ) {
                 case POSITIVE_INT_VAL:
                     {
                     switch ( input.LA(2) ) {
+                        case 114:
                         case 115:
                         case 116:
-                        case 117:
                             {
                             alt85=1;
                             }
@@ -11952,9 +11951,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt85) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:88: secondValue
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:88: secondValue
                     {
-                    pushFollow(FOLLOW_secondValue_in_timeExpr2789);
+                    pushFollow(FOLLOW_secondValue_in_timeExpr2784);
                     secondValue324=secondValue();
 
                     state._fsp--;
@@ -11967,7 +11966,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:103: ( milliSecondValue )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:103: ( milliSecondValue )?
             int alt86=2;
             switch ( input.LA(1) ) {
                 case POSITIVE_INT_VAL:
@@ -11979,9 +11978,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt86) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:104: milliSecondValue
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:381:104: milliSecondValue
                     {
-                    pushFollow(FOLLOW_milliSecondValue_in_timeExpr2795);
+                    pushFollow(FOLLOW_milliSecondValue_in_timeExpr2790);
                     milliSecondValue325=milliSecondValue();
 
                     state._fsp--;
@@ -11995,7 +11994,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: yearValue, hourValue, milliSecondValue, minuteValue, monthValue, weekValue, secondValue, dayValue
+            // elements: hourValue, milliSecondValue, monthValue, yearValue, secondValue, weekValue, minuteValue, dayValue
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -12007,65 +12006,65 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 383:2: -> ^( TIME_EXP ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? )
+            // 382:2: -> ^( TIME_EXP ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:383:5: ^( TIME_EXP ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:5: ^( TIME_EXP ( yearValue )? ( monthValue )? ( weekValue )? ( dayValue )? ( hourValue )? ( minuteValue )? ( secondValue )? ( milliSecondValue )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
                 (CommonTree)adaptor.create(TIME_EXP, "TIME_EXP")
                 , root_1);
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:383:16: ( yearValue )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:16: ( yearValue )?
                 if ( stream_yearValue.hasNext() ) {
                     adaptor.addChild(root_1, stream_yearValue.nextTree());
 
                 }
                 stream_yearValue.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:383:27: ( monthValue )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:27: ( monthValue )?
                 if ( stream_monthValue.hasNext() ) {
                     adaptor.addChild(root_1, stream_monthValue.nextTree());
 
                 }
                 stream_monthValue.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:383:39: ( weekValue )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:39: ( weekValue )?
                 if ( stream_weekValue.hasNext() ) {
                     adaptor.addChild(root_1, stream_weekValue.nextTree());
 
                 }
                 stream_weekValue.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:383:50: ( dayValue )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:50: ( dayValue )?
                 if ( stream_dayValue.hasNext() ) {
                     adaptor.addChild(root_1, stream_dayValue.nextTree());
 
                 }
                 stream_dayValue.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:383:60: ( hourValue )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:60: ( hourValue )?
                 if ( stream_hourValue.hasNext() ) {
                     adaptor.addChild(root_1, stream_hourValue.nextTree());
 
                 }
                 stream_hourValue.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:383:71: ( minuteValue )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:71: ( minuteValue )?
                 if ( stream_minuteValue.hasNext() ) {
                     adaptor.addChild(root_1, stream_minuteValue.nextTree());
 
                 }
                 stream_minuteValue.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:383:84: ( secondValue )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:84: ( secondValue )?
                 if ( stream_secondValue.hasNext() ) {
                     adaptor.addChild(root_1, stream_secondValue.nextTree());
 
                 }
                 stream_secondValue.reset();
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:383:97: ( milliSecondValue )?
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:382:97: ( milliSecondValue )?
                 if ( stream_milliSecondValue.hasNext() ) {
                     adaptor.addChild(root_1, stream_milliSecondValue.nextTree());
 
@@ -12114,7 +12113,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "yearValue"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:386:1: yearValue : POSITIVE_INT_VAL ( 'years' | 'year' ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:385:1: yearValue : POSITIVE_INT_VAL ( 'years' | 'year' ) ;
     public final SiddhiQLGrammarParser.yearValue_return yearValue() throws RecognitionException {
         SiddhiQLGrammarParser.yearValue_return retval = new SiddhiQLGrammarParser.yearValue_return();
         retval.start = input.LT(1);
@@ -12129,13 +12128,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set327_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:387:2: ( POSITIVE_INT_VAL ( 'years' | 'year' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:387:4: POSITIVE_INT_VAL ( 'years' | 'year' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:386:2: ( POSITIVE_INT_VAL ( 'years' | 'year' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:386:4: POSITIVE_INT_VAL ( 'years' | 'year' )
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            POSITIVE_INT_VAL326=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_yearValue2841); if (state.failed) return retval;
+            POSITIVE_INT_VAL326=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_yearValue2836); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             POSITIVE_INT_VAL326_tree = 
             (CommonTree)adaptor.create(POSITIVE_INT_VAL326)
@@ -12145,7 +12144,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             set327=(Token)input.LT(1);
 
-            if ( (input.LA(1) >= 126 && input.LA(1) <= 127) ) {
+            if ( (input.LA(1) >= 125 && input.LA(1) <= 126) ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set327)
@@ -12193,7 +12192,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "monthValue"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:390:1: monthValue : POSITIVE_INT_VAL ( 'months' | 'month' ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:389:1: monthValue : POSITIVE_INT_VAL ( 'months' | 'month' ) ;
     public final SiddhiQLGrammarParser.monthValue_return monthValue() throws RecognitionException {
         SiddhiQLGrammarParser.monthValue_return retval = new SiddhiQLGrammarParser.monthValue_return();
         retval.start = input.LT(1);
@@ -12208,13 +12207,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set329_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:391:2: ( POSITIVE_INT_VAL ( 'months' | 'month' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:391:4: POSITIVE_INT_VAL ( 'months' | 'month' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:390:2: ( POSITIVE_INT_VAL ( 'months' | 'month' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:390:4: POSITIVE_INT_VAL ( 'months' | 'month' )
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            POSITIVE_INT_VAL328=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_monthValue2861); if (state.failed) return retval;
+            POSITIVE_INT_VAL328=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_monthValue2856); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             POSITIVE_INT_VAL328_tree = 
             (CommonTree)adaptor.create(POSITIVE_INT_VAL328)
@@ -12224,7 +12223,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             set329=(Token)input.LT(1);
 
-            if ( (input.LA(1) >= 107 && input.LA(1) <= 108) ) {
+            if ( (input.LA(1) >= 106 && input.LA(1) <= 107) ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set329)
@@ -12272,7 +12271,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "weekValue"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:394:1: weekValue : POSITIVE_INT_VAL ( 'weeks' | 'week' ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:393:1: weekValue : POSITIVE_INT_VAL ( 'weeks' | 'week' ) ;
     public final SiddhiQLGrammarParser.weekValue_return weekValue() throws RecognitionException {
         SiddhiQLGrammarParser.weekValue_return retval = new SiddhiQLGrammarParser.weekValue_return();
         retval.start = input.LT(1);
@@ -12287,13 +12286,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set331_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:395:2: ( POSITIVE_INT_VAL ( 'weeks' | 'week' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:395:4: POSITIVE_INT_VAL ( 'weeks' | 'week' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:394:2: ( POSITIVE_INT_VAL ( 'weeks' | 'week' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:394:4: POSITIVE_INT_VAL ( 'weeks' | 'week' )
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            POSITIVE_INT_VAL330=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_weekValue2881); if (state.failed) return retval;
+            POSITIVE_INT_VAL330=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_weekValue2876); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             POSITIVE_INT_VAL330_tree = 
             (CommonTree)adaptor.create(POSITIVE_INT_VAL330)
@@ -12303,7 +12302,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             set331=(Token)input.LT(1);
 
-            if ( (input.LA(1) >= 122 && input.LA(1) <= 123) ) {
+            if ( (input.LA(1) >= 121 && input.LA(1) <= 122) ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set331)
@@ -12351,7 +12350,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "dayValue"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:398:1: dayValue : POSITIVE_INT_VAL ( 'days' | 'day' ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:397:1: dayValue : POSITIVE_INT_VAL ( 'days' | 'day' ) ;
     public final SiddhiQLGrammarParser.dayValue_return dayValue() throws RecognitionException {
         SiddhiQLGrammarParser.dayValue_return retval = new SiddhiQLGrammarParser.dayValue_return();
         retval.start = input.LT(1);
@@ -12366,13 +12365,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set333_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:399:2: ( POSITIVE_INT_VAL ( 'days' | 'day' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:399:4: POSITIVE_INT_VAL ( 'days' | 'day' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:398:2: ( POSITIVE_INT_VAL ( 'days' | 'day' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:398:4: POSITIVE_INT_VAL ( 'days' | 'day' )
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            POSITIVE_INT_VAL332=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_dayValue2901); if (state.failed) return retval;
+            POSITIVE_INT_VAL332=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_dayValue2896); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             POSITIVE_INT_VAL332_tree = 
             (CommonTree)adaptor.create(POSITIVE_INT_VAL332)
@@ -12382,7 +12381,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             set333=(Token)input.LT(1);
 
-            if ( (input.LA(1) >= 81 && input.LA(1) <= 82) ) {
+            if ( (input.LA(1) >= 80 && input.LA(1) <= 81) ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set333)
@@ -12430,7 +12429,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "hourValue"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:402:1: hourValue : POSITIVE_INT_VAL ( 'hours' | 'hour' ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:401:1: hourValue : POSITIVE_INT_VAL ( 'hours' | 'hour' ) ;
     public final SiddhiQLGrammarParser.hourValue_return hourValue() throws RecognitionException {
         SiddhiQLGrammarParser.hourValue_return retval = new SiddhiQLGrammarParser.hourValue_return();
         retval.start = input.LT(1);
@@ -12445,13 +12444,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set335_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:403:2: ( POSITIVE_INT_VAL ( 'hours' | 'hour' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:403:4: POSITIVE_INT_VAL ( 'hours' | 'hour' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:402:2: ( POSITIVE_INT_VAL ( 'hours' | 'hour' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:402:4: POSITIVE_INT_VAL ( 'hours' | 'hour' )
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            POSITIVE_INT_VAL334=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_hourValue2921); if (state.failed) return retval;
+            POSITIVE_INT_VAL334=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_hourValue2916); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             POSITIVE_INT_VAL334_tree = 
             (CommonTree)adaptor.create(POSITIVE_INT_VAL334)
@@ -12461,7 +12460,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             set335=(Token)input.LT(1);
 
-            if ( (input.LA(1) >= 92 && input.LA(1) <= 93) ) {
+            if ( (input.LA(1) >= 91 && input.LA(1) <= 92) ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set335)
@@ -12509,7 +12508,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "minuteValue"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:406:1: minuteValue : POSITIVE_INT_VAL ( 'minutes' | 'min' | 'minute' ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:405:1: minuteValue : POSITIVE_INT_VAL ( 'minutes' | 'min' | 'minute' ) ;
     public final SiddhiQLGrammarParser.minuteValue_return minuteValue() throws RecognitionException {
         SiddhiQLGrammarParser.minuteValue_return retval = new SiddhiQLGrammarParser.minuteValue_return();
         retval.start = input.LT(1);
@@ -12524,13 +12523,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set337_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:407:2: ( POSITIVE_INT_VAL ( 'minutes' | 'min' | 'minute' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:407:4: POSITIVE_INT_VAL ( 'minutes' | 'min' | 'minute' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:406:2: ( POSITIVE_INT_VAL ( 'minutes' | 'min' | 'minute' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:406:4: POSITIVE_INT_VAL ( 'minutes' | 'min' | 'minute' )
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            POSITIVE_INT_VAL336=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_minuteValue2944); if (state.failed) return retval;
+            POSITIVE_INT_VAL336=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_minuteValue2939); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             POSITIVE_INT_VAL336_tree = 
             (CommonTree)adaptor.create(POSITIVE_INT_VAL336)
@@ -12540,7 +12539,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             set337=(Token)input.LT(1);
 
-            if ( (input.LA(1) >= 104 && input.LA(1) <= 106) ) {
+            if ( (input.LA(1) >= 103 && input.LA(1) <= 105) ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set337)
@@ -12588,7 +12587,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "secondValue"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:410:1: secondValue : POSITIVE_INT_VAL ( 'seconds' | 'second' | 'sec' ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:409:1: secondValue : POSITIVE_INT_VAL ( 'seconds' | 'second' | 'sec' ) ;
     public final SiddhiQLGrammarParser.secondValue_return secondValue() throws RecognitionException {
         SiddhiQLGrammarParser.secondValue_return retval = new SiddhiQLGrammarParser.secondValue_return();
         retval.start = input.LT(1);
@@ -12603,13 +12602,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set339_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:411:2: ( POSITIVE_INT_VAL ( 'seconds' | 'second' | 'sec' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:411:4: POSITIVE_INT_VAL ( 'seconds' | 'second' | 'sec' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:410:2: ( POSITIVE_INT_VAL ( 'seconds' | 'second' | 'sec' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:410:4: POSITIVE_INT_VAL ( 'seconds' | 'second' | 'sec' )
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            POSITIVE_INT_VAL338=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_secondValue2972); if (state.failed) return retval;
+            POSITIVE_INT_VAL338=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_secondValue2967); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             POSITIVE_INT_VAL338_tree = 
             (CommonTree)adaptor.create(POSITIVE_INT_VAL338)
@@ -12619,7 +12618,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             set339=(Token)input.LT(1);
 
-            if ( (input.LA(1) >= 115 && input.LA(1) <= 117) ) {
+            if ( (input.LA(1) >= 114 && input.LA(1) <= 116) ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set339)
@@ -12668,7 +12667,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "milliSecondValue"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:414:1: milliSecondValue returns [long value] : POSITIVE_INT_VAL ( 'milliseconds' | 'millisecond' ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:413:1: milliSecondValue returns [long value] : POSITIVE_INT_VAL ( 'milliseconds' | 'millisecond' ) ;
     public final SiddhiQLGrammarParser.milliSecondValue_return milliSecondValue() throws RecognitionException {
         SiddhiQLGrammarParser.milliSecondValue_return retval = new SiddhiQLGrammarParser.milliSecondValue_return();
         retval.start = input.LT(1);
@@ -12683,13 +12682,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set341_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:415:2: ( POSITIVE_INT_VAL ( 'milliseconds' | 'millisecond' ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:415:4: POSITIVE_INT_VAL ( 'milliseconds' | 'millisecond' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:414:2: ( POSITIVE_INT_VAL ( 'milliseconds' | 'millisecond' ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:414:4: POSITIVE_INT_VAL ( 'milliseconds' | 'millisecond' )
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            POSITIVE_INT_VAL340=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_milliSecondValue3002); if (state.failed) return retval;
+            POSITIVE_INT_VAL340=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_milliSecondValue2997); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             POSITIVE_INT_VAL340_tree = 
             (CommonTree)adaptor.create(POSITIVE_INT_VAL340)
@@ -12699,7 +12698,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             set341=(Token)input.LT(1);
 
-            if ( (input.LA(1) >= 102 && input.LA(1) <= 103) ) {
+            if ( (input.LA(1) >= 101 && input.LA(1) <= 102) ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set341)
@@ -12747,7 +12746,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "intVal"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:418:1: intVal : ( '-' )? POSITIVE_INT_VAL -> ^( SIGNED_VAL POSITIVE_INT_VAL ( '-' )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:417:1: intVal : ( '-' )? POSITIVE_INT_VAL -> ^( SIGNED_VAL POSITIVE_INT_VAL ( '-' )? ) ;
     public final SiddhiQLGrammarParser.intVal_return intVal() throws RecognitionException {
         SiddhiQLGrammarParser.intVal_return retval = new SiddhiQLGrammarParser.intVal_return();
         retval.start = input.LT(1);
@@ -12761,16 +12760,16 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal342_tree=null;
         CommonTree POSITIVE_INT_VAL343_tree=null;
         RewriteRuleTokenStream stream_POSITIVE_INT_VAL=new RewriteRuleTokenStream(adaptor,"token POSITIVE_INT_VAL");
-        RewriteRuleTokenStream stream_58=new RewriteRuleTokenStream(adaptor,"token 58");
+        RewriteRuleTokenStream stream_57=new RewriteRuleTokenStream(adaptor,"token 57");
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:418:7: ( ( '-' )? POSITIVE_INT_VAL -> ^( SIGNED_VAL POSITIVE_INT_VAL ( '-' )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:418:9: ( '-' )? POSITIVE_INT_VAL
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:417:7: ( ( '-' )? POSITIVE_INT_VAL -> ^( SIGNED_VAL POSITIVE_INT_VAL ( '-' )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:417:9: ( '-' )? POSITIVE_INT_VAL
             {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:418:9: ( '-' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:417:9: ( '-' )?
             int alt87=2;
             switch ( input.LA(1) ) {
-                case 58:
+                case 57:
                     {
                     alt87=1;
                     }
@@ -12779,10 +12778,10 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt87) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:418:9: '-'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:417:9: '-'
                     {
-                    char_literal342=(Token)match(input,58,FOLLOW_58_in_intVal3023); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_58.add(char_literal342);
+                    char_literal342=(Token)match(input,57,FOLLOW_57_in_intVal3018); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_57.add(char_literal342);
 
 
                     }
@@ -12791,12 +12790,12 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            POSITIVE_INT_VAL343=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_intVal3026); if (state.failed) return retval; 
+            POSITIVE_INT_VAL343=(Token)match(input,POSITIVE_INT_VAL,FOLLOW_POSITIVE_INT_VAL_in_intVal3021); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_POSITIVE_INT_VAL.add(POSITIVE_INT_VAL343);
 
 
             // AST REWRITE
-            // elements: POSITIVE_INT_VAL, 58
+            // elements: POSITIVE_INT_VAL, 57
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -12808,9 +12807,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 418:31: -> ^( SIGNED_VAL POSITIVE_INT_VAL ( '-' )? )
+            // 417:31: -> ^( SIGNED_VAL POSITIVE_INT_VAL ( '-' )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:418:34: ^( SIGNED_VAL POSITIVE_INT_VAL ( '-' )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:417:34: ^( SIGNED_VAL POSITIVE_INT_VAL ( '-' )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -12821,14 +12820,14 @@ public TreeAdaptor getTreeAdaptor() {
                 stream_POSITIVE_INT_VAL.nextNode()
                 );
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:418:65: ( '-' )?
-                if ( stream_58.hasNext() ) {
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:417:65: ( '-' )?
+                if ( stream_57.hasNext() ) {
                     adaptor.addChild(root_1, 
-                    stream_58.nextNode()
+                    stream_57.nextNode()
                     );
 
                 }
-                stream_58.reset();
+                stream_57.reset();
 
                 adaptor.addChild(root_0, root_1);
                 }
@@ -12872,7 +12871,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "longVal"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:420:1: longVal : ( '-' )? POSITIVE_LONG_VAL -> ^( SIGNED_VAL POSITIVE_LONG_VAL ( '-' )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:419:1: longVal : ( '-' )? POSITIVE_LONG_VAL -> ^( SIGNED_VAL POSITIVE_LONG_VAL ( '-' )? ) ;
     public final SiddhiQLGrammarParser.longVal_return longVal() throws RecognitionException {
         SiddhiQLGrammarParser.longVal_return retval = new SiddhiQLGrammarParser.longVal_return();
         retval.start = input.LT(1);
@@ -12885,17 +12884,17 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree char_literal344_tree=null;
         CommonTree POSITIVE_LONG_VAL345_tree=null;
-        RewriteRuleTokenStream stream_58=new RewriteRuleTokenStream(adaptor,"token 58");
+        RewriteRuleTokenStream stream_57=new RewriteRuleTokenStream(adaptor,"token 57");
         RewriteRuleTokenStream stream_POSITIVE_LONG_VAL=new RewriteRuleTokenStream(adaptor,"token POSITIVE_LONG_VAL");
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:420:8: ( ( '-' )? POSITIVE_LONG_VAL -> ^( SIGNED_VAL POSITIVE_LONG_VAL ( '-' )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:420:10: ( '-' )? POSITIVE_LONG_VAL
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:419:8: ( ( '-' )? POSITIVE_LONG_VAL -> ^( SIGNED_VAL POSITIVE_LONG_VAL ( '-' )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:419:10: ( '-' )? POSITIVE_LONG_VAL
             {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:420:10: ( '-' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:419:10: ( '-' )?
             int alt88=2;
             switch ( input.LA(1) ) {
-                case 58:
+                case 57:
                     {
                     alt88=1;
                     }
@@ -12904,10 +12903,10 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt88) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:420:10: '-'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:419:10: '-'
                     {
-                    char_literal344=(Token)match(input,58,FOLLOW_58_in_longVal3045); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_58.add(char_literal344);
+                    char_literal344=(Token)match(input,57,FOLLOW_57_in_longVal3040); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_57.add(char_literal344);
 
 
                     }
@@ -12916,12 +12915,12 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            POSITIVE_LONG_VAL345=(Token)match(input,POSITIVE_LONG_VAL,FOLLOW_POSITIVE_LONG_VAL_in_longVal3048); if (state.failed) return retval; 
+            POSITIVE_LONG_VAL345=(Token)match(input,POSITIVE_LONG_VAL,FOLLOW_POSITIVE_LONG_VAL_in_longVal3043); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_POSITIVE_LONG_VAL.add(POSITIVE_LONG_VAL345);
 
 
             // AST REWRITE
-            // elements: 58, POSITIVE_LONG_VAL
+            // elements: 57, POSITIVE_LONG_VAL
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -12933,9 +12932,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 420:33: -> ^( SIGNED_VAL POSITIVE_LONG_VAL ( '-' )? )
+            // 419:33: -> ^( SIGNED_VAL POSITIVE_LONG_VAL ( '-' )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:420:36: ^( SIGNED_VAL POSITIVE_LONG_VAL ( '-' )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:419:36: ^( SIGNED_VAL POSITIVE_LONG_VAL ( '-' )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -12946,14 +12945,14 @@ public TreeAdaptor getTreeAdaptor() {
                 stream_POSITIVE_LONG_VAL.nextNode()
                 );
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:420:68: ( '-' )?
-                if ( stream_58.hasNext() ) {
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:419:68: ( '-' )?
+                if ( stream_57.hasNext() ) {
                     adaptor.addChild(root_1, 
-                    stream_58.nextNode()
+                    stream_57.nextNode()
                     );
 
                 }
-                stream_58.reset();
+                stream_57.reset();
 
                 adaptor.addChild(root_0, root_1);
                 }
@@ -12997,7 +12996,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "floatVal"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:422:1: floatVal : ( '-' )? POSITIVE_FLOAT_VAL -> ^( SIGNED_VAL POSITIVE_FLOAT_VAL ( '-' )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:421:1: floatVal : ( '-' )? POSITIVE_FLOAT_VAL -> ^( SIGNED_VAL POSITIVE_FLOAT_VAL ( '-' )? ) ;
     public final SiddhiQLGrammarParser.floatVal_return floatVal() throws RecognitionException {
         SiddhiQLGrammarParser.floatVal_return retval = new SiddhiQLGrammarParser.floatVal_return();
         retval.start = input.LT(1);
@@ -13011,16 +13010,16 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree char_literal346_tree=null;
         CommonTree POSITIVE_FLOAT_VAL347_tree=null;
         RewriteRuleTokenStream stream_POSITIVE_FLOAT_VAL=new RewriteRuleTokenStream(adaptor,"token POSITIVE_FLOAT_VAL");
-        RewriteRuleTokenStream stream_58=new RewriteRuleTokenStream(adaptor,"token 58");
+        RewriteRuleTokenStream stream_57=new RewriteRuleTokenStream(adaptor,"token 57");
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:422:9: ( ( '-' )? POSITIVE_FLOAT_VAL -> ^( SIGNED_VAL POSITIVE_FLOAT_VAL ( '-' )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:422:11: ( '-' )? POSITIVE_FLOAT_VAL
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:421:9: ( ( '-' )? POSITIVE_FLOAT_VAL -> ^( SIGNED_VAL POSITIVE_FLOAT_VAL ( '-' )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:421:11: ( '-' )? POSITIVE_FLOAT_VAL
             {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:422:11: ( '-' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:421:11: ( '-' )?
             int alt89=2;
             switch ( input.LA(1) ) {
-                case 58:
+                case 57:
                     {
                     alt89=1;
                     }
@@ -13029,10 +13028,10 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt89) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:422:11: '-'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:421:11: '-'
                     {
-                    char_literal346=(Token)match(input,58,FOLLOW_58_in_floatVal3067); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_58.add(char_literal346);
+                    char_literal346=(Token)match(input,57,FOLLOW_57_in_floatVal3062); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_57.add(char_literal346);
 
 
                     }
@@ -13041,12 +13040,12 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            POSITIVE_FLOAT_VAL347=(Token)match(input,POSITIVE_FLOAT_VAL,FOLLOW_POSITIVE_FLOAT_VAL_in_floatVal3070); if (state.failed) return retval; 
+            POSITIVE_FLOAT_VAL347=(Token)match(input,POSITIVE_FLOAT_VAL,FOLLOW_POSITIVE_FLOAT_VAL_in_floatVal3065); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_POSITIVE_FLOAT_VAL.add(POSITIVE_FLOAT_VAL347);
 
 
             // AST REWRITE
-            // elements: POSITIVE_FLOAT_VAL, 58
+            // elements: POSITIVE_FLOAT_VAL, 57
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -13058,9 +13057,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 422:35: -> ^( SIGNED_VAL POSITIVE_FLOAT_VAL ( '-' )? )
+            // 421:35: -> ^( SIGNED_VAL POSITIVE_FLOAT_VAL ( '-' )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:422:38: ^( SIGNED_VAL POSITIVE_FLOAT_VAL ( '-' )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:421:38: ^( SIGNED_VAL POSITIVE_FLOAT_VAL ( '-' )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -13071,14 +13070,14 @@ public TreeAdaptor getTreeAdaptor() {
                 stream_POSITIVE_FLOAT_VAL.nextNode()
                 );
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:422:71: ( '-' )?
-                if ( stream_58.hasNext() ) {
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:421:71: ( '-' )?
+                if ( stream_57.hasNext() ) {
                     adaptor.addChild(root_1, 
-                    stream_58.nextNode()
+                    stream_57.nextNode()
                     );
 
                 }
-                stream_58.reset();
+                stream_57.reset();
 
                 adaptor.addChild(root_0, root_1);
                 }
@@ -13122,7 +13121,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "doubleVal"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:424:1: doubleVal : ( '-' )? POSITIVE_DOUBLE_VAL -> ^( SIGNED_VAL POSITIVE_DOUBLE_VAL ( '-' )? ) ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:423:1: doubleVal : ( '-' )? POSITIVE_DOUBLE_VAL -> ^( SIGNED_VAL POSITIVE_DOUBLE_VAL ( '-' )? ) ;
     public final SiddhiQLGrammarParser.doubleVal_return doubleVal() throws RecognitionException {
         SiddhiQLGrammarParser.doubleVal_return retval = new SiddhiQLGrammarParser.doubleVal_return();
         retval.start = input.LT(1);
@@ -13135,17 +13134,17 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree char_literal348_tree=null;
         CommonTree POSITIVE_DOUBLE_VAL349_tree=null;
-        RewriteRuleTokenStream stream_58=new RewriteRuleTokenStream(adaptor,"token 58");
+        RewriteRuleTokenStream stream_57=new RewriteRuleTokenStream(adaptor,"token 57");
         RewriteRuleTokenStream stream_POSITIVE_DOUBLE_VAL=new RewriteRuleTokenStream(adaptor,"token POSITIVE_DOUBLE_VAL");
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:424:10: ( ( '-' )? POSITIVE_DOUBLE_VAL -> ^( SIGNED_VAL POSITIVE_DOUBLE_VAL ( '-' )? ) )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:424:12: ( '-' )? POSITIVE_DOUBLE_VAL
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:423:10: ( ( '-' )? POSITIVE_DOUBLE_VAL -> ^( SIGNED_VAL POSITIVE_DOUBLE_VAL ( '-' )? ) )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:423:12: ( '-' )? POSITIVE_DOUBLE_VAL
             {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:424:12: ( '-' )?
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:423:12: ( '-' )?
             int alt90=2;
             switch ( input.LA(1) ) {
-                case 58:
+                case 57:
                     {
                     alt90=1;
                     }
@@ -13154,10 +13153,10 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt90) {
                 case 1 :
-                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:424:12: '-'
+                    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:423:12: '-'
                     {
-                    char_literal348=(Token)match(input,58,FOLLOW_58_in_doubleVal3089); if (state.failed) return retval; 
-                    if ( state.backtracking==0 ) stream_58.add(char_literal348);
+                    char_literal348=(Token)match(input,57,FOLLOW_57_in_doubleVal3084); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_57.add(char_literal348);
 
 
                     }
@@ -13166,12 +13165,12 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            POSITIVE_DOUBLE_VAL349=(Token)match(input,POSITIVE_DOUBLE_VAL,FOLLOW_POSITIVE_DOUBLE_VAL_in_doubleVal3092); if (state.failed) return retval; 
+            POSITIVE_DOUBLE_VAL349=(Token)match(input,POSITIVE_DOUBLE_VAL,FOLLOW_POSITIVE_DOUBLE_VAL_in_doubleVal3087); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_POSITIVE_DOUBLE_VAL.add(POSITIVE_DOUBLE_VAL349);
 
 
             // AST REWRITE
-            // elements: 58, POSITIVE_DOUBLE_VAL
+            // elements: POSITIVE_DOUBLE_VAL, 57
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -13183,9 +13182,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 424:37: -> ^( SIGNED_VAL POSITIVE_DOUBLE_VAL ( '-' )? )
+            // 423:37: -> ^( SIGNED_VAL POSITIVE_DOUBLE_VAL ( '-' )? )
             {
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:424:40: ^( SIGNED_VAL POSITIVE_DOUBLE_VAL ( '-' )? )
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:423:40: ^( SIGNED_VAL POSITIVE_DOUBLE_VAL ( '-' )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -13196,14 +13195,14 @@ public TreeAdaptor getTreeAdaptor() {
                 stream_POSITIVE_DOUBLE_VAL.nextNode()
                 );
 
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:424:74: ( '-' )?
-                if ( stream_58.hasNext() ) {
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:423:74: ( '-' )?
+                if ( stream_57.hasNext() ) {
                     adaptor.addChild(root_1, 
-                    stream_58.nextNode()
+                    stream_57.nextNode()
                     );
 
                 }
-                stream_58.reset();
+                stream_57.reset();
 
                 adaptor.addChild(root_0, root_1);
                 }
@@ -13247,7 +13246,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "boolVal"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:426:1: boolVal : BOOL_VAL ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:425:1: boolVal : BOOL_VAL ;
     public final SiddhiQLGrammarParser.boolVal_return boolVal() throws RecognitionException {
         SiddhiQLGrammarParser.boolVal_return retval = new SiddhiQLGrammarParser.boolVal_return();
         retval.start = input.LT(1);
@@ -13260,13 +13259,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree BOOL_VAL350_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:426:8: ( BOOL_VAL )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:426:10: BOOL_VAL
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:425:8: ( BOOL_VAL )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:425:10: BOOL_VAL
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            BOOL_VAL350=(Token)match(input,BOOL_VAL,FOLLOW_BOOL_VAL_in_boolVal3111); if (state.failed) return retval;
+            BOOL_VAL350=(Token)match(input,BOOL_VAL,FOLLOW_BOOL_VAL_in_boolVal3106); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             BOOL_VAL350_tree = 
             (CommonTree)adaptor.create(BOOL_VAL350)
@@ -13307,7 +13306,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "extensionId"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:428:1: extensionId : id ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:427:1: extensionId : id ;
     public final SiddhiQLGrammarParser.extensionId_return extensionId() throws RecognitionException {
         SiddhiQLGrammarParser.extensionId_return retval = new SiddhiQLGrammarParser.extensionId_return();
         retval.start = input.LT(1);
@@ -13320,13 +13319,13 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:428:12: ( id )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:428:14: id
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:427:12: ( id )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:427:14: id
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_id_in_extensionId3118);
+            pushFollow(FOLLOW_id_in_extensionId3113);
             id351=id();
 
             state._fsp--;
@@ -13366,7 +13365,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "functionId"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:430:1: functionId : id ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:429:1: functionId : id ;
     public final SiddhiQLGrammarParser.functionId_return functionId() throws RecognitionException {
         SiddhiQLGrammarParser.functionId_return retval = new SiddhiQLGrammarParser.functionId_return();
         retval.start = input.LT(1);
@@ -13379,13 +13378,13 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:430:11: ( id )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:430:13: id
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:429:11: ( id )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:429:13: id
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_id_in_functionId3125);
+            pushFollow(FOLLOW_id_in_functionId3120);
             id352=id();
 
             state._fsp--;
@@ -13425,7 +13424,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "stringVal"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:432:1: stringVal : STRING_VAL ;
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:431:1: stringVal : STRING_VAL ;
     public final SiddhiQLGrammarParser.stringVal_return stringVal() throws RecognitionException {
         SiddhiQLGrammarParser.stringVal_return retval = new SiddhiQLGrammarParser.stringVal_return();
         retval.start = input.LT(1);
@@ -13438,13 +13437,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree STRING_VAL353_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:432:10: ( STRING_VAL )
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:432:12: STRING_VAL
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:431:10: ( STRING_VAL )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:431:12: STRING_VAL
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            STRING_VAL353=(Token)match(input,STRING_VAL,FOLLOW_STRING_VAL_in_stringVal3132); if (state.failed) return retval;
+            STRING_VAL353=(Token)match(input,STRING_VAL,FOLLOW_STRING_VAL_in_stringVal3127); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             STRING_VAL353_tree = 
             (CommonTree)adaptor.create(STRING_VAL353)
@@ -13485,7 +13484,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "type"
-    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:434:1: type : ( 'string' | 'int' | 'long' | 'float' | 'double' | 'bool' );
+    // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:433:1: type : ( 'string' | 'int' | 'long' | 'float' | 'double' | 'bool' );
     public final SiddhiQLGrammarParser.type_return type() throws RecognitionException {
         SiddhiQLGrammarParser.type_return retval = new SiddhiQLGrammarParser.type_return();
         retval.start = input.LT(1);
@@ -13498,7 +13497,7 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set354_tree=null;
 
         try {
-            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:434:5: ( 'string' | 'int' | 'long' | 'float' | 'double' | 'bool' )
+            // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:433:5: ( 'string' | 'int' | 'long' | 'float' | 'double' | 'bool' )
             // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:
             {
             root_0 = (CommonTree)adaptor.nil();
@@ -13506,7 +13505,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             set354=(Token)input.LT(1);
 
-            if ( input.LA(1)==76||input.LA(1)==84||input.LA(1)==87||input.LA(1)==97||input.LA(1)==101||input.LA(1)==119 ) {
+            if ( input.LA(1)==75||input.LA(1)==83||input.LA(1)==86||input.LA(1)==96||input.LA(1)==100||input.LA(1)==118 ) {
                 input.consume();
                 if ( state.backtracking==0 ) adaptor.addChild(root_0, 
                 (CommonTree)adaptor.create(set354)
@@ -13548,22 +13547,22 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred7_SiddhiQLGrammar
     public final void synpred7_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:84:3: ( inputStream outputStream outputProjection )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:84:3: inputStream outputStream outputProjection
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:83:3: ( inputStream outputStream outputProjection )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:83:3: inputStream outputStream outputProjection
         {
-        pushFollow(FOLLOW_inputStream_in_synpred7_SiddhiQLGrammar373);
+        pushFollow(FOLLOW_inputStream_in_synpred7_SiddhiQLGrammar368);
         inputStream();
 
         state._fsp--;
         if (state.failed) return ;
 
-        pushFollow(FOLLOW_outputStream_in_synpred7_SiddhiQLGrammar375);
+        pushFollow(FOLLOW_outputStream_in_synpred7_SiddhiQLGrammar370);
         outputStream();
 
         state._fsp--;
         if (state.failed) return ;
 
-        pushFollow(FOLLOW_outputProjection_in_synpred7_SiddhiQLGrammar377);
+        pushFollow(FOLLOW_outputProjection_in_synpred7_SiddhiQLGrammar372);
         outputProjection();
 
         state._fsp--;
@@ -13576,10 +13575,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred13_SiddhiQLGrammar
     public final void synpred13_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:97:12: ( sequenceFullStream )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:97:12: sequenceFullStream
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:96:12: ( sequenceFullStream )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:96:12: sequenceFullStream
         {
-        pushFollow(FOLLOW_sequenceFullStream_in_synpred13_SiddhiQLGrammar503);
+        pushFollow(FOLLOW_sequenceFullStream_in_synpred13_SiddhiQLGrammar498);
         sequenceFullStream();
 
         state._fsp--;
@@ -13592,10 +13591,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred14_SiddhiQLGrammar
     public final void synpred14_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:98:5: ( patternFullStream )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:98:5: patternFullStream
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:97:5: ( patternFullStream )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:97:5: patternFullStream
         {
-        pushFollow(FOLLOW_patternFullStream_in_synpred14_SiddhiQLGrammar517);
+        pushFollow(FOLLOW_patternFullStream_in_synpred14_SiddhiQLGrammar512);
         patternFullStream();
 
         state._fsp--;
@@ -13608,10 +13607,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred15_SiddhiQLGrammar
     public final void synpred15_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:99:5: ( joinStream )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:99:5: joinStream
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:98:5: ( joinStream )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:98:5: joinStream
         {
-        pushFollow(FOLLOW_joinStream_in_synpred15_SiddhiQLGrammar534);
+        pushFollow(FOLLOW_joinStream_in_synpred15_SiddhiQLGrammar529);
         joinStream();
 
         state._fsp--;
@@ -13624,10 +13623,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred16_SiddhiQLGrammar
     public final void synpred16_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:100:5: ( windowStream )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:100:5: windowStream
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:99:5: ( windowStream )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:99:5: windowStream
         {
-        pushFollow(FOLLOW_windowStream_in_synpred16_SiddhiQLGrammar549);
+        pushFollow(FOLLOW_windowStream_in_synpred16_SiddhiQLGrammar544);
         windowStream();
 
         state._fsp--;
@@ -13640,33 +13639,33 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred34_SiddhiQLGrammar
     public final void synpred34_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:3: ( leftStream join rightStream 'unidirectional' ( 'on' condition )? ( 'within' time )? )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:3: leftStream join rightStream 'unidirectional' ( 'on' condition )? ( 'within' time )?
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:3: ( leftStream join rightStream 'unidirectional' ( 'on' condition )? ( 'within' time )? )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:3: leftStream join rightStream 'unidirectional' ( 'on' condition )? ( 'within' time )?
         {
-        pushFollow(FOLLOW_leftStream_in_synpred34_SiddhiQLGrammar848);
+        pushFollow(FOLLOW_leftStream_in_synpred34_SiddhiQLGrammar843);
         leftStream();
 
         state._fsp--;
         if (state.failed) return ;
 
-        pushFollow(FOLLOW_join_in_synpred34_SiddhiQLGrammar850);
+        pushFollow(FOLLOW_join_in_synpred34_SiddhiQLGrammar845);
         join();
 
         state._fsp--;
         if (state.failed) return ;
 
-        pushFollow(FOLLOW_rightStream_in_synpred34_SiddhiQLGrammar852);
+        pushFollow(FOLLOW_rightStream_in_synpred34_SiddhiQLGrammar847);
         rightStream();
 
         state._fsp--;
         if (state.failed) return ;
 
-        match(input,121,FOLLOW_121_in_synpred34_SiddhiQLGrammar854); if (state.failed) return ;
+        match(input,120,FOLLOW_120_in_synpred34_SiddhiQLGrammar849); if (state.failed) return ;
 
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:48: ( 'on' condition )?
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:48: ( 'on' condition )?
         int alt98=2;
         switch ( input.LA(1) ) {
-            case 110:
+            case 109:
                 {
                 alt98=1;
                 }
@@ -13675,11 +13674,11 @@ public TreeAdaptor getTreeAdaptor() {
 
         switch (alt98) {
             case 1 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:49: 'on' condition
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:49: 'on' condition
                 {
-                match(input,110,FOLLOW_110_in_synpred34_SiddhiQLGrammar857); if (state.failed) return ;
+                match(input,109,FOLLOW_109_in_synpred34_SiddhiQLGrammar852); if (state.failed) return ;
 
-                pushFollow(FOLLOW_condition_in_synpred34_SiddhiQLGrammar859);
+                pushFollow(FOLLOW_condition_in_synpred34_SiddhiQLGrammar854);
                 condition();
 
                 state._fsp--;
@@ -13691,10 +13690,10 @@ public TreeAdaptor getTreeAdaptor() {
         }
 
 
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:66: ( 'within' time )?
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:66: ( 'within' time )?
         int alt99=2;
         switch ( input.LA(1) ) {
-            case 125:
+            case 124:
                 {
                 alt99=1;
                 }
@@ -13703,11 +13702,11 @@ public TreeAdaptor getTreeAdaptor() {
 
         switch (alt99) {
             case 1 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:67: 'within' time
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:125:67: 'within' time
                 {
-                match(input,125,FOLLOW_125_in_synpred34_SiddhiQLGrammar864); if (state.failed) return ;
+                match(input,124,FOLLOW_124_in_synpred34_SiddhiQLGrammar859); if (state.failed) return ;
 
-                pushFollow(FOLLOW_time_in_synpred34_SiddhiQLGrammar866);
+                pushFollow(FOLLOW_time_in_synpred34_SiddhiQLGrammar861);
                 time();
 
                 state._fsp--;
@@ -13726,31 +13725,31 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred37_SiddhiQLGrammar
     public final void synpred37_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:3: ( leftStream join rightStream ( 'on' condition )? ( 'within' time )? )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:3: leftStream join rightStream ( 'on' condition )? ( 'within' time )?
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:3: ( leftStream join rightStream ( 'on' condition )? ( 'within' time )? )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:3: leftStream join rightStream ( 'on' condition )? ( 'within' time )?
         {
-        pushFollow(FOLLOW_leftStream_in_synpred37_SiddhiQLGrammar889);
+        pushFollow(FOLLOW_leftStream_in_synpred37_SiddhiQLGrammar884);
         leftStream();
 
         state._fsp--;
         if (state.failed) return ;
 
-        pushFollow(FOLLOW_join_in_synpred37_SiddhiQLGrammar891);
+        pushFollow(FOLLOW_join_in_synpred37_SiddhiQLGrammar886);
         join();
 
         state._fsp--;
         if (state.failed) return ;
 
-        pushFollow(FOLLOW_rightStream_in_synpred37_SiddhiQLGrammar893);
+        pushFollow(FOLLOW_rightStream_in_synpred37_SiddhiQLGrammar888);
         rightStream();
 
         state._fsp--;
         if (state.failed) return ;
 
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:31: ( 'on' condition )?
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:31: ( 'on' condition )?
         int alt100=2;
         switch ( input.LA(1) ) {
-            case 110:
+            case 109:
                 {
                 alt100=1;
                 }
@@ -13759,11 +13758,11 @@ public TreeAdaptor getTreeAdaptor() {
 
         switch (alt100) {
             case 1 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:32: 'on' condition
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:32: 'on' condition
                 {
-                match(input,110,FOLLOW_110_in_synpred37_SiddhiQLGrammar896); if (state.failed) return ;
+                match(input,109,FOLLOW_109_in_synpred37_SiddhiQLGrammar891); if (state.failed) return ;
 
-                pushFollow(FOLLOW_condition_in_synpred37_SiddhiQLGrammar898);
+                pushFollow(FOLLOW_condition_in_synpred37_SiddhiQLGrammar893);
                 condition();
 
                 state._fsp--;
@@ -13775,10 +13774,10 @@ public TreeAdaptor getTreeAdaptor() {
         }
 
 
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:49: ( 'within' time )?
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:49: ( 'within' time )?
         int alt101=2;
         switch ( input.LA(1) ) {
-            case 125:
+            case 124:
                 {
                 alt101=1;
                 }
@@ -13787,11 +13786,11 @@ public TreeAdaptor getTreeAdaptor() {
 
         switch (alt101) {
             case 1 :
-                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:127:50: 'within' time
+                // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:126:50: 'within' time
                 {
-                match(input,125,FOLLOW_125_in_synpred37_SiddhiQLGrammar903); if (state.failed) return ;
+                match(input,124,FOLLOW_124_in_synpred37_SiddhiQLGrammar898); if (state.failed) return ;
 
-                pushFollow(FOLLOW_time_in_synpred37_SiddhiQLGrammar905);
+                pushFollow(FOLLOW_time_in_synpred37_SiddhiQLGrammar900);
                 time();
 
                 state._fsp--;
@@ -13810,10 +13809,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred40_SiddhiQLGrammar
     public final void synpred40_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:132:8: ( windowStream )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:132:8: windowStream
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:131:8: ( windowStream )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:131:8: windowStream
         {
-        pushFollow(FOLLOW_windowStream_in_synpred40_SiddhiQLGrammar980);
+        pushFollow(FOLLOW_windowStream_in_synpred40_SiddhiQLGrammar975);
         windowStream();
 
         state._fsp--;
@@ -13826,10 +13825,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred41_SiddhiQLGrammar
     public final void synpred41_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:137:8: ( windowStream )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:137:8: windowStream
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:136:8: ( windowStream )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:136:8: windowStream
         {
-        pushFollow(FOLLOW_windowStream_in_synpred41_SiddhiQLGrammar1006);
+        pushFollow(FOLLOW_windowStream_in_synpred41_SiddhiQLGrammar1001);
         windowStream();
 
         state._fsp--;
@@ -13842,18 +13841,18 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred50_SiddhiQLGrammar
     public final void synpred50_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:168:4: ( itemStream 'and' itemStream )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:168:4: itemStream 'and' itemStream
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:167:4: ( itemStream 'and' itemStream )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:167:4: itemStream 'and' itemStream
         {
-        pushFollow(FOLLOW_itemStream_in_synpred50_SiddhiQLGrammar1255);
+        pushFollow(FOLLOW_itemStream_in_synpred50_SiddhiQLGrammar1250);
         itemStream();
 
         state._fsp--;
         if (state.failed) return ;
 
-        match(input,74,FOLLOW_74_in_synpred50_SiddhiQLGrammar1257); if (state.failed) return ;
+        match(input,73,FOLLOW_73_in_synpred50_SiddhiQLGrammar1252); if (state.failed) return ;
 
-        pushFollow(FOLLOW_itemStream_in_synpred50_SiddhiQLGrammar1260);
+        pushFollow(FOLLOW_itemStream_in_synpred50_SiddhiQLGrammar1255);
         itemStream();
 
         state._fsp--;
@@ -13866,18 +13865,18 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred51_SiddhiQLGrammar
     public final void synpred51_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:169:4: ( itemStream 'or' itemStream )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:169:4: itemStream 'or' itemStream
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:168:4: ( itemStream 'or' itemStream )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:168:4: itemStream 'or' itemStream
         {
-        pushFollow(FOLLOW_itemStream_in_synpred51_SiddhiQLGrammar1265);
+        pushFollow(FOLLOW_itemStream_in_synpred51_SiddhiQLGrammar1260);
         itemStream();
 
         state._fsp--;
         if (state.failed) return ;
 
-        match(input,111,FOLLOW_111_in_synpred51_SiddhiQLGrammar1267); if (state.failed) return ;
+        match(input,110,FOLLOW_110_in_synpred51_SiddhiQLGrammar1262); if (state.failed) return ;
 
-        pushFollow(FOLLOW_itemStream_in_synpred51_SiddhiQLGrammar1270);
+        pushFollow(FOLLOW_itemStream_in_synpred51_SiddhiQLGrammar1265);
         itemStream();
 
         state._fsp--;
@@ -13890,24 +13889,24 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred52_SiddhiQLGrammar
     public final void synpred52_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:170:4: ( itemStream '<' collect '>' )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:170:4: itemStream '<' collect '>'
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:169:4: ( itemStream '<' collect '>' )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:169:4: itemStream '<' collect '>'
         {
-        pushFollow(FOLLOW_itemStream_in_synpred52_SiddhiQLGrammar1275);
+        pushFollow(FOLLOW_itemStream_in_synpred52_SiddhiQLGrammar1270);
         itemStream();
 
         state._fsp--;
         if (state.failed) return ;
 
-        match(input,63,FOLLOW_63_in_synpred52_SiddhiQLGrammar1277); if (state.failed) return ;
+        match(input,62,FOLLOW_62_in_synpred52_SiddhiQLGrammar1272); if (state.failed) return ;
 
-        pushFollow(FOLLOW_collect_in_synpred52_SiddhiQLGrammar1278);
+        pushFollow(FOLLOW_collect_in_synpred52_SiddhiQLGrammar1273);
         collect();
 
         state._fsp--;
         if (state.failed) return ;
 
-        match(input,67,FOLLOW_67_in_synpred52_SiddhiQLGrammar1280); if (state.failed) return ;
+        match(input,66,FOLLOW_66_in_synpred52_SiddhiQLGrammar1275); if (state.failed) return ;
 
         }
 
@@ -13916,18 +13915,18 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred53_SiddhiQLGrammar
     public final void synpred53_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:175:4: ( itemStream 'or' itemStream )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:175:4: itemStream 'or' itemStream
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:174:4: ( itemStream 'or' itemStream )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:174:4: itemStream 'or' itemStream
         {
-        pushFollow(FOLLOW_itemStream_in_synpred53_SiddhiQLGrammar1306);
+        pushFollow(FOLLOW_itemStream_in_synpred53_SiddhiQLGrammar1301);
         itemStream();
 
         state._fsp--;
         if (state.failed) return ;
 
-        match(input,111,FOLLOW_111_in_synpred53_SiddhiQLGrammar1308); if (state.failed) return ;
+        match(input,110,FOLLOW_110_in_synpred53_SiddhiQLGrammar1303); if (state.failed) return ;
 
-        pushFollow(FOLLOW_itemStream_in_synpred53_SiddhiQLGrammar1311);
+        pushFollow(FOLLOW_itemStream_in_synpred53_SiddhiQLGrammar1306);
         itemStream();
 
         state._fsp--;
@@ -13940,16 +13939,16 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred54_SiddhiQLGrammar
     public final void synpred54_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:176:4: ( itemStream regex )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:176:4: itemStream regex
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:175:4: ( itemStream regex )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:175:4: itemStream regex
         {
-        pushFollow(FOLLOW_itemStream_in_synpred54_SiddhiQLGrammar1316);
+        pushFollow(FOLLOW_itemStream_in_synpred54_SiddhiQLGrammar1311);
         itemStream();
 
         state._fsp--;
         if (state.failed) return ;
 
-        pushFollow(FOLLOW_regex_in_synpred54_SiddhiQLGrammar1318);
+        pushFollow(FOLLOW_regex_in_synpred54_SiddhiQLGrammar1313);
         regex();
 
         state._fsp--;
@@ -13962,18 +13961,18 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred64_SiddhiQLGrammar
     public final void synpred64_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:199:4: ( extensionOutFunction 'as' id )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:199:4: extensionOutFunction 'as' id
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:198:4: ( extensionOutFunction 'as' id )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:198:4: extensionOutFunction 'as' id
         {
-        pushFollow(FOLLOW_extensionOutFunction_in_synpred64_SiddhiQLGrammar1469);
+        pushFollow(FOLLOW_extensionOutFunction_in_synpred64_SiddhiQLGrammar1464);
         extensionOutFunction();
 
         state._fsp--;
         if (state.failed) return ;
 
-        match(input,75,FOLLOW_75_in_synpred64_SiddhiQLGrammar1471); if (state.failed) return ;
+        match(input,74,FOLLOW_74_in_synpred64_SiddhiQLGrammar1466); if (state.failed) return ;
 
-        pushFollow(FOLLOW_id_in_synpred64_SiddhiQLGrammar1473);
+        pushFollow(FOLLOW_id_in_synpred64_SiddhiQLGrammar1468);
         id();
 
         state._fsp--;
@@ -13986,18 +13985,18 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred65_SiddhiQLGrammar
     public final void synpred65_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:200:4: ( outFunction 'as' id )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:200:4: outFunction 'as' id
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:199:4: ( outFunction 'as' id )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:199:4: outFunction 'as' id
         {
-        pushFollow(FOLLOW_outFunction_in_synpred65_SiddhiQLGrammar1486);
+        pushFollow(FOLLOW_outFunction_in_synpred65_SiddhiQLGrammar1481);
         outFunction();
 
         state._fsp--;
         if (state.failed) return ;
 
-        match(input,75,FOLLOW_75_in_synpred65_SiddhiQLGrammar1488); if (state.failed) return ;
+        match(input,74,FOLLOW_74_in_synpred65_SiddhiQLGrammar1483); if (state.failed) return ;
 
-        pushFollow(FOLLOW_id_in_synpred65_SiddhiQLGrammar1490);
+        pushFollow(FOLLOW_id_in_synpred65_SiddhiQLGrammar1485);
         id();
 
         state._fsp--;
@@ -14010,18 +14009,18 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred66_SiddhiQLGrammar
     public final void synpred66_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:201:4: ( expression 'as' id )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:201:4: expression 'as' id
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:200:4: ( expression 'as' id )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:200:4: expression 'as' id
         {
-        pushFollow(FOLLOW_expression_in_synpred66_SiddhiQLGrammar1502);
+        pushFollow(FOLLOW_expression_in_synpred66_SiddhiQLGrammar1497);
         expression();
 
         state._fsp--;
         if (state.failed) return ;
 
-        match(input,75,FOLLOW_75_in_synpred66_SiddhiQLGrammar1505); if (state.failed) return ;
+        match(input,74,FOLLOW_74_in_synpred66_SiddhiQLGrammar1500); if (state.failed) return ;
 
-        pushFollow(FOLLOW_id_in_synpred66_SiddhiQLGrammar1507);
+        pushFollow(FOLLOW_id_in_synpred66_SiddhiQLGrammar1502);
         id();
 
         state._fsp--;
@@ -14034,10 +14033,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred67_SiddhiQLGrammar
     public final void synpred67_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:206:36: ( parameters )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:206:36: parameters
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:205:36: ( parameters )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:205:36: parameters
         {
-        pushFollow(FOLLOW_parameters_in_synpred67_SiddhiQLGrammar1541);
+        pushFollow(FOLLOW_parameters_in_synpred67_SiddhiQLGrammar1536);
         parameters();
 
         state._fsp--;
@@ -14050,10 +14049,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred68_SiddhiQLGrammar
     public final void synpred68_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:210:11: ( parameters )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:210:11: parameters
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:209:11: ( parameters )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:209:11: parameters
         {
-        pushFollow(FOLLOW_parameters_in_synpred68_SiddhiQLGrammar1573);
+        pushFollow(FOLLOW_parameters_in_synpred68_SiddhiQLGrammar1568);
         parameters();
 
         state._fsp--;
@@ -14066,10 +14065,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred70_SiddhiQLGrammar
     public final void synpred70_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:222:18: ( parameters )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:222:18: parameters
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:221:18: ( parameters )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:221:18: parameters
         {
-        pushFollow(FOLLOW_parameters_in_synpred70_SiddhiQLGrammar1661);
+        pushFollow(FOLLOW_parameters_in_synpred70_SiddhiQLGrammar1656);
         parameters();
 
         state._fsp--;
@@ -14082,10 +14081,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred71_SiddhiQLGrammar
     public final void synpred71_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:230:41: ( parameters )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:230:41: parameters
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:229:41: ( parameters )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:229:41: parameters
         {
-        pushFollow(FOLLOW_parameters_in_synpred71_SiddhiQLGrammar1731);
+        pushFollow(FOLLOW_parameters_in_synpred71_SiddhiQLGrammar1726);
         parameters();
 
         state._fsp--;
@@ -14098,10 +14097,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred73_SiddhiQLGrammar
     public final void synpred73_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:234:39: ( parameters )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:234:39: parameters
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:233:39: ( parameters )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:233:39: parameters
         {
-        pushFollow(FOLLOW_parameters_in_synpred73_SiddhiQLGrammar1775);
+        pushFollow(FOLLOW_parameters_in_synpred73_SiddhiQLGrammar1770);
         parameters();
 
         state._fsp--;
@@ -14114,12 +14113,12 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred80_SiddhiQLGrammar
     public final void synpred80_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:274:21: ( 'or' conditionExpression )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:274:21: 'or' conditionExpression
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:273:21: ( 'or' conditionExpression )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:273:21: 'or' conditionExpression
         {
-        match(input,111,FOLLOW_111_in_synpred80_SiddhiQLGrammar1973); if (state.failed) return ;
+        match(input,110,FOLLOW_110_in_synpred80_SiddhiQLGrammar1968); if (state.failed) return ;
 
-        pushFollow(FOLLOW_conditionExpression_in_synpred80_SiddhiQLGrammar1976);
+        pushFollow(FOLLOW_conditionExpression_in_synpred80_SiddhiQLGrammar1971);
         conditionExpression();
 
         state._fsp--;
@@ -14132,22 +14131,22 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred82_SiddhiQLGrammar
     public final void synpred82_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:282:3: ( expression compareOperation expression )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:282:3: expression compareOperation expression
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:281:3: ( expression compareOperation expression )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:281:3: expression compareOperation expression
         {
-        pushFollow(FOLLOW_expression_in_synpred82_SiddhiQLGrammar2008);
+        pushFollow(FOLLOW_expression_in_synpred82_SiddhiQLGrammar2003);
         expression();
 
         state._fsp--;
         if (state.failed) return ;
 
-        pushFollow(FOLLOW_compareOperation_in_synpred82_SiddhiQLGrammar2010);
+        pushFollow(FOLLOW_compareOperation_in_synpred82_SiddhiQLGrammar2005);
         compareOperation();
 
         state._fsp--;
         if (state.failed) return ;
 
-        pushFollow(FOLLOW_expression_in_synpred82_SiddhiQLGrammar2013);
+        pushFollow(FOLLOW_expression_in_synpred82_SiddhiQLGrammar2008);
         expression();
 
         state._fsp--;
@@ -14160,10 +14159,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred83_SiddhiQLGrammar
     public final void synpred83_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:283:3: ( boolVal )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:283:3: boolVal
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:282:3: ( boolVal )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:282:3: boolVal
         {
-        pushFollow(FOLLOW_boolVal_in_synpred83_SiddhiQLGrammar2017);
+        pushFollow(FOLLOW_boolVal_in_synpred83_SiddhiQLGrammar2012);
         boolVal();
 
         state._fsp--;
@@ -14176,18 +14175,18 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred84_SiddhiQLGrammar
     public final void synpred84_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:284:6: ( '(' conditionExpression ')' )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:284:6: '(' conditionExpression ')'
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:283:6: ( '(' conditionExpression ')' )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:283:6: '(' conditionExpression ')'
         {
-        match(input,53,FOLLOW_53_in_synpred84_SiddhiQLGrammar2024); if (state.failed) return ;
+        match(input,52,FOLLOW_52_in_synpred84_SiddhiQLGrammar2019); if (state.failed) return ;
 
-        pushFollow(FOLLOW_conditionExpression_in_synpred84_SiddhiQLGrammar2025);
+        pushFollow(FOLLOW_conditionExpression_in_synpred84_SiddhiQLGrammar2020);
         conditionExpression();
 
         state._fsp--;
         if (state.failed) return ;
 
-        match(input,54,FOLLOW_54_in_synpred84_SiddhiQLGrammar2027); if (state.failed) return ;
+        match(input,53,FOLLOW_53_in_synpred84_SiddhiQLGrammar2022); if (state.failed) return ;
 
         }
 
@@ -14196,10 +14195,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred95_SiddhiQLGrammar
     public final void synpred95_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:322:42: ( parameters )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:322:42: parameters
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:321:42: ( parameters )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:321:42: parameters
         {
-        pushFollow(FOLLOW_parameters_in_synpred95_SiddhiQLGrammar2270);
+        pushFollow(FOLLOW_parameters_in_synpred95_SiddhiQLGrammar2265);
         parameters();
 
         state._fsp--;
@@ -14212,10 +14211,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred97_SiddhiQLGrammar
     public final void synpred97_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:326:42: ( parameters )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:326:42: parameters
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:325:42: ( parameters )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:325:42: parameters
         {
-        pushFollow(FOLLOW_parameters_in_synpred97_SiddhiQLGrammar2321);
+        pushFollow(FOLLOW_parameters_in_synpred97_SiddhiQLGrammar2316);
         parameters();
 
         state._fsp--;
@@ -14228,10 +14227,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred99_SiddhiQLGrammar
     public final void synpred99_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:332:3: ( intVal )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:332:3: intVal
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:331:3: ( intVal )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:331:3: intVal
         {
-        pushFollow(FOLLOW_intVal_in_synpred99_SiddhiQLGrammar2358);
+        pushFollow(FOLLOW_intVal_in_synpred99_SiddhiQLGrammar2353);
         intVal();
 
         state._fsp--;
@@ -14244,10 +14243,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred100_SiddhiQLGrammar
     public final void synpred100_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:333:3: ( longVal )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:333:3: longVal
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:332:3: ( longVal )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:332:3: longVal
         {
-        pushFollow(FOLLOW_longVal_in_synpred100_SiddhiQLGrammar2371);
+        pushFollow(FOLLOW_longVal_in_synpred100_SiddhiQLGrammar2366);
         longVal();
 
         state._fsp--;
@@ -14260,10 +14259,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred101_SiddhiQLGrammar
     public final void synpred101_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:334:3: ( floatVal )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:334:3: floatVal
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:333:3: ( floatVal )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:333:3: floatVal
         {
-        pushFollow(FOLLOW_floatVal_in_synpred101_SiddhiQLGrammar2384);
+        pushFollow(FOLLOW_floatVal_in_synpred101_SiddhiQLGrammar2379);
         floatVal();
 
         state._fsp--;
@@ -14276,10 +14275,10 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred102_SiddhiQLGrammar
     public final void synpred102_SiddhiQLGrammar_fragment() throws RecognitionException {
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:335:3: ( doubleVal )
-        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:335:3: doubleVal
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:334:3: ( doubleVal )
+        // org/wso2/siddhi/query/compiler/SiddhiQLGrammar.g:334:3: doubleVal
         {
-        pushFollow(FOLLOW_doubleVal_in_synpred102_SiddhiQLGrammar2398);
+        pushFollow(FOLLOW_doubleVal_in_synpred102_SiddhiQLGrammar2393);
         doubleVal();
 
         state._fsp--;
@@ -14744,423 +14743,423 @@ public TreeAdaptor getTreeAdaptor() {
 
  
 
-    public static final BitSet FOLLOW_definitionStream_in_executionPlan257 = new BitSet(new long[]{0x4000000000000002L});
-    public static final BitSet FOLLOW_query_in_executionPlan259 = new BitSet(new long[]{0x4000000000000002L});
-    public static final BitSet FOLLOW_62_in_executionPlan263 = new BitSet(new long[]{0x0000000000000000L,0x0000000001080000L});
-    public static final BitSet FOLLOW_definitionStream_in_executionPlan266 = new BitSet(new long[]{0x4000000000000002L});
-    public static final BitSet FOLLOW_query_in_executionPlan268 = new BitSet(new long[]{0x4000000000000002L});
-    public static final BitSet FOLLOW_62_in_executionPlan273 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_83_in_definitionStream309 = new BitSet(new long[]{0x0000000000000000L,0x0040000000000000L});
-    public static final BitSet FOLLOW_118_in_definitionStream311 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_streamId_in_definitionStream313 = new BitSet(new long[]{0x0020000000000000L,0x0000000000000040L});
-    public static final BitSet FOLLOW_70_in_definitionStream316 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_IP_in_definitionStream318 = new BitSet(new long[]{0x0020000000000000L});
-    public static final BitSet FOLLOW_53_in_definitionStream323 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_attributeName_in_definitionStream325 = new BitSet(new long[]{0x0000000000000000L,0x0080002200901000L});
-    public static final BitSet FOLLOW_type_in_definitionStream327 = new BitSet(new long[]{0x0240000000000000L});
-    public static final BitSet FOLLOW_57_in_definitionStream330 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_attributeName_in_definitionStream332 = new BitSet(new long[]{0x0000000000000000L,0x0080002200901000L});
-    public static final BitSet FOLLOW_type_in_definitionStream334 = new BitSet(new long[]{0x0240000000000000L});
-    public static final BitSet FOLLOW_54_in_definitionStream339 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_inputStream_in_query373 = new BitSet(new long[]{0x0000000000000000L,0x0000000080000000L});
-    public static final BitSet FOLLOW_outputStream_in_query375 = new BitSet(new long[]{0x04A0203C00300080L,0x008000220C905000L});
-    public static final BitSet FOLLOW_outputProjection_in_query377 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_inputStream_in_query396 = new BitSet(new long[]{0x0000000000000000L,0x0002000000000000L});
-    public static final BitSet FOLLOW_113_in_query398 = new BitSet(new long[]{0x04A0203C00300080L,0x008000220C905000L});
-    public static final BitSet FOLLOW_outputProjection_in_query400 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_95_in_outputStream423 = new BitSet(new long[]{0x0000000000000000L,0x0000000400410200L});
-    public static final BitSet FOLLOW_outputType_in_outputStream425 = new BitSet(new long[]{0x0000000000000000L,0x0000000400000000L});
-    public static final BitSet FOLLOW_98_in_outputStream428 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_streamId_in_outputStream430 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000040L});
-    public static final BitSet FOLLOW_70_in_outputStream433 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_IP_in_outputStream435 = new BitSet(new long[]{0x0200000000000002L});
-    public static final BitSet FOLLOW_57_in_outputStream438 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_IP_in_outputStream440 = new BitSet(new long[]{0x0200000000000002L});
-    public static final BitSet FOLLOW_88_in_inputStream499 = new BitSet(new long[]{0x0020000000300000L,0x0000000000200000L});
-    public static final BitSet FOLLOW_sequenceFullStream_in_inputStream503 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_patternFullStream_in_inputStream517 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_joinStream_in_inputStream534 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_windowStream_in_inputStream549 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_basicStream_in_inputStream559 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_53_in_patternFullStream584 = new BitSet(new long[]{0x0000000000300000L,0x0000000000200000L});
-    public static final BitSet FOLLOW_patternStream_in_patternFullStream586 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_patternFullStream588 = new BitSet(new long[]{0x0000000000000002L,0x2000000000000000L});
-    public static final BitSet FOLLOW_125_in_patternFullStream591 = new BitSet(new long[]{0x0400203C00000080L});
-    public static final BitSet FOLLOW_time_in_patternFullStream593 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_patternStream_in_patternFullStream615 = new BitSet(new long[]{0x0000000000000002L,0x2000000000000000L});
-    public static final BitSet FOLLOW_125_in_patternFullStream619 = new BitSet(new long[]{0x0400203C00000080L});
-    public static final BitSet FOLLOW_time_in_patternFullStream621 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rawStream_in_basicStream652 = new BitSet(new long[]{0x0008000000000002L,0x0000000000000800L});
-    public static final BitSet FOLLOW_transformHandler_in_basicStream654 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000800L});
-    public static final BitSet FOLLOW_75_in_basicStream658 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_id_in_basicStream660 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_streamId_in_windowStream688 = new BitSet(new long[]{0x0008000000000000L,0x0000000000000080L});
-    public static final BitSet FOLLOW_filterHandler_in_windowStream691 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_transformHandler_in_windowStream694 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_windowHandler_in_windowStream697 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000800L});
-    public static final BitSet FOLLOW_75_in_windowStream700 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_id_in_windowStream702 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_53_in_windowStream731 = new BitSet(new long[]{0x0000000000000000L,0x0000000001000000L});
-    public static final BitSet FOLLOW_returnQuery_in_windowStream733 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_windowStream735 = new BitSet(new long[]{0x0008000000000000L,0x0000000000000080L});
-    public static final BitSet FOLLOW_filterHandler_in_windowStream738 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_transformHandler_in_windowStream741 = new BitSet(new long[]{0x0008000000000000L});
-    public static final BitSet FOLLOW_windowHandler_in_windowStream744 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000800L});
-    public static final BitSet FOLLOW_75_in_windowStream747 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_id_in_windowStream749 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_streamId_in_rawStream791 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000080L});
-    public static final BitSet FOLLOW_filterHandler_in_rawStream794 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_53_in_rawStream815 = new BitSet(new long[]{0x0000000000000000L,0x0000000001000000L});
-    public static final BitSet FOLLOW_returnQuery_in_rawStream817 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_rawStream819 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000080L});
-    public static final BitSet FOLLOW_filterHandler_in_rawStream822 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_leftStream_in_joinStream848 = new BitSet(new long[]{0x0000000000000000L,0x0005001842000000L});
-    public static final BitSet FOLLOW_join_in_joinStream850 = new BitSet(new long[]{0x0020000000300000L});
-    public static final BitSet FOLLOW_rightStream_in_joinStream852 = new BitSet(new long[]{0x0000000000000000L,0x0200000000000000L});
-    public static final BitSet FOLLOW_121_in_joinStream854 = new BitSet(new long[]{0x0000000000000002L,0x2000400000000000L});
-    public static final BitSet FOLLOW_110_in_joinStream857 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_condition_in_joinStream859 = new BitSet(new long[]{0x0000000000000002L,0x2000000000000000L});
-    public static final BitSet FOLLOW_125_in_joinStream864 = new BitSet(new long[]{0x0400203C00000080L});
-    public static final BitSet FOLLOW_time_in_joinStream866 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_leftStream_in_joinStream889 = new BitSet(new long[]{0x0000000000000000L,0x0005001842000000L});
-    public static final BitSet FOLLOW_join_in_joinStream891 = new BitSet(new long[]{0x0020000000300000L});
-    public static final BitSet FOLLOW_rightStream_in_joinStream893 = new BitSet(new long[]{0x0000000000000002L,0x2000400000000000L});
-    public static final BitSet FOLLOW_110_in_joinStream896 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_condition_in_joinStream898 = new BitSet(new long[]{0x0000000000000002L,0x2000000000000000L});
-    public static final BitSet FOLLOW_125_in_joinStream903 = new BitSet(new long[]{0x0400203C00000080L});
-    public static final BitSet FOLLOW_time_in_joinStream905 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_leftStream_in_joinStream927 = new BitSet(new long[]{0x0000000000000000L,0x0200000000000000L});
-    public static final BitSet FOLLOW_121_in_joinStream929 = new BitSet(new long[]{0x0000000000000000L,0x0005001842000000L});
-    public static final BitSet FOLLOW_join_in_joinStream931 = new BitSet(new long[]{0x0020000000300000L});
-    public static final BitSet FOLLOW_rightStream_in_joinStream933 = new BitSet(new long[]{0x0000000000000002L,0x2000400000000000L});
-    public static final BitSet FOLLOW_110_in_joinStream936 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_condition_in_joinStream938 = new BitSet(new long[]{0x0000000000000002L,0x2000000000000000L});
-    public static final BitSet FOLLOW_125_in_joinStream943 = new BitSet(new long[]{0x0400203C00000080L});
-    public static final BitSet FOLLOW_time_in_joinStream945 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_windowStream_in_leftStream980 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_basicStream_in_leftStream988 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_windowStream_in_rightStream1006 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_basicStream_in_rightStream1015 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_inputStream_in_returnQuery1029 = new BitSet(new long[]{0x0000000000000000L,0x0002000000000000L});
-    public static final BitSet FOLLOW_113_in_returnQuery1031 = new BitSet(new long[]{0x04A0203C00300080L,0x008000220C905000L});
-    public static final BitSet FOLLOW_outputProjection_in_returnQuery1033 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_patternItem_in_patternStream1055 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_FOLLOWED_BY_in_patternStream1059 = new BitSet(new long[]{0x0000000000300000L,0x0000000000200000L});
-    public static final BitSet FOLLOW_patternStream_in_patternStream1061 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_85_in_patternStream1079 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_patternItem_in_patternStream1081 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_FOLLOWED_BY_in_patternStream1085 = new BitSet(new long[]{0x0000000000300000L,0x0000000000200000L});
-    public static final BitSet FOLLOW_patternStream_in_patternStream1087 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_85_in_patternStream1111 = new BitSet(new long[]{0x0020000000000000L});
-    public static final BitSet FOLLOW_53_in_patternStream1113 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_nonEveryPatternStream_in_patternStream1114 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_patternStream1115 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_FOLLOWED_BY_in_patternStream1119 = new BitSet(new long[]{0x0000000000300000L,0x0000000000200000L});
-    public static final BitSet FOLLOW_patternStream_in_patternStream1121 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_patternItem_in_nonEveryPatternStream1150 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_FOLLOWED_BY_in_nonEveryPatternStream1155 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_nonEveryPatternStream_in_nonEveryPatternStream1157 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_sequenceStream_in_sequenceFullStream1179 = new BitSet(new long[]{0x0000000000000002L,0x2000000000000000L});
-    public static final BitSet FOLLOW_125_in_sequenceFullStream1182 = new BitSet(new long[]{0x0400203C00000080L});
-    public static final BitSet FOLLOW_time_in_sequenceFullStream1184 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_sequenceItem_in_sequenceStream1211 = new BitSet(new long[]{0x0200000000000000L});
-    public static final BitSet FOLLOW_57_in_sequenceStream1213 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_sequenceItem_in_sequenceStream1215 = new BitSet(new long[]{0x0200000000000002L});
-    public static final BitSet FOLLOW_57_in_sequenceStream1219 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_sequenceItem_in_sequenceStream1221 = new BitSet(new long[]{0x0200000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_patternItem1255 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
-    public static final BitSet FOLLOW_74_in_patternItem1257 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_itemStream_in_patternItem1260 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_patternItem1265 = new BitSet(new long[]{0x0000000000000000L,0x0000800000000000L});
-    public static final BitSet FOLLOW_111_in_patternItem1267 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_itemStream_in_patternItem1270 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_patternItem1275 = new BitSet(new long[]{0x8000000000000000L});
-    public static final BitSet FOLLOW_63_in_patternItem1277 = new BitSet(new long[]{0x2000001000000000L});
-    public static final BitSet FOLLOW_collect_in_patternItem1278 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
-    public static final BitSet FOLLOW_67_in_patternItem1280 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_patternItem1295 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_sequenceItem1306 = new BitSet(new long[]{0x0000000000000000L,0x0000800000000000L});
-    public static final BitSet FOLLOW_111_in_sequenceItem1308 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_itemStream_in_sequenceItem1311 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_sequenceItem1316 = new BitSet(new long[]{0x0180000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_regex_in_sequenceItem1318 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_sequenceItem1333 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_attributeName_in_itemStream1344 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_65_in_itemStream1345 = new BitSet(new long[]{0x0020000000300000L});
-    public static final BitSet FOLLOW_rawStream_in_itemStream1346 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_set_in_regex1371 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000020L});
-    public static final BitSet FOLLOW_69_in_regex1379 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_externalCall_in_outputProjection1391 = new BitSet(new long[]{0x04A0203C00300080L,0x008000220C901000L});
-    public static final BitSet FOLLOW_outputAttributeList_in_outputProjection1394 = new BitSet(new long[]{0x0000000000000002L,0x000000000C000000L});
-    public static final BitSet FOLLOW_groupBy_in_outputProjection1396 = new BitSet(new long[]{0x0000000000000002L,0x0000000008000000L});
-    public static final BitSet FOLLOW_having_in_outputProjection1399 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_55_in_outputAttributeList1429 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_outputItem_in_outputAttributeList1434 = new BitSet(new long[]{0x0200000000000002L});
-    public static final BitSet FOLLOW_57_in_outputAttributeList1437 = new BitSet(new long[]{0x0420203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_outputItem_in_outputAttributeList1439 = new BitSet(new long[]{0x0200000000000002L});
-    public static final BitSet FOLLOW_extensionOutFunction_in_outputItem1469 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000800L});
-    public static final BitSet FOLLOW_75_in_outputItem1471 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_id_in_outputItem1473 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_outFunction_in_outputItem1486 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000800L});
-    public static final BitSet FOLLOW_75_in_outputItem1488 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_id_in_outputItem1490 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_expression_in_outputItem1502 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000800L});
-    public static final BitSet FOLLOW_75_in_outputItem1505 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_id_in_outputItem1507 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_attributeVariable_in_outputItem1521 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_extensionId_in_extensionOutFunction1532 = new BitSet(new long[]{0x2000000000000000L});
-    public static final BitSet FOLLOW_61_in_extensionOutFunction1534 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_functionId_in_extensionOutFunction1536 = new BitSet(new long[]{0x0020000000000000L});
-    public static final BitSet FOLLOW_53_in_extensionOutFunction1539 = new BitSet(new long[]{0x0460203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_parameters_in_extensionOutFunction1541 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_extensionOutFunction1544 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_in_outFunction1569 = new BitSet(new long[]{0x0020000000000000L});
-    public static final BitSet FOLLOW_53_in_outFunction1571 = new BitSet(new long[]{0x0460203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_parameters_in_outFunction1573 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_outFunction1576 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_90_in_groupBy1599 = new BitSet(new long[]{0x0000000000000000L,0x0000000000002000L});
-    public static final BitSet FOLLOW_77_in_groupBy1601 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_attributeVariable_in_groupBy1603 = new BitSet(new long[]{0x0200000000000002L});
-    public static final BitSet FOLLOW_57_in_groupBy1606 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_attributeVariable_in_groupBy1608 = new BitSet(new long[]{0x0200000000000002L});
-    public static final BitSet FOLLOW_91_in_having1633 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_condition_in_having1635 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_78_in_externalCall1655 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_ID_in_externalCall1657 = new BitSet(new long[]{0x0020000000000000L});
-    public static final BitSet FOLLOW_53_in_externalCall1659 = new BitSet(new long[]{0x0460203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_parameters_in_externalCall1661 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_externalCall1664 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_71_in_filterHandler1691 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_condition_in_filterHandler1693 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000100L});
-    public static final BitSet FOLLOW_72_in_filterHandler1695 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_51_in_transformHandler1719 = new BitSet(new long[]{0x0000000000000000L,0x0100000000000000L});
-    public static final BitSet FOLLOW_transform_in_transformHandler1721 = new BitSet(new long[]{0x0800000000000000L});
-    public static final BitSet FOLLOW_59_in_transformHandler1723 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_extensibleId_in_transformHandler1725 = new BitSet(new long[]{0x0020000000000002L});
-    public static final BitSet FOLLOW_53_in_transformHandler1729 = new BitSet(new long[]{0x0460203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_parameters_in_transformHandler1731 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_transformHandler1734 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_51_in_windowHandler1762 = new BitSet(new long[]{0x0000000000000000L,0x1000000000000000L});
-    public static final BitSet FOLLOW_window_in_windowHandler1764 = new BitSet(new long[]{0x0800000000000000L});
-    public static final BitSet FOLLOW_59_in_windowHandler1767 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_extensibleId_in_windowHandler1769 = new BitSet(new long[]{0x0020000000000002L});
-    public static final BitSet FOLLOW_53_in_windowHandler1773 = new BitSet(new long[]{0x0460203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_parameters_in_windowHandler1775 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_windowHandler1778 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_extensionId_in_extensibleId1806 = new BitSet(new long[]{0x2000000000000000L});
-    public static final BitSet FOLLOW_61_in_extensibleId1808 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_functionId_in_extensibleId1810 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_id_in_extensibleId1828 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_parameter_in_parameters1839 = new BitSet(new long[]{0x0200000000000002L});
-    public static final BitSet FOLLOW_57_in_parameters1842 = new BitSet(new long[]{0x0420203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_parameter_in_parameters1844 = new BitSet(new long[]{0x0200000000000002L});
-    public static final BitSet FOLLOW_constant_in_time1868 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_expression_in_parameter1880 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_countStart_in_collect1891 = new BitSet(new long[]{0x2000000000000000L});
-    public static final BitSet FOLLOW_61_in_collect1893 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_countEnd_in_collect1895 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_countStart_in_collect1900 = new BitSet(new long[]{0x2000000000000000L});
-    public static final BitSet FOLLOW_61_in_collect1902 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_61_in_collect1907 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_countEnd_in_collect1909 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_countStartAndEnd_in_collect1914 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_countStart1923 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_countEnd1930 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_countStartAndEnd1937 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_conditionExpression_in_condition1947 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_andCondition_in_conditionExpression1970 = new BitSet(new long[]{0x0000000000000002L,0x0000800000000000L});
-    public static final BitSet FOLLOW_111_in_conditionExpression1973 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_conditionExpression_in_conditionExpression1976 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_compareCondition_in_andCondition1990 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000400L});
-    public static final BitSet FOLLOW_74_in_andCondition1993 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_conditionExpression_in_andCondition1996 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_expression_in_compareCondition2008 = new BitSet(new long[]{0x8004000000000000L,0x000000010000801DL});
-    public static final BitSet FOLLOW_compareOperation_in_compareCondition2010 = new BitSet(new long[]{0x0420203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_expression_in_compareCondition2013 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_boolVal_in_compareCondition2017 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_53_in_compareCondition2024 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_conditionExpression_in_compareCondition2025 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_compareCondition2027 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_notCondition_in_compareCondition2038 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_extensionCondition_in_compareCondition2045 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_minusExpression_in_expression2058 = new BitSet(new long[]{0x0100000000000002L});
-    public static final BitSet FOLLOW_56_in_expression2061 = new BitSet(new long[]{0x0420203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_expression_in_expression2064 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_multiplyExpression_in_minusExpression2082 = new BitSet(new long[]{0x0400000000000002L});
-    public static final BitSet FOLLOW_58_in_minusExpression2085 = new BitSet(new long[]{0x0420203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_minusExpression_in_minusExpression2088 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_divisionExpression_in_multiplyExpression2106 = new BitSet(new long[]{0x0080000000000002L});
-    public static final BitSet FOLLOW_55_in_multiplyExpression2109 = new BitSet(new long[]{0x0420203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_multiplyExpression_in_multiplyExpression2112 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_modExpression_in_divisionExpression2130 = new BitSet(new long[]{0x1000000000000002L});
-    public static final BitSet FOLLOW_60_in_divisionExpression2133 = new BitSet(new long[]{0x0420203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_divisionExpression_in_divisionExpression2136 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_valueExpression_in_modExpression2154 = new BitSet(new long[]{0x0010000000000002L});
-    public static final BitSet FOLLOW_52_in_modExpression2157 = new BitSet(new long[]{0x0420203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_modExpression_in_modExpression2160 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_constant_in_valueExpression2179 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_attributeVariable_in_valueExpression2187 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_type_in_valueExpression2195 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_53_in_valueExpression2203 = new BitSet(new long[]{0x0420203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_expression_in_valueExpression2204 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_valueExpression2206 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_extensionExpression_in_valueExpression2218 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_109_in_notCondition2231 = new BitSet(new long[]{0x0020000000000000L});
-    public static final BitSet FOLLOW_53_in_notCondition2233 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_conditionExpression_in_notCondition2234 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_notCondition2235 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_extensionId_in_extensionCondition2260 = new BitSet(new long[]{0x2000000000000000L});
-    public static final BitSet FOLLOW_61_in_extensionCondition2262 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_functionId_in_extensionCondition2264 = new BitSet(new long[]{0x0020000000000002L});
-    public static final BitSet FOLLOW_53_in_extensionCondition2268 = new BitSet(new long[]{0x0460203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_parameters_in_extensionCondition2270 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_extensionCondition2273 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_extensionId_in_extensionExpression2311 = new BitSet(new long[]{0x2000000000000000L});
-    public static final BitSet FOLLOW_61_in_extensionExpression2313 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_functionId_in_extensionExpression2315 = new BitSet(new long[]{0x0020000000000002L});
-    public static final BitSet FOLLOW_53_in_extensionExpression2319 = new BitSet(new long[]{0x0460203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_parameters_in_extensionExpression2321 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_extensionExpression2324 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_intVal_in_constant2358 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_longVal_in_constant2371 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_floatVal_in_constant2384 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_doubleVal_in_constant2398 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_boolVal_in_constant2411 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_stringVal_in_constant2424 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_timeExpr_in_constant2437 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_id_in_streamId2457 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_streamPositionAttributeName_in_attributeVariable2465 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_streamAttributeName_in_attributeVariable2467 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_attributeName_in_attributeVariable2469 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_streamId_in_streamPositionAttributeName2477 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
-    public static final BitSet FOLLOW_71_in_streamPositionAttributeName2479 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_streamPositionAttributeName2480 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000100L});
-    public static final BitSet FOLLOW_72_in_streamPositionAttributeName2481 = new BitSet(new long[]{0x0800000000000000L});
-    public static final BitSet FOLLOW_59_in_streamPositionAttributeName2482 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_id_in_streamPositionAttributeName2484 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_streamId_in_streamAttributeName2511 = new BitSet(new long[]{0x0800000000000000L});
-    public static final BitSet FOLLOW_59_in_streamAttributeName2513 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_id_in_streamAttributeName2515 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_id_in_attributeName2539 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_100_in_join2561 = new BitSet(new long[]{0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_112_in_join2562 = new BitSet(new long[]{0x0000000000000000L,0x0000000800000000L});
-    public static final BitSet FOLLOW_99_in_join2564 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_114_in_join2582 = new BitSet(new long[]{0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_112_in_join2584 = new BitSet(new long[]{0x0000000000000000L,0x0000000800000000L});
-    public static final BitSet FOLLOW_99_in_join2586 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_89_in_join2603 = new BitSet(new long[]{0x0000000000000000L,0x0001000000000000L});
-    public static final BitSet FOLLOW_112_in_join2604 = new BitSet(new long[]{0x0000000000000000L,0x0000000800000000L});
-    public static final BitSet FOLLOW_99_in_join2606 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_112_in_join2623 = new BitSet(new long[]{0x0000000000000000L,0x0000000800000000L});
-    public static final BitSet FOLLOW_99_in_join2625 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_94_in_join2643 = new BitSet(new long[]{0x0000000000000000L,0x0000000800000000L});
-    public static final BitSet FOLLOW_99_in_join2645 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_99_in_join2660 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_124_in_window2682 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_120_in_transform2699 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_yearValue_in_timeExpr2759 = new BitSet(new long[]{0x0000001000000002L});
-    public static final BitSet FOLLOW_monthValue_in_timeExpr2764 = new BitSet(new long[]{0x0000001000000002L});
-    public static final BitSet FOLLOW_weekValue_in_timeExpr2769 = new BitSet(new long[]{0x0000001000000002L});
-    public static final BitSet FOLLOW_dayValue_in_timeExpr2774 = new BitSet(new long[]{0x0000001000000002L});
-    public static final BitSet FOLLOW_hourValue_in_timeExpr2779 = new BitSet(new long[]{0x0000001000000002L});
-    public static final BitSet FOLLOW_minuteValue_in_timeExpr2784 = new BitSet(new long[]{0x0000001000000002L});
-    public static final BitSet FOLLOW_secondValue_in_timeExpr2789 = new BitSet(new long[]{0x0000001000000002L});
-    public static final BitSet FOLLOW_milliSecondValue_in_timeExpr2795 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_yearValue2841 = new BitSet(new long[]{0x0000000000000000L,0xC000000000000000L});
-    public static final BitSet FOLLOW_set_in_yearValue2843 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_monthValue2861 = new BitSet(new long[]{0x0000000000000000L,0x0000180000000000L});
-    public static final BitSet FOLLOW_set_in_monthValue2863 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_weekValue2881 = new BitSet(new long[]{0x0000000000000000L,0x0C00000000000000L});
-    public static final BitSet FOLLOW_set_in_weekValue2883 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_dayValue2901 = new BitSet(new long[]{0x0000000000000000L,0x0000000000060000L});
-    public static final BitSet FOLLOW_set_in_dayValue2903 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_hourValue2921 = new BitSet(new long[]{0x0000000000000000L,0x0000000030000000L});
-    public static final BitSet FOLLOW_set_in_hourValue2923 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_minuteValue2944 = new BitSet(new long[]{0x0000000000000000L,0x0000070000000000L});
-    public static final BitSet FOLLOW_set_in_minuteValue2946 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_secondValue2972 = new BitSet(new long[]{0x0000000000000000L,0x0038000000000000L});
-    public static final BitSet FOLLOW_set_in_secondValue2974 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_milliSecondValue3002 = new BitSet(new long[]{0x0000000000000000L,0x000000C000000000L});
-    public static final BitSet FOLLOW_set_in_milliSecondValue3004 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_58_in_intVal3023 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_intVal3026 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_58_in_longVal3045 = new BitSet(new long[]{0x0000002000000000L});
-    public static final BitSet FOLLOW_POSITIVE_LONG_VAL_in_longVal3048 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_58_in_floatVal3067 = new BitSet(new long[]{0x0000000800000000L});
-    public static final BitSet FOLLOW_POSITIVE_FLOAT_VAL_in_floatVal3070 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_58_in_doubleVal3089 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_POSITIVE_DOUBLE_VAL_in_doubleVal3092 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_BOOL_VAL_in_boolVal3111 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_id_in_extensionId3118 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_id_in_functionId3125 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_STRING_VAL_in_stringVal3132 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_inputStream_in_synpred7_SiddhiQLGrammar373 = new BitSet(new long[]{0x0000000000000000L,0x0000000080000000L});
-    public static final BitSet FOLLOW_outputStream_in_synpred7_SiddhiQLGrammar375 = new BitSet(new long[]{0x04A0203C00300080L,0x008000220C905000L});
-    public static final BitSet FOLLOW_outputProjection_in_synpred7_SiddhiQLGrammar377 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_sequenceFullStream_in_synpred13_SiddhiQLGrammar503 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_patternFullStream_in_synpred14_SiddhiQLGrammar517 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_joinStream_in_synpred15_SiddhiQLGrammar534 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_windowStream_in_synpred16_SiddhiQLGrammar549 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_leftStream_in_synpred34_SiddhiQLGrammar848 = new BitSet(new long[]{0x0000000000000000L,0x0005001842000000L});
-    public static final BitSet FOLLOW_join_in_synpred34_SiddhiQLGrammar850 = new BitSet(new long[]{0x0020000000300000L});
-    public static final BitSet FOLLOW_rightStream_in_synpred34_SiddhiQLGrammar852 = new BitSet(new long[]{0x0000000000000000L,0x0200000000000000L});
-    public static final BitSet FOLLOW_121_in_synpred34_SiddhiQLGrammar854 = new BitSet(new long[]{0x0000000000000002L,0x2000400000000000L});
-    public static final BitSet FOLLOW_110_in_synpred34_SiddhiQLGrammar857 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_condition_in_synpred34_SiddhiQLGrammar859 = new BitSet(new long[]{0x0000000000000002L,0x2000000000000000L});
-    public static final BitSet FOLLOW_125_in_synpred34_SiddhiQLGrammar864 = new BitSet(new long[]{0x0400203C00000080L});
-    public static final BitSet FOLLOW_time_in_synpred34_SiddhiQLGrammar866 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_leftStream_in_synpred37_SiddhiQLGrammar889 = new BitSet(new long[]{0x0000000000000000L,0x0005001842000000L});
-    public static final BitSet FOLLOW_join_in_synpred37_SiddhiQLGrammar891 = new BitSet(new long[]{0x0020000000300000L});
-    public static final BitSet FOLLOW_rightStream_in_synpred37_SiddhiQLGrammar893 = new BitSet(new long[]{0x0000000000000002L,0x2000400000000000L});
-    public static final BitSet FOLLOW_110_in_synpred37_SiddhiQLGrammar896 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_condition_in_synpred37_SiddhiQLGrammar898 = new BitSet(new long[]{0x0000000000000002L,0x2000000000000000L});
-    public static final BitSet FOLLOW_125_in_synpred37_SiddhiQLGrammar903 = new BitSet(new long[]{0x0400203C00000080L});
-    public static final BitSet FOLLOW_time_in_synpred37_SiddhiQLGrammar905 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_windowStream_in_synpred40_SiddhiQLGrammar980 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_windowStream_in_synpred41_SiddhiQLGrammar1006 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_synpred50_SiddhiQLGrammar1255 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
-    public static final BitSet FOLLOW_74_in_synpred50_SiddhiQLGrammar1257 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_itemStream_in_synpred50_SiddhiQLGrammar1260 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_synpred51_SiddhiQLGrammar1265 = new BitSet(new long[]{0x0000000000000000L,0x0000800000000000L});
-    public static final BitSet FOLLOW_111_in_synpred51_SiddhiQLGrammar1267 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_itemStream_in_synpred51_SiddhiQLGrammar1270 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_synpred52_SiddhiQLGrammar1275 = new BitSet(new long[]{0x8000000000000000L});
-    public static final BitSet FOLLOW_63_in_synpred52_SiddhiQLGrammar1277 = new BitSet(new long[]{0x2000001000000000L});
-    public static final BitSet FOLLOW_collect_in_synpred52_SiddhiQLGrammar1278 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
-    public static final BitSet FOLLOW_67_in_synpred52_SiddhiQLGrammar1280 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_synpred53_SiddhiQLGrammar1306 = new BitSet(new long[]{0x0000000000000000L,0x0000800000000000L});
-    public static final BitSet FOLLOW_111_in_synpred53_SiddhiQLGrammar1308 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_itemStream_in_synpred53_SiddhiQLGrammar1311 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_itemStream_in_synpred54_SiddhiQLGrammar1316 = new BitSet(new long[]{0x0180000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_regex_in_synpred54_SiddhiQLGrammar1318 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_extensionOutFunction_in_synpred64_SiddhiQLGrammar1469 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000800L});
-    public static final BitSet FOLLOW_75_in_synpred64_SiddhiQLGrammar1471 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_id_in_synpred64_SiddhiQLGrammar1473 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_outFunction_in_synpred65_SiddhiQLGrammar1486 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000800L});
-    public static final BitSet FOLLOW_75_in_synpred65_SiddhiQLGrammar1488 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_id_in_synpred65_SiddhiQLGrammar1490 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_expression_in_synpred66_SiddhiQLGrammar1502 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000800L});
-    public static final BitSet FOLLOW_75_in_synpred66_SiddhiQLGrammar1505 = new BitSet(new long[]{0x0000000000300000L});
-    public static final BitSet FOLLOW_id_in_synpred66_SiddhiQLGrammar1507 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_parameters_in_synpred67_SiddhiQLGrammar1541 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_parameters_in_synpred68_SiddhiQLGrammar1573 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_parameters_in_synpred70_SiddhiQLGrammar1661 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_parameters_in_synpred71_SiddhiQLGrammar1731 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_parameters_in_synpred73_SiddhiQLGrammar1775 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_111_in_synpred80_SiddhiQLGrammar1973 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_conditionExpression_in_synpred80_SiddhiQLGrammar1976 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_expression_in_synpred82_SiddhiQLGrammar2008 = new BitSet(new long[]{0x8004000000000000L,0x000000010000801DL});
-    public static final BitSet FOLLOW_compareOperation_in_synpred82_SiddhiQLGrammar2010 = new BitSet(new long[]{0x0420203C00300080L,0x0080002200901000L});
-    public static final BitSet FOLLOW_expression_in_synpred82_SiddhiQLGrammar2013 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_boolVal_in_synpred83_SiddhiQLGrammar2017 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_53_in_synpred84_SiddhiQLGrammar2024 = new BitSet(new long[]{0x0420203C00300080L,0x0080202200901000L});
-    public static final BitSet FOLLOW_conditionExpression_in_synpred84_SiddhiQLGrammar2025 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_54_in_synpred84_SiddhiQLGrammar2027 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_parameters_in_synpred95_SiddhiQLGrammar2270 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_parameters_in_synpred97_SiddhiQLGrammar2321 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_intVal_in_synpred99_SiddhiQLGrammar2358 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_longVal_in_synpred100_SiddhiQLGrammar2371 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_floatVal_in_synpred101_SiddhiQLGrammar2384 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_doubleVal_in_synpred102_SiddhiQLGrammar2398 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_definitionStream_in_executionPlan252 = new BitSet(new long[]{0x2000000000000002L});
+    public static final BitSet FOLLOW_query_in_executionPlan254 = new BitSet(new long[]{0x2000000000000002L});
+    public static final BitSet FOLLOW_61_in_executionPlan258 = new BitSet(new long[]{0x0000000000000000L,0x0000000000840000L});
+    public static final BitSet FOLLOW_definitionStream_in_executionPlan261 = new BitSet(new long[]{0x2000000000000002L});
+    public static final BitSet FOLLOW_query_in_executionPlan263 = new BitSet(new long[]{0x2000000000000002L});
+    public static final BitSet FOLLOW_61_in_executionPlan268 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_82_in_definitionStream304 = new BitSet(new long[]{0x0000000000000000L,0x0020000000000000L});
+    public static final BitSet FOLLOW_117_in_definitionStream306 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_streamId_in_definitionStream308 = new BitSet(new long[]{0x0010000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_69_in_definitionStream311 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_IP_in_definitionStream313 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_52_in_definitionStream318 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_attributeName_in_definitionStream320 = new BitSet(new long[]{0x0000000000000000L,0x0040001100480800L});
+    public static final BitSet FOLLOW_type_in_definitionStream322 = new BitSet(new long[]{0x0120000000000000L});
+    public static final BitSet FOLLOW_56_in_definitionStream325 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_attributeName_in_definitionStream327 = new BitSet(new long[]{0x0000000000000000L,0x0040001100480800L});
+    public static final BitSet FOLLOW_type_in_definitionStream329 = new BitSet(new long[]{0x0120000000000000L});
+    public static final BitSet FOLLOW_53_in_definitionStream334 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_inputStream_in_query368 = new BitSet(new long[]{0x0000000000000000L,0x0000000040000000L});
+    public static final BitSet FOLLOW_outputStream_in_query370 = new BitSet(new long[]{0x0250101E00180040L,0x0040001106482800L});
+    public static final BitSet FOLLOW_outputProjection_in_query372 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_inputStream_in_query391 = new BitSet(new long[]{0x0000000000000000L,0x0001000000000000L});
+    public static final BitSet FOLLOW_112_in_query393 = new BitSet(new long[]{0x0250101E00180040L,0x0040001106482800L});
+    public static final BitSet FOLLOW_outputProjection_in_query395 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_94_in_outputStream418 = new BitSet(new long[]{0x0000000000000000L,0x0000000200208100L});
+    public static final BitSet FOLLOW_outputType_in_outputStream420 = new BitSet(new long[]{0x0000000000000000L,0x0000000200000000L});
+    public static final BitSet FOLLOW_97_in_outputStream423 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_streamId_in_outputStream425 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000020L});
+    public static final BitSet FOLLOW_69_in_outputStream428 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_IP_in_outputStream430 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_56_in_outputStream433 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_IP_in_outputStream435 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_87_in_inputStream494 = new BitSet(new long[]{0x0010000000180000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_sequenceFullStream_in_inputStream498 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_patternFullStream_in_inputStream512 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_joinStream_in_inputStream529 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_windowStream_in_inputStream544 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_basicStream_in_inputStream554 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_52_in_patternFullStream579 = new BitSet(new long[]{0x0000000000180000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_patternStream_in_patternFullStream581 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_patternFullStream583 = new BitSet(new long[]{0x0000000000000002L,0x1000000000000000L});
+    public static final BitSet FOLLOW_124_in_patternFullStream586 = new BitSet(new long[]{0x0200101E00000040L});
+    public static final BitSet FOLLOW_time_in_patternFullStream588 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_patternStream_in_patternFullStream610 = new BitSet(new long[]{0x0000000000000002L,0x1000000000000000L});
+    public static final BitSet FOLLOW_124_in_patternFullStream614 = new BitSet(new long[]{0x0200101E00000040L});
+    public static final BitSet FOLLOW_time_in_patternFullStream616 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rawStream_in_basicStream647 = new BitSet(new long[]{0x0004000000000002L,0x0000000000000400L});
+    public static final BitSet FOLLOW_transformHandler_in_basicStream649 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000400L});
+    public static final BitSet FOLLOW_74_in_basicStream653 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_id_in_basicStream655 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_streamId_in_windowStream683 = new BitSet(new long[]{0x0004000000000000L,0x0000000000000040L});
+    public static final BitSet FOLLOW_filterHandler_in_windowStream686 = new BitSet(new long[]{0x0004000000000000L});
+    public static final BitSet FOLLOW_transformHandler_in_windowStream689 = new BitSet(new long[]{0x0004000000000000L});
+    public static final BitSet FOLLOW_windowHandler_in_windowStream692 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000400L});
+    public static final BitSet FOLLOW_74_in_windowStream695 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_id_in_windowStream697 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_52_in_windowStream726 = new BitSet(new long[]{0x0000000000000000L,0x0000000000800000L});
+    public static final BitSet FOLLOW_returnQuery_in_windowStream728 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_windowStream730 = new BitSet(new long[]{0x0004000000000000L,0x0000000000000040L});
+    public static final BitSet FOLLOW_filterHandler_in_windowStream733 = new BitSet(new long[]{0x0004000000000000L});
+    public static final BitSet FOLLOW_transformHandler_in_windowStream736 = new BitSet(new long[]{0x0004000000000000L});
+    public static final BitSet FOLLOW_windowHandler_in_windowStream739 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000400L});
+    public static final BitSet FOLLOW_74_in_windowStream742 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_id_in_windowStream744 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_streamId_in_rawStream786 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000040L});
+    public static final BitSet FOLLOW_filterHandler_in_rawStream789 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_52_in_rawStream810 = new BitSet(new long[]{0x0000000000000000L,0x0000000000800000L});
+    public static final BitSet FOLLOW_returnQuery_in_rawStream812 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_rawStream814 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000040L});
+    public static final BitSet FOLLOW_filterHandler_in_rawStream817 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_leftStream_in_joinStream843 = new BitSet(new long[]{0x0000000000000000L,0x0002800C21000000L});
+    public static final BitSet FOLLOW_join_in_joinStream845 = new BitSet(new long[]{0x0010000000180000L});
+    public static final BitSet FOLLOW_rightStream_in_joinStream847 = new BitSet(new long[]{0x0000000000000000L,0x0100000000000000L});
+    public static final BitSet FOLLOW_120_in_joinStream849 = new BitSet(new long[]{0x0000000000000002L,0x1000200000000000L});
+    public static final BitSet FOLLOW_109_in_joinStream852 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_condition_in_joinStream854 = new BitSet(new long[]{0x0000000000000002L,0x1000000000000000L});
+    public static final BitSet FOLLOW_124_in_joinStream859 = new BitSet(new long[]{0x0200101E00000040L});
+    public static final BitSet FOLLOW_time_in_joinStream861 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_leftStream_in_joinStream884 = new BitSet(new long[]{0x0000000000000000L,0x0002800C21000000L});
+    public static final BitSet FOLLOW_join_in_joinStream886 = new BitSet(new long[]{0x0010000000180000L});
+    public static final BitSet FOLLOW_rightStream_in_joinStream888 = new BitSet(new long[]{0x0000000000000002L,0x1000200000000000L});
+    public static final BitSet FOLLOW_109_in_joinStream891 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_condition_in_joinStream893 = new BitSet(new long[]{0x0000000000000002L,0x1000000000000000L});
+    public static final BitSet FOLLOW_124_in_joinStream898 = new BitSet(new long[]{0x0200101E00000040L});
+    public static final BitSet FOLLOW_time_in_joinStream900 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_leftStream_in_joinStream922 = new BitSet(new long[]{0x0000000000000000L,0x0100000000000000L});
+    public static final BitSet FOLLOW_120_in_joinStream924 = new BitSet(new long[]{0x0000000000000000L,0x0002800C21000000L});
+    public static final BitSet FOLLOW_join_in_joinStream926 = new BitSet(new long[]{0x0010000000180000L});
+    public static final BitSet FOLLOW_rightStream_in_joinStream928 = new BitSet(new long[]{0x0000000000000002L,0x1000200000000000L});
+    public static final BitSet FOLLOW_109_in_joinStream931 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_condition_in_joinStream933 = new BitSet(new long[]{0x0000000000000002L,0x1000000000000000L});
+    public static final BitSet FOLLOW_124_in_joinStream938 = new BitSet(new long[]{0x0200101E00000040L});
+    public static final BitSet FOLLOW_time_in_joinStream940 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_windowStream_in_leftStream975 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_basicStream_in_leftStream983 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_windowStream_in_rightStream1001 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_basicStream_in_rightStream1010 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_inputStream_in_returnQuery1024 = new BitSet(new long[]{0x0000000000000000L,0x0001000000000000L});
+    public static final BitSet FOLLOW_112_in_returnQuery1026 = new BitSet(new long[]{0x0250101E00180040L,0x0040001106482800L});
+    public static final BitSet FOLLOW_outputProjection_in_returnQuery1028 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_patternItem_in_patternStream1050 = new BitSet(new long[]{0x0000000000010002L});
+    public static final BitSet FOLLOW_FOLLOWED_BY_in_patternStream1054 = new BitSet(new long[]{0x0000000000180000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_patternStream_in_patternStream1056 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_84_in_patternStream1074 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_patternItem_in_patternStream1076 = new BitSet(new long[]{0x0000000000010002L});
+    public static final BitSet FOLLOW_FOLLOWED_BY_in_patternStream1080 = new BitSet(new long[]{0x0000000000180000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_patternStream_in_patternStream1082 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_84_in_patternStream1106 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_52_in_patternStream1108 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_nonEveryPatternStream_in_patternStream1109 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_patternStream1110 = new BitSet(new long[]{0x0000000000010002L});
+    public static final BitSet FOLLOW_FOLLOWED_BY_in_patternStream1114 = new BitSet(new long[]{0x0000000000180000L,0x0000000000100000L});
+    public static final BitSet FOLLOW_patternStream_in_patternStream1116 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_patternItem_in_nonEveryPatternStream1145 = new BitSet(new long[]{0x0000000000010002L});
+    public static final BitSet FOLLOW_FOLLOWED_BY_in_nonEveryPatternStream1150 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_nonEveryPatternStream_in_nonEveryPatternStream1152 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_sequenceStream_in_sequenceFullStream1174 = new BitSet(new long[]{0x0000000000000002L,0x1000000000000000L});
+    public static final BitSet FOLLOW_124_in_sequenceFullStream1177 = new BitSet(new long[]{0x0200101E00000040L});
+    public static final BitSet FOLLOW_time_in_sequenceFullStream1179 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_sequenceItem_in_sequenceStream1206 = new BitSet(new long[]{0x0100000000000000L});
+    public static final BitSet FOLLOW_56_in_sequenceStream1208 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_sequenceItem_in_sequenceStream1210 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_56_in_sequenceStream1214 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_sequenceItem_in_sequenceStream1216 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_patternItem1250 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000200L});
+    public static final BitSet FOLLOW_73_in_patternItem1252 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_itemStream_in_patternItem1255 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_patternItem1260 = new BitSet(new long[]{0x0000000000000000L,0x0000400000000000L});
+    public static final BitSet FOLLOW_110_in_patternItem1262 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_itemStream_in_patternItem1265 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_patternItem1270 = new BitSet(new long[]{0x4000000000000000L});
+    public static final BitSet FOLLOW_62_in_patternItem1272 = new BitSet(new long[]{0x1000000800000000L});
+    public static final BitSet FOLLOW_collect_in_patternItem1273 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_66_in_patternItem1275 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_patternItem1290 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_sequenceItem1301 = new BitSet(new long[]{0x0000000000000000L,0x0000400000000000L});
+    public static final BitSet FOLLOW_110_in_sequenceItem1303 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_itemStream_in_sequenceItem1306 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_sequenceItem1311 = new BitSet(new long[]{0x00C0000000000000L,0x0000000000000010L});
+    public static final BitSet FOLLOW_regex_in_sequenceItem1313 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_sequenceItem1328 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_attributeName_in_itemStream1339 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_64_in_itemStream1340 = new BitSet(new long[]{0x0010000000180000L});
+    public static final BitSet FOLLOW_rawStream_in_itemStream1341 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_set_in_regex1366 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000010L});
+    public static final BitSet FOLLOW_68_in_regex1374 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_externalCall_in_outputProjection1386 = new BitSet(new long[]{0x0250101E00180040L,0x0040001106480800L});
+    public static final BitSet FOLLOW_outputAttributeList_in_outputProjection1389 = new BitSet(new long[]{0x0000000000000002L,0x0000000006000000L});
+    public static final BitSet FOLLOW_groupBy_in_outputProjection1391 = new BitSet(new long[]{0x0000000000000002L,0x0000000004000000L});
+    public static final BitSet FOLLOW_having_in_outputProjection1394 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_54_in_outputAttributeList1424 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_outputItem_in_outputAttributeList1429 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_56_in_outputAttributeList1432 = new BitSet(new long[]{0x0210101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_outputItem_in_outputAttributeList1434 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_extensionOutFunction_in_outputItem1464 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_74_in_outputItem1466 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_id_in_outputItem1468 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_outFunction_in_outputItem1481 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_74_in_outputItem1483 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_id_in_outputItem1485 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_expression_in_outputItem1497 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_74_in_outputItem1500 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_id_in_outputItem1502 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_attributeVariable_in_outputItem1516 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_extensionId_in_extensionOutFunction1527 = new BitSet(new long[]{0x1000000000000000L});
+    public static final BitSet FOLLOW_60_in_extensionOutFunction1529 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_functionId_in_extensionOutFunction1531 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_52_in_extensionOutFunction1534 = new BitSet(new long[]{0x0230101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_parameters_in_extensionOutFunction1536 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_extensionOutFunction1539 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_in_outFunction1564 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_52_in_outFunction1566 = new BitSet(new long[]{0x0230101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_parameters_in_outFunction1568 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_outFunction1571 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_89_in_groupBy1594 = new BitSet(new long[]{0x0000000000000000L,0x0000000000001000L});
+    public static final BitSet FOLLOW_76_in_groupBy1596 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_attributeVariable_in_groupBy1598 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_56_in_groupBy1601 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_attributeVariable_in_groupBy1603 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_90_in_having1628 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_condition_in_having1630 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_77_in_externalCall1650 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_ID_in_externalCall1652 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_52_in_externalCall1654 = new BitSet(new long[]{0x0230101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_parameters_in_externalCall1656 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_externalCall1659 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_70_in_filterHandler1686 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_condition_in_filterHandler1688 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
+    public static final BitSet FOLLOW_71_in_filterHandler1690 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_50_in_transformHandler1714 = new BitSet(new long[]{0x0000000000000000L,0x0080000000000000L});
+    public static final BitSet FOLLOW_transform_in_transformHandler1716 = new BitSet(new long[]{0x0400000000000000L});
+    public static final BitSet FOLLOW_58_in_transformHandler1718 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_extensibleId_in_transformHandler1720 = new BitSet(new long[]{0x0010000000000002L});
+    public static final BitSet FOLLOW_52_in_transformHandler1724 = new BitSet(new long[]{0x0230101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_parameters_in_transformHandler1726 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_transformHandler1729 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_50_in_windowHandler1757 = new BitSet(new long[]{0x0000000000000000L,0x0800000000000000L});
+    public static final BitSet FOLLOW_window_in_windowHandler1759 = new BitSet(new long[]{0x0400000000000000L});
+    public static final BitSet FOLLOW_58_in_windowHandler1762 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_extensibleId_in_windowHandler1764 = new BitSet(new long[]{0x0010000000000002L});
+    public static final BitSet FOLLOW_52_in_windowHandler1768 = new BitSet(new long[]{0x0230101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_parameters_in_windowHandler1770 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_windowHandler1773 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_extensionId_in_extensibleId1801 = new BitSet(new long[]{0x1000000000000000L});
+    public static final BitSet FOLLOW_60_in_extensibleId1803 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_functionId_in_extensibleId1805 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_id_in_extensibleId1823 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_parameter_in_parameters1834 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_56_in_parameters1837 = new BitSet(new long[]{0x0210101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_parameter_in_parameters1839 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_constant_in_time1863 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_expression_in_parameter1875 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_countStart_in_collect1886 = new BitSet(new long[]{0x1000000000000000L});
+    public static final BitSet FOLLOW_60_in_collect1888 = new BitSet(new long[]{0x0000000800000000L});
+    public static final BitSet FOLLOW_countEnd_in_collect1890 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_countStart_in_collect1895 = new BitSet(new long[]{0x1000000000000000L});
+    public static final BitSet FOLLOW_60_in_collect1897 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_60_in_collect1902 = new BitSet(new long[]{0x0000000800000000L});
+    public static final BitSet FOLLOW_countEnd_in_collect1904 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_countStartAndEnd_in_collect1909 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_countStart1918 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_countEnd1925 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_countStartAndEnd1932 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_conditionExpression_in_condition1942 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_andCondition_in_conditionExpression1965 = new BitSet(new long[]{0x0000000000000002L,0x0000400000000000L});
+    public static final BitSet FOLLOW_110_in_conditionExpression1968 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_conditionExpression_in_conditionExpression1971 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_compareCondition_in_andCondition1985 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000200L});
+    public static final BitSet FOLLOW_73_in_andCondition1988 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_conditionExpression_in_andCondition1991 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_expression_in_compareCondition2003 = new BitSet(new long[]{0xC002000000000000L,0x000000008000400EL});
+    public static final BitSet FOLLOW_compareOperation_in_compareCondition2005 = new BitSet(new long[]{0x0210101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_expression_in_compareCondition2008 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_boolVal_in_compareCondition2012 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_52_in_compareCondition2019 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_conditionExpression_in_compareCondition2020 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_compareCondition2022 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_notCondition_in_compareCondition2033 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_extensionCondition_in_compareCondition2040 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_minusExpression_in_expression2053 = new BitSet(new long[]{0x0080000000000002L});
+    public static final BitSet FOLLOW_55_in_expression2056 = new BitSet(new long[]{0x0210101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_expression_in_expression2059 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_multiplyExpression_in_minusExpression2077 = new BitSet(new long[]{0x0200000000000002L});
+    public static final BitSet FOLLOW_57_in_minusExpression2080 = new BitSet(new long[]{0x0210101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_minusExpression_in_minusExpression2083 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_divisionExpression_in_multiplyExpression2101 = new BitSet(new long[]{0x0040000000000002L});
+    public static final BitSet FOLLOW_54_in_multiplyExpression2104 = new BitSet(new long[]{0x0210101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_multiplyExpression_in_multiplyExpression2107 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_modExpression_in_divisionExpression2125 = new BitSet(new long[]{0x0800000000000002L});
+    public static final BitSet FOLLOW_59_in_divisionExpression2128 = new BitSet(new long[]{0x0210101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_divisionExpression_in_divisionExpression2131 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_valueExpression_in_modExpression2149 = new BitSet(new long[]{0x0008000000000002L});
+    public static final BitSet FOLLOW_51_in_modExpression2152 = new BitSet(new long[]{0x0210101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_modExpression_in_modExpression2155 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_constant_in_valueExpression2174 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_attributeVariable_in_valueExpression2182 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_type_in_valueExpression2190 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_52_in_valueExpression2198 = new BitSet(new long[]{0x0210101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_expression_in_valueExpression2199 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_valueExpression2201 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_extensionExpression_in_valueExpression2213 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_108_in_notCondition2226 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_52_in_notCondition2228 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_conditionExpression_in_notCondition2229 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_notCondition2230 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_extensionId_in_extensionCondition2255 = new BitSet(new long[]{0x1000000000000000L});
+    public static final BitSet FOLLOW_60_in_extensionCondition2257 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_functionId_in_extensionCondition2259 = new BitSet(new long[]{0x0010000000000002L});
+    public static final BitSet FOLLOW_52_in_extensionCondition2263 = new BitSet(new long[]{0x0230101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_parameters_in_extensionCondition2265 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_extensionCondition2268 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_extensionId_in_extensionExpression2306 = new BitSet(new long[]{0x1000000000000000L});
+    public static final BitSet FOLLOW_60_in_extensionExpression2308 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_functionId_in_extensionExpression2310 = new BitSet(new long[]{0x0010000000000002L});
+    public static final BitSet FOLLOW_52_in_extensionExpression2314 = new BitSet(new long[]{0x0230101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_parameters_in_extensionExpression2316 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_extensionExpression2319 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_intVal_in_constant2353 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_longVal_in_constant2366 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_floatVal_in_constant2379 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_doubleVal_in_constant2393 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_boolVal_in_constant2406 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_stringVal_in_constant2419 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_timeExpr_in_constant2432 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_id_in_streamId2452 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_streamPositionAttributeName_in_attributeVariable2460 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_streamAttributeName_in_attributeVariable2462 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_attributeName_in_attributeVariable2464 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_streamId_in_streamPositionAttributeName2472 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000040L});
+    public static final BitSet FOLLOW_70_in_streamPositionAttributeName2474 = new BitSet(new long[]{0x0000000800000000L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_streamPositionAttributeName2475 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
+    public static final BitSet FOLLOW_71_in_streamPositionAttributeName2476 = new BitSet(new long[]{0x0400000000000000L});
+    public static final BitSet FOLLOW_58_in_streamPositionAttributeName2477 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_id_in_streamPositionAttributeName2479 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_streamId_in_streamAttributeName2506 = new BitSet(new long[]{0x0400000000000000L});
+    public static final BitSet FOLLOW_58_in_streamAttributeName2508 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_id_in_streamAttributeName2510 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_id_in_attributeName2534 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_99_in_join2556 = new BitSet(new long[]{0x0000000000000000L,0x0000800000000000L});
+    public static final BitSet FOLLOW_111_in_join2557 = new BitSet(new long[]{0x0000000000000000L,0x0000000400000000L});
+    public static final BitSet FOLLOW_98_in_join2559 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_113_in_join2577 = new BitSet(new long[]{0x0000000000000000L,0x0000800000000000L});
+    public static final BitSet FOLLOW_111_in_join2579 = new BitSet(new long[]{0x0000000000000000L,0x0000000400000000L});
+    public static final BitSet FOLLOW_98_in_join2581 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_88_in_join2598 = new BitSet(new long[]{0x0000000000000000L,0x0000800000000000L});
+    public static final BitSet FOLLOW_111_in_join2599 = new BitSet(new long[]{0x0000000000000000L,0x0000000400000000L});
+    public static final BitSet FOLLOW_98_in_join2601 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_111_in_join2618 = new BitSet(new long[]{0x0000000000000000L,0x0000000400000000L});
+    public static final BitSet FOLLOW_98_in_join2620 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_93_in_join2638 = new BitSet(new long[]{0x0000000000000000L,0x0000000400000000L});
+    public static final BitSet FOLLOW_98_in_join2640 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_98_in_join2655 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_123_in_window2677 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_119_in_transform2694 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_yearValue_in_timeExpr2754 = new BitSet(new long[]{0x0000000800000002L});
+    public static final BitSet FOLLOW_monthValue_in_timeExpr2759 = new BitSet(new long[]{0x0000000800000002L});
+    public static final BitSet FOLLOW_weekValue_in_timeExpr2764 = new BitSet(new long[]{0x0000000800000002L});
+    public static final BitSet FOLLOW_dayValue_in_timeExpr2769 = new BitSet(new long[]{0x0000000800000002L});
+    public static final BitSet FOLLOW_hourValue_in_timeExpr2774 = new BitSet(new long[]{0x0000000800000002L});
+    public static final BitSet FOLLOW_minuteValue_in_timeExpr2779 = new BitSet(new long[]{0x0000000800000002L});
+    public static final BitSet FOLLOW_secondValue_in_timeExpr2784 = new BitSet(new long[]{0x0000000800000002L});
+    public static final BitSet FOLLOW_milliSecondValue_in_timeExpr2790 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_yearValue2836 = new BitSet(new long[]{0x0000000000000000L,0x6000000000000000L});
+    public static final BitSet FOLLOW_set_in_yearValue2838 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_monthValue2856 = new BitSet(new long[]{0x0000000000000000L,0x00000C0000000000L});
+    public static final BitSet FOLLOW_set_in_monthValue2858 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_weekValue2876 = new BitSet(new long[]{0x0000000000000000L,0x0600000000000000L});
+    public static final BitSet FOLLOW_set_in_weekValue2878 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_dayValue2896 = new BitSet(new long[]{0x0000000000000000L,0x0000000000030000L});
+    public static final BitSet FOLLOW_set_in_dayValue2898 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_hourValue2916 = new BitSet(new long[]{0x0000000000000000L,0x0000000018000000L});
+    public static final BitSet FOLLOW_set_in_hourValue2918 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_minuteValue2939 = new BitSet(new long[]{0x0000000000000000L,0x0000038000000000L});
+    public static final BitSet FOLLOW_set_in_minuteValue2941 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_secondValue2967 = new BitSet(new long[]{0x0000000000000000L,0x001C000000000000L});
+    public static final BitSet FOLLOW_set_in_secondValue2969 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_milliSecondValue2997 = new BitSet(new long[]{0x0000000000000000L,0x0000006000000000L});
+    public static final BitSet FOLLOW_set_in_milliSecondValue2999 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_57_in_intVal3018 = new BitSet(new long[]{0x0000000800000000L});
+    public static final BitSet FOLLOW_POSITIVE_INT_VAL_in_intVal3021 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_57_in_longVal3040 = new BitSet(new long[]{0x0000001000000000L});
+    public static final BitSet FOLLOW_POSITIVE_LONG_VAL_in_longVal3043 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_57_in_floatVal3062 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_POSITIVE_FLOAT_VAL_in_floatVal3065 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_57_in_doubleVal3084 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_POSITIVE_DOUBLE_VAL_in_doubleVal3087 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_BOOL_VAL_in_boolVal3106 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_id_in_extensionId3113 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_id_in_functionId3120 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_STRING_VAL_in_stringVal3127 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_inputStream_in_synpred7_SiddhiQLGrammar368 = new BitSet(new long[]{0x0000000000000000L,0x0000000040000000L});
+    public static final BitSet FOLLOW_outputStream_in_synpred7_SiddhiQLGrammar370 = new BitSet(new long[]{0x0250101E00180040L,0x0040001106482800L});
+    public static final BitSet FOLLOW_outputProjection_in_synpred7_SiddhiQLGrammar372 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_sequenceFullStream_in_synpred13_SiddhiQLGrammar498 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_patternFullStream_in_synpred14_SiddhiQLGrammar512 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_joinStream_in_synpred15_SiddhiQLGrammar529 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_windowStream_in_synpred16_SiddhiQLGrammar544 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_leftStream_in_synpred34_SiddhiQLGrammar843 = new BitSet(new long[]{0x0000000000000000L,0x0002800C21000000L});
+    public static final BitSet FOLLOW_join_in_synpred34_SiddhiQLGrammar845 = new BitSet(new long[]{0x0010000000180000L});
+    public static final BitSet FOLLOW_rightStream_in_synpred34_SiddhiQLGrammar847 = new BitSet(new long[]{0x0000000000000000L,0x0100000000000000L});
+    public static final BitSet FOLLOW_120_in_synpred34_SiddhiQLGrammar849 = new BitSet(new long[]{0x0000000000000002L,0x1000200000000000L});
+    public static final BitSet FOLLOW_109_in_synpred34_SiddhiQLGrammar852 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_condition_in_synpred34_SiddhiQLGrammar854 = new BitSet(new long[]{0x0000000000000002L,0x1000000000000000L});
+    public static final BitSet FOLLOW_124_in_synpred34_SiddhiQLGrammar859 = new BitSet(new long[]{0x0200101E00000040L});
+    public static final BitSet FOLLOW_time_in_synpred34_SiddhiQLGrammar861 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_leftStream_in_synpred37_SiddhiQLGrammar884 = new BitSet(new long[]{0x0000000000000000L,0x0002800C21000000L});
+    public static final BitSet FOLLOW_join_in_synpred37_SiddhiQLGrammar886 = new BitSet(new long[]{0x0010000000180000L});
+    public static final BitSet FOLLOW_rightStream_in_synpred37_SiddhiQLGrammar888 = new BitSet(new long[]{0x0000000000000002L,0x1000200000000000L});
+    public static final BitSet FOLLOW_109_in_synpred37_SiddhiQLGrammar891 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_condition_in_synpred37_SiddhiQLGrammar893 = new BitSet(new long[]{0x0000000000000002L,0x1000000000000000L});
+    public static final BitSet FOLLOW_124_in_synpred37_SiddhiQLGrammar898 = new BitSet(new long[]{0x0200101E00000040L});
+    public static final BitSet FOLLOW_time_in_synpred37_SiddhiQLGrammar900 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_windowStream_in_synpred40_SiddhiQLGrammar975 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_windowStream_in_synpred41_SiddhiQLGrammar1001 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_synpred50_SiddhiQLGrammar1250 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000200L});
+    public static final BitSet FOLLOW_73_in_synpred50_SiddhiQLGrammar1252 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_itemStream_in_synpred50_SiddhiQLGrammar1255 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_synpred51_SiddhiQLGrammar1260 = new BitSet(new long[]{0x0000000000000000L,0x0000400000000000L});
+    public static final BitSet FOLLOW_110_in_synpred51_SiddhiQLGrammar1262 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_itemStream_in_synpred51_SiddhiQLGrammar1265 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_synpred52_SiddhiQLGrammar1270 = new BitSet(new long[]{0x4000000000000000L});
+    public static final BitSet FOLLOW_62_in_synpred52_SiddhiQLGrammar1272 = new BitSet(new long[]{0x1000000800000000L});
+    public static final BitSet FOLLOW_collect_in_synpred52_SiddhiQLGrammar1273 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_66_in_synpred52_SiddhiQLGrammar1275 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_synpred53_SiddhiQLGrammar1301 = new BitSet(new long[]{0x0000000000000000L,0x0000400000000000L});
+    public static final BitSet FOLLOW_110_in_synpred53_SiddhiQLGrammar1303 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_itemStream_in_synpred53_SiddhiQLGrammar1306 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_itemStream_in_synpred54_SiddhiQLGrammar1311 = new BitSet(new long[]{0x00C0000000000000L,0x0000000000000010L});
+    public static final BitSet FOLLOW_regex_in_synpred54_SiddhiQLGrammar1313 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_extensionOutFunction_in_synpred64_SiddhiQLGrammar1464 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_74_in_synpred64_SiddhiQLGrammar1466 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_id_in_synpred64_SiddhiQLGrammar1468 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_outFunction_in_synpred65_SiddhiQLGrammar1481 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_74_in_synpred65_SiddhiQLGrammar1483 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_id_in_synpred65_SiddhiQLGrammar1485 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_expression_in_synpred66_SiddhiQLGrammar1497 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
+    public static final BitSet FOLLOW_74_in_synpred66_SiddhiQLGrammar1500 = new BitSet(new long[]{0x0000000000180000L});
+    public static final BitSet FOLLOW_id_in_synpred66_SiddhiQLGrammar1502 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_parameters_in_synpred67_SiddhiQLGrammar1536 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_parameters_in_synpred68_SiddhiQLGrammar1568 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_parameters_in_synpred70_SiddhiQLGrammar1656 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_parameters_in_synpred71_SiddhiQLGrammar1726 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_parameters_in_synpred73_SiddhiQLGrammar1770 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_110_in_synpred80_SiddhiQLGrammar1968 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_conditionExpression_in_synpred80_SiddhiQLGrammar1971 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_expression_in_synpred82_SiddhiQLGrammar2003 = new BitSet(new long[]{0xC002000000000000L,0x000000008000400EL});
+    public static final BitSet FOLLOW_compareOperation_in_synpred82_SiddhiQLGrammar2005 = new BitSet(new long[]{0x0210101E00180040L,0x0040001100480800L});
+    public static final BitSet FOLLOW_expression_in_synpred82_SiddhiQLGrammar2008 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_boolVal_in_synpred83_SiddhiQLGrammar2012 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_52_in_synpred84_SiddhiQLGrammar2019 = new BitSet(new long[]{0x0210101E00180040L,0x0040101100480800L});
+    public static final BitSet FOLLOW_conditionExpression_in_synpred84_SiddhiQLGrammar2020 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_53_in_synpred84_SiddhiQLGrammar2022 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_parameters_in_synpred95_SiddhiQLGrammar2265 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_parameters_in_synpred97_SiddhiQLGrammar2316 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_intVal_in_synpred99_SiddhiQLGrammar2353 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_longVal_in_synpred100_SiddhiQLGrammar2366 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_floatVal_in_synpred101_SiddhiQLGrammar2379 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_doubleVal_in_synpred102_SiddhiQLGrammar2393 = new BitSet(new long[]{0x0000000000000002L});
 
 }
