@@ -14,20 +14,9 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: isuru
- * Date: 4/29/13
- * Time: 9:03 AM
- * To change this template use File | Settings | File Templates.
- */
 public class NodeProvider {
     private static List<Node> inputNodeList = new ArrayList<Node>();
     private static List<Node> outputNodeList = new ArrayList<Node>();
-
-
-
-
 
     public static List<Node> getNodeListFromFile(){
 
@@ -71,12 +60,12 @@ public class NodeProvider {
 
         OutStream stream = query.getOutputStream();
         String streamId = stream.getStreamId();
-        String ip = stream.getIp();
+        List<String> ipList = stream.getIp();
         String port ="9673";
-        outputNodeList.add(new Node(ip,port,streamId));
+        for(String ip: ipList){
+            outputNodeList.add(new Node(ip,port,streamId));
+        }
         return outputNodeList;
     }
-
-
 
 }
