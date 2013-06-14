@@ -14,18 +14,11 @@ import org.wso2.carbon.databridge.receiver.thrift.internal.ThriftDataReceiver;
 import org.wso2.siddhi.loadbalancer.eventdivider.Divider;
 import org.wso2.siddhi.loadbalancer.eventdivider.EventRRDivider;
 import org.wso2.siddhi.loadbalancer.utils.KeyStoreUtil;
-
 import java.net.SocketException;
 import java.util.List;
 
 
-/**
- * Created with IntelliJ IDEA.
- * User: isuru
- * Date: 4/29/13
- * Time: 9:04 AM
- * To change this template use File | Settings | File Templates.
- */
+
 public class ExternalEventReceiver {
     private static Logger log = Logger.getLogger(ExternalEventReceiver.class);
     private static ThriftDataReceiver thriftDataReceiver;
@@ -84,6 +77,7 @@ public class ExternalEventReceiver {
             log.info("Thrift Server Started");
         } catch (SocketException e) {
             log.error("Thrift Server not started !", e);
+
         }
     }
 

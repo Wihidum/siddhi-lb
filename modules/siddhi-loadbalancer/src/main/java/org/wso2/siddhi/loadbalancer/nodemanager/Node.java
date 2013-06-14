@@ -6,13 +6,7 @@ import org.wso2.siddhi.loadbalancer.eventpublisher.EventPublisher;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: isuru
- * Date: 4/29/13
- * Time: 9:03 AM
- * To change this template use File | Settings | File Templates.
- */
+
 public class Node {
 
     private  String hostname;
@@ -49,7 +43,7 @@ public class Node {
 
         if (eventList.size()>=1000){
             if(this.streamID != null){
-            EventPublisher.setSTREAM_ID(this.streamID);
+
             }
             EventPublisher.publishEvents(hostname,port,eventList);
             eventList.clear();

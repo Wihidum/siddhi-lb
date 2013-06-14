@@ -9,13 +9,7 @@ import org.wso2.siddhi.loadbalancer.eventpublisher.EventPublisher;
 import org.wso2.siddhi.loadbalancer.nodemanager.Node;
 import org.wso2.siddhi.loadbalancer.nodemanager.NodeProvider;
 
-/**
- * Created with IntelliJ IDEA.
- * User: isuru
- * Date: 4/29/13
- * Time: 9:05 AM
- * To change this template use File | Settings | File Templates.
- */
+
 public class EventRRDivider implements Divider,Runnable {
     private static final List<Node> nodelist  = NodeProvider.getNodeListFromFile();
     private static int eventCount=0;
@@ -27,7 +21,7 @@ public class EventRRDivider implements Divider,Runnable {
     public synchronized void  divide(Event event) {
         eventCount++;
         eventList.add(event);
-        if(eventCount>0 && eventCount >=10000){
+        if(eventCount >=10000){
             EventPublisher.publishEvents(nodelist.get(nodeCount).getHostname(), nodelist.get(nodeCount).getPort(), eventList);
             nodeCount++;
             eventList.clear();
