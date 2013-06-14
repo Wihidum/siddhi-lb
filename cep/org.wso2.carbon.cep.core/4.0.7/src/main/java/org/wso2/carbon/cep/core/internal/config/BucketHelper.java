@@ -50,14 +50,14 @@ public class BucketHelper {
 
         OMElement descriptionElement =
                 bucketElement.getFirstChildWithName(new QName(CEPConstants.CEP_CONF_NAMESPACE,
-                                                              CEPConstants.CEP_CONF_ELE_DESCRIPTION));
+                        CEPConstants.CEP_CONF_ELE_DESCRIPTION));
         if (descriptionElement != null) {
             bucket.setDescription(descriptionElement.getText());
         }
 
         OMElement providerConfiguration =
                 bucketElement.getFirstChildWithName(new QName(CEPConstants.CEP_CONF_NAMESPACE,
-                                                              CEPConstants.CEP_CONF_ELE_PROVIDER_CONFIG));
+                        CEPConstants.CEP_CONF_ELE_PROVIDER_CONFIG));
         bucket.setEngineProvider(ProviderConfigurationHelper.engineProviderFromOM(providerConfiguration));
 
         if (providerConfiguration.getChildElements().hasNext()) {
@@ -71,7 +71,7 @@ public class BucketHelper {
 
         OMElement inputOmElement = null;
         for (Iterator iter = bucketElement.getChildrenWithName(new QName(CEPConstants.CEP_CONF_NAMESPACE,
-                                                                         CEPConstants.CEP_CONF_ELE_INPUT)); iter.hasNext(); ) {
+                CEPConstants.CEP_CONF_ELE_INPUT)); iter.hasNext(); ) {
             inputOmElement = (OMElement) iter.next();
             bucket.addInput(InputHelper.fromOM(inputOmElement));
         }
@@ -80,7 +80,7 @@ public class BucketHelper {
         OMElement queryOmElement = null;
         int queryIndex = 0;
         for (Iterator iterator = bucketElement.getChildrenWithName(new QName(CEPConstants.CEP_CONF_NAMESPACE,
-                                                                             CEPConstants.CEP_CONF_ELE_QUERY)); iterator.hasNext(); ) {
+                CEPConstants.CEP_CONF_ELE_QUERY)); iterator.hasNext(); ) {
             queryOmElement = (OMElement) iterator.next();
             Query query = QueryHelper.fromOM(queryOmElement);
             query.setQueryIndex(queryIndex);
@@ -105,7 +105,7 @@ public class BucketHelper {
                 CEPConstants.CEP_CONF_ELE_BUCKET,
                 CEPConstants.CEP_CONF_CEP_NAME_SPACE_PREFIX));
         bucketItem.addAttribute(CEPConstants.CEP_CONF_ATTR_NAME, bucketName,
-                                null);
+                null);
         OMElement description = factory.createOMElement(new QName(
                 CEPConstants.CEP_CONF_NAMESPACE,
                 CEPConstants.CEP_CONF_ELE_DESCRIPTION,

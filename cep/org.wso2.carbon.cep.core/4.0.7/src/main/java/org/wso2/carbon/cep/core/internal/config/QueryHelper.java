@@ -44,7 +44,7 @@ public class QueryHelper {
 
         Iterator iterator = queryElement.getChildrenWithName(new QName(CEPConstants.CEP_CONF_QUERY_IP));
 
-        if(iterator != null && iterator.hasNext()){
+        if (iterator != null && iterator.hasNext()) {
             OMElement ipElement = (OMElement) iterator.next();
             String ip = ipElement.getText();
             query.addIP(ip);
@@ -66,33 +66,32 @@ public class QueryHelper {
         return query;
     }
 
-    
-    
-	public static OMElement queryToOM(Query query) {
-		OMFactory factory = OMAbstractFactory.getOMFactory();
-		OMElement queryChild = factory.createOMElement(new QName(
-				CEPConstants.CEP_CONF_NAMESPACE,
-				CEPConstants.CEP_CONF_ELE_QUERY,
-				CEPConstants.CEP_CONF_CEP_NAME_SPACE_PREFIX));
+
+    public static OMElement queryToOM(Query query) {
+        OMFactory factory = OMAbstractFactory.getOMFactory();
+        OMElement queryChild = factory.createOMElement(new QName(
+                CEPConstants.CEP_CONF_NAMESPACE,
+                CEPConstants.CEP_CONF_ELE_QUERY,
+                CEPConstants.CEP_CONF_CEP_NAME_SPACE_PREFIX));
         Expression queryExpression = query.getExpression();
         String queryName = query.getName();
-        OMElement queryIP=null;
-         List<String> ipList = query.getIpList();
-        for(String ip:ipList){
+        OMElement queryIP = null;
+        List<String> ipList = query.getIpList();
+        for (String ip : ipList) {
             queryIP = factory.createOMElement(new QName(CEPConstants.CEP_CONF_QUERY_IP));
             queryIP.setText(ip);
             queryChild.addChild(queryIP);
         }
         queryChild.addAttribute(CEPConstants.CEP_CONF_ATTR_NAME, queryName, null);
         OMElement omQueryExpression = ExpressionHelper
-				.expressionToOM(queryExpression);
+                .expressionToOM(queryExpression);
         queryChild.addChild(omQueryExpression);
-        if(query.getOutput()!=null){
+        if (query.getOutput() != null) {
             OMElement queryOutput = OutputHelper.outputToOM(query.getOutput());
             queryChild.addChild(queryOutput);
         }
-		return queryChild;
-	}
-    
-    
+        return queryChild;
+    }
+
+
 }

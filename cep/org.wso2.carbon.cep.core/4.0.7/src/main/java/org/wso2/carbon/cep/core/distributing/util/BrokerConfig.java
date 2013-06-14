@@ -8,12 +8,12 @@ public class BrokerConfig {
     private String inputTopic;
     private String outputTopic;
 
-    public BrokerConfig(String ip, String inputBroker, String inputTopic, String outputBroker, String outputTopic){
-      this.ip =ip;
-      this.inputBroker =inputBroker;
-      this.outputBroker =outputBroker;
-      this.inputTopic = inputTopic;
-      this.outputTopic=outputTopic;
+    public BrokerConfig(String ip, String inputBroker, String inputTopic, String outputBroker, String outputTopic) {
+        this.ip = ip;
+        this.inputBroker = inputBroker;
+        this.outputBroker = outputBroker;
+        this.inputTopic = inputTopic;
+        this.outputTopic = outputTopic;
     }
 
     public String getIp() {

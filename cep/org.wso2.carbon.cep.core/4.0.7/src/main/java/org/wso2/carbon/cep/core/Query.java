@@ -25,28 +25,27 @@ public class Query {
 
     /**
      * Query String
-     * */
+     */
     private Expression expression;
 
     /**
      * ip List query.
      */
-     private List<String> ipList = new ArrayList<String>();
+    private List<String> ipList = new ArrayList<String>();
 
     /**
      * Name of  the query
-     * */
+     */
     private String name;
 
     /**
      * configuration ot the output topic and the output XML Element
-     *
-     * */
+     */
     private Output output;
 
-    /***
-     *Order of the query, important when having more than one query to maintain the order of
-     *  queries
+    /**
+     * Order of the query, important when having more than one query to maintain the order of
+     * queries
      */
 
     private int queryIndex;
@@ -105,10 +104,11 @@ public class Query {
         return ipList;
     }
 
-   public void addIP(String ip){
-       ipList.add(ip);
-   }
-    public void clearIPList(){
+    public void addIP(String ip) {
+        ipList.add(ip);
+    }
+
+    public void clearIPList() {
         ipList.clear();
     }
 }
