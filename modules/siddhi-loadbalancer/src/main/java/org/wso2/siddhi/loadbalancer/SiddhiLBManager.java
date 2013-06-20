@@ -7,7 +7,7 @@ public class SiddhiLBManager {
 
 
     public static void main(String[] args) {
-      ExternalEventReceiver.startReciver("localhost", 7611);
+        ExternalEventReceiver.startReciver("localhost", 7611);
     }
 
 }

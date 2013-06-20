@@ -14,17 +14,16 @@ import org.wso2.carbon.databridge.receiver.thrift.internal.ThriftDataReceiver;
 import org.wso2.siddhi.loadbalancer.eventdivider.Divider;
 import org.wso2.siddhi.loadbalancer.eventdivider.EventRRDivider;
 import org.wso2.siddhi.loadbalancer.utils.KeyStoreUtil;
+
 import java.net.SocketException;
 import java.util.List;
-
 
 
 public class ExternalEventReceiver {
     private static Logger log = Logger.getLogger(ExternalEventReceiver.class);
     private static ThriftDataReceiver thriftDataReceiver;
     private static final ExternalEventReceiver testServer = new ExternalEventReceiver();
-    private static String reciverHost="localhost";
-
+    private static String reciverHost = "localhost";
 
 
     private void start(int receiverPort) throws DataBridgeException {
@@ -61,7 +60,7 @@ public class ExternalEventReceiver {
             public void receive(List<Event> eventList, Credentials credentials) {
                 //  log.info("eventListSize=" + eventList.size() + " eventList " + eventList + " for username " + credentials.getUsername());
 
-                for(Event event :eventList){
+                for (Event event : eventList) {
                     divider.divide(event);
                 }
                 // log.info("events send to divider");
@@ -82,37 +81,25 @@ public class ExternalEventReceiver {
     }
 
 
-    public static boolean startReciver(String host ,int recivingPort){
+    public static boolean startReciver(String host, int recivingPort) {
         reciverHost = host;
-        boolean start =false;
+        boolean start = false;
         try {
             testServer.start(recivingPort);
 
-            start =true;
+            start = true;
         } catch (DataBridgeException e) {
-            start =false;
+            start = false;
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
-        return  start;
+        return start;
     }
 
 
-
-    public static void  stopReciver(){
+    public static void stopReciver() {
         thriftDataReceiver.stop();
         log.info("DataRecciver Stopped");
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
