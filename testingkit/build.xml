@@ -19,7 +19,7 @@
 
 <project default="init">
 
-    <property name="cep.home" value="../../.."/>
+    <property name="cep.home" value="/home/isuru/Documents/FYP/cepnodes/wso2cep-2.1.0.1"/>
     <property name="src.dir" value="src"/>
     <property name="resource.dir" value="resource"/>
     <property name="conf.dir" value="${cep.home}/repository/conf"/>

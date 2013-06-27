@@ -73,16 +73,19 @@ public class TestAgentServer {
                                       Credentials credentials) {
                 log.info("StreamDefinition " + streamDefinition);
             }
-
+               public void removeStream(StreamDefinition streamDefinition,
+                                     Credentials credentials) {
+                // log.info("Removed StreamDefinition " + streamDefinition);
+            }
             @Override
             public void receive(List<Event> eventList, Credentials credentials) {
-                eventCount =eventCount+eventList.size();
+                
                  if(eventCount==0){
                    starttime= System.currentTimeMillis();
                }
-                
-                if(eventCount>=1000){
-                     double thput= eventCount*1000/(System.currentTimeMillis()-starttime);
+                eventCount =eventCount+eventList.size();
+                if(eventCount>=10000){
+                    double  thput= eventCount*1000*1.0/(System.currentTimeMillis()-starttime);
                     eventCount=0;
                  System.out.println(thput);
                     
